@@ -1,3 +1,29 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../sass/bootstrap/functions";
+@import "../sass/bootstrap/variables";
+@import "variables.scss";
+@import "mixins.scss";
+
+// colors
+$navbar-dark-color: $basic-light;
+$navbar-dark-active-color: rgba($basic-light, 0.5);
+
+// sizes
+$nav-link-padding-y: 0;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1200px
+);
+
+@import "../sass/bootstrap/bootstrap";
+
+@import "fonts.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+
+@import "blocks/features.scss";
