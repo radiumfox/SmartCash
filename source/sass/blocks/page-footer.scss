@@ -7,13 +7,13 @@
   }
 }
 
-.page-footer__nav {
+.page-footer-nav {
   @include media-breakpoint-up(lg) {
     padding-right: 153px;
   }
 }
 
-.page-footer__link {
+.page-footer-link {
   @include font(1.13rem, 21px, 400);
   color: $basic-light;
   padding: 10px 0;

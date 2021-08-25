@@ -1,0 +1,64 @@
+.personnel {
+  width: 100vw;
+  overflow: hidden;
+  margin-right: 0;
+
+  .list-group {
+    position: relative;
+    left: 353px;
+
+    @include media-breakpoint-up(sm) {
+      left: 0;
+      max-width: 756px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      left: -90px;
+      max-width: 756px;
+    }
+  }
+}
+
+.personnel-item {
+  padding-right: 20px;
+}
+
+.personnel-img {
+  background-color: $basic-grey;
+  min-width: 200px;
+  min-height: 260px;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-up(lg) {
+    min-width: 285px;
+    min-height: 380px;
+    margin-bottom: 35px;
+  }
+}
+
+.personnel-name {
+  @include font(1.13rem, 1.25rem, 400);
+  padding-bottom: 5px;
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    @include font(1.3rem, 1.54rem, 400);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.5rem, 1.75rem, 400);
+  }
+}
+
+.personnel-duty {
+  @include font(0.87rem, 1.1rem, 400);
+  margin: 0;
+
+  @include media-breakpoint-up(md) {
+    @include font(1rem, 1.2rem, 400);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.25rem, 400);
+  }
+}

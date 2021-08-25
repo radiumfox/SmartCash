@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg">
 <symbol id="arrow-right" viewBox="0 0 11 18">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M7.9394 9.00006L0.469727 1.53039L1.53039 0.469727L10.0607 9.00006L1.53039 17.5304L0.469727 16.4697L7.9394 9.00006Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.9394 9.00006L0.469727 1.53039L1.53039 0.469727L10.0607 9.00006L1.53039 17.5304L0.469727 16.4697L7.9394 9.00006Z"/>
 </symbol>
 
 <symbol id="arrow-left" viewBox="0 0 11 18">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M2.59088 9.00006L10.0605 1.53039L8.99989 0.469727L0.469557 9.00006L8.99989 17.5304L10.0605 16.4697L2.59088 9.00006Z" fill="black"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.59088 9.00006L10.0605 1.53039L8.99989 0.469727L0.469557 9.00006L8.99989 17.5304L10.0605 16.4697L2.59088 9.00006Z"/>
 </symbol>
 
 <symbol id="user-icon" viewBox="0 0 24 24">

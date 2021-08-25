@@ -3,6 +3,40 @@
   max-width: 450px;
   padding: 0 18px;
 
+  .form-select {
+    border-radius: 16px;
+    border-color: $basic-grey;
+
+    &:focus {
+      background-color: $special-grey;
+      border-color: $basic-dark-2;
+      box-shadow: none;
+    }
+
+    &:active {
+      border-color: $basic-dark-2;
+      background-color: $special-grey;
+      box-shadow: none;
+    }
+  }
+
+  .form-control {
+    border-radius: 16px;
+    border-color: $basic-grey;
+
+    &:focus {
+      background-color: $special-grey;
+      border-color: $basic-dark-2;
+      box-shadow: none;
+    }
+
+    &:active {
+      border-color: $basic-dark-2;
+      background-color: $special-grey;
+      box-shadow: none;
+    }
+  }
+
   @include media-breakpoint-up(sm) {
     @include font(1rem, 1.2rem, 400);
   }
@@ -12,7 +46,7 @@
   }
 }
 
-.filter__button.collapsed .filter__caret {
+.filter-button.collapsed .filter-caret {
   background-image: url("../img/arrow-down.svg");
   background-repeat: no-repeat;
   width: 16px;
@@ -20,7 +54,7 @@
   display: inline-block;
 }
 
-.filter__caret {
+.filter-caret {
   background-image: url("../img/arrow-up.svg");
   background-repeat: no-repeat;
   width: 16px;
@@ -29,7 +63,7 @@
   margin-left: 14px;
 }
 
-.filter__button {
+.filter-button {
   margin-bottom: 32px;
   color: $basic-dark-2;
   cursor: pointer;
@@ -39,26 +73,10 @@
   }
 }
 
-.filter__item {
+.filter-item {
   margin-bottom: 20px;
 
   @include media-breakpoint-up(lg) {
     margin-bottom: 30px;
-  }
-}
-.filter__control {
-  border-radius: 16px;
-  border-color: $basic-grey;
-
-  &:focus {
-    background-color: $special-grey;
-    border-color: $basic-dark-2;
-    box-shadow: none;
-  }
-
-  &:active {
-    border-color: $basic-dark-2;
-    background-color: $special-grey;
-    box-shadow: none;
   }
 }

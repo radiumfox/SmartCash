@@ -8,37 +8,37 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <nav class="page-header__nav navbar navbar-dark navbar-expand-lg py-0">
+    <header class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg py-0">
         <div class="container px-0">
-          <a class="navbar-brand py-0">
-            <img class="page-header__logo align-baseline" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+          <a class="navbar-brand align-baseline py-0">
+            <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
-          <button class="page-header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="page-header__toggler-icon"></span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="header-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
-            <ul class="page-header__navbar navbar-nav flex-wrap">
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="index.html">Главная</a>
+            <ul class="header-navbar navbar-nav flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link px-0" href="index.html">Главная</a>
               </li>
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="#">О программе</a>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="#">О программе</a>
               </li>
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0 active">Магазины / партнеры</a>
+              <li class="nav-item">
+                <a class="nav-link px-0 active">Магазины / партнеры</a>
               </li>
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="#">Новости</a>
+              <li class="nav-item">
+                <a class="nav-link px-0" href="news.html">Новости</a>
               </li>
             </ul>
 
-            <form class="page-header__form d-flex">
-              <input class="page-header__search form-control" type="search" placeholder="Введите запрос" aria-label="Search">
-              <span class="page-header__search-icon"></span>
+            <form class="header-form d-flex">
+              <input class="form-control" type="search" placeholder="Введите запрос" aria-label="Search">
+              <span class="header-search-icon"></span>
             </form>
-            <a class="page-header__user" href="#">
+            <a class="header-user" href="#">
               <svg viewBox="0 0 24 24" width="24" height="24">
                 <use xlink:href="img/sprite.svg#user-icon"></use>
               </svg>
@@ -57,57 +57,57 @@
 
           <section class="filter col-sm-12 col-lg-3 mx-auto mx-lg-0">
             <div class="dropdown">
-              <a class="filter__button d-lg-none visible-xs collapsed d-flex align-items-center text-decoration-none" data-bs-toggle="collapse" data-bs-target="#filters">
+              <a class="filter-button d-lg-none visible-xs collapsed d-flex align-items-center text-decoration-none" data-bs-toggle="collapse" data-bs-target="#filters">
                 <span>Фильтры</span>
-                <span class="filter__caret"></span>
+                <span class="filter-caret"></span>
               </a>
 
             </div>
             <div class="navbar-collapse collapse d-lg-block" id="filters">
               <form>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="country" class="form-label">Страна</label>
-                  <input type="text" class="filter__control form-control" id="country">
+                  <input type="text" class="filter-control form-control" id="country">
                 </div>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="city" class="form-label">Город</label>
-                  <input type="text" class="filter__control form-control" id="city">
+                  <input type="text" class="filter-control form-control" id="city">
                 </div>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="category" class="form-label">Категория</label>
-                  <select id="category" class="filter__control form-select">
+                  <select id="category" class="filter-control form-select">
                     <option>Опция-1</option>
                     <option>Опция-2</option>
                     <option>Опция-3</option>
                   </select>
                 </div>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="subcategory" class="form-label">Подкатегория</label>
-                  <select id="subcategory" class="filter__control form-select">
+                  <select id="subcategory" class="filter-control form-select">
                     <option>Опция-1</option>
                     <option>Опция-2</option>
                     <option>Опция-3</option>
                   </select>
                 </div>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="program" class="form-label">Программа</label>
-                  <select id="program" class="filter__control form-select">
+                  <select id="program" class="filter-control form-select">
                     <option>Опция-1</option>
                     <option>Опция-2</option>
                     <option>Опция-3</option>
                   </select>
                 </div>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="sort" class="form-label">Сортировать по</label>
-                  <select id="sort" class="filter__control form-select">
+                  <select id="sort" class="filter-control form-select">
                     <option>Опция-1</option>
                     <option>Опция-2</option>
                     <option>Опция-3</option>
                   </select>
                 </div>
-                <div class="filter__item">
+                <div class="filter-item">
                   <label for="sort" class="form-label">Статус</label>
-                  <select id="sort" class="filter__control form-select">
+                  <select id="sort" class="filter-control form-select">
                     <option>Опция-1</option>
                     <option>Опция-2</option>
                     <option>Опция-3</option>
@@ -122,12 +122,12 @@
             <div class="container p-0">
               <div class="row">
                 <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="catalog__card p-3 card">
+                  <div class="p-3 card">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -146,12 +146,12 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -170,12 +170,12 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -195,12 +195,12 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -219,12 +219,12 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4 d-none d-sm-block">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -243,12 +243,12 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4 d-none d-sm-block">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -268,12 +268,12 @@
                 </div>
 
                 <div class="col-12 col-sm-6 col-xl-4 d-none d-md-block">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -292,12 +292,12 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4 d-none d-md-block">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -316,12 +316,12 @@
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-xl-4 d-none d-lg-block">
-                  <div class="catalog__card card p-3">
+                  <div class="card p-3">
                     <a href="catalog-item.html">
-                      <img class="catalog__img mx-auto d-block mb-2" src="img/rectangle.svg" width="160" height="70" alt="img">
+                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
-                      <h3 class="catalog__card-title card-title">ООО Belife</h3>
+                      <h3 class="title">ООО Belife</h3>
                       <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
                     </div>
                     <div class="d-flex justify-content-between">
@@ -344,25 +344,25 @@
           </section>
 
           <div class="col-12 mt-4 mt-lg-5">
-            <ul class="catalog__pagination pagination justify-content-end align-items-center justify-content-center justify-content-lg-end">
-              <li class="page-item me-3">
-                <a class="catalog__page-link catalog__page-link--disabled" href="#" aria-label="Previous">
+            <ul class="catalog-pagination pagination justify-content-end align-items-center justify-content-center justify-content-lg-end">
+              <li class="page-item me-2">
+                <a class="page-link page-link--disabled" href="#" aria-label="Previous">
                   <svg viewBox="0 0 11 18" width="11" height="18">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
                   </svg>
                 </a>
               </li>
-              <li class="catalog__page-item page-item active">
-                <a class="catalog__page-link page-link border-0" href="#">1</a>
+              <li class="page-item active">
+                <a class=" page-link border-0" href="#">1</a>
               </li>
               <li class="page-item">
-                <a class="catalog__page-link page-link border-0" href="#">2</a>
+                <a class=" page-link border-0" href="#">2</a>
               </li>
               <li class="page-item">
-                <a class="catalog__page-link page-link border-0" href="#">3</a>
+                <a class=" page-link border-0" href="#">3</a>
               </li>
-              <li class="page-item ms-3">
-                <a class="catalog__page-link" href="#" aria-label="Next">
+              <li class="page-link page-item ms-2">
+                <a class="" href="#" aria-label="Next">
                   <svg viewBox="0 0 11 18" width="11" height="18">
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                   </svg>
@@ -371,11 +371,7 @@
             </ul>
           </div>
 
-
-
         </div> <!-- row  -->
-
-
 
       </div>
 
