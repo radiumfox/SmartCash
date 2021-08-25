@@ -1,29 +1,30 @@
+// bootstrap variables
+
 @import "../sass/bootstrap/functions";
 @import "../sass/bootstrap/variables";
+
+// custom properties
+
 @import "variables.scss";
 @import "mixins.scss";
+@import "fonts.scss";
+@import "custom.scss";
 
-// colors
-$navbar-dark-color: $basic-light;
-$navbar-dark-active-color: rgba($basic-light, 0.5);
-
-// sizes
-$nav-link-padding-y: 0;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1200px
-);
+// bootstrap
 
 @import "../sass/bootstrap/bootstrap";
 
-@import "fonts.scss";
+// sections
+
 @import "blocks/page-body.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page-footer.scss";
-
 @import "blocks/features.scss";
+@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+
+// components
+
+@import "components/stars.scss";
+@import "components/views.scss";

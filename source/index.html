@@ -12,7 +12,7 @@
     <header class="page-header">
       <nav class="page-header__nav navbar navbar-dark navbar-expand-lg py-0">
         <div class="container px-0">
-          <a class="navbar-brand py-0">
+          <a class="navbar-brand align-baseline py-0">
             <img class="page-header__logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
           <button class="page-header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
                 <a class="page-header__link nav-link px-0" href="#">О программе</a>
               </li>
               <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="#">Магазины / партнеры</a>
+                <a class="page-header__link nav-link px-0" href="catalog.html">Магазины / партнеры</a>
               </li>
               <li class="page-header__item nav-item">
                 <a class="page-header__link nav-link px-0" href="#">Новости</a>
@@ -40,7 +40,9 @@
               <span class="page-header__search-icon"></span>
             </form>
             <a class="page-header__user" href="#">
-              <img src="img/user-icon.svg" width="24" height="24" alt="user-icon">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -63,6 +65,10 @@
                   <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-1">
                     Экономь в магазинах
                     <span class="features__plus"></span>
+                    <!-- <svg class="features__plus" viewBox="0 0 24 24" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#cross"></use>
+                    </svg> -->
+
                   </a>
                   <ul class="features__scheme list-unstyled collapse" id="feature-list-1">
                     <li class="features__scheme-item">Стань участником</li>

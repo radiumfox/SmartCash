@@ -1,0 +1,64 @@
+.filter {
+  @include font(0.87rem, 1.06rem, 400);
+  max-width: 450px;
+  padding: 0 18px;
+
+  @include media-breakpoint-up(sm) {
+    @include font(1rem, 1.2rem, 400);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.3rem, 400);
+  }
+}
+
+.filter__button.collapsed .filter__caret {
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.filter__caret {
+  background-image: url("../img/arrow-up.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.filter__button {
+  margin-bottom: 32px;
+  color: $basic-dark-2;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($basic-dark-2, 0.8);
+  }
+}
+
+.filter__item {
+  margin-bottom: 20px;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 30px;
+  }
+}
+.filter__control {
+  border-radius: 16px;
+  border-color: $basic-grey;
+
+  &:focus {
+    background-color: $special-grey;
+    border-color: $basic-dark-2;
+    box-shadow: none;
+  }
+
+  &:active {
+    border-color: $basic-dark-2;
+    background-color: $special-grey;
+    box-shadow: none;
+  }
+}

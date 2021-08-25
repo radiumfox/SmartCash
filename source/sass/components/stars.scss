@@ -1,0 +1,12 @@
+.star {
+  background-image: url("../img/star.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+  margin-right: 5px;
+
+  &--checked {
+    opacity: 1;
+  }
+}

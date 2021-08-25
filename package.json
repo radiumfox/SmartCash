@@ -19,7 +19,7 @@
     "stylelint-config-htmlacademy": "0.1.10"
   },
   "scripts": {
-    "editorconfig": "editorconfig",
+    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
     "test": "npm run editorconfig",
     "build": "gulp styles",
