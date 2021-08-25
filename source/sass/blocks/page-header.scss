@@ -1,0 +1,139 @@
+.page-header {
+  background-color: $basic-dark;
+  padding: 12px 20px 10px;
+
+  .form-control {
+    color: $basic-light;
+    padding: 8px 35px 10px 12px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    padding: 20px 0 17px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 10px 0;
+  }
+}
+
+.page-header__logo {
+  @include media-breakpoint-up(sm) {
+    width: 104px;
+    height: 24px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 125px;
+    height: 29px;
+  }
+}
+
+.page-header__toggler {
+  border: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.page-header__toggler-icon {
+  background-image: url("../img/navbar-toggler-icon.svg");
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.page-header__navbar {
+  @include media-breakpoint-up(lg) {
+    max-width: 600px;
+  }
+}
+
+.page-header__item {
+  padding: 20px 0;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 20px;
+  }
+}
+
+.page-header__link {
+  @include font(0.87rem, 1.06rem, 400);
+
+  @include media-breakpoint-up(md) {
+    @include font(1rem, 1.16rem, 400);
+    padding: 5px 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.25rem, 400);
+  }
+}
+
+.page-header__form {
+  position: relative;
+}
+
+.page-header__search {
+  @include font(0.87rem, 1.06rem, 400);
+  background-color: $special-grey;
+  border-radius: 16px;
+  border: 1px solid $special-grey;
+  width: 100%;
+  margin: 20px auto;
+
+  &::placeholder {
+    @include font(0.87rem, 1.06rem, 400);
+    color: $basic-light;
+  }
+
+  &::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  &:focus {
+    background-color: $special-grey;
+    border: 1px solid $basic-light;
+    box-shadow: none;
+  }
+
+  &:active {
+    background-color: $special-grey;
+    border: 1px solid $basic-light;
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-left: 40px;
+    margin-right: 24px;
+    width: 240px;
+    color: $basic-light;
+  }
+}
+
+.page-header__search-icon {
+  position: absolute;
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 18px;
+  top: 30px;
+  right: 15px;
+  @include media-breakpoint-up(lg) {
+    right: 40px;
+  }
+}
+
+.page-header__user {
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  @include media-breakpoint-up(lg) {
+    position: initial;
+  }
+}

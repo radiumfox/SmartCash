@@ -1,12 +1,192 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCASH</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-</body>
+  <body class="page-body">
+
+    <header class="page-header">
+      <nav class="page-header__nav navbar navbar-dark navbar-expand-lg py-0">
+        <div class="container px-0">
+          <a class="navbar-brand align-baseline py-0">
+            <img class="page-header__logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+          </a>
+          <button class="page-header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="page-header__toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
+            <ul class="page-header__navbar navbar-nav flex-wrap">
+              <li class="page-header__item nav-item">
+                <a class="page-header__link nav-link px-0 active">Главная</a>
+              </li>
+              <li class="page-header__item nav-item">
+                <a class="page-header__link nav-link px-0" href="#">О программе</a>
+              </li>
+              <li class="page-header__item nav-item">
+                <a class="page-header__link nav-link px-0" href="catalog.html">Магазины / партнеры</a>
+              </li>
+              <li class="page-header__item nav-item">
+                <a class="page-header__link nav-link px-0" href="#">Новости</a>
+              </li>
+            </ul>
+
+            <form class="page-header__form d-flex">
+              <input class="page-header__search form-control" type="search" placeholder="Введите запрос" aria-label="Search">
+              <span class="page-header__search-icon"></span>
+            </form>
+            <a class="page-header__user" href="#">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">SmartCASH</h1>
+
+      <div class="container-fluid mx-0 page-main__header">
+      </div>
+
+      <div class="features">
+        <section class="features__section">
+          <div class="container-fluid">
+            <h2 class="features__title my-0">Новые возможности</h2>
+            <div class="row justify-content-end">
+              <ul class="features__list">
+                <li class="features__item list-group-item">
+                  <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-1">
+                    Экономь в магазинах
+                    <span class="features__plus"></span>
+                    <!-- <svg class="features__plus" viewBox="0 0 24 24" width="24" height="24">
+                      <use xlink:href="img/sprite.svg#cross"></use>
+                    </svg> -->
+
+                  </a>
+                  <ul class="features__scheme list-unstyled collapse" id="feature-list-1">
+                    <li class="features__scheme-item">Стань участником</li>
+                    <li class="features__scheme-item">Выбери магазин</li>
+                    <li class="features__scheme-item">Сделай покупку</li>
+                    <li class="features__scheme-item">Получи вознаграждение</li>
+                  </ul>
+                </li>
+
+                <li class="features__item list-group-item">
+                  <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-2">
+                    Продавай больше
+                    <span class="features__plus"></span>
+                  </a>
+                  <ul class="features__scheme list-unstyled collapse" id="feature-list-2">
+                    <li class="features__scheme-item">Item1</li>
+                    <li class="features__scheme-item">Item2</li>
+                    <li class="features__scheme-item">Item3</li>
+                    <li class="features__scheme-item">Item4</li>
+                  </ul>
+                </li>
+
+                <li class="features__item list-group-item">
+                  <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-3">
+                    Заработай много
+                    <span class="features__plus"></span>
+                  </a>
+                  <ul class="features__scheme list-unstyled collapse" id="feature-list-3">
+                    <li class="features__scheme-item">Item1</li>
+                    <li class="features__scheme-item">Item2</li>
+                    <li class="features__scheme-item">Item3</li>
+                    <li class="features__scheme-item">Item4</li>
+                  </ul>
+                </li>
+              </ul>
+            </div> <!-- flex-row-reverse -->
+          </div> <!-- container -->
+        </section>
+
+        <section class="features__section personnel pe-0">
+          <div class="container-fluid pe-0 me-0">
+            <h2 class="features__title my-0">Топ-менеджеры</h2>
+            <div class="d-flex flex-row-reverse overflow-hidden">
+              <ul class="personnel__list list-unstyled d-flex flex-row list-group col-lg-8">
+                <li class="personnel__item">
+                  <img class="personnel__img" src="#" width="200" height="260" alt="photo">
+                  <p class="personnel__name my-0">Иван Иванов</p>
+                  <p class="personnel__duty my-0">Менеджер</p>
+                </li>
+                <li class="personnel__item">
+                  <img class="personnel__img" src="#" width="200" height="260" alt="photo">
+                  <p class="personnel__name my-0">Иван Иванов</p>
+                  <p class="personnel__duty my-0">Менеджер</p>
+                </li>
+                <li class="personnel__item">
+                  <img class="personnel__img" src="#" width="200" height="260" alt="photo">
+                  <p class="personnel__name my-0">Иван Иванов</p>
+                  <p class="personnel__duty my-0">Менеджер</p>
+                </li>
+              </ul>
+            </div> <!-- flex-row-reverse -->
+          </div> <!-- container -->
+        </section>
+
+        <section class="features__section indicators mx-auto">
+          <div class="container-fluid">
+            <h2 class="features__title my-0">Кэшбэк в цифрах</h2>
+            <div class="row justify-content-end">
+              <dl class="indicators__list d-md-flex flex-row flex-wrap justify-content-between my-0">
+                <div class="indicators__item">
+                  <dt class="indicators__key">102 000</dt>
+                  <dd class="indicators__value">партнеров</dd>
+                </div>
+                <div class="indicators__item">
+                  <dt class="indicators__key">105 000</dt>
+                  <dd class="indicators__value">пользователей</dd>
+                </div>
+                <div class="indicators__item">
+                  <dt class="indicators__key">25 000 000</dt>
+                  <dd class="indicators__value">сэкономлено</dd>
+                </div>
+              </dl> <!-- flex-row -->
+            </div>  <!-- flex-row-reverse -->
+          </div> <!-- container -->
+        </section>
+      </div>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="container navbar-dark d-md-flex text-center text-lg-start">
+        <ul class="page-footer__nav navbar-nav">
+          <li class="navbar-item">
+            <a class="page-footer__link nav-link" href="#">Партнерам</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer__link nav-link" href="#">Участникам</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer__link nav-link" href="#">Карты лояльности</a>
+          </li>
+        </ul>
+
+        <ul class="page-footer__nav navbar-nav">
+          <li class="navbar-item">
+            <a class="page-footer__link nav-link" href="#">Вопросы и ответы</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer__link nav-link" href="#">Клиент.соглашение</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer__link nav-link" href="#">Политика конф.</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+
+  </body>
 </html>

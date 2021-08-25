@@ -1,0 +1,30 @@
+.catalog {
+  padding: 0 18px;
+}
+
+.catalog__card {
+  border-radius: 16px;
+  margin-bottom: 25px;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 285px;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__card-title {
+  @include font(1.13rem, 1.3rem, 400);
+  color: $basic-dark-2;
+}
+
+.catalog__page-link {
+  @include font(0.87rem, 1.06rem, 400);
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
+.catalog__page-item.active .catalog__page-link {
+  @include font(1.13rem, 1.3rem, 400);
+}

@@ -1,0 +1,10 @@
+.page-body {
+  @include font(0.87rem, 1.87rem, 300);
+  font-family: "SF UI Display", "Helvetica", sans-serif;
+  color: $basic-dark-2;
+  background-color: $basic-light;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+};

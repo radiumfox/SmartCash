@@ -1,3 +1,30 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+// bootstrap variables
+
+@import "../sass/bootstrap/functions";
+@import "../sass/bootstrap/variables";
+
+// custom properties
+
+@import "variables.scss";
+@import "mixins.scss";
+@import "fonts.scss";
+@import "custom.scss";
+
+// bootstrap
+
+@import "../sass/bootstrap/bootstrap";
+
+// sections
+
+@import "blocks/page-body.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/features.scss";
+@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+
+// components
+
+@import "components/stars.scss";
+@import "components/views.scss";
