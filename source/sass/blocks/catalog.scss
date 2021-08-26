@@ -4,9 +4,10 @@
   .card {
     border-radius: 16px;
     margin-bottom: 25px;
+    padding: 20px 30px;
 
     @include media-breakpoint-up(lg) {
-      max-width: 285px;
+      min-width: 285px;
       margin-bottom: 30px;
     }
   }
@@ -14,6 +15,10 @@
   .title {
     @include font(1.13rem, 1.3rem, 400);
     color: $basic-dark-2;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 0;
   }
 }
 

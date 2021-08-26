@@ -1,0 +1,108 @@
+.program {
+  .btn {
+    color: $basic-light;
+  }
+
+  .card-title {
+    @include font(1.13rem, 1.3rem, 400);
+  }
+
+  .card {
+    border: none;
+
+    @include media-breakpoint-up(lg) {
+      @include font(0.87rem, 1.06rem, 400);
+      border: 1px solid $basic-grey;
+      padding: 20px;
+      min-height: 100%;
+    }
+  }
+
+  .card-header {
+    padding: 0;
+    background-color: initial;
+  }
+
+  .nav-link {
+    @include font(0.87rem, 1.06rem, 400);
+    padding: 10px;
+    border: none;
+
+    @include media-breakpoint-up(lg) {
+      min-width: 150px;
+      text-align: center;
+      background-color: $basic-grey;
+    }
+  }
+
+  .nav-item {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      flex-grow: 0;
+      min-width: 150px;
+    }
+  }
+
+  .nav-link.active {
+    border: none;
+    border-bottom: 2px solid $light-green;
+    color: $light-green;
+
+    @include media-breakpoint-up(lg) {
+      color: $basic-dark-2;
+      border-bottom: none;
+      border-top: 2px solid $light-green;
+      border-radius: 0;
+
+      &:first-child {
+        border-left: 1px solid $basic-grey;
+      }
+
+      &:last-child {
+        border-right: 1px solid $basic-grey;
+      }
+    }
+  }
+}
+
+.program-img {
+  width: 296px;
+  height: 160px;
+  background-color: $basic-grey;
+  margin: 40px 0 20px;
+
+  @include media-breakpoint-up(lg) {
+    width: 245px;
+    height: 120px;
+    margin: 0 auto 15px;
+  }
+}
+
+.program-contacts {
+  .card-title {
+    cursor: pointer;
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.13rem, 1.8rem, 400);
+    }
+  }
+
+  .btn {
+    @include media-breakpoint-up(sm) {
+      min-width: 300px;
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      min-width: 245px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-width: 285px;
+    margin-bottom: 30px;
+  }
+}

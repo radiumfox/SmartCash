@@ -6,6 +6,7 @@
 }
 
 .views-number {
+  @include font(0.87rem, 1rem, 400);
   color: $special-grey-2;
   margin-right: 4px;
 }

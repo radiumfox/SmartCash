@@ -1,34 +1,48 @@
 // colors
 $navbar-dark-color: $basic-light;
 $navbar-dark-active-color: rgba($basic-light, 0.5);
+$nav-link-color: $basic-dark-2;
+$nav-link-hover-color: rgba($basic-dark-2, 0.5);
+$nav-tabs-link-hover-border-color: none;
 $pagination-active-bg: none;
 $pagination-color: $basic-dark-2;
 $pagination-active-color: $basic-dark-2;
 $pagination-hover-color: $basic-dark-2;
+$link-color: $basic-dark-2;
 $link-hover-color: rgba($basic-dark-2, 0.5);
+$link-decoration: none;
+
+$theme-colors: (
+  "primary":    $light-green,
+);
+
 
 
 // sizes
 $nav-link-padding-y: 0;
+$navbar-nav-link-padding-x: 0;
 
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
   xxl: 1200px
 );
 
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
   3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  6: $spacer * 4,
-  7: $spacer * 5
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 5),
+  7: ($spacer * 6.2),
+  8: ($spacer * 0.75),
+  9: ($spacer * 0.9),
+  10: ($spacer * 1.25),
+  11: ($spacer * 1.875),
+  12: ($spacer * 2.5)
 );
+
+$btn-border-radius: 20px;
 
 // images
 

@@ -1,6 +1,19 @@
 .header {
   background-color: $basic-dark;
-  padding: 12px 20px 10px;
+
+  .navbar {
+    padding: 16px 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
 
   .navbar-nav {
     @include media-breakpoint-up(lg) {
@@ -22,7 +35,7 @@
   .form-control {
     @include font(0.87rem, 1.06rem, 400);
     color: $basic-light;
-    padding: 8px 35px 10px 12px;
+    padding: 8px 35px 8px 12px;
     background-color: $special-grey;
     border-radius: 16px;
     border: 1px solid $special-grey;
@@ -32,6 +45,10 @@
     &::placeholder {
       @include font(0.87rem, 1.06rem, 400);
       color: $basic-light;
+
+      @include media-breakpoint-up(lg) {
+        @include font(1.13rem, 1.25rem, 400);
+      }
     }
 
     &::-webkit-search-cancel-button {
@@ -71,7 +88,6 @@
 
     @include media-breakpoint-up(md) {
       @include font(1rem, 1.16rem, 400);
-      padding: 5px 0;
     }
 
     @include media-breakpoint-up(lg) {
@@ -84,7 +100,7 @@
   }
 
   @include media-breakpoint-up(lg) {
-    padding: 10px 0;
+    padding: 8px 0;
   }
 }
 
