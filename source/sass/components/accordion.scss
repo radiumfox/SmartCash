@@ -1,0 +1,108 @@
+.accordion-custom {
+
+  .accordion-item {
+    padding: 16px 0;
+    border-left: none;
+    border-right: none;
+    border-color: $basic-grey;
+
+    @include media-breakpoint-up(lg) {
+      padding: 30px 0;
+      border-bottom: 1px solid $basic-grey;
+
+      &:first-child {
+        border-top: 1px solid $basic-grey;
+      }
+    }
+  }
+
+  .accordion-button {
+    @include font(1.13rem, 1.31rem, 400);
+    text-decoration: none;
+    color: $basic-dark-2;
+    padding: 0;
+
+    &:hover {
+      color: rgba($basic-dark-2, 0.8);
+    }
+
+    @include media-breakpoint-up(sm) {
+      @include font(1.7rem, 1.31rem, 400);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include font(2.25rem, 2.62rem, 400);
+    }
+  }
+
+  .accordion-body {
+    @include font(0.87rem, 1.06rem, 400);
+    padding: 10px 0 0 28px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 135px;
+      background-color: $basic-grey;
+      top: 33px;
+      left: 3px;
+
+      @include media-breakpoint-up(lg) {
+        height: 333px;
+        background-color: $basic-grey;
+        top: 50px;
+        left: 27px;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      @include font(1.2rem, 1.44rem, 400);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.5rem, 1.75rem, 400);
+      padding: 0 0 0 58px;
+    }
+  }
+
+  .accordion-sub-item {
+    padding: 12px 0;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: $light-green;
+      top: 16px;
+      left: -28px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 40px 0;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $light-green;
+        top: 43px;
+        left: -38px;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    max-width: 450px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 800px;
+  }
+}

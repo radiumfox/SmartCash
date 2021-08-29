@@ -3,9 +3,14 @@
   overflow: hidden;
   margin-right: 0;
 
-  .list-group {
+
+  .personnel-list {
     position: relative;
-    left: 353px;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
 
     @include media-breakpoint-up(sm) {
       left: 0;
@@ -13,7 +18,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      left: -90px;
+      left: 0;
       max-width: 756px;
     }
   }

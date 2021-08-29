@@ -1,0 +1,81 @@
+.tab-link {
+  @include font(0.87rem, 1.06rem, 400);
+  padding: 10px;
+
+  @include media-breakpoint-up(lg) {
+    text-align: center;
+
+    &:first-child {
+      border-left: 1px solid $basic-grey;
+    }
+
+    &:last-child {
+      border-right: 1px solid $basic-grey;
+    }
+  }
+}
+
+.tab-link.active {
+  border: none;
+  border-bottom: 2px solid $light-green;
+  color: $light-green;
+  background-color: $basic-light;
+
+  @include media-breakpoint-up(sm) {
+    color: $light-green;
+    border-bottom: none;
+    border-top: 2px solid $light-green;
+    border-radius: 0;
+
+    &:first-child {
+      border-left: 1px solid $basic-grey;
+    }
+
+    &:last-child {
+      border-right: 1px solid $basic-grey;
+    }
+  }
+}
+
+.tab-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center;
+  width: 120px;
+
+  @include media-breakpoint-up(sm) {
+    max-width: 150px;
+  }
+}
+
+.tab-card {
+  border: none;
+
+  @include media-breakpoint-up(lg) {
+    @include font(0.87rem, 1.06rem, 400);
+    min-height: calc(100% - 42px);
+    border: 1px solid $basic-grey;
+    border-top: 0;
+    border-radius: 4px;
+  }
+}
+
+.tab-header {
+  padding: 0;
+}
+
+.scrollable {
+  scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .scrollable-content {
+  min-width: max-content;
+}
+
+.tab-content-title {
+  @include font(1.13rem, 1.3rem, 400);
+  color: $basic-dark-2;
+}

@@ -1,22 +1,53 @@
 // colors
+
 $navbar-dark-color: $basic-light;
 $navbar-dark-active-color: rgba($basic-light, 0.5);
+
 $nav-link-color: $basic-dark-2;
 $nav-link-hover-color: rgba($basic-dark-2, 0.5);
 $nav-tabs-link-hover-border-color: none;
+
 $pagination-active-bg: none;
 $pagination-color: $basic-dark-2;
 $pagination-active-color: $basic-dark-2;
 $pagination-hover-color: $basic-dark-2;
+
 $link-color: $basic-dark-2;
 $link-hover-color: rgba($basic-dark-2, 0.5);
 $link-decoration: none;
 
+$nav-tabs-link-active-border-color: $light-green;
+$nav-tabs-link-active-color:  $light-green;
+
+$card-cap-bg: none;
+
+$input-focus-border-color: none;
+$input-focus-box-shadow: none;
+$input-disabled-bg: none;
+
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $basic-dark-2;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-width: 0;
+$accordion-border-color: 0;
+
+.card-header {
+  .nav-tabs {
+    .nav-link {
+      background-color: inherit;
+
+      @include media-breakpoint-up(sm) {
+        background-color: $basic-grey;
+      }
+    }
+  }
+}
+
 $theme-colors: (
   "primary":    $light-green,
+  "secondary": $basic-dark,
 );
-
-
 
 // sizes
 $nav-link-padding-y: 0;
@@ -39,7 +70,7 @@ $spacers: (
   9: ($spacer * 0.9),
   10: ($spacer * 1.25),
   11: ($spacer * 1.875),
-  12: ($spacer * 2.5)
+  12: ($spacer * 2.5),
 );
 
 $btn-border-radius: 20px;
@@ -47,3 +78,12 @@ $btn-border-radius: 20px;
 // images
 
 $form-select-indicator: url("../img/select-indicator.svg");
+$accordion-button-icon: url("../img/plus.svg");
+$accordion-button-active-icon: url("../img/cross.svg");
+$accordion-icon-width: 48px;
+
+// @media (max-width: 700px) {
+//   $accordion-icon-width: 20px;
+//   $accordion-button-icon: url("../img/plus-desktop.svg");
+//   $accordion-button-active-icon: url("../img/cross-desktop.svg");
+// }

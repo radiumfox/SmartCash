@@ -1,0 +1,14 @@
+.button {
+  @include font(1rem, 1.19rem, 400);
+  background-color: $light-green;
+  border-radius: 20px;
+  color: $basic-light;
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+
+  &:hover {
+    color: rgba($basic-light, 0.7);
+  }
+}

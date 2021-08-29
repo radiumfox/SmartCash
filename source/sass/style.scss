@@ -2,6 +2,7 @@
 
 @import "../sass/bootstrap/functions";
 @import "../sass/bootstrap/variables";
+@import "../sass/bootstrap/mixins/breakpoints";
 
 // custom properties
 
@@ -23,8 +24,7 @@
 @import "blocks/features.scss";
 @import "blocks/personnel.scss";
 @import "blocks/indicators.scss";
-@import "blocks/catalog.scss";
-@import "blocks/filter.scss";
+
 @import "blocks/news.scss";
 @import "blocks/program.scss";
 @import "blocks/info.scss";
@@ -33,3 +33,10 @@
 
 @import "components/stars.scss";
 @import "components/views.scss";
+@import "components/buttons.scss";
+@import "components/tabs.scss";
+@import "components/cards.scss";
+@import "components/accordion.scss";
+@import "components/filter.scss";
+@import "components/pagination.scss";
+@import "components/reviews.scss";

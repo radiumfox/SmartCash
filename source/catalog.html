@@ -51,80 +51,82 @@
     <main class="page-main">
       <h1 class="visually-hidden">SmartCASH</h1>
 
-      <div class="container mt-4 mt-lg-7 mb-3 mb-lg-5">
+      <div class="container mt-4 mt-lg-6 mb-3 mb-lg-5">
 
-        <div class="row justify-content-between align-items-xl-end">
+        <div class="row justify-content-between">
 
-          <section class="filter col-sm-12 col-lg-3 mx-auto mx-lg-0">
-            <div class="dropdown">
-              <a class="filter-button d-lg-none visible-xs collapsed d-flex align-items-center text-decoration-none" data-bs-toggle="collapse" data-bs-target="#filters">
-                <span>Фильтры</span>
-                <span class="filter-caret"></span>
-              </a>
+          <section class="filter col-12 col-lg-3 mx-auto ms-lg-0 px-xl-0">
+            <div class="container-fluid gx-lg-0">
+              <div class="dropdown">
+                <a class="filter-button d-lg-none visible-xs collapsed d-flex align-items-baseline text-decoration-none" data-bs-toggle="collapse" data-bs-target="#filters">
+                  <span>Фильтры</span>
+                  <span class="filter-caret"></span>
+                </a>
+              </div>
 
-            </div>
-            <div class="navbar-collapse collapse d-lg-block" id="filters">
-              <form>
-                <div class="filter-item">
-                  <label for="country" class="form-label">Страна</label>
-                  <input type="text" class="filter-control form-control" id="country">
-                </div>
-                <div class="filter-item">
-                  <label for="city" class="form-label">Город</label>
-                  <input type="text" class="filter-control form-control" id="city">
-                </div>
-                <div class="filter-item">
-                  <label for="category" class="form-label">Категория</label>
-                  <select id="category" class="filter-control form-select">
-                    <option>Опция-1</option>
-                    <option>Опция-2</option>
-                    <option>Опция-3</option>
-                  </select>
-                </div>
-                <div class="filter-item">
-                  <label for="subcategory" class="form-label">Подкатегория</label>
-                  <select id="subcategory" class="filter-control form-select">
-                    <option>Опция-1</option>
-                    <option>Опция-2</option>
-                    <option>Опция-3</option>
-                  </select>
-                </div>
-                <div class="filter-item">
-                  <label for="program" class="form-label">Программа</label>
-                  <select id="program" class="filter-control form-select">
-                    <option>Опция-1</option>
-                    <option>Опция-2</option>
-                    <option>Опция-3</option>
-                  </select>
-                </div>
-                <div class="filter-item">
-                  <label for="sort" class="form-label">Сортировать по</label>
-                  <select id="sort" class="filter-control form-select">
-                    <option>Опция-1</option>
-                    <option>Опция-2</option>
-                    <option>Опция-3</option>
-                  </select>
-                </div>
-                <div class="filter-item">
-                  <label for="sort" class="form-label">Статус</label>
-                  <select id="sort" class="filter-control form-select">
-                    <option>Опция-1</option>
-                    <option>Опция-2</option>
-                    <option>Опция-3</option>
-                  </select>
-                </div>
-              </form>
+              <div class="navbar-collapse collapse d-lg-block" id="filters">
+                <form>
+                  <div class="filter-item">
+                    <label for="country" class="form-label">Страна</label>
+                    <input type="text" class="filter-control form-control" id="country">
+                  </div>
+                  <div class="filter-item">
+                    <label for="city" class="form-label">Город</label>
+                    <input type="text" class="filter-control form-control" id="city">
+                  </div>
+                  <div class="filter-item">
+                    <label for="category" class="form-label">Категория</label>
+                    <select id="category" class="filter-control form-select">
+                      <option>Опция-1</option>
+                      <option>Опция-2</option>
+                      <option>Опция-3</option>
+                    </select>
+                  </div>
+                  <div class="filter-item">
+                    <label for="subcategory" class="form-label">Подкатегория</label>
+                    <select id="subcategory" class="filter-control form-select">
+                      <option>Опция-1</option>
+                      <option>Опция-2</option>
+                      <option>Опция-3</option>
+                    </select>
+                  </div>
+                  <div class="filter-item">
+                    <label for="program" class="form-label">Программа</label>
+                    <select id="program" class="filter-control form-select">
+                      <option>Опция-1</option>
+                      <option>Опция-2</option>
+                      <option>Опция-3</option>
+                    </select>
+                  </div>
+                  <div class="filter-item">
+                    <label for="sort" class="form-label">Сортировать по</label>
+                    <select id="sort" class="filter-control form-select">
+                      <option>Опция-1</option>
+                      <option>Опция-2</option>
+                      <option>Опция-3</option>
+                    </select>
+                  </div>
+                  <div class="filter-item">
+                    <label for="sort" class="form-label">Статус</label>
+                    <select id="sort" class="filter-control form-select">
+                      <option>Опция-1</option>
+                      <option>Опция-2</option>
+                      <option>Опция-3</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
             </div>
           </section>
 
-          <section class="catalog col-lg-9">
+          <section class="col-12 col-lg-9 px-xl-0">
             <h2 class="visually-hidden">Каталог магазинов</h2>
-            <div class="container-fluid gx-0">
+            <div class="container-fluid gx-lg-0">
               <div class="row">
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="p-3 card">
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
                     <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
                       <h3 class="title">ООО Belife</h3>
@@ -145,10 +147,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card p-3">
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
                     <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
                       <h3 class="title">ООО Belife</h3>
@@ -169,83 +171,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card p-3">
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
                     <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
-                    </a>
-                    <div class="card-body p-0 text-center">
-                      <h3 class="title">ООО Belife</h3>
-                      <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex">
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star"></span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <span class="views-number">164</span>
-                        <span class="views-icon"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card p-3">
-                    <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
-                    </a>
-                    <div class="card-body p-0 text-center">
-                      <h3 class="title">ООО Belife</h3>
-                      <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex">
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star"></span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <span class="views-number">164</span>
-                        <span class="views-icon"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4 d-none d-sm-block">
-                  <div class="card p-3">
-                    <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
-                    </a>
-                    <div class="card-body p-0 text-center">
-                      <h3 class="title">ООО Belife</h3>
-                      <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                      <div class="d-flex">
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star star--checked"></span>
-                        <span class="star"></span>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <span class="views-number">164</span>
-                        <span class="views-icon"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4 d-none d-sm-block">
-                  <div class="card p-3">
-                    <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
                       <h3 class="title">ООО Belife</h3>
@@ -267,10 +196,10 @@
                   </div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-xl-4 d-none d-md-block">
-                  <div class="card p-3">
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
                     <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
                       <h3 class="title">ООО Belife</h3>
@@ -291,10 +220,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-4 d-none d-md-block">
-                  <div class="card p-3">
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
                     <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
                       <h3 class="title">ООО Belife</h3>
@@ -315,10 +244,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 col-sm-6 col-xl-4 d-none d-lg-block">
-                  <div class="card p-3">
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
                     <a href="catalog-item.html">
-                      <img class="catalog-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
                     </a>
                     <div class="card-body p-0 text-center">
                       <h3 class="title">ООО Belife</h3>
@@ -339,8 +268,82 @@
                     </div>
                   </div>
                 </div>
-              </div> <!-- row -->
-            </div> <!-- container  -->
+
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
+                    <a href="catalog-item.html">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    </a>
+                    <div class="card-body p-0 text-center">
+                      <h3 class="title">ООО Belife</h3>
+                      <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star"></span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <span class="views-number">164</span>
+                        <span class="views-icon"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
+                    <a href="catalog-item.html">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    </a>
+                    <div class="card-body p-0 text-center">
+                      <h3 class="title">ООО Belife</h3>
+                      <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star"></span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <span class="views-number">164</span>
+                        <span class="views-icon"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-xl-4 gx-0">
+                  <div class="p-3 card company-card-preview">
+                    <a href="catalog-item.html">
+                      <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    </a>
+                    <div class="card-body p-0 text-center">
+                      <h3 class="title">ООО Belife</h3>
+                      <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <div class="d-flex">
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star"></span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <span class="views-number">164</span>
+                        <span class="views-icon"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
           </section>
 
           <div class="col-12 mt-4 mt-lg-5">
@@ -371,7 +374,7 @@
             </ul>
           </div>
 
-        </div> <!-- row  -->
+        </div>
 
       </div>
 
