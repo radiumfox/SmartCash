@@ -2,22 +2,12 @@
   background-color: $basic-dark;
 
   .navbar {
-    padding: 16px 12px;
+    padding: 11px 0 11px 8px;
     max-width: 1200px;
     margin: 0 auto;
 
     @include media-breakpoint-up(lg) {
       padding: 0;
-    }
-  }
-
-  .navbar-brand {
-    padding: 0;
-  }
-
-  .navbar-nav {
-    @include media-breakpoint-up(lg) {
-      max-width: 600px;
     }
   }
 
@@ -30,6 +20,14 @@
     &:focus {
       box-shadow: none;
     }
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("../img/navbar-toggler-icon.svg");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
   }
 
   .form-control {
@@ -57,14 +55,13 @@
 
     &:focus {
       background-color: $special-grey;
-      border: 1px solid $basic-light;
-      box-shadow: none;
+      border: 1px solid rgba($basic-light, 0.5);
+      box-shadow: 0 0 3px rgba($basic-light, 0.5);
     }
 
     &:active {
       background-color: $special-grey;
-      border: 1px solid $basic-light;
-      box-shadow: none;
+      border: 1px solid rgba($basic-light, 0.5);
     }
 
     @include media-breakpoint-up(lg) {
@@ -78,8 +75,15 @@
   .nav-item {
     padding: 20px 0;
 
+    &:first-child {
+      padding-top: 40px;
+    }
+
     @include media-breakpoint-up(lg) {
-      padding: 0 20px;
+      padding: 20px 20px;
+      &:first-child {
+        padding-top: 20px;
+      }
     }
   }
 
@@ -105,6 +109,9 @@
 }
 
 .header-logo {
+  width: 83px;
+  height: 19px;
+
   @include media-breakpoint-up(sm) {
     width: 104px;
     height: 24px;
@@ -116,26 +123,15 @@
   }
 }
 
-.header-toggler-icon {
-  background-image: url("../img/navbar-toggler-icon.svg");
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  background-repeat: no-repeat;
-}
-
-.header-form {
-  position: relative;
-}
-
 .header-search-icon {
   position: absolute;
   background-image: url("../img/search-icon.svg");
   background-repeat: no-repeat;
   width: 19px;
   height: 18px;
-  top: 30px;
+  top: 28px;
   right: 15px;
+
   @include media-breakpoint-up(lg) {
     right: 40px;
   }

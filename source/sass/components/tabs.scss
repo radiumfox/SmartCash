@@ -2,15 +2,28 @@
   @include font(0.87rem, 1.06rem, 400);
   padding: 10px;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(sm) {
     text-align: center;
+    position: relative;
+  }
+}
 
-    &:first-child {
-      border-left: 1px solid $basic-grey;
+.tab-content {
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 300px);
+      height: 1px;
+      background-color: $basic-grey;
+      right: 0;
+      top: -1px;
     }
 
-    &:last-child {
-      border-right: 1px solid $basic-grey;
+    &--partner::before {
+      width: calc(100% - 900px);
     }
   }
 }
@@ -21,19 +34,12 @@
   color: $light-green;
   background-color: $basic-light;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     color: $light-green;
     border-bottom: none;
     border-top: 2px solid $light-green;
     border-radius: 0;
-
-    &:first-child {
-      border-left: 1px solid $basic-grey;
-    }
-
-    &:last-child {
-      border-right: 1px solid $basic-grey;
-    }
+    position: relative;
   }
 }
 
@@ -43,8 +49,18 @@
   text-align: center;
   width: 120px;
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(lg) {
     max-width: 150px;
+
+    &:first-child {
+      border-left: 1px solid $basic-grey;
+      border-top-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-right: 1px solid $basic-grey;
+      border-top-right-radius: 4px;
+    }
   }
 }
 
@@ -52,11 +68,16 @@
   border: none;
 
   @include media-breakpoint-up(lg) {
-    @include font(0.87rem, 1.06rem, 400);
-    min-height: calc(100% - 42px);
     border: 1px solid $basic-grey;
     border-top: 0;
-    border-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(0.87rem, 1.06rem, 400);
+    min-height: calc(100% - 42px);
+
   }
 }
 

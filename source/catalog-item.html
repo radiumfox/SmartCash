@@ -10,16 +10,16 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container">
-          <a class="navbar-brand">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="header-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
-            <ul class="header-navbar navbar-nav flex-wrap">
+            <ul class="navbar-nav flex-wrap">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Главная</a>
               </li>
@@ -34,7 +34,7 @@
               </li>
             </ul>
 
-            <form class="header-form d-flex">
+            <form class="header-form d-flex position-relative">
               <input class="form-control" type="search" placeholder="Введите запрос" aria-label="Search">
               <span class="header-search-icon"></span>
             </form>
@@ -51,9 +51,9 @@
     <main class="page-main">
       <h1 class="visually-hidden">SmartCASH</h1>
 
-      <section class="container mb-5 mb-lg-0">
-        <div class="row justify-content-between">
-          <div class="container d-none col-12 mt-lg-12 mb-lg-11 d-lg-block">
+      <section class="mb-5 mb-lg-0 gx-0">
+        <div class="row justify-content-between m-0">
+          <div class="d-none d-lg-block col-12 mt-lg-12 mb-lg-11">
             <a class="d-lg-flex align-items-center" href="index.html">
               <svg viewBox="0 0 8 16" width="8" height="16">
                 <use xlink:href="img/sprite.svg#arrow-left"></use>
@@ -62,92 +62,94 @@
             </a>
           </div>
 
-          <div class="container col-sm-12 col-lg-2 gx-lg-0 mx-0">
+          <div class="col-12 col-lg-3 col-xl-2 gx-lg-0">
             <div class="company-card card mb-lg-0">
-              <img class="card-img-top company-img mx-auto" src="#"alt="img">
+              <img class="company-img card-img-top mx-auto" src="#" alt="img">
 
-              <div class="dropdown">
-                <a class="d-inline d-md-none d-flex flex-row align-items-baseline" role="button" tabindex="0" data-bs-toggle="collapse" data-bs-target="#contacts">
-                  <p class="card-title m-0 pb-10 pe-8">OOO Belife</p>
-                  <svg viewBox="0 0 18 11" width="18" height="11">
-                    <use xlink:href="img/sprite.svg#arrow-down"></use>
-                  </svg>
-                </a>
-              </div>
+              <div class="accordion accordion-dropdown mx-md-auto" id="partner-contacts">
+                <div class="accordion-item d-flex flex-column">
+                  <h2 class="accordion-header pb-4 p-lg-0 order-lg-0">
+                    <button class="accordion-button p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span class="button-text fs-4">OOO Belife</span>
+                    </button>
+                    <span class="card-title d-none d-lg-block m-0 pb-10 mx-md-auto">OOO Belife</span>
+                  </h2>
 
-              <p class="card-title d-none d-md-block m-0 pb-10">OOO Belife</h2>
+                  <div id="collapseOne" class="accordion-collapse d-lg-block collapse show order-lg-2" data-bs-parent="#partner-contacts">
+                    <div class="justify-content-between d-flex flex-row mb-10">
+                      <div class="d-flex">
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                        <span class="star star--checked"></span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <span class="views-number">164</span>
+                        <span class="views-icon"></span>
+                      </div>
+                    </div>
 
-              <div class="justify-content-between d-none d-lg-flex flex-row mb-10">
-                <div class="d-flex">
-                  <span class="star star--checked"></span>
-                  <span class="star star--checked"></span>
-                  <span class="star star--checked"></span>
-                  <span class="star star--checked"></span>
-                  <span class="star"></span>
+                    <ul class="d-md-block list-unstyled mb-11 mx-md-auto">
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#time"></use>
+                        </svg>
+                        <span class="ps-9">9:00 - 18:00, Пн - Пт</span>
+                      </li>
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#global"></use>
+                        </svg>
+                        <a class="ps-9" href="#">belife.com</a>
+                      </li>
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#instagram"></use>
+                        </svg>
+                        <a class="ps-9" href="#">belife.com</a>
+                      </li>
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#facebook"></use>
+                        </svg>
+                        <a class="ps-9" href="#">belife.com</a>
+                      </li>
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#telegram"></use>
+                        </svg>
+                        <a class="ps-9" href="#">belife.com</a>
+                      </li>
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#whatsapp"></use>
+                        </svg>
+                        <a class="ps-9" href="tel:+7966555777777">+ 966 (555) 77 77 77</a>
+                      </li>
+                      <li class="d-flex align-items-center pb-8">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#phone"></use>
+                        </svg>
+                        <a class="ps-9" href="tel:+7966555777777">+ 966 (555) 77 77 77</a>
+                      </li>
+                      <li class="d-flex align-items-center">
+                        <svg viewBox="0 0 20 20" width="20" height="20">
+                          <use xlink:href="img/sprite.svg#geo"></use>
+                        </svg>
+                        <address class="ps-9 m-0">КР, г. Бишкек, ул. Фрунзе</address>
+                      </li>
+                    </ul>
+
+                  </div>
+
+                  <a href="#" class="button mb-11 mx-auto order-lg-1" data-bs-toggle="modal" data-bs-target="#modal-window">Написать</a>
                 </div>
-                <div class="d-flex align-items-center">
-                  <span class="views-number">164</span>
-                  <span class="views-icon"></span>
-                </div>
               </div>
-
-              <a href="#" class="button order-5 order-lg-4 mb-11" data-bs-toggle="modal" data-bs-target="#modal-window">Написать</a>
-
-              <ul class="navbar-collapse collapse d-md-block list-unstyled mb-11 order-4 order-lg-5" id="contacts">
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#time"></use>
-                  </svg>
-                  <span class="ps-9">9:00 - 18:00, Пн - Пт</span>
-                </li>
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#global"></use>
-                  </svg>
-                  <a class="ps-9" href="#">belife.com</a>
-                </li>
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#instagram"></use>
-                  </svg>
-                  <a class="ps-9" href="#">belife.com</a>
-                </li>
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#facebook"></use>
-                  </svg>
-                  <a class="ps-9" href="#">belife.com</a>
-                </li>
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#telegram"></use>
-                  </svg>
-                  <a class="ps-9" href="#">belife.com</a>
-                </li>
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#whatsapp"></use>
-                  </svg>
-                  <a class="ps-9" href="tel:+7966555777777">+ 966 (555) 77 77 77</a>
-                </li>
-                <li class="d-flex align-items-center pb-8">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg>
-                  <a class="ps-9" href="tel:+7966555777777">+ 966 (555) 77 77 77</a>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg viewBox="0 0 20 20" width="20" height="20">
-                    <use xlink:href="img/sprite.svg#geo"></use>
-                  </svg>
-                  <address class="ps-9 m-0">КР, г. Бишкек, ул. Фрунзе</address>
-                </li>
-              </ul>
-
             </div>
           </div>
 
-          <div class="container col-sm-12 col-lg-9 gx-0 px-lg-0 mx-0">
+          <div class="col-12 col-lg-8 col-xl-9 gx-0 mx-0 px-lg-0">
             <div class="card-header tab-header border-bottom-0 pe-0 ps-8 pb-12 border-lg-start p-lg-0">
               <div class="scrollable overflow-auto">
                 <ul class="scrollable-content nav nav-tabs nav-justified d-flex" role="tablist">
@@ -173,7 +175,7 @@
               </div>
             </div>
 
-            <div class="tab-content tab-card p-lg-12 d-flex flex-column">
+            <div class="tab-content tab-content--partner tab-card p-lg-12 d-flex flex-column">
               <div class="tab-pane fade" id="discount">
                 <h2 class="tab-content-title m-0 pb-10 px-8 px-lg-0">Скидка на товары</h2>
                 <div class="scrollable overflow-auto">
@@ -307,49 +309,6 @@
                   </ul>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="modal fade" id="modal-window" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="card">
-              <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs">
-                  <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#message">Сообщение</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#review">Отзыв</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="card-body tab-content">
-                <div class="tab-pane fade show active" id="message">
-                  <label for="name">Ваше имя<label>
-                  <input type="text" id="name" required>
-                  <label for="contacts">E-mail / номер телефона<label>
-                  <input type="text" id="contacts" required>
-                  <label for="comment">Текст<label>
-                  <textarea id="comment" required></textarea>
-                </div>
-
-                <div class="tab-pane fade" id="review">
-                  <label for="name">Ваше имя<label>
-                  <input type="text" id="name" required>
-                  <label for="contacts">E-mail / номер телефона<label>
-                  <input type="text" id="contacts" required>
-                  <label for="comment">Текст<label>
-                  <textarea id="comment" required></textarea>
-                </div>
-              </div>
-
-              <button type="button" class="button">Отправить</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="visually-hidden">Close</span></button>
-
             </div>
           </div>
         </div>

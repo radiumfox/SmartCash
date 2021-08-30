@@ -9,6 +9,10 @@
 
   .button {
     max-width: 320px;
+
+    @include media-breakpoint-up(lg) {
+      width: 245px;
+    }
   }
 
   @include media-breakpoint-up(lg) {

@@ -10,32 +10,32 @@
   <body class="page-body">
 
     <header class="header">
-      <nav class="navbar navbar-dark navbar-expand-lg py-0">
-        <div class="container px-0">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
           <a class="navbar-brand align-baseline py-0">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="header-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
-            <ul class="header-navbar navbar-nav flex-wrap">
+            <ul class="navbar-nav flex-wrap">
               <li class="nav-item">
-                <a class="nav-link px-0 active">Главная</a>
+                <a class="nav-link active">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-0" href="about.html">О программе</a>
+                <a class="nav-link" href="about.html">О программе</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-0" href="catalog.html">Магазины / партнеры</a>
+                <a class="nav-link" href="catalog.html">Магазины / партнеры</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-0" href="news.html">Новости</a>
+                <a class="nav-link" href="news.html">Новости</a>
               </li>
             </ul>
 
-            <form class="header-form d-flex">
+            <form class="header-form d-flex position-relative">
               <input class="form-control" type="search" placeholder="Введите запрос" aria-label="Search">
               <span class="header-search-icon"></span>
             </form>
@@ -52,23 +52,24 @@
     <main>
       <h1 class="visually-hidden">SmartCASH</h1>
 
-      <div class="container-fluid p-0 mx-0 page-main-header">
+      <div class="page-main-header container-fluid">
+        <img src="#" width="280" height="200" alt="image">
       </div>
 
       <div class="features">
+
         <section class="features-section">
           <div class="container-fluid">
             <h2 class="features-title">Новые возможности</h2>
             <div class="row justify-content-end">
-
-              <ul class="accordion-custom accordion list-unstyled" id="featuresAccordion">
+              <ul class="accordion-features accordion list-unstyled" id="featuresAccordion">
                 <li class="accordion-item">
                   <h3 id="headingOne">
                     <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-1" aria-expanded="true" aria-controls="feature-list-1">
                       Экономь в магазинах
                     </button>
                   </h3>
-                  <div id="feature-list-1" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#featuresAccordion">
+                  <div id="feature-list-1" class="accordion-collapse collapse show" data-bs-parent="#featuresAccordion">
                     <ul class="list-unstyled accordion-body">
                       <li class="accordion-sub-item">Стань участником</li>
                       <li class="accordion-sub-item">Выбери магазин</li>
@@ -84,7 +85,7 @@
                       Продавай больше
                     </button>
                   </h3>
-                  <div id="feature-list-2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#featuresAccordion">
+                  <div id="feature-list-2" class="accordion-collapse collapse" data-bs-parent="#featuresAccordion">
                     <ul class="list-unstyled accordion-body">
                       <li class="accordion-sub-item">Стань участником</li>
                       <li class="accordion-sub-item">Выбери магазин</li>
@@ -100,7 +101,7 @@
                       Заработай много
                     </button>
                   </h3>
-                  <div id="feature-list-3" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#featuresAccordion">
+                  <div id="feature-list-3" class="accordion-collapse collapse" data-bs-parent="#featuresAccordion">
                     <ul class="list-unstyled accordion-body">
                       <li class="accordion-sub-item">Стань участником</li>
                       <li class="accordion-sub-item">Выбери магазин</li>
@@ -110,9 +111,8 @@
                   </div>
                 </li>
               </ul>
-
-            </div> <!-- flex-row-reverse -->
-          </div> <!-- container -->
+            </div>
+          </div>
         </section>
 
         <section class="features-section personnel pe-0">
@@ -136,8 +136,8 @@
                   <p class="personnel-duty">Менеджер</p>
                 </li>
               </ul>
-            </div> <!-- flex-row-reverse -->
-          </div> <!-- container -->
+            </div>
+          </div>
         </section>
 
         <section class="features-section indicators mx-auto">
@@ -157,16 +157,16 @@
                   <dt class="indicators-key">25 000 000</dt>
                   <dd class="indicators-value">сэкономлено</dd>
                 </div>
-              </dl> <!-- flex-row -->
-            </div>  <!-- flex-row-reverse -->
-          </div> <!-- container -->
+              </dl>
+            </div>
+          </div>
         </section>
       </div>
 
     </main>
 
     <footer class="page-footer">
-      <div class="container navbar-dark d-md-flex text-center text-lg-start">
+      <div class="container navbar-dark d-md-flex text-center text-md-start">
         <ul class="page-footer-nav navbar-nav">
           <li class="navbar-item">
             <a class="page-footer-link nav-link" href="#">Партнерам</a>

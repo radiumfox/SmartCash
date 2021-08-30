@@ -9,32 +9,32 @@
   <body>
 
     <header class="header">
-      <nav class="navbar navbar-dark navbar-expand-lg py-0">
-        <div class="container px-0">
-          <a class="navbar-brand align-baseline py-0">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="header-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
-            <ul class="header-navbar navbar-nav flex-wrap">
+            <ul class="navbar-nav flex-wrap">
               <li class="nav-item">
-                <a class="nav-link px-0" href="index.html">Главная</a>
+                <a class="nav-link" href="index.html">Главная</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-0" href="about.html">О программе</a>
+                <a class="nav-link" href="about.html">О программе</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-0 active">Магазины / партнеры</a>
+                <a class="nav-link active">Магазины / партнеры</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-0" href="news.html">Новости</a>
+                <a class="nav-link" href="news.html">Новости</a>
               </li>
             </ul>
 
-            <form class="header-form d-flex">
+            <form class="header-form d-flex position-relative">
               <input class="form-control" type="search" placeholder="Введите запрос" aria-label="Search">
               <span class="header-search-icon"></span>
             </form>
@@ -48,80 +48,80 @@
       </nav>
     </header>
 
-    <main class="page-main">
-      <h1 class="visually-hidden">SmartCASH</h1>
+    <main>
+      <h1 class="visually-hidden">Магазины / партнеры</h1>
 
       <div class="container mt-4 mt-lg-6 mb-3 mb-lg-5">
 
-        <div class="row justify-content-between">
+        <div class="row justify-content-between m-0">
 
-          <section class="filter col-12 col-lg-3 mx-auto ms-lg-0 px-xl-0">
-            <div class="container-fluid gx-lg-0">
-              <div class="dropdown">
-                <a class="filter-button d-lg-none visible-xs collapsed d-flex align-items-baseline text-decoration-none" data-bs-toggle="collapse" data-bs-target="#filters">
-                  <span>Фильтры</span>
-                  <span class="filter-caret"></span>
-                </a>
-              </div>
-
-              <div class="navbar-collapse collapse d-lg-block" id="filters">
-                <form>
-                  <div class="filter-item">
-                    <label for="country" class="form-label">Страна</label>
-                    <input type="text" class="filter-control form-control" id="country">
-                  </div>
-                  <div class="filter-item">
-                    <label for="city" class="form-label">Город</label>
-                    <input type="text" class="filter-control form-control" id="city">
-                  </div>
-                  <div class="filter-item">
-                    <label for="category" class="form-label">Категория</label>
-                    <select id="category" class="filter-control form-select">
-                      <option>Опция-1</option>
-                      <option>Опция-2</option>
-                      <option>Опция-3</option>
-                    </select>
-                  </div>
-                  <div class="filter-item">
-                    <label for="subcategory" class="form-label">Подкатегория</label>
-                    <select id="subcategory" class="filter-control form-select">
-                      <option>Опция-1</option>
-                      <option>Опция-2</option>
-                      <option>Опция-3</option>
-                    </select>
-                  </div>
-                  <div class="filter-item">
-                    <label for="program" class="form-label">Программа</label>
-                    <select id="program" class="filter-control form-select">
-                      <option>Опция-1</option>
-                      <option>Опция-2</option>
-                      <option>Опция-3</option>
-                    </select>
-                  </div>
-                  <div class="filter-item">
-                    <label for="sort" class="form-label">Сортировать по</label>
-                    <select id="sort" class="filter-control form-select">
-                      <option>Опция-1</option>
-                      <option>Опция-2</option>
-                      <option>Опция-3</option>
-                    </select>
-                  </div>
-                  <div class="filter-item">
-                    <label for="sort" class="form-label">Статус</label>
-                    <select id="sort" class="filter-control form-select">
-                      <option>Опция-1</option>
-                      <option>Опция-2</option>
-                      <option>Опция-3</option>
-                    </select>
-                  </div>
-                </form>
+          <section class="filter col-12 col-lg-3 mx-auto mx-lg-0 px-lg-0">
+            <div class="accordion accordion-dropdown" id="filters">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="filter-button accordion-button p-0 d-lg-none visible-xs" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <span class="button-text">Фильтры</span>
+                  </button>
+                </h2>
+                <div class="accordion-collapse collapse show d-lg-block " id="collapseOne" data-bs-parent="#filters">
+                  <form class="accordion-body p-0">
+                    <div class="filter-item">
+                      <label for="country" class="form-label">Страна</label>
+                      <input type="text" class="filter-control form-control" id="country">
+                    </div>
+                    <div class="filter-item">
+                      <label for="city" class="form-label">Город</label>
+                      <input type="text" class="filter-control form-control" id="city">
+                    </div>
+                    <div class="filter-item">
+                      <label for="category" class="form-label">Категория</label>
+                      <select id="category" class="filter-control form-select">
+                        <option>Опция-1</option>
+                        <option>Опция-2</option>
+                        <option>Опция-3</option>
+                      </select>
+                    </div>
+                    <div class="filter-item">
+                      <label for="subcategory" class="form-label">Подкатегория</label>
+                      <select id="subcategory" class="filter-control form-select">
+                        <option>Опция-1</option>
+                        <option>Опция-2</option>
+                        <option>Опция-3</option>
+                      </select>
+                    </div>
+                    <div class="filter-item">
+                      <label for="program" class="form-label">Программа</label>
+                      <select id="program" class="filter-control form-select">
+                        <option>Опция-1</option>
+                        <option>Опция-2</option>
+                        <option>Опция-3</option>
+                      </select>
+                    </div>
+                    <div class="filter-item">
+                      <label for="sort" class="form-label">Сортировать по</label>
+                      <select id="sort" class="filter-control form-select">
+                        <option>Опция-1</option>
+                        <option>Опция-2</option>
+                        <option>Опция-3</option>
+                      </select>
+                    </div>
+                    <div class="filter-item">
+                      <label for="status" class="form-label">Статус</label>
+                      <select id="status" class="filter-control form-select">
+                        <option>Опция-1</option>
+                        <option>Опция-2</option>
+                        <option>Опция-3</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </section>
 
-          <section class="col-12 col-lg-9 px-xl-0">
+          <section class="col-12 col-lg-9 gx-xl-0">
             <h2 class="visually-hidden">Каталог магазинов</h2>
-            <div class="container-fluid gx-lg-0">
+            <div class="container-fluid gx-0">
               <div class="row">
                 <div class="col-12 col-sm-6 col-xl-4 gx-0">
                   <div class="p-3 card company-card-preview">
@@ -340,7 +340,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
                 </div>
               </div>
             </div>
