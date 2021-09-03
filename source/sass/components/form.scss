@@ -1,0 +1,483 @@
+.filter {
+  @include font(0.87rem, 1.06rem, 400);
+  margin-top: 20px;
+  margin-bottom: 25px;
+
+  .form-select {
+    border-radius: 16px;
+    border-color: $basic-grey;
+    line-height: 1.25rem;
+
+    &:focus {
+      border-color: rgba($basic-dark, 0.5);
+      box-shadow: none;
+    }
+
+    &:active {
+      border-color: rgba($basic-dark, 0.5);
+      box-shadow: none;
+    }
+  }
+
+  .form-control {
+    border-radius: 16px;
+    border-color: $basic-grey;
+    line-height: 1.25rem;
+
+    &:focus {
+      background-color: $special-grey;
+      border-color: rgba($basic-dark, 0.5);
+      box-shadow: none;
+    }
+
+    &:active {
+      border-color: rgba($basic-dark, 0.5);
+      background-color: $special-grey;
+      box-shadow: none;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    @include font(1rem, 1.2rem, 400);
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.3rem, 400);
+
+  }
+}
+
+.filter-catalog {
+  max-width: 450px;
+
+  @include media-breakpoint-up(lg) {
+    max-width: 245px;
+  }
+}
+
+.form-item {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 20px;
+  margin: 0 auto;
+
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 30px;
+  }
+}
+
+.form {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-label {
+    @include font(1.13rem, 1.3rem, 400);
+    margin: 0;
+  }
+
+  .button {
+    margin: 0 auto;
+    width: 296px;
+
+    @include media-breakpoint-up(sm) {
+      width: 285px;
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+    }
+  }
+}
+
+.filter-button.collapsed .filter-caret {
+  background-image: url("../img/arrow-down.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 7px;
+  display: inline-block;
+}
+
+.filter-caret {
+  background-image: url("../img/arrow-up.svg");
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 7px;
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.filter-button {
+  margin-bottom: 32px;
+  color: $basic-dark-2;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba($basic-dark-2, 0.8);
+  }
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+// cabinet
+//cash.html
+
+#cash .form-item {
+  max-width: 296px;
+
+  @include media-breakpoint-up(lg) {
+    &:first-child {
+      max-width: 100%;
+    }
+  }
+}
+
+#cash .form-control {
+  @include media-breakpoint-up(lg) {
+    max-width: 285px;
+  }
+}
+
+#cash .form-label {
+  padding-bottom: 10px;
+}
+
+.client-info {
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
+
+  .button {
+    width: 256px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+
+    .button {
+      width: 285px;
+    }
+  }
+}
+
+.client-info-list {
+  @include font(1.13rem, 1.3rem, 400);
+}
+
+.client-info-item {
+  padding-bottom: 15px;
+}
+
+
+// profile.html
+
+#profile {
+  @include font(1.13rem, 1.3rem, 400);
+  .form-label {
+    padding-bottom: 10px;
+  }
+}
+
+.form-upload {
+  border: 1px solid $basic-grey;
+  min-height: 160px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  max-width: 296px;
+  margin: 20px auto 28px;
+
+  .form-label {
+    @include font(1.13rem, 1.3rem, 400);
+    position: relative;
+    color: $special-grey-2;
+    margin-top: 60px;
+    margin-left: 25%;
+    padding: 5px 0 5px 48px;
+    cursor: pointer;
+    max-width: 120px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/plus-desktop.svg");
+      background-size: contain;
+      width: 40px;
+      height: 40px;
+      opacity: 0.2;
+      top: 4px;
+      right: 80%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background-color: $light-green;
+      border-radius: 50%;
+      right: 83%;
+      top: 10px;
+    }
+  }
+
+  @include media-breakpoint-up(sm) {
+    max-width: 265px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 245px;
+  }
+}
+
+.form-label-checkbox {
+  @include font(1.13rem, 1, 400);
+  color: $basic-dark-2;
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 5px;
+  border-color: $basic-grey;
+
+  .btn-check:checked + &,
+  .btn-check:hover + & {
+    color: $basic-light;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-right: 14px;
+  }
+}
+
+.form-time {
+  width: 70px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+.form-label-radio {
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $light-green;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  .btn-check:checked + &::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: $light-green;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+  }
+}
+
+#main,
+#contacts,
+#safety,
+#responsible {
+  @include media-breakpoint-up(lg) {
+    .form-control {
+      width: 325px;
+      margin-left: 9px;
+    }
+  }
+}
+
+#main .form-item {
+  @include media-breakpoint-up(lg) {
+    max-width: initial;
+  }
+}
+
+#schedule .form-item {
+  @include media-breakpoint-up(lg) {
+    width: 374px;
+    max-width: initial;
+  }
+}
+
+#responsible,
+#gifts {
+  .form-upload {
+    width: 285px;
+    height: 285px;
+    max-width: initial;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      margin-left: 9px;
+    }
+  }
+}
+
+
+// discounts.html
+// cashback.html
+
+#add-discount,
+#add-cashback,
+#coupons,
+#gifts {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-item-select {
+    width: 285px;
+    margin: 0 auto;
+  }
+
+  .form-item {
+    width: 285px;
+  }
+
+  .form-item-date {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+    }
+  }
+
+  .form-control-percent {
+    width: 266px;
+    text-align: center;
+
+    height: 32px;
+
+    &::placeholder {
+      text-align: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100px;
+      margin-left: calc(50% - 76px);
+    }
+  }
+
+  .form-textarea {
+    height: 108px;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 150px;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 895px;
+  }
+}
+
+#add-cashback {
+  .form-control-percent {
+    width: 100px;
+    margin-left: 0;
+  }
+
+  .cashback-section {
+    max-width: 568px;
+
+    .form-label {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-item-select {
+    width: 296px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+    }
+  }
+
+  .form-item {
+    width: 296px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+    }
+  }
+  .form-item-large {
+    @include media-breakpoint-up(lg) {
+      width: 590px;
+    }
+  }
+
+}
+
+.form-select-day {
+  width: 71px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+
+  @include media-breakpoint-up(lg) {
+    width: 75px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+
+.form-select-month {
+  width: 120px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+
+  @include media-breakpoint-up(lg) {
+    width: 135px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+
+.form-select-year {
+  width: 85px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+
+  @include media-breakpoint-up(lg) {
+    width: 95px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+
+// coupons.html
+
+#coupons {
+  .coupons-amount {
+    width: 590px;
+
+    .form-control {
+      width: 285px;
+    }
+  }
+}
+
+// gifts.html
+
+#gifts {
+  .form-textarea {
+    width: 590px;
+    height: 285px;
+  }
+}
+
+.form-amount {
+  .form-control {
+    width: 285px;
+  }
+}

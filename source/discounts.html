@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCASH</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page-body">
+
+    <header class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
+            <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Магазины / партнеры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+            </ul>
+
+            <form class="header-form d-flex position-relative">
+              <input class="form-control" type="search" placeholder="Введите запрос" aria-label="Search">
+              <span class="header-search-icon"></span>
+            </form>
+            <a class="header-user" href="#">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Скидки партнера</h1>
+
+      <div class="container gx-0 mt-11 mt-sm-6 mb-sm-6">
+        <div class="row justify-content-between gx-0">
+
+          <div class="card-custom col-12 mx-auto col-lg-4">
+            <div class="form-upload">
+              <label class="form-label" for="add-img">Добавить изображение</label>
+              <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
+            </div>
+            <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
+              <div class="nav-item d-md-none">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Скидки партнера
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#partner-menu">
+                <div class="accordion-body px-0">
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="cash.html">Касса партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="profile.html">Профиль партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="balance.html">Баланс партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item current d-none d-md-block">
+                    <a class="accordion-link current">Скидки партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="cashback.html">Кэшбэк партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="coupons.html">Купоны партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="gifts.html">Подарки партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="clients.html">Клиенты партнера</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="#">Выход</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-xl-9 pt-4 px-8 pt-lg-0 mb-5 mt-md-5">
+            <form method="POST" action="#" id="add-discount">
+              <div class="row d-flex align-items-center justify-content-between m-0 gx-0">
+                <div class="d-flex justify-content-center justify-content-xl-end mb-5">
+                  <button class="button" type="button">+ Добавить скидку</button>
+                </div>
+                <div class="d-xl-flex">
+                  <div class="form-item form-item-select  ms-lg-0">
+                    <label for="category" class="form-label">Категория</label>
+                    <select id="category" class="form-select">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="form-item form-item-select  ms-lg-0">
+                    <label for="subcategory" class="form-label">Подкатегория</label>
+                    <select id="subcategory" class="form-select">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                  <div class="form-item form-item-select">
+                    <label for="status" class="form-label">Статус</label>
+                    <select id="status" class="form-select">
+                      <option></option>
+                      <option></option>
+                      <option></option>
+                    </select>
+                  </div>
+                </div>
+                <div>
+                <div class="d-flex flex-column">
+                  <div class="form-item ms-lg-0">
+                    <label for="discount-title" class="form-label">Тема</label>
+                    <input type="text" class="form-control" id="discount-title">
+                  </div>
+                  <div class="form-item form-item-date ms-lg-0">
+                    <p>Дата завершения</p>
+                    <div class="d-flex justify-content-between justify-content-md-around justify-content-lg-between">
+                      <label for="discount-date-day" class="form-label visually-hidden">День</label>
+                      <select id="discount-date-day" class="form-select form-select-day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                      </select>
+
+                      <label for="discount-date-month" class="form-label visually-hidden">Месяц</label>
+                      <select id="discount-date-month" class="form-select form-select-month">
+                        <option>Января</option>
+                        <option>Февраля</option>
+                        <option>Марта</option>
+                        <option>Апреля</option>
+                        <option>Мая</option>
+                        <option>Июня</option>
+                        <option>Июля</option>
+                        <option>Августа</option>
+                        <option>Сентября</option>
+                        <option>Октября</option>
+                        <option>Ноября</option>
+                        <option>Декабря</option>
+                      </select>
+
+                      <label for="discount-date-year" class="form-label visually-hidden">Год</label>
+                      <select id="discount-date-year" class="form-select form-select-year">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div>
+                  <p class="mt-12 mb-11">Скидки по картам</p>
+
+                  <ul class="list-unstyled d-lg-flex m-0 ps-lg-0 pb-5">
+                    <li class="pe-lg-9 mb-11 d-md-flex justify-content-between align-items-center d-lg-block">
+                      <input type="checkbox" class="btn-check" id="discount-classic">
+                      <label for="discount-classic" class="form-label form-label-radio d-flex justify-content-end">
+                        <div class="card-discount d-flex justify-content-center align-items-center mb-2">
+                        Classic
+                        </div>
+                      </label>
+                      <div class="d-flex justify-content-end justify-content-lg-center">
+                        <input class="form-control form-control-percent" type="text" id="discount-classic-input" value="2%" placeholder="%">
+                        <label for="discount-classic-input" class="visually-hidden">Введите скидку</label>
+                      </div>
+                    </li>
+                    <li class="pe-lg-9 mb-11 d-md-flex justify-content-between align-items-center d-lg-block">
+                      <input type="checkbox" class="btn-check" id="discount-premium">
+                      <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end">
+                        <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center mb-2">
+                          Premium
+                        </div>
+                      </label>
+                      <div class="d-flex justify-content-end justify-content-lg-center">
+                        <input class="form-control form-control-percent" type="text" id="discount-premium-input" placeholder="%">
+                        <label for="discount-premium-input" class="visually-hidden">Введите скидку</label>
+                      </div>
+                    </li>
+                    <li class="pe-lg-9 d-md-flex justify-content-between align-items-center d-lg-block">
+                      <input type="checkbox" class="btn-check" id="discount-gold">
+                      <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end">
+                        <div class="card-discount card-discount--green d-flex justify-content-center align-items-center mb-2">
+                          Gold
+                        </div>
+                      </label>
+                      <div class="d-flex justify-content-end justify-content-lg-center">
+                        <input class="form-control form-control-percent" type="text" id="discount-gold-input" placeholder="%">
+                        <label for="discount-gold-input" class="visually-hidden">Введите скидку</label>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="mb-12">
+                  <label class="mb-2" for="terms-description">Описание условий</label>
+                  <textarea class="form-control form-textarea" id="terms-description"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-start">
+                  <button class="button" type="submit">Сохранить</button>
+                </div>
+
+              </div>
+
+
+
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

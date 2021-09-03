@@ -1,3 +1,13 @@
+// grey tabs
+
+.tab-header .tab-link {
+  background-color: inherit;
+
+  @include media-breakpoint-up(md) {
+    background-color: $basic-grey;
+  }
+}
+
 .tab-link {
   @include font(0.87rem, 1.06rem, 400);
   padding: 10px;
@@ -5,26 +15,6 @@
   @include media-breakpoint-up(sm) {
     text-align: center;
     position: relative;
-  }
-}
-
-.tab-content {
-  position: relative;
-
-  @include media-breakpoint-up(lg) {
-    &::before {
-      content: "";
-      position: absolute;
-      width: calc(100% - 300px);
-      height: 1px;
-      background-color: $basic-grey;
-      right: 0;
-      top: -1px;
-    }
-
-    &--partner::before {
-      width: calc(100% - 900px);
-    }
   }
 }
 
@@ -47,7 +37,8 @@
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
-  width: 120px;
+  min-width: 120px;
+  white-space: nowrap;
 
   @include media-breakpoint-up(lg) {
     max-width: 150px;
@@ -75,28 +66,141 @@
   }
 
   @include media-breakpoint-up(lg) {
-    @include font(0.87rem, 1.06rem, 400);
+    // @include font(0.87rem, 1.06rem, 400);
     min-height: calc(100% - 42px);
-
   }
 }
 
-.tab-header {
-  padding: 0;
-}
 
-.scrollable {
-  scrollbar-width: none;
+// profile.html
 
-    &::-webkit-scrollbar {
-      display: none;
+.tab-item-large {
+
+  @include media-breakpoint-up(md) {
+    &.tab-item {
+      width: 100%;
+      max-width: initial;
     }
   }
-  .scrollable-content {
+
+  @include media-breakpoint-up(lg) {
+
+    border: none;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &:first-child {
+      border-left: none;
+    }
+  }
+
+  @include media-breakpoint-up(xl) {
+    min-width: 284px;
+  }
+}
+
+.tab-header .tab-link-white {
+  @include media-breakpoint-up(md) {
+    background-color: $basic-light;
+
+    &.active {
+      background-color: $light-green;
+      color: $basic-light;
+    }
+  }
+}
+
+.tab-header-border {
+  @include media-breakpoint-up(lg) {
+    &.tab-header {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 50px 0;
+      border: 1px solid $basic-grey;
+    }
+
+
+  }
+}
+
+#main.tab-pane {
+  @include media-breakpoint-up(lg) {
+    max-width: 533px;
+    margin: 0 auto;
+  }
+}
+
+#safety.tab-pane,
+#responsible.tab-pane {
+  @include media-breakpoint-up(lg) {
+    max-width: 492px;
+    margin: 0 auto;
+  }
+}
+
+#schedule {
+  max-width: 288px;
+  margin:  0 auto;
+}
+
+// about.html
+
+.tab-content {
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% - 300px);
+      height: 1px;
+      background-color: $basic-grey;
+      right: 0;
+      top: -1px;
+    }
+
+    &--partner::before {
+      width: calc(100% - 900px);
+    }
+
+    &--profile::before {
+      width: 0;
+    }
+  }
+}
+
+
+// scroll on mobile width
+
+.scrollable {
+  width: 100vw;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+  }
+}
+
+.scrollable-content {
   min-width: max-content;
 }
+
+// titles
 
 .tab-content-title {
   @include font(1.13rem, 1.3rem, 400);
   color: $basic-dark-2;
+}
+
+// other
+
+.tab-header {
+  padding: 0;
+  max-width: 100vw;
 }

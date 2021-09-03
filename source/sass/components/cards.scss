@@ -1,4 +1,4 @@
-.company-card {
+.card-custom {
   border: none;
 
   .card-title {
@@ -15,16 +15,21 @@
     }
   }
 
+  @include media-breakpoint-up(sm) {
+    border: 1px solid $basic-grey;
+    max-width: 320px;
+  }
+
   @include media-breakpoint-up(lg) {
     @include font(0.87rem, 1.06rem, 400);
-    border: 1px solid $basic-grey;
-    padding: 20px;
-    min-height: 100%;
-    min-width: 285px;
+
+    border-radius: 5px;
+    max-height: 620px;
+    max-width: 285px;
   }
 }
 
-.company-card-preview {
+.card-preview {
   border-radius: 16px;
   margin-bottom: 25px;
   padding: 20px 30px;
@@ -95,6 +100,20 @@
   }
 }
 
+#add-discount .card-discount,
+#add-cashback .card-discount {
+  width: 266px;
+  height: 140px;
+
+  .form-label-radio {
+    padding-left: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 254px;
+  }
+}
+
 // coupons
 
 .coupon {
@@ -156,4 +175,31 @@
 
 .coupon-gifts {
   @include font(4rem, 4.75rem, 300);
+}
+
+// balance
+
+.card-green {
+  .info {
+    @include font(0.87rem, 1.06rem, 400);
+
+    .info-summ {
+      @include font(1.5rem, 1.75rem, 400);
+    }
+  }
+
+  color: $basic-light;
+  border-radius: 5px;
+  background-color: $light-green;
+  width: 296px;
+  height: 130px;
+
+  @include media-breakpoint-up(lg) {
+    width: 285px;
+  }
+
+  &.balance {
+    border-bottom-left-radius: none;
+    border-bottom-right-radius: none;
+  }
 }

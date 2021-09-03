@@ -1,14 +1,84 @@
+
+
 .button {
   @include font(1rem, 1.19rem, 400);
-  background-color: $light-green;
   border-radius: 20px;
-  color: $basic-light;
   display: inline-block;
   padding: 10px 0;
-  width: 100%;
+  width: 296px;
   text-align: center;
 
-  &:hover {
-    color: rgba($basic-light, 0.7);
+  @include button-variant(
+    $light-green,
+    transparent,
+    $basic-light,
+    $green-special,
+    transparent,
+    $basic-light,
+    $green-special,
+    transparent,
+    $basic-light,
+    $disabled-btn,
+    transparent,
+    rgba($basic-light, 0.7),
+  );
+
+  @include media-breakpoint-up(md) {
+   width: 285px;
   }
+}
+
+#cash,
+#main,
+#contacts {
+  .button-box {
+    width: 296px;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+    }
+  }
+}
+
+#profile {
+  @include media-breakpoint-up(md) {
+    .button {
+      width: 200px;
+    }
+
+    .button-box {
+      width: 325px;
+      margin-left: auto;
+      padding: 0;
+    }
+  }
+}
+
+#schedule {
+  .button-box {
+    max-width: 200px;
+
+    @include media-breakpoint-up(md) {
+      width: 302px;
+    }
+  }
+}
+
+.card-green .button {
+  border-radius: 0;
+  // width: 142.5px;
+  padding: 6px;
+
+  &.button-refill {
+    border-bottom-left-radius: 5px;
+    background-color: $basic-light;
+    color: $basic-dark-2;
+  }
+
+  &.button-show {
+    background-color: $basic-dark;
+    border-bottom-right-radius: 5px;
+  }
+
 }

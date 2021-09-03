@@ -1,0 +1,58 @@
+.table-container {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 895px;
+  border: 1px solid $basic-grey;
+  width: 880px;
+}
+
+.table.table-custom {
+  width:880px;
+  height: 690px;
+  margin-bottom: 0;
+
+  .theader {
+    background-color: $light-green;
+    color: $basic-light;
+  }
+
+  td {
+    @include font(1.13rem, 1.3rem, 400);
+    border: none;
+    min-width: 150px;
+    vertical-align: middle;
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .td-sort {
+    position: relative;
+    padding-right: 42px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/arrow-white.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 16px;
+      height: 22px;
+      z-index: 1;
+      right: 22%;
+      top: 20px;
+    }
+  }
+
+  .table-body {
+    color: $basic-dark-2;
+  }
+}
+
+.output {
+  @include font(1.13rem, 1.3rem, 400);
+  border: 1px solid $basic-grey;
+  border-radius: 5px;
+  height: 60px;
+  margin-bottom: 0;
+}
+

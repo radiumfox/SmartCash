@@ -7,4 +7,8 @@
   min-height: 100%;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.3rem, 400);
+  }
 };

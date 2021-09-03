@@ -9,7 +9,7 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "fonts.scss";
-@import "custom.scss";
+@import "overrides.scss";
 
 // bootstrap
 
@@ -34,6 +34,9 @@
 @import "components/tabs.scss";
 @import "components/cards.scss";
 @import "components/accordion.scss";
-@import "components/filter.scss";
+@import "components/form.scss";
 @import "components/pagination.scss";
 @import "components/reviews.scss";
+
+@import "components/containers.scss";
+@import "components/table.scss";

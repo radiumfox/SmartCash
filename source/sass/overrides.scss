@@ -33,30 +33,28 @@ $accordion-button-focus-box-shadow: none;
 $accordion-border-width: 0;
 $accordion-border-color: 0;
 
-.card-header {
-  .nav-tabs {
-    .nav-link {
-      background-color: inherit;
-
-      @include media-breakpoint-up(md) {
-        background-color: $basic-grey;
-      }
-    }
-  }
-}
+$table-variants: (
+  "dark": $light-green,
+);
 
 $theme-colors: (
-  "primary":    $light-green,
+  "primary": $light-green,
   "secondary": $basic-dark,
 );
 
 // sizes
+
 $nav-link-padding-y: 0;
 $navbar-nav-link-padding-x: 0;
 
 $container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
   xxl: 1200px
 );
+
 
 $spacers: (
   0: 0,
@@ -75,6 +73,7 @@ $spacers: (
 );
 
 $btn-border-radius: 20px;
+$btn-focus-width: 0;
 
 // images
 
