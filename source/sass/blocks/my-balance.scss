@@ -1,0 +1,42 @@
+.form-custom {
+  border: 1px solid $basic-grey;
+  border-radius: 5px;
+  text-align: center;
+
+  .form-control {
+    width: 256px;
+    margin: 0 auto;
+  }
+  .button {
+    width: 256px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    max-width: 285px;
+  }
+}
+
+.form-custom-wrapper {
+  padding: 0 20px 30px;
+}
+
+.form-custom-header {
+  @include font(1.13rem, 1.3rem, 400);
+  color: $basic-light;
+  background-color: $light-green;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#my-balance {
+  .table-custom {
+    @include media-breakpoint-up(lg) {
+      width: fit-content;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      width: 895px;
+    }
+  }
+}

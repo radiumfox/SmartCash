@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCASH</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page-body">
+
+    <header class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
+            <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-wrap">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Магазины / партнеры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+            </ul>
+
+            <form class="header-form d-flex position-relative">
+              <label class="visually-hidden" for="site-search">Введите запрос</label>
+              <input class="form-control" id="site-search" type="search" name="search" placeholder="Введите запрос" aria-label="Поиск">
+              <span class="header-search-icon"></span>
+            </form>
+            <a class="header-user" href="#">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="my-profile">
+      <h1 class="visually-hidden">Моя карта</h1>
+
+      <div class="container-xl gx-0 mt-11 mt-sm-6 mb-sm-6">
+        <div class="row justify-content-between gx-0">
+
+          <div class="card-custom col-12 col-lg-4"> <!-- menu -->
+            <div class="form-upload">
+              <label class="form-label" for="add-img">Добавить изображение</label>
+              <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
+            </div>
+            <div class="d-flex flex-column align-items-center "> <!-- personal number -->
+              <p class="mb-0 mb-lg-3">Ваш личный номер</p>
+              <p class="fs-3">990000001</p>
+            </div>
+            <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
+              <div class="nav-item d-md-none">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Мой профиль
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#partner-menu">
+                <div class="accordion-body">
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-card.html">Моя карта</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item current d-none d-md-block">
+                    <a class="accordion-link current">Мой профиль</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-balance.html">Мой баланс</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-discounts.html">Мои скидки</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-cashback.html">Мой кэшбэк</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-coupons.html">Мои купоны</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-gifts.html">Мои подарки</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="my-referrals.html">Мои рефереалы</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="#">Выход</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-2 col-xl-3 border-lg-start p-lg-0 order-md-0 order-lg-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0">
+            <div class="card-header tab-header tab-header-border">
+              <div class="scrollable overflow-auto  ps-8 ps-md-0">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#main">Основное</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#contacts">Контакты</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#safety">Безопасность</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 order-md-2 order-lg-1">
+            <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
+
+              <div class="tab-pane fade show active px-8 px-lg-0 mb-5" id="main">
+                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+                  <form method="POST" action="#">
+                    <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="official-name" class="form-label">Имя:</label>
+                        <input type="text" class="form-control" id="official-name" name="official-name">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="short-name" class="form-label">Фамилия:</label>
+                        <input type="text" class="form-control" id="short-name" name="short-name">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="motto" class="form-label">Отчество:</label>
+                        <input type="text" class="form-control" id="motto" name="motto">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">Пол:</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-baseline">
+                        <p class="m-0">Дата рождения</p>
+                        <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
+                          <label for="discount-date-day" class="form-label visually-hidden">День</label>
+                          <select id="discount-date-day" class="form-select form-select-day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                          </select>
+
+                          <label for="discount-date-month" class="form-label visually-hidden">Месяц</label>
+                          <select id="discount-date-month" class="form-select form-select-month">
+                            <option>Января</option>
+                            <option>Февраля</option>
+                            <option>Марта</option>
+                            <option>Апреля</option>
+                            <option>Мая</option>
+                            <option>Июня</option>
+                            <option>Июля</option>
+                            <option>Августа</option>
+                            <option>Сентября</option>
+                            <option>Октября</option>
+                            <option>Ноября</option>
+                            <option>Декабря</option>
+                          </select>
+
+                          <label for="discount-date-year" class="form-label visually-hidden">Год</label>
+                          <select id="discount-date-year" class="form-select form-select-year">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">Серия паспорта:</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">Кем выдан:</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-center">
+                        <p class="m-0">Когда выдан</p>
+                        <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
+                          <label for="discount-date-day" class="form-label visually-hidden">День</label>
+                          <select id="discount-date-day" class="form-select form-select-day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                          </select>
+
+                          <label for="discount-date-month" class="form-label visually-hidden">Месяц</label>
+                          <select id="discount-date-month" class="form-select form-select-month">
+                            <option>Января</option>
+                            <option>Февраля</option>
+                            <option>Марта</option>
+                            <option>Апреля</option>
+                            <option>Мая</option>
+                            <option>Июня</option>
+                            <option>Июля</option>
+                            <option>Августа</option>
+                            <option>Сентября</option>
+                            <option>Октября</option>
+                            <option>Ноября</option>
+                            <option>Декабря</option>
+                          </select>
+
+                          <label for="discount-date-year" class="form-label visually-hidden">Год</label>
+                          <select id="discount-date-year" class="form-select form-select-year">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="button-box ms-lg-auto">
+                        <button class="button col-lg-6 border-0" type="button">Сохранить</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- -->
+
+              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
+                <div class="col-12 pt-4 pt-lg-0 mx-auto">
+                  <form method="POST" action="#">
+                    <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="country" class="form-label">Страна:</label>
+                        <input type="text" class="form-control" id="country" name="country">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="region" class="form-label">Регион / город:</label>
+                        <input type="text" class="form-control" id="region-city" name="region-city">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="street-home" class="form-label">Улица, дом:</label>
+                        <input type="text" class="form-control" id="street-home" name="street-home">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="phone-number" class="form-label">Номер телефона:</label>
+                        <input type="text" class="form-control" id="phone-number" name="phone-number">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="whatsapp" class="form-label">WhatsApp:</label>
+                        <input type="text" class="form-control" id="whatsapp" name="whatsapp">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                      </div>
+
+                      <div class="button-box ms-lg-auto">
+                        <button class="button border-0" type="button">Сохранить</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+              <!-- -->
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="safety">
+                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                  <form method="POST" action="#">
+                    <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="login" class="form-label">Логин:</label>
+                        <input type="text" class="form-control" id="login" name="login">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="old-password" class="form-label">Старый пароль:</label>
+                        <input type="text" class="form-control" id="old-password" name="old-password">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="new-password" class="form-label">Новый пароль:</label>
+                        <input type="text" class="form-control" id="new-password" name="new-password">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="repeat-password" class="form-label">Повторить пароль:</label>
+                        <input type="text" class="form-control" id="repeat-password" name="repeat-password">
+                      </div>
+
+                      <div class="button-box ms-lg-auto">
+                        <button class="button border-0" type="button">Сохранить</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

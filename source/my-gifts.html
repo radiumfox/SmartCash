@@ -50,50 +50,54 @@
       </nav>
     </header>
 
-    <main id="balance">
-      <h1 class="visually-hidden">Баланс партнера</h1>
+    <main>
+      <h1 class="visually-hidden">Мой баланс</h1>
 
-      <div class="container gx-0 mt-11 mt-sm-6 mb-sm-6">
+      <div class="container-lg gx-0 mt-11 mt-sm-6 mb-sm-6">
         <div class="row justify-content-between gx-0">
 
-          <div class="card-custom col-12 mx-auto col-lg-4">
+          <div class="card-custom col-12 col-lg-4 mx-auto"> <!-- menu -->
             <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
-              <input class="form-control visually-hidden" id="add-img" type="file" name="add-img" accept="image/gif, image/jpeg, image/png">
+              <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
+            </div>
+            <div class="d-flex flex-column align-items-center mb-lg-11"> <!-- personal number -->
+              <p class="mb-0 mb-lg-3">Ваш личный номер</p>
+              <p class="fs-3 m-lg-0">990000001</p>
             </div>
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
               <div class="nav-item d-md-none">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Баланс партнера
+                    Мои подарки
                   </button>
                 </h2>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#partner-menu">
-                <div class="accordion-body px-0">
-                  <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="cash.html">Касса партнера</a>
+                <div class="accordion-body">
+                  <div class="accordion-sub-item">
+                    <a class="accordion-link" href="my-card.html">Моя карта</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="profile.html">Профиль партнера</a>
-                  </div>
-                  <div class="accordion-sub-item current d-none d-md-block nav-item">
-                    <a class="accordion-link current">Баланс партнера</a>
+                    <a class="accordion-link" href="my-profile.html">Мой профиль</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="discounts.html">Скидки партнера</a>
+                    <a class="accordion-link" href="my-balance.html">Мой баланс</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="cashback.html">Кэшбэк партнера</a>
+                    <a class="accordion-link" href="my-discounts.html">Мои скидки</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="coupons.html">Купоны партнера</a>
+                    <a class="accordion-link" href="my-cashback.html">Мой кэшбэк</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="gifts.html">Подарки партнера</a>
+                    <a class="accordion-link" href="my-coupons.html">Мои купоны</a>
+                  </div>
+                  <div class="accordion-sub-item nav-item current nav-item d-none d-md-block">
+                    <a class="accordion-link current">Мои подарки</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="clients.html">Клиенты партнера</a>
+                    <a class="accordion-link" href="my-referrals.html">Мои рефереалы</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="#">Выход</a>
@@ -103,49 +107,21 @@
             </div>
           </div>
 
-          <div class="col-12 col-xl-9 pt-4 pt-lg-0 mx-auto mb-5">
-            <section>
-              <h2 class="visually-hidden">Баланс / долг за услуги</h2>
-              <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-center mt-lg-4 mt-xl-0 justify-content-xl-end">
-
-                <div class="card-green balance d-flex flex-column justify-content-end me-lg-10 mb-5">
-                  <div class="info d-flex flex-column justify-content-center align-items-center mb-4">
-                    <p class="info-summ m-0 pb-1">100,00$</p>
-                    <p class="m-0">Ваш доступный баланс</p>
-                  </div>
-                  <div class="d-flex">
-                    <button class="button button-refill" type="button">Пополнить</button>
-                    <button class="button button-show" type="button">Вывести</button>
-                  </div>
-                </div>
-
-                <div class="card-green balance d-flex flex-column justify-content-end mb-5">
-                  <div class="info d-flex flex-column justify-content-center align-items-center mb-4">
-                    <p class="info-summ m-0 pb-1">30,00$</p>
-                    <p class="m-0">Ваш долг за услуги SmartCash</p>
-                  </div>
-                  <div class="d-flex">
-                    <button class="button button-refill" type="button">Пополнить</button>
-                    <button class="button button-show" type="button">Вывести</button>
-                  </div>
-                </div>
-
-              </div>
-
-              <div class="scrollable overflow-auto ms-lg-3">
-                <div class="scrollable-content d-flex table-container">
-                  <table class="table table-custom">
+          <div class="col-12 col-xl-9 pt-4 pt-lg-0 mb-2" id="my-gifts"> <!-- main section -->
+            <div class="scrollable overflow-auto px-lg-0">
+              <div class="scrollable-content">
+                <div class="container ms-8 ms-lg-0 d-flex table-container mb-5">
+                  <table class="table table-custom ">
                     <thead class="theader">
                       <tr>
-                        <td>Вид операции</td>
-                        <td>Карта</td>
-                        <td>Сумма</td>
+                        <td>Партнеры</td>
+                        <td>Подарки</td>
+                        <td>Количество баллов</td>
                         <td class="td-sort">Дата</td>
-                        <td>Статус</td>
                       </tr>
                     </thead>
                     <tbody class="table-body">
-                      <tr>
+                      <tr class="table-row">
                         <td></td>
                         <td></td>
                         <td></td>
@@ -155,15 +131,13 @@
                   </table>
                 </div>
               </div>
-
-            </section>
+            </div>
           </div>
 
         </div>
       </div>
 
     </main>
-
     <script src="js/bootstrap.js"></script>
   </body>
 </html>

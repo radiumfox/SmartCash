@@ -1,0 +1,70 @@
+#my-profile {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-select-day {
+    width: 71px;
+    height: 32px;
+    background-image: none;
+    padding-top: 4px;
+
+    @include media-breakpoint-up(lg) {
+      width: 75px;
+      background-image: url("../img/select-indicator.svg");
+    }
+  }
+
+  .form-select-month {
+    width: 120px;
+    height: 32px;
+    background-image: none;
+    padding-top: 4px;
+
+    @include media-breakpoint-up(lg) {
+      width: 135px;
+      background-image: url("../img/select-indicator.svg");
+    }
+  }
+
+  .form-select-year {
+    width: 85px;
+    height: 32px;
+    background-image: none;
+    padding-top: 4px;
+
+    @include media-breakpoint-up(lg) {
+      width: 95px;
+      background-image: url("../img/select-indicator.svg");
+    }
+  }
+
+  .form-select {
+    padding: 5px 18px 5px 30px;
+    text-align: center;
+  }
+
+  .form-control {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+      margin-left: 10px;
+    }
+  }
+
+  .form-date-group{
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+      margin-left: 10px;
+    }
+  }
+
+  .button {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
+  }
+
+  .button-box {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+#my-referrals {
+
+  .table-container {
+    max-width: 438px;
+  }
+
+  td {
+    min-width: max-content;
+  }
+
+  .table.table-custom {
+    @include media-breakpoint-up(lg) {
+      max-width: 438px;
+    }
+  }
+}

@@ -2280,7 +2280,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #86b7fe;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  box-shadow: none;
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.75rem;
@@ -13880,10 +13880,6 @@ textarea.form-control-lg {
   font-weight: 400;
 }
 
-.client-info-item {
-  padding-bottom: 15px;
-}
-
 #profile {
   font-size: 1.13rem;
   line-height: 1.3rem;
@@ -13920,6 +13916,231 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   #schedule .button-box {
     width: 302px;
+  }
+}
+
+.my-card .my-card-title {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+.my-card .client-info-list {
+  font-size: 0.87rem;
+  line-height: 1.06rem;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .my-card .client-info-list {
+    font-size: 1.13rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+  }
+}
+.my-card .card-discount {
+  width: 296px;
+  height: 185px;
+}
+@media (min-width: 992px) {
+  .my-card .card-discount {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+#my-card {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+#my-card .card-discount {
+  width: 266px;
+  height: 140px;
+  position: relative;
+}
+@media (min-width: 992px) {
+  #my-card .card-discount {
+    width: 200px;
+    height: 110px;
+  }
+}
+#my-card .card-discount-summ {
+  font-size: 0.87rem;
+  line-height: 1.06rem;
+  font-weight: 400;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+@media (min-width: 992px) {
+  #my-card .button {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #my-card {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+  }
+}
+
+.form-custom {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+}
+.form-custom .form-control {
+  width: 256px;
+  margin: 0 auto;
+}
+.form-custom .button {
+  width: 256px;
+}
+@media (min-width: 992px) {
+  .form-custom {
+    max-width: 285px;
+  }
+}
+
+.form-custom-wrapper {
+  padding: 0 20px 30px;
+}
+
+.form-custom-header {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #58AE6B;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media (min-width: 992px) {
+  #my-balance .table-custom {
+    width: fit-content;
+  }
+}
+@media (min-width: 1400px) {
+  #my-balance .table-custom {
+    width: 895px;
+  }
+}
+
+#my-discounts .table-container,
+#my-cashback .table-container,
+#my-coupons .table-container {
+  width: 895px;
+}
+#my-discounts .table.table-custom,
+#my-cashback .table.table-custom,
+#my-coupons .table.table-custom {
+  width: 895px;
+}
+#my-discounts td,
+#my-cashback td,
+#my-coupons td {
+  width: 220px;
+}
+#my-discounts .output,
+#my-cashback .output,
+#my-coupons .output {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #my-discounts .output,
+#my-cashback .output,
+#my-coupons .output {
+    height: 60px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+#my-referrals .table-container {
+  max-width: 438px;
+}
+#my-referrals td {
+  min-width: max-content;
+}
+@media (min-width: 992px) {
+  #my-referrals .table.table-custom {
+    max-width: 438px;
+  }
+}
+
+#my-profile {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+#my-profile .form-select-day {
+  width: 71px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #my-profile .form-select-day {
+    width: 75px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#my-profile .form-select-month {
+  width: 120px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #my-profile .form-select-month {
+    width: 135px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#my-profile .form-select-year {
+  width: 85px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #my-profile .form-select-year {
+    width: 95px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#my-profile .form-select {
+  padding: 5px 18px 5px 30px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #my-profile .form-control {
+    width: 325px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #my-profile .form-date-group {
+    width: 325px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  #my-profile .button {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #my-profile .button-box {
+    width: 325px;
   }
 }
 
@@ -14169,15 +14390,13 @@ textarea.form-control-lg {
 }
 
 #cash .button-box,
-#main .button-box,
-#contacts .button-box {
+#profile .button-box {
   width: 296px;
   margin: 0 auto;
 }
 @media (min-width: 992px) {
   #cash .button-box,
-#main .button-box,
-#contacts .button-box {
+#profile .button-box {
     width: 325px;
   }
 }
@@ -14425,7 +14644,7 @@ textarea.form-control-lg {
     line-height: 1.06rem;
     font-weight: 400;
     border-radius: 5px;
-    max-height: 620px;
+    max-height: 675px;
     max-width: 285px;
   }
 }
@@ -15010,11 +15229,9 @@ textarea.form-control-lg {
   overflow: hidden;
   width: 895px;
   border: 1px solid #e0e0e0;
-  width: 880px;
 }
 
 .table.table-custom {
-  width: 880px;
   height: 690px;
   margin-bottom: 0;
 }
