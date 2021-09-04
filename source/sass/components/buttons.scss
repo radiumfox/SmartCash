@@ -24,7 +24,7 @@
   );
 
   @include media-breakpoint-up(md) {
-   width: 285px;
+    width: 285px;
   }
 }
 
@@ -55,19 +55,8 @@
   }
 }
 
-#schedule {
-  .button-box {
-    max-width: 200px;
-
-    @include media-breakpoint-up(md) {
-      width: 302px;
-    }
-  }
-}
-
 .card-green .button {
   border-radius: 0;
-  // width: 142.5px;
   padding: 6px;
 
   &.button-refill {

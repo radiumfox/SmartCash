@@ -1,0 +1,72 @@
+#coupons {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-item {
+    width: 100%;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+      margin: 0;
+    }
+  }
+
+  .form-select-day {
+    width: 71px;
+    height: 32px;
+    background-image: none;
+    padding-top: 4px;
+
+    @include media-breakpoint-up(lg) {
+      width: 75px;
+      background-image: url("../img/select-indicator.svg");
+    }
+  }
+
+  .form-select-month {
+    width: 120px;
+    height: 32px;
+    background-image: none;
+    padding-top: 4px;
+
+    @include media-breakpoint-up(lg) {
+      width: 135px;
+      background-image: url("../img/select-indicator.svg");
+    }
+  }
+
+  .form-select-year {
+    width: 85px;
+    height: 32px;
+    background-image: none;
+    padding-top: 4px;
+
+    @include media-breakpoint-up(lg) {
+      width: 95px;
+      background-image: url("../img/select-indicator.svg");
+    }
+  }
+
+  .form-textarea {
+    height: 108px;
+  }
+
+  .form-control-large {
+    @include media-breakpoint-up(lg) {
+      width: 590px;
+    }
+  }
+
+
+  .form-item-date {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+    }
+  }
+
+  .button-box {
+    @include media-breakpoint-up(md) {
+      width: 590px;
+    }
+  }
+}

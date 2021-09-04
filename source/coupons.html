@@ -51,12 +51,13 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden">Скидки партнера</h1>
+      <h1 class="visually-hidden">Баланс партнера</h1>
 
-      <div class="container gx-0 mt-11 mt-sm-6 mb-sm-6">
-        <div class="row justify-content-between gx-0">
-          <div class="card-custom col-12 mx-auto col-lg-4">
-            <div class="form-upload">
+      <div class="container gx-0 mt-md-6">
+        <div class="row d-md-flex justify-content-between gx-0">
+
+          <div class="card-custom col-12 col-md-7 col-lg-3">
+            <div class="form-upload mb-10 mt-10">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
             </div>
@@ -64,7 +65,7 @@
               <div class="nav-item d-md-none">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Скидки партнера
+                    Купоны партнера
                   </button>
                 </h2>
               </div>
@@ -79,14 +80,14 @@
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="balance.html">Баланс партнера</a>
                   </div>
-                  <div class="accordion-sub-item nav-item current d-none d-md-block">
-                    <a class="accordion-link current">Скидки партнера</a>
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="discounts.html">Скидки партнера</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="cashback.html">Кэшбэк партнера</a>
                   </div>
-                  <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="coupons.html">Купоны партнера</a>
+                  <div class="accordion-sub-item current d-none d-md-block nav-item">
+                    <a class="accordion-link current">Купоны партнера</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="gifts.html">Подарки партнера</a>
@@ -102,14 +103,15 @@
             </div>
           </div>
 
-          <div class="col-12 col-xl-9 pt-4 px-8 pt-lg-0 mb-5 mt-md-5">
-            <form method="POST" action="#" id="add-discount">
-              <div class="row d-flex align-items-center justify-content-between m-0 gx-0">
-                <div class="d-flex justify-content-center justify-content-xl-end mb-5">
-                  <button class="button" type="button">+ Добавить скидку</button>
-                </div>
-                <div class="d-xl-flex">
-                  <div class="form-item form-item-select  ms-lg-0">
+          <div class="container col-12 mt-4 px-8 col-lg-9">
+            <form method="POST" action="#" id="coupons">
+              <div class="d-flex justify-content-center justify-content-lg-end mb-5">
+                <button class="button" type="button">+ Добавить скидку</button>
+              </div>
+
+              <div class="d-flex row gx-0">
+                <div class="d-lg-flex justify-content-between">
+                  <div class="form-item form-item-select col-lg-4 me-lg-2 ms-lg-0">
                     <label for="category" class="form-label">Категория</label>
                     <select id="category" class="form-select">
                       <option></option>
@@ -117,7 +119,7 @@
                       <option></option>
                     </select>
                   </div>
-                  <div class="form-item form-item-select  ms-lg-0">
+                  <div class="form-item form-item-select col-lg-4 me-lg-2 ms-lg-0">
                     <label for="subcategory" class="form-label">Подкатегория</label>
                     <select id="subcategory" class="form-select">
                       <option></option>
@@ -125,7 +127,7 @@
                       <option></option>
                     </select>
                   </div>
-                  <div class="form-item form-item-select">
+                  <div class="form-item form-item-select col-lg-4">
                     <label for="status" class="form-label">Статус</label>
                     <select id="status" class="form-select">
                       <option></option>
@@ -134,17 +136,16 @@
                     </select>
                   </div>
                 </div>
-                <div>
+                <div class="form-item col-lg-8 ms-lg-0">
+                  <label for="discount-title" class="form-label">Тема</label>
+                  <input type="text" class="form-control form-control-large" id="discount-title">
+                </div>
                 <div class="d-flex flex-column">
-                  <div class="form-item ms-lg-0">
-                    <label for="discount-title" class="form-label">Тема</label>
-                    <input type="text" class="form-control" id="discount-title">
-                  </div>
-                  <div class="form-item form-item-date ms-lg-0">
-                    <p>Дата завершения</p>
-                    <div class="d-flex justify-content-between justify-content-md-around justify-content-lg-between">
-                      <label for="discount-date-day" class="form-label visually-hidden">День</label>
-                      <select id="discount-date-day" class="form-select form-select-day">
+                  <div class="form-item form-item-date col-lg-5 ms-lg-0">
+                    <p>Дата начала</p>
+                    <div class="d-flex justify-content-between">
+                      <label for="cashback-date-day" class="form-label visually-hidden">День</label>
+                      <select id="cashback-date-day" class="form-select form-select-day">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -153,12 +154,10 @@
                         <option>6</option>
                         <option>7</option>
                         <option>8</option>
-                        <option>9</option>
-                        <option>10</option>
                       </select>
 
-                      <label for="discount-date-month" class="form-label visually-hidden">Месяц</label>
-                      <select id="discount-date-month" class="form-select form-select-month">
+                      <label for="cashback-date-month" class="form-label visually-hidden">Месяц</label>
+                      <select id="cashback-date-month" class="form-select form-select-month">
                         <option>Января</option>
                         <option>Февраля</option>
                         <option>Марта</option>
@@ -173,8 +172,45 @@
                         <option>Декабря</option>
                       </select>
 
-                      <label for="discount-date-year" class="form-label visually-hidden">Год</label>
-                      <select id="discount-date-year" class="form-select form-select-year">
+                      <label for="cashback-date-year" class="form-label visually-hidden">Год</label>
+                      <select id="cashback-date-year" class="form-select form-select-year">
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-item form-item-date col-lg-5 ms-lg-0">
+                    <p>Дата завершения</p>
+                    <div class="d-flex justify-content-between">
+                      <label for="cashback-date-day" class="form-label visually-hidden">День</label>
+                      <select id="cashback-date-day" class="form-select form-select-day">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                      </select>
+
+                      <label for="cashback-date-month" class="form-label visually-hidden">Месяц</label>
+                      <select id="cashback-date-month" class="form-select form-select-month">
+                        <option>Января</option>
+                        <option>Февраля</option>
+                        <option>Марта</option>
+                        <option>Апреля</option>
+                        <option>Мая</option>
+                        <option>Июня</option>
+                        <option>Июля</option>
+                        <option>Августа</option>
+                        <option>Сентября</option>
+                        <option>Октября</option>
+                        <option>Ноября</option>
+                        <option>Декабря</option>
+                      </select>
+
+                      <label for="cashback-date-year" class="form-label visually-hidden">Год</label>
+                      <select id="cashback-date-year" class="form-select form-select-year">
                         <option></option>
                         <option></option>
                         <option></option>
@@ -184,48 +220,22 @@
                   </div>
                 </div>
 
+                <div class="coupons-amount mb-12">
+                  <div class="d-lg-flex">
+                    <div class="form-item me-lg-3">
+                      <label for="discount-from-50" class="form-label">Скидка (от 50%)</label>
+                      <input type="text" class="form-control" id="discount-from-50">
+                    </div>
+                    <div class="form-item">
+                      <label for="coupons-amount" class="form-label">Количество купонов</label>
+                      <input type="text" class="form-control" id="coupons-amount">
+                    </div>
+                  </div>
 
-                <div>
-                  <p class="mt-12 mb-11">Скидки по картам</p>
-
-                  <ul class="list-unstyled d-lg-flex m-0 ps-lg-0 pb-5">
-                    <li class="pe-lg-9 mb-11 d-md-flex justify-content-between align-items-center d-lg-block">
-                      <input type="checkbox" class="btn-check" id="discount-classic">
-                      <label for="discount-classic" class="form-label form-label-radio d-flex justify-content-end">
-                        <div class="card-discount d-flex justify-content-center align-items-center mb-2">
-                        Classic
-                        </div>
-                      </label>
-                      <div class="d-flex justify-content-end justify-content-lg-center">
-                        <input class="form-control form-control-percent" type="text" id="discount-classic-input" value="2%" placeholder="%">
-                        <label for="discount-classic-input" class="visually-hidden">Введите скидку</label>
-                      </div>
-                    </li>
-                    <li class="pe-lg-9 mb-11 d-md-flex justify-content-between align-items-center d-lg-block">
-                      <input type="checkbox" class="btn-check" id="discount-premium">
-                      <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end">
-                        <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center mb-2">
-                          Premium
-                        </div>
-                      </label>
-                      <div class="d-flex justify-content-end justify-content-lg-center">
-                        <input class="form-control form-control-percent" type="text" id="discount-premium-input" placeholder="%">
-                        <label for="discount-premium-input" class="visually-hidden">Введите скидку</label>
-                      </div>
-                    </li>
-                    <li class="pe-lg-9 d-md-flex justify-content-between align-items-center d-lg-block">
-                      <input type="checkbox" class="btn-check" id="discount-gold">
-                      <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end">
-                        <div class="card-discount card-discount--green d-flex justify-content-center align-items-center mb-2">
-                          Gold
-                        </div>
-                      </label>
-                      <div class="d-flex justify-content-end justify-content-lg-center">
-                        <input class="form-control form-control-percent" type="text" id="discount-gold-input" placeholder="%">
-                        <label for="discount-gold-input" class="visually-hidden">Введите скидку</label>
-                      </div>
-                    </li>
-                  </ul>
+                  <div class="button-box d-flex justify-content-lg-end">
+                    <input type="checkbox" class="btn-check" id="unlimited">
+                    <label for="unlimited" class="form-label form-label-radio ms-2">Неограничено</label>
+                  </div>
                 </div>
 
                 <div class="mb-12">
@@ -233,13 +243,11 @@
                   <textarea class="form-control form-textarea" id="terms-description"></textarea>
                 </div>
 
-                <div class="d-flex justify-content-start">
-                  <button class="button" type="submit">Сохранить</button>
-                </div>
-
               </div>
 
-
+              <div class="d-flex justify-content-center mb-4">
+                <button class="button" type="submit">Сохранить</button>
+              </div>
 
             </form>
           </div>

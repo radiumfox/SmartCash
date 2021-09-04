@@ -13561,6 +13561,368 @@ textarea.form-control-lg {
   font-weight: 400;
 }
 
+#coupons {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+#coupons .form-item {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  #coupons .form-item {
+    width: 285px;
+    margin: 0;
+  }
+}
+#coupons .form-select-day {
+  width: 71px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #coupons .form-select-day {
+    width: 75px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#coupons .form-select-month {
+  width: 120px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #coupons .form-select-month {
+    width: 135px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#coupons .form-select-year {
+  width: 85px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #coupons .form-select-year {
+    width: 95px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#coupons .form-textarea {
+  height: 108px;
+}
+@media (min-width: 992px) {
+  #coupons .form-control-large {
+    width: 590px;
+  }
+}
+@media (min-width: 992px) {
+  #coupons .form-item-date {
+    width: 325px;
+  }
+}
+@media (min-width: 768px) {
+  #coupons .button-box {
+    width: 590px;
+  }
+}
+
+#gifts {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+#gifts .form-item {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  #gifts .form-item {
+    width: 285px;
+    margin: 0;
+  }
+}
+#gifts .form-select-day {
+  width: 71px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #gifts .form-select-day {
+    width: 75px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#gifts .form-select-month {
+  width: 120px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #gifts .form-select-month {
+    width: 135px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#gifts .form-select-year {
+  width: 85px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #gifts .form-select-year {
+    width: 95px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#gifts .form-textarea {
+  height: 108px;
+}
+@media (min-width: 992px) {
+  #gifts .form-textarea {
+    width: 590px;
+    height: 285px;
+  }
+}
+#gifts .form-upload {
+  height: 296px;
+}
+@media (min-width: 992px) {
+  #gifts .form-upload {
+    width: 285px;
+    height: 285px;
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  #gifts .form-control-large {
+    width: 590px;
+  }
+}
+@media (min-width: 992px) {
+  #gifts .form-item-date {
+    width: 325px;
+  }
+}
+@media (min-width: 768px) {
+  #gifts .button-box {
+    width: 590px;
+  }
+}
+
+#add-discount {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+#add-discount .form-item-select {
+  width: 285px;
+  margin: 0 auto;
+}
+#add-discount .form-item {
+  width: 285px;
+}
+@media (min-width: 992px) {
+  #add-discount .form-item-date {
+    width: 325px;
+  }
+}
+#add-discount .form-control-percent {
+  width: 266px;
+  text-align: center;
+  height: 32px;
+}
+#add-discount .form-control-percent::placeholder {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  #add-discount .form-control-percent {
+    width: 100px;
+    margin-left: calc(50% - 76px);
+  }
+}
+#add-discount .form-textarea {
+  height: 108px;
+}
+@media (min-width: 992px) {
+  #add-discount .form-textarea {
+    min-height: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #add-discount {
+    width: 895px;
+  }
+}
+#add-discount .form-select-day {
+  width: 71px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #add-discount .form-select-day {
+    width: 75px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#add-discount .form-select-month {
+  width: 120px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #add-discount .form-select-month {
+    width: 135px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#add-discount .form-select-year {
+  width: 85px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  #add-discount .form-select-year {
+    width: 95px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+#add-discount .card-discount {
+  width: 266px;
+  height: 140px;
+}
+#add-discount .card-discount .form-label-radio {
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  #add-discount .card-discount {
+    width: 254px;
+  }
+}
+
+#clients .card-green {
+  color: #ffffff;
+  border-radius: 5px;
+  background-color: #58AE6B;
+  width: 296px;
+  height: 130px;
+  padding-top: 25px;
+}
+#clients .card-green .info {
+  font-size: 0.87rem;
+  line-height: 1.06rem;
+  font-weight: 400;
+}
+#clients .card-green .info .info-summ {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  #clients .card-green {
+    width: 285px;
+  }
+}
+#clients .output {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  height: 60px;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+#cash .form-item {
+  width: 296px;
+}
+@media (min-width: 992px) {
+  #cash .form-item {
+    width: 285px;
+  }
+  #cash .form-item:first-child {
+    width: 100%;
+  }
+}
+
+.client-info {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.client-info .button {
+  width: 256px;
+}
+@media (min-width: 992px) {
+  .client-info {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+  }
+  .client-info .button {
+    width: 285px;
+  }
+}
+
+.client-info-list {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+
+.client-info-item {
+  padding-bottom: 15px;
+}
+
+#profile {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+#profile .form-label {
+  padding-bottom: 10px;
+}
+@media (min-width: 992px) {
+  #profile .form-control {
+    width: 325px;
+    margin-left: 10px;
+  }
+}
+
+#schedule .form-time {
+  width: 70px;
+  height: 32px;
+  margin-left: 10px;
+}
+
+#schedule .form-item {
+  width: 100%;
+}
+#schedule .form-item:last-child {
+  max-width: 288px;
+}
+@media (min-width: 992px) {
+  #schedule .form-item {
+    width: 374px;
+  }
+}
+
+@media (min-width: 768px) {
+  #schedule .button-box {
+    width: 302px;
+  }
+}
+
 .news .container {
   padding-top: 40px;
   padding-bottom: 60px;
@@ -13828,15 +14190,6 @@ textarea.form-control-lg {
     width: 325px;
     margin-left: auto;
     padding: 0;
-  }
-}
-
-#schedule .button-box {
-  max-width: 200px;
-}
-@media (min-width: 768px) {
-  #schedule .button-box {
-    width: 302px;
   }
 }
 
@@ -14151,18 +14504,15 @@ textarea.form-control-lg {
   color: #ffffff;
 }
 
-#add-discount .card-discount,
 #add-cashback .card-discount {
   width: 266px;
   height: 140px;
 }
-#add-discount .card-discount .form-label-radio,
 #add-cashback .card-discount .form-label-radio {
   padding-left: 0;
 }
 @media (min-width: 992px) {
-  #add-discount .card-discount,
-#add-cashback .card-discount {
+  #add-cashback .card-discount {
     width: 254px;
   }
 }
@@ -14486,65 +14836,6 @@ textarea.form-control-lg {
   background-image: url("../img/arrow-down.svg");
 }
 
-.filter {
-  font-size: 0.87rem;
-  line-height: 1.06rem;
-  font-weight: 400;
-  margin-top: 20px;
-  margin-bottom: 25px;
-}
-.filter .form-select {
-  border-radius: 16px;
-  border-color: #e0e0e0;
-  line-height: 1.25rem;
-}
-.filter .form-select:focus {
-  border-color: rgba(61, 77, 83, 0.5);
-  box-shadow: none;
-}
-.filter .form-select:active {
-  border-color: rgba(61, 77, 83, 0.5);
-  box-shadow: none;
-}
-.filter .form-control {
-  border-radius: 16px;
-  border-color: #e0e0e0;
-  line-height: 1.25rem;
-}
-.filter .form-control:focus {
-  background-color: #ffffff33;
-  border-color: rgba(61, 77, 83, 0.5);
-  box-shadow: none;
-}
-.filter .form-control:active {
-  border-color: rgba(61, 77, 83, 0.5);
-  background-color: #ffffff33;
-  box-shadow: none;
-}
-@media (min-width: 576px) {
-  .filter {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    font-weight: 400;
-  }
-}
-@media (min-width: 992px) {
-  .filter {
-    font-size: 1.13rem;
-    line-height: 1.3rem;
-    font-weight: 400;
-  }
-}
-
-.filter-catalog {
-  max-width: 450px;
-}
-@media (min-width: 992px) {
-  .filter-catalog {
-    max-width: 245px;
-  }
-}
-
 .form-item {
   padding-left: 0;
   padding-right: 0;
@@ -14557,117 +14848,9 @@ textarea.form-control-lg {
   }
 }
 
-.form {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-.form .form-label {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-  margin: 0;
-}
-.form .button {
-  margin: 0 auto;
-  width: 296px;
-}
-@media (min-width: 576px) {
-  .form .button {
-    width: 285px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 992px) {
-  .form .button {
-    width: 285px;
-  }
-}
-
-.filter-button.collapsed .filter-caret {
-  background-image: url("../img/arrow-down.svg");
-  background-repeat: no-repeat;
-  width: 12px;
-  height: 7px;
-  display: inline-block;
-}
-
-.filter-caret {
-  background-image: url("../img/arrow-up.svg");
-  background-repeat: no-repeat;
-  width: 12px;
-  height: 7px;
-  display: inline-block;
-  margin-left: 14px;
-}
-
-.filter-button {
-  margin-bottom: 32px;
-  color: #000000;
-  cursor: pointer;
-}
-.filter-button:hover {
-  color: rgba(0, 0, 0, 0.8);
-}
-
 .form-textarea {
   min-height: 120px;
   resize: none;
-}
-
-#cash .form-item {
-  max-width: 296px;
-}
-@media (min-width: 992px) {
-  #cash .form-item:first-child {
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  #cash .form-control {
-    max-width: 285px;
-  }
-}
-
-#cash .form-label {
-  padding-bottom: 10px;
-}
-
-.client-info {
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-}
-.client-info .button {
-  width: 256px;
-}
-@media (min-width: 992px) {
-  .client-info {
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-  }
-  .client-info .button {
-    width: 285px;
-  }
-}
-
-.client-info-list {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-
-.client-info-item {
-  padding-bottom: 15px;
-}
-
-#profile {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-#profile .form-label {
-  padding-bottom: 10px;
 }
 
 .form-upload {
@@ -14677,7 +14860,7 @@ textarea.form-control-lg {
   margin-bottom: 20px;
   cursor: pointer;
   margin: 0 auto;
-  max-width: 296px;
+  width: 296px;
   margin: 20px auto 28px;
 }
 .form-upload .form-label {
@@ -14688,7 +14871,7 @@ textarea.form-control-lg {
   color: #BDBDBD;
   margin-top: 60px;
   margin-left: 25%;
-  padding: 5px 0 5px 48px;
+  padding: 5px 0 5px 46px;
   cursor: pointer;
   max-width: 120px;
 }
@@ -14715,12 +14898,12 @@ textarea.form-control-lg {
 }
 @media (min-width: 576px) {
   .form-upload {
-    max-width: 265px;
+    width: 265px;
   }
 }
 @media (min-width: 992px) {
   .form-upload {
-    max-width: 245px;
+    width: 245px;
   }
 }
 
@@ -14743,12 +14926,6 @@ textarea.form-control-lg {
   .form-label-checkbox {
     margin-right: 14px;
   }
-}
-
-.form-time {
-  width: 70px;
-  height: 32px;
-  margin-left: 10px;
 }
 
 .form-label-radio {
@@ -14774,207 +14951,6 @@ textarea.form-control-lg {
   border-radius: 50%;
   top: 4px;
   left: 4px;
-}
-
-@media (min-width: 992px) {
-  #main .form-control,
-#contacts .form-control,
-#safety .form-control,
-#responsible .form-control {
-    width: 325px;
-    margin-left: 9px;
-  }
-}
-
-@media (min-width: 992px) {
-  #main .form-item {
-    max-width: initial;
-  }
-}
-
-@media (min-width: 992px) {
-  #schedule .form-item {
-    width: 374px;
-    max-width: initial;
-  }
-}
-
-#responsible .form-upload,
-#gifts .form-upload {
-  width: 285px;
-  height: 285px;
-  max-width: initial;
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  #responsible .form-upload,
-#gifts .form-upload {
-    margin-left: 9px;
-  }
-}
-
-#add-discount,
-#add-cashback,
-#coupons,
-#gifts {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-#add-discount .form-item-select,
-#add-cashback .form-item-select,
-#coupons .form-item-select,
-#gifts .form-item-select {
-  width: 285px;
-  margin: 0 auto;
-}
-#add-discount .form-item,
-#add-cashback .form-item,
-#coupons .form-item,
-#gifts .form-item {
-  width: 285px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-item-date,
-#add-cashback .form-item-date,
-#coupons .form-item-date,
-#gifts .form-item-date {
-    width: 325px;
-  }
-}
-#add-discount .form-control-percent,
-#add-cashback .form-control-percent,
-#coupons .form-control-percent,
-#gifts .form-control-percent {
-  width: 266px;
-  text-align: center;
-  height: 32px;
-}
-#add-discount .form-control-percent::placeholder,
-#add-cashback .form-control-percent::placeholder,
-#coupons .form-control-percent::placeholder,
-#gifts .form-control-percent::placeholder {
-  text-align: center;
-}
-@media (min-width: 992px) {
-  #add-discount .form-control-percent,
-#add-cashback .form-control-percent,
-#coupons .form-control-percent,
-#gifts .form-control-percent {
-    width: 100px;
-    margin-left: calc(50% - 76px);
-  }
-}
-#add-discount .form-textarea,
-#add-cashback .form-textarea,
-#coupons .form-textarea,
-#gifts .form-textarea {
-  height: 108px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-textarea,
-#add-cashback .form-textarea,
-#coupons .form-textarea,
-#gifts .form-textarea {
-    min-height: 150px;
-  }
-}
-@media (min-width: 1200px) {
-  #add-discount,
-#add-cashback,
-#coupons,
-#gifts {
-    width: 895px;
-  }
-}
-
-#add-cashback .form-control-percent {
-  width: 100px;
-  margin-left: 0;
-}
-#add-cashback .cashback-section {
-  max-width: 568px;
-}
-#add-cashback .cashback-section .form-label {
-  margin-bottom: 0;
-}
-#add-cashback .form-item-select {
-  width: 296px;
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  #add-cashback .form-item-select {
-    width: 285px;
-  }
-}
-#add-cashback .form-item {
-  width: 296px;
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  #add-cashback .form-item {
-    width: 285px;
-  }
-}
-@media (min-width: 992px) {
-  #add-cashback .form-item-large {
-    width: 590px;
-  }
-}
-
-.form-select-day {
-  width: 71px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  .form-select-day {
-    width: 75px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-
-.form-select-month {
-  width: 120px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  .form-select-month {
-    width: 135px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-
-.form-select-year {
-  width: 85px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  .form-select-year {
-    width: 95px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-
-#coupons .coupons-amount {
-  width: 590px;
-}
-#coupons .coupons-amount .form-control {
-  width: 285px;
-}
-
-#gifts .form-textarea {
-  width: 590px;
-  height: 285px;
-}
-
-.form-amount .form-control {
-  width: 285px;
 }
 
 .catalog-pagination .page-link {
@@ -15074,16 +15050,6 @@ textarea.form-control-lg {
 }
 .table.table-custom .table-body {
   color: #000000;
-}
-
-.output {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  height: 60px;
-  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

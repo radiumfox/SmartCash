@@ -47,12 +47,3 @@
     color: $basic-dark-2;
   }
 }
-
-.output {
-  @include font(1.13rem, 1.3rem, 400);
-  border: 1px solid $basic-grey;
-  border-radius: 5px;
-  height: 60px;
-  margin-bottom: 0;
-}
-

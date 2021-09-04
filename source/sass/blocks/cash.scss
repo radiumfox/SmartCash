@@ -1,0 +1,38 @@
+#cash {
+  .form-item {
+    width: 296px;
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.client-info {
+  border-top: 1px solid $basic-grey;
+  border-bottom: 1px solid $basic-grey;
+
+  .button {
+    width: 256px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+
+    .button {
+      width: 285px;
+    }
+  }
+}
+
+.client-info-list {
+  @include font(1.13rem, 1.3rem, 400);
+}
+
+.client-info-item {
+  padding-bottom: 15px;
+}

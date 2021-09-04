@@ -1,0 +1,31 @@
+#clients {
+  .card-green {
+    .info {
+      @include font(0.87rem, 1.06rem, 400);
+
+      .info-summ {
+        @include font(1.5rem, 1.75rem, 400);
+      }
+    }
+
+    color: $basic-light;
+    border-radius: 5px;
+    background-color: $light-green;
+    width: 296px;
+    height: 130px;
+    padding-top: 25px;
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+    }
+  }
+
+  .output {
+    @include font(1.13rem, 1.3rem, 400);
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+    height: 60px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}

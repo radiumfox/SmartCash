@@ -50,28 +50,29 @@
       </nav>
     </header>
 
-    <main>
-      <h1 class="visually-hidden">Касса партнера</h1>
+    <main id="clients">
+      <h1 class="visually-hidden">Баланс партнера</h1>
 
-      <div class="container gx-0 mt-11 mt-sm-6 mb-sm-6">
-        <div class="row justify-content-between gx-0">
-          <div class="card-custom col-12 mx-auto col-lg-4 ">
-            <div class="form-upload">
+      <div class="container gx-0 mt-md-6">
+        <div class="row d-md-flex justify-content-between gx-0">
+
+          <div class="card-custom px-0 col-12 col-md-4 col-lg-3">
+            <div class="form-upload mb-10 mt-10">
               <label class="form-label" for="add-img">Добавить изображение</label>
-              <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
+              <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
             </div>
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
               <div class="nav-item d-md-none">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Касса партнера
+                    Клиенты партнера
                   </button>
                 </h2>
               </div>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#partner-menu">
-                <div class="accordion-body">
-                  <div class="accordion-sub-item current nav-item d-none d-md-block">
-                    <a class="accordion-link current">Касса партнера</a>
+                <div class="accordion-body px-0">
+                  <div class="accordion-sub-item nav-item">
+                    <a class="accordion-link" href="cash.html">Касса партнера</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="profile.html">Профиль партнера</a>
@@ -89,10 +90,10 @@
                     <a class="accordion-link" href="coupons.html">Купоны партнера</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="#">Подарки партнера</a>
+                    <a class="accordion-link"  href="gifts.html">Подарки партнера</a>
                   </div>
-                  <div class="accordion-sub-item nav-item">
-                    <a class="accordion-link" href="#">Клиенты партнера</a>
+                  <div class="accordion-sub-item current d-none d-md-block nav-item">
+                    <a class="accordion-link current">Клиенты партнера</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="#">Выход</a>
@@ -102,64 +103,71 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 pt-4 pt-lg-0 mx-auto mb-5">
-              <form class="form mb-12" method="POST" id="cash">
-                <div class="row d-flex align-items-center justify-content-between m-0 gx-0">
-                  <div class="form-item col-lg-12">
-                    <label for="loyalty-program" class="form-label">Программа лояльности</label>
-                    <select id="loyalty-program" class="form-select">
-                      <option></option>
-                      <option></option>
-                      <option></option>
-                    </select>
-                  </div>
+          <div class="col-lg-9 mb-6">
+            <div class="d-lg-flex justify-content-between mb-12">
+              <div class="card-green mx-auto mt-4 mt-lg-0 mb-3 mb-lg-0 me-lg-10">
+                <div class="info d-flex flex-column justify-content-center align-items-center">
+                  <p class="info-summ m-0 pb-1">10</p>
+                  <p class="m-0">Общее количество клиентов</p>
+                </div>
+              </div>
+              <div class="card-green mx-auto mb-3 mb-lg-0 me-lg-10">
+                <div class="info d-flex flex-column justify-content-center align-items-center">
+                  <p class="info-summ m-0 pb-1">100,00</p>
+                  <p class="m-0">Общая сумма продаж</p>
+                </div>
+              </div>
+              <div class="card-green mx-auto mb-3 mb-lg-0 me-lg-10">
+                <div class="info d-flex flex-column justify-content-center align-items-center">
+                  <p class="info-summ m-0 pb-1">100,00</p>
+                  <p class="m-0">Общая сумма скидок</p>
+                </div>
+              </div>
+            </div>
 
-                  <div class="form-item">
-                    <label for="receipt-number" class="form-label">Номер квитанции</label>
-                    <input type="text" class="form-control" id="receipt-number" name="receipt-number">
-                  </div>
-
-                  <div class="form-item">
-                    <label for="purchase-sum" class="form-label">Сумма покупки</label>
-                    <input type="text" class="form-control" id="purchase-sum" name="purchase-sum">
-                  </div>
-
-                  <div class="form-item">
-                    <label for="personal-number" class="form-label">Личный номер клиента</label>
-                    <input type="text" class="form-control" id="personal-number" name="personal-number">
-                  </div>
-
-                  <div class="form-item">
-                    <label for="payment-sum" class="form-label">Сумма к оплате</label>
-                    <input type="text" class="form-control" id="payment-sum" name="payment-sum">
-                  </div>
-
-                  <div class="button-box">
-                    <button class="button col-lg-6 border-0" type="button">Сохранить</button>
+            <div class="accordion accordion-dropdown" id="sales-history">
+              <div class="accordion-item">
+                <h2 class="accordion-header mb-11">
+                  <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >
+                    <span class="button-text fs-4 m-0 me-2">История продаж</span>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse scrollable overflow-auto collapse show" data-bs-parent="#sales-history">
+                  <div class=" scrollable-content">
+                    <div class="container table-container mb-5">
+                      <table class="table table-custom borderless">
+                        <thead class="theader">
+                          <tr>
+                            <td>ID клиента</td>
+                            <td>Сумма покупки</td>
+                            <td>Программа</td>
+                            <td>Сумма к оплате</td>
+                            <td>Скидка</td>
+                            <td class="td-sort">Дата</td>
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr class="table-row">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="output d-flex justify-content-around align-items-center">
+                      <div class="td-output">Итого: 00,00 с.</div>
+                      <div class="td-output">Итого: 00,00 с.</div>
+                      <div class="td-output">Итого: 00,00 с.</div>
+                    </div>
                   </div>
                 </div>
-              </form>
-              <div class="client-info container d-flex flex-column align-items-center pt-5 pb-5">
-                <ul class="client-info-list d-flex mb-0 flex-column align-items-center list-unstyled">
-                  <li class="client-info-item pb-9">Номер квитанции: <span>1234567</span>
-                  </li>
-                  <li class="client-info-item pb-9">Личный номер клиента: <span>365</span>
-                  </li>
-                  <li class="client-info-item pb-9">Сумма покупки: <span>1200 Р</span>
-                  </li>
-                  <li class="client-info-item pb-9">Скидка: <span>10%</span>
-                  </li>
-                  <li class="client-info-item pb-11">Сумма к оплате: <span>1080 Р</span>
-                  </li>
-                </ul>
-                <button class="button border-0" type="submit">Подтвердить</button>
               </div>
-
-          </div>
+            </div>
 
         </div>
       </div>
-
     </main>
     <script src="js/bootstrap.js"></script>
   </body>
