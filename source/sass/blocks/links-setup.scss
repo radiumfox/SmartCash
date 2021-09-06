@@ -5,7 +5,8 @@
     max-width: 325px;
 
     @include media-breakpoint-up(lg) {
-      max-width: 471px;
+      width: 475px;
+      max-width: 475px;
     }
   }
 

@@ -316,6 +316,13 @@
                   </tbody>
                 </table>
               </div>
+              <div class="table-nav d-none d-md-block ms-lg-auto">
+                <nav class="nav ">
+                  <a class="table-nav-item flex-fill nav-link active" aria-current="page" href="#"><span class="visually-hidden">Страница1</span></a>
+                  <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница2</span></a>
+                  <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница3</span></a>
+                </nav>
+              </div>
             </div>
 
             <div class="mb-7 mt-5">
@@ -340,21 +347,60 @@
                       <label for="country-of-issue" class="form-label">Страна:</label>
                       <input type="text" class="form-control form-control-large" id="country-of-issue" name="country-of-issue">
                     </div>
-
-                    <p class="title mb-4 mx-auto mx-md-0"><span class="d-none d-md-inline">Доступные цифры</span><span class="d-md-none">Цифры</span> для регистрации карты</p>
-                    <p class="title mb-4 mx-auto mx-md-0">Цены оформления карт</p>
-                    <div class="d-lg-flex justify-content-start">
-                      <div class="form-item form-item-percent me-lg-10 text-lg-center">
-                        <label for="classic-price" class="form-label">Classic</label>
-                        <input type="text" class="form-control" id="classic-price" name="classic-price" placeholder="0$">
+                    <div class="container">
+                      <p class="title mb-4 mx-md-0 ps-8 ps-sm-0"><span class="d-none d-md-inline">Доступные цифры</span><span class="d-md-none">Цифры</span> для регистрации карты</p>
+                      <div class="scrollable ps-8 ps-sm-0 overflow-auto mb-12">
+                        <div class="acrollable-content d-flex scale">
+                          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" checked>
+                          <label class="btn btn-outline-primary" for="btncheck1"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off" checked>
+                          <label class="btn btn-outline-primary" for="btncheck2"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off" checked>
+                          <label class="btn btn-outline-primary" for="btncheck3"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off" checked>
+                          <label class="btn btn-outline-primary" for="btncheck4"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off" checked>
+                          <label class="btn btn-outline-primary" for="btncheck5"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck6"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck7"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck8"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck9"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck10"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck11"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck12"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck13"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck14"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck15"></label>
+                          <input type="checkbox" class="btn-check" id="btncheck16" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btncheck16"></label>
+                        </div>
                       </div>
-                      <div class="form-item form-item-percent me-lg-10 text-lg-center">
-                        <label for="premium-price" class="form-label">Premium</label>
-                        <input type="text" class="form-control" id="premium-price" name="premium-price" placeholder="2$">
-                      </div>
-                      <div class="form-item form-item-percent text-lg-center">
-                        <label for="gold-price" class="form-label">Gold</label>
-                        <input type="text" class="form-control" id="gold-price" name="gold-price" placeholder="2$">
+                    </div>
+                    <div class="container">
+                      <p class="title mb-4 mx-md-0 ps-8 ps-sm-0">Цены оформления карт</p>
+                      <div class="d-lg-flex justify-content-start">
+                        <div class="form-item form-item-percent me-lg-10 text-lg-center">
+                          <label for="classic-price" class="form-label">Classic</label>
+                          <input type="text" class="form-control" id="classic-price" name="classic-price" placeholder="0$">
+                        </div>
+                        <div class="form-item form-item-percent me-lg-10 text-lg-center">
+                          <label for="premium-price" class="form-label">Premium</label>
+                          <input type="text" class="form-control" id="premium-price" name="premium-price" placeholder="2$">
+                        </div>
+                        <div class="form-item form-item-percent text-lg-center">
+                          <label for="gold-price" class="form-label">Gold</label>
+                          <input type="text" class="form-control" id="gold-price" name="gold-price" placeholder="2$">
+                        </div>
                       </div>
                     </div>
                     <div class="button-box d-flex justify-content-center justify-content-lg-start mt-11 ms-lg-auto">

@@ -1,6 +1,22 @@
 .partner-profile {
   @include font(1.13rem, 1.3rem, 400);
 
+  .button-box {
+    @include media-breakpoint-up(md) {
+      width: 325px;
+    }
+  }
+
+  .form-item {
+    max-width: 325px;
+
+    @include media-breakpoint-up(lg) {
+      width: max-content;
+      max-width: max-content;
+      margin: 0;
+    }
+  }
+
   .form-control {
     @include media-breakpoint-up(lg) {
       width: 325px;
@@ -21,16 +37,29 @@
       max-width: 288px;
     }
     @include media-breakpoint-up(lg) {
-      width: 374px;
+      max-width: 425px;
     }
   }
 
   #schedule {
+    .button {
+      @include media-breakpoint-up(md) {
+        width: 200px;
+      }
+    }
+
     .button-box {
 
       @include media-breakpoint-up(md) {
         width: 302px;
       }
+    }
+  }
+
+  #schedule {
+    @include media-breakpoint-up(md) {
+      width: 374px;
+      margin: 0 auto;
     }
   }
 }

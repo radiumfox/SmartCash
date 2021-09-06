@@ -110,8 +110,8 @@
 
           <div class="col-12 col-lg-2 col-xl-3 border-lg-start p-lg-0 order-md-0 order-lg-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0">
             <div class="card-header tab-header tab-header-border">
-              <div class="ps-8 ps-lg-0 scrollable overflow-auto">
-                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+              <div class=" scrollable overflow-auto">
+                <ul class="ps-8 ps-lg-0 scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#main">Основное</a>
                   </li>
@@ -135,37 +135,37 @@
           <div class="col-12 col-md-6 order-md-2 order-lg-1">
             <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
 
-              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="main">
+              <div class="tab-pane fade show active px-8 px-lg-0 mb-5" id="main">
                 <div class="pt-4 px-md-0 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="official-name" class="form-label">Юридическое название</label>
                         <input type="text" class="form-control" id="official-name" name="official-name">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto ">
                         <label for="short-name" class="form-label">Сокращенное название</label>
                         <input type="text" class="form-control" id="short-name" name="short-name">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto ">
                         <label for="motto" class="form-label">Слоган компании</label>
                         <input type="text" class="form-control" id="motto" name="motto">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto ">
                         <label for="tin" class="form-label">ИИН</label>
                         <input type="text" class="form-control" id="tin" name="tin">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end ms-lg-auto ">
                         <label for="description" class="form-label">Описание</label>
                         <textarea class="form-control form-textarea" id="description" name="description"></textarea>
                       </div>
 
-                      <div class="button-box">
+                      <div class="button-box d-flex justify-content-center justify-content-lg-start ms-lg-auto">
                         <button class="button col-lg-6 border-0" type="submit">Сохранить</button>
                       </div>
 
@@ -179,7 +179,7 @@
               <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
                 <div class="col-12 pt-4 pt-lg-0 mx-auto">
                   <form method="POST" action="#">
-                    <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
+                    <div class="row m-0 d-flex align-items-center justify-content-between justify-content-lg-end gx-0">
 
                       <div class="form-item d-lg-flex justify-content-end">
                         <label for="country" class="form-label">Страна:</label>
@@ -241,7 +241,7 @@
                         <input type="text" class="form-control" id="website" name="website">
                       </div>
 
-                      <div class="button-box">
+                      <div class="button-box d-flex justify-content-center justify-content-lg-start ms-lg-auto">
                         <button class="button border-0" type="button">Сохранить</button>
                       </div>
 
@@ -254,7 +254,7 @@
               <!-- -->
 
               <div class="tab-pane fade tab-pane fade mb-5" id="schedule">
-                <div class="col-12 pt-4 pt-lg-0 mx-auto">
+                <div class="col-12 pt-4 pt-lg-0 mx-auto px-8 px-lg-0">
                   <form method="POST" action="#">
                     <div class="form-item d-flex justify-content-between align-items-baseline">
                       <div class="d-flex align-items-center">
@@ -363,7 +363,7 @@
 
                     <div class="mb-11">
                       <p class="m-0 mb-10">Обеденный перерыв</p>
-                      <div class="form-item d-flex justify-content-end align-items-center ms-lg-0">
+                      <div class="form-item d-flex justify-content-end align-items-center ms-lg-auto ">
                         <div class="d-flex align-items-center">
                           <label for="break-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
                           <input type="text" class="form-control form-time" id="break-from">
@@ -379,7 +379,7 @@
                       </div>
                     </div>
 
-                    <div class="button-box">
+                    <div class="button-box ms-lg-auto">
                       <button class="button border-0" type="button">Сохранить</button>
                     </div>
                   </form>
@@ -392,27 +392,27 @@
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="login" class="form-label">Логин:</label>
                         <input type="text" class="form-control" id="login" name="login">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="old-password" class="form-label">Старый пароль:</label>
                         <input type="text" class="form-control" id="old-password" name="old-password">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="new-password" class="form-label">Новый пароль:</label>
                         <input type="text" class="form-control" id="new-password" name="new-password">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="repeat-password" class="form-label">Повторить пароль:</label>
                         <input type="text" class="form-control" id="repeat-password" name="repeat-password">
                       </div>
 
-                      <div class="button-box">
+                      <div class="button-box ms-lg-auto">
                         <button class="button border-0" type="button">Сохранить</button>
                       </div>
 
@@ -423,37 +423,37 @@
 
               <!-- -->
 
-              <div class="tab-pane fade px-8 px-lg-0 show active mb-5" id="responsible">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="responsible">
                 <div class="col-12 pt-4 pt-lg-0 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="head-surname" class="form-label">Фамилия:</label>
                         <input type="text" class="form-control" id="head-surname" name="head-surname">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="head-name" class="form-label">Имя:</label>
                         <input type="text" class="form-control" id="head-name" name="head-name">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="head-patronymic" class="form-label">Отчество:</label>
                         <input type="text" class="form-control" id="head-patronymic" name="head-patronymic">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="head-phone-number" class="form-label">Номер телефона:</label>
                         <input type="text" class="form-control" id="head-phone-number" name="head-phone-number">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
                         <label for="head-email" class="form-label">E-mail:</label>
                         <input type="text" class="form-control" id="head-email" name="head-email">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end ms-lg-auto">
                         <p class="m-0 form-label">Добавить фото:</p>
                         <div class="form-upload form-control me-lg-0 d-flex justify-content-center align-items-center">
                           <label class="form-label m-0" for="head-photo">Добавить изображение</label>
@@ -461,7 +461,7 @@
                         </div>
                       </div>
 
-                      <div class="button-box">
+                      <div class="button-box ms-lg-auto">
                         <button class="button border-0" type="button">Сохранить</button>
                       </div>
 

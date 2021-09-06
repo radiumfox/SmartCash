@@ -2,12 +2,13 @@
   .form-control {
     @include media-breakpoint-up(lg) {
       width: 200px;
+      margin-left: 10px;
     }
   }
 
-  .form-control {
+  .form-item {
     @include media-breakpoint-up(lg) {
-      margin-left: 10px;
+      width: 576px;
     }
   }
 

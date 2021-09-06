@@ -2,11 +2,13 @@
   border-radius: 5px;
   border: 1px solid $basic-grey;
   overflow: hidden;
+  width: 890px;
 }
 
 .table-custom {
   min-height: 690px;
   margin-bottom: 0;
+
 
   .theader {
     background-color: $light-green;
@@ -66,7 +68,7 @@
     border-radius: 0;
     width: 100%;
     text-align: left;
-    padding-left: 25px;
+    padding-left: 18px;
   }
 
   .table-body {
@@ -74,8 +76,12 @@
   }
 }
 
+.table-container-complex {
+  width: 875px;
+}
+
 .table-custom-complex {
-  width: 895px;
+  width: 875px;
   min-height: max-content;
 
   th {
@@ -85,17 +91,17 @@
     vertical-align: middle;
     padding-left: 20px;
     padding: 10px 0;
-    min-width: 285px;
+    width: 285px;
   }
 
   td {
     border-bottom: 1px solid $basic-grey;
-    width: 305px;
-    min-width: 285px;
+    width: 285px;
+
     border-left: 1px solid $basic-grey;
   }
 
-  .td-option {
+  th .td-option {
     @include font(1.13rem, 1.3rem, 400);
     padding-right: 0;
     width: 285px;
@@ -175,5 +181,22 @@
       }
     }
 
+  }
+}
+
+.table-nav {
+  height: 1px;
+  width: 450px;
+  background-color: $basic-grey;
+  margin-top: 20px;
+
+  .table-nav-item {
+    max-width: 100px;
+    height: 1px;
+  }
+
+  .table-nav-item.nav-link.active {
+    border-bottom: 2px solid $special-grey-2;
+    background-color: $special-grey-2;
   }
 }

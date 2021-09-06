@@ -13784,6 +13784,10 @@ textarea.form-control-lg {
   }
 }
 
+.coupons-amount .button-box {
+  margin-top: 10px;
+}
+
 #gifts {
   font-size: 1.13rem;
   line-height: 1.3rem;
@@ -14099,6 +14103,21 @@ textarea.form-control-lg {
   line-height: 1.3rem;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  .partner-profile .button-box {
+    width: 325px;
+  }
+}
+.partner-profile .form-item {
+  max-width: 325px;
+}
+@media (min-width: 992px) {
+  .partner-profile .form-item {
+    width: max-content;
+    max-width: max-content;
+    margin: 0;
+  }
+}
 @media (min-width: 992px) {
   .partner-profile .form-control {
     width: 325px;
@@ -14118,12 +14137,23 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .partner-profile #schedule .form-item {
-    width: 374px;
+    max-width: 425px;
+  }
+}
+@media (min-width: 768px) {
+  .partner-profile #schedule .button {
+    width: 200px;
   }
 }
 @media (min-width: 768px) {
   .partner-profile #schedule .button-box {
     width: 302px;
+  }
+}
+@media (min-width: 768px) {
+  .partner-profile #schedule {
+    width: 374px;
+    margin: 0 auto;
   }
 }
 
@@ -14578,11 +14608,12 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .finance-setup .form-control {
     width: 200px;
+    margin-left: 10px;
   }
 }
 @media (min-width: 992px) {
-  .finance-setup .form-control {
-    margin-left: 10px;
+  .finance-setup .form-item {
+    width: 576px;
   }
 }
 @media (min-width: 992px) {
@@ -14604,6 +14635,9 @@ textarea.form-control-lg {
     min-height: 150px;
     width: 895px;
   }
+  .texts-setup .form-item {
+    margin: 0;
+  }
 }
 
 .links-setup {
@@ -14616,7 +14650,8 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .links-setup .form-item {
-    max-width: 471px;
+    width: 475px;
+    max-width: 475px;
   }
 }
 .links-setup .form-control {
@@ -15343,11 +15378,6 @@ textarea.form-control-lg {
   }
 }
 
-#schedule {
-  max-width: 288px;
-  margin: 0 auto;
-}
-
 .tab-content {
   position: relative;
 }
@@ -15918,6 +15948,7 @@ textarea.form-control-lg {
   padding-right: 0;
   padding-bottom: 20px;
   margin: 0 auto;
+  width: 296px;
 }
 .form-item:last-child {
   padding-bottom: 0;
@@ -15925,12 +15956,24 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .form-item {
     padding-bottom: 30px;
+    width: 285px;
   }
 }
 
 .form-textarea {
   min-height: 120px;
   resize: none;
+}
+.form-textarea ::-webkit-scrollbar {
+  width: 1px;
+}
+.form-textarea ::-webkit-scrollbar-track {
+  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+}
+.form-textarea ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 .form-upload {
@@ -16142,16 +16185,11 @@ textarea.form-control-lg {
   padding: 0;
 }
 
-@media (min-width: 768px) {
-  #schedule {
-    width: 368px;
-  }
-}
-
 .table-container {
   border-radius: 5px;
   border: 1px solid #e0e0e0;
   overflow: hidden;
+  width: 890px;
 }
 
 .table-custom {
@@ -16211,14 +16249,18 @@ textarea.form-control-lg {
   border-radius: 0;
   width: 100%;
   text-align: left;
-  padding-left: 25px;
+  padding-left: 18px;
 }
 .table-custom .table-body {
   color: #000000;
 }
 
+.table-container-complex {
+  width: 875px;
+}
+
 .table-custom-complex {
-  width: 895px;
+  width: 875px;
   min-height: max-content;
 }
 .table-custom-complex th {
@@ -16230,22 +16272,21 @@ textarea.form-control-lg {
   vertical-align: middle;
   padding-left: 20px;
   padding: 10px 0;
-  min-width: 285px;
+  width: 285px;
 }
 .table-custom-complex td {
   border-bottom: 1px solid #e0e0e0;
-  width: 305px;
-  min-width: 285px;
+  width: 285px;
   border-left: 1px solid #e0e0e0;
 }
-.table-custom-complex .td-option {
+.table-custom-complex th .td-option {
   font-size: 1.13rem;
   line-height: 1.3rem;
   font-weight: 400;
   padding-right: 0;
   width: 285px;
 }
-.table-custom-complex .td-option::before {
+.table-custom-complex th .td-option::before {
   right: 20px;
   top: 20px;
 }
@@ -16309,6 +16350,36 @@ textarea.form-control-lg {
 }
 .table-currency .td-button-save .button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.table-nav {
+  height: 1px;
+  width: 450px;
+  background-color: #e0e0e0;
+  margin-top: 20px;
+}
+.table-nav .table-nav-item {
+  max-width: 100px;
+  height: 1px;
+}
+.table-nav .table-nav-item.nav-link.active {
+  border-bottom: 2px solid #BDBDBD;
+  background-color: #BDBDBD;
+}
+
+.scale {
+  min-width: 510px;
+}
+.scale .btn {
+  width: 30px;
+  height: 20px;
+  border-radius: 2px;
+  background-color: #e0e0e0;
+  border: none;
+  margin-right: 2px;
+}
+.scale .btn:hover {
+  background-color: #58AE6B;
 }
 
 /*# sourceMappingURL=style.css.map */
