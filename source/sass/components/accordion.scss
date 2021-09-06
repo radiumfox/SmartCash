@@ -196,17 +196,86 @@
     .button-text {
       @include font(0.87rem, 1rem, 400);
       margin-right: 15px;
+      padding-bottom: 3px;
     }
   }
 
   .accordion-button::after {
     background-image: url("../img/arrow-down.svg");
     background-size: contain;
-    width: 15px;
-    height: 10px;
+    width: 11px;
+    height: 6px;
+    top: 15px;
+    left: 0;
   }
 
   .accordion-button:not(.collapsed)::after {
     background-image: url("../img/arrow-down.svg");
   }
+}
+
+.accordion-setup {
+  .accordion-button {
+    @include font(0.87rem, 1.06rem, 400);
+    background-color: rgba($light-green, 0.3);
+    width: 100%;
+    display: block;
+    border-left: 4px solid $light-green;
+    padding: 7px 16px;
+    margin-bottom: 0;
+    font-style: normal;
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.13rem, 1.3rem, 400);
+      padding: 7px 20px;
+    }
+  }
+
+  .accordion-button::after {
+    width: 0;
+    height: 0;
+  }
+
+  .accordion-item {
+    border: none;
+
+    &:first-child {
+      border: none;
+    }
+  }
+
+  .accordion-body {
+    padding-left: 0;
+
+    &::before {
+      top: 36px;
+      left: 7px;
+      height: calc(100% - 64px);
+
+      @include media-breakpoint-up(lg) {
+        height: calc(100% - 52px);
+        background-color: $basic-grey;
+        top: 40px;
+        left: 7px;
+      }
+    }
+  }
+
+  .accordion-sub-item {
+    @include font(1.13rem, 1.3rem, 400);
+    padding-left: 46px;
+    padding: 25px 0 25px 46px;
+
+    &::before {
+      width: 16px;
+      height: 16px;
+      top: 26px;
+      left: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
 }

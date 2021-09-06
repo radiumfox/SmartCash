@@ -1,9 +1,5 @@
-#profile {
+.partner-profile {
   @include font(1.13rem, 1.3rem, 400);
-
-  .form-label {
-    padding-bottom: 10px;
-  }
 
   .form-control {
     @include media-breakpoint-up(lg) {
@@ -11,30 +7,30 @@
       margin-left: 10px;
     }
   }
-}
 
-#schedule .form-time {
-  width: 70px;
-  height: 32px;
-  margin-left: 10px;
-}
-#schedule .form-item {
-  width: 100%;
-
-  &:last-child {
-    max-width: 288px;
+  #schedule .form-time {
+    width: 70px;
+    height: 32px;
+    margin-left: 10px;
   }
-  @include media-breakpoint-up(lg) {
-    width: 374px;
+
+  #schedule .form-item {
+    width: 100%;
+
+    &:last-child {
+      max-width: 288px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 374px;
+    }
   }
-}
 
-#schedule {
-  .button-box {
+  #schedule {
+    .button-box {
 
-    @include media-breakpoint-up(md) {
-      width: 302px;
+      @include media-breakpoint-up(md) {
+        width: 302px;
+      }
     }
   }
 }
-

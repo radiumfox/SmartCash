@@ -1,4 +1,9 @@
-#my-profile {
+#my-profile,
+#about-me,
+#contacts,
+#safety,
+#loyalty-card,
+#client-agreement {
   @include font(1.13rem, 1.3rem, 400);
 
   .form-select-day {
@@ -39,13 +44,16 @@
 
   .form-select {
     padding: 5px 18px 5px 30px;
-    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      padding: 5px 18px;
+    }
   }
 
   .form-control {
     @include media-breakpoint-up(lg) {
       width: 325px;
-      margin-left: 10px;
+      margin-left: 5px;
     }
   }
 
@@ -65,6 +73,29 @@
   .button-box {
     @include media-breakpoint-up(lg) {
       width: 325px;
+    }
+  }
+
+  .note {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+    }
+  }
+}
+
+
+#client-agreement {
+  .features-list {
+    padding-left: 20px;
+  }
+
+  .form-label {
+    @include font(0.87rem, 1.06rem, 400);
+  }
+
+  .button {
+    @include media-breakpoint-up(lg) {
+      width: 300px;
     }
   }
 }

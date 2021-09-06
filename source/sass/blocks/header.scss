@@ -3,11 +3,34 @@
 
   .navbar {
     padding: 11px 0 11px 8px;
+
     max-width: 1200px;
     margin: 0 auto;
 
     @include media-breakpoint-up(lg) {
       padding: 0;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 110px;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      margin: 0;
+    }
+
+  }
+
+  .navbar-collapse.show,
+  .navbar-collapse.collapsing {
+    min-height: 596px;
+
+    @include media-breakpoint-up(lg) {
+      min-height: auto;
     }
   }
 
@@ -23,6 +46,14 @@
   }
 
   .navbar-toggler-icon {
+    background-image: url("../img/cross-white.svg");
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-toggler.collapsed .navbar-toggler-icon {
     background-image: url("../img/navbar-toggler-icon.svg");
     width: 24px;
     height: 24px;
@@ -74,6 +105,7 @@
 
   .nav-item {
     padding: 20px 0;
+    text-align: left;
 
     &:first-child {
       padding-top: 40px;
@@ -81,6 +113,8 @@
 
     @include media-breakpoint-up(lg) {
       padding: 20px 20px;
+
+
       &:first-child {
         padding-top: 20px;
       }
@@ -90,12 +124,14 @@
   .nav-link {
     @include font(0.87rem, 1.06rem, 400);
 
+
     @include media-breakpoint-up(md) {
       @include font(1rem, 1.16rem, 400);
     }
 
     @include media-breakpoint-up(lg) {
       @include font(1.13rem, 1.25rem, 400);
+
     }
   }
 

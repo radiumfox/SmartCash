@@ -26,6 +26,47 @@
   }
 }
 
+.button-white {
+  background-color: $basic-light;
+  border: 1px solid $light-green;
+  color: $light-green;
+
+  @include button-variant(
+    $basic-light,
+    $light-green,
+    $light-green,
+    $light-green,
+    transparent,
+    $basic-light,
+    $light-green,
+    transparent,
+    $basic-light,
+    $basic-light,
+    $light-green,
+    $light-green,
+  );
+}
+
+.button-link {
+  @include font(1rem, 1.19rem, 400);
+  padding: 0;
+
+  @include button-variant(
+  transparent,
+  transparent,
+  $light-green,
+  transparent,
+  transparent,
+  $green-special,
+  transparent,
+  transparent,
+  $green-special,
+  transparent,
+  transparent,
+  $basic-grey,
+  );
+}
+
 #cash,
 #profile {
   .button-box {

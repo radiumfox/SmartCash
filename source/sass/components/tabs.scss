@@ -42,6 +42,7 @@
 
   @include media-breakpoint-up(lg) {
     max-width: 150px;
+    border-bottom: none;
 
     &:first-child {
       border-left: 1px solid $basic-grey;
@@ -120,8 +121,6 @@
       padding: 50px 0;
       border: 1px solid $basic-grey;
     }
-
-
   }
 }
 
@@ -133,7 +132,8 @@
 }
 
 #safety.tab-pane,
-#responsible.tab-pane {
+#responsible.tab-pane,
+#loyalty-card.tab-pane {
   @include media-breakpoint-up(lg) {
     max-width: 492px;
     margin: 0 auto;
@@ -171,7 +171,6 @@
   }
 }
 
-
 // scroll on mobile width
 
 .scrollable {
@@ -180,6 +179,10 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @include media-breakpoint-up(sm) {
+    width: auto;
   }
 
   @include media-breakpoint-up(lg) {

@@ -1,0 +1,101 @@
+.modal-window {
+  .modal-content {
+    border: none;
+  }
+
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    border: none;
+    position: fixed;
+    height: 100%;
+    background-color: $basic-light;
+    z-index: 2;
+
+    @include media-breakpoint-up(md) {
+      min-width: 616px;
+      height: 390px;
+      left: 30%;
+      top: 100px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+  }
+
+  .card-header {
+    position: absolute;
+    top: -36px;
+  }
+
+  .tab-link.nav-link {
+    width: 100%;
+    border: 1px solid $basic-grey;
+    background-color: $basic-grey;
+
+    @include media-breakpoint-up(md) {
+      width: 150px;
+    }
+  }
+
+  .tab-link.nav-link.active {
+    background-color: $basic-light;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+
+  .tab-content {
+    padding: 0 12px;
+    margin-top: 40px;
+
+    @include media-breakpoint-up(md) {
+      padding: 50px;
+    }
+  }
+
+  .tab-content::before {
+    display: none;
+  }
+
+  .tab-card {
+    border: none;
+  }
+
+  .form-item {
+    margin: 0;
+  }
+
+  .form-control {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 245px;
+    }
+  }
+
+  .form-textarea {
+    width: 100%;
+    min-height: 108px;
+  }
+
+  .button {
+    width: 296px;
+
+    @include media-breakpoint-up(md) {
+      width: 145px;
+    }
+  }
+
+  .btn-close {
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    background-image: url("../img/btn-close.svg");
+    background-size: contain;
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+  }
+}

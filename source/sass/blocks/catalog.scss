@@ -1,0 +1,17 @@
+.catalog {
+  .form-select,
+  .form-control {
+    @include font(0.87rem, 1rem, 400);
+    border-radius: 16px;
+    height: 32px;
+    max-width: 325px;
+
+    @include media-breakpoint-up(md) {
+      width: 325px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 285px;
+    }
+  }
+}
