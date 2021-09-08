@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCASH</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page-body">
+
+    <header class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
+            <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-wrap">
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Личный кабинет</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Магазины / партнеры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" data-bs-toggle="collapse" href="#page-footer" data-bs-target="#page-footer" aria-expanded="false">
+                  Подвал
+                </a>
+              </li>
+            </ul>
+
+            <form class="header-form d-none d-lg-flex position-relative">
+              <label class="visually-hidden" for="site-search">Введите запрос</label>
+              <input class="form-control" id="site-search" type="search" name="search" placeholder="Введите запрос" aria-label="Поиск">
+              <span class="header-search-icon"></span>
+            </form>
+            <a class="header-user d-none d-lg-inline" href="#">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Регистрация пользователя</h1>
+      <div class="container me-0 me-lg-auto gx-0 mt-11 mt-sm-6 mb-sm-6">
+        <div class="row gx-0 justify-content-lg-between">
+
+          <div class="col-12 col-lg-5 col-xl-3 order-md-0 d-none d-md-block"> <!-- sign-up menu -->
+            <div class="sign-in-menu">
+              <div class="tab-header tab-header-border ">
+                <ul class="nav nav-tabs d-flex flex-md-column">
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" href="sign-in_sign-up.html">Вход</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link active">Регистрация</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-lg-0 col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0"> <!-- right menu -->
+            <div class="card-header tab-header tab-header-border">
+              <div class="scrollable ps-8 ps-lg-0  overflow-auto">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#about-me">Обо мне</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#contacts">Контакты</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#safety">Безопасность</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#loyalty-card">Карта лояльности</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#client-agreement">Клиентское соглашение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="sign-up-user col-12 col-xl-6 order-xl-1 mt-lg-6 mt-xl-0"> <!-- content -->
+            <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
+
+              <div class="tab-pane fade px-8 px-lg-0 mb-5 mx-auto" id="about-me">
+                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+                  <form method="POST" action="#">
+                    <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="official-name" class="form-label">Фамилия:</label>
+                        <input type="text" class="form-control" id="official-name" name="official-name">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="short-name" class="form-label">Имя:</label>
+                        <input type="text" class="form-control" id="short-name" name="short-name">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="motto" class="form-label">Отчество:</label>
+                        <input type="text" class="form-control" id="motto" name="motto">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">Пол:</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-baseline">
+                        <p class="m-0 mb-2 mb-lg-0">Дата рождения</p>
+                        <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
+                          <label for="birth-date-day" class="form-label visually-hidden">День</label>
+                          <select id="birth-date-day" class="form-select form-select-day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select>
+
+                          <label for="birth-date-month" class="form-label visually-hidden">Месяц</label>
+                          <select id="birth-date-month" class="form-select form-select-month">
+                            <option>Января</option>
+                            <option>Февраля</option>
+                            <option>Марта</option>
+                            <option>Апреля</option>
+                            <option>Мая</option>
+                            <option>Июня</option>
+                            <option>Июля</option>
+                            <option>Августа</option>
+                            <option>Сентября</option>
+                            <option>Октября</option>
+                            <option>Ноября</option>
+                            <option>Декабря</option>
+                          </select>
+
+                          <label for="birth-date-year" class="form-label visually-hidden">Год</label>
+                          <select id="birth-date-year" class="years form-select form-select-year">
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">Серия паспорта:</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">Кем выдан:</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-center">
+                        <p class="m-0 mb-2 mb-lg-0">Когда выдан</p>
+                        <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
+                          <label for="passport-date-day" class="form-label visually-hidden">День</label>
+                          <select id="passport-date-day" class="form-select form-select-day">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                          </select>
+
+                          <label for="passport-date-month" class="form-label visually-hidden">Месяц</label>
+                          <select id="passport-date-month" class="form-select form-select-month">
+                            <option>Января</option>
+                            <option>Февраля</option>
+                            <option>Марта</option>
+                            <option>Апреля</option>
+                            <option>Мая</option>
+                            <option>Июня</option>
+                            <option>Июля</option>
+                            <option>Августа</option>
+                            <option>Сентября</option>
+                            <option>Октября</option>
+                            <option>Ноября</option>
+                            <option>Декабря</option>
+                          </select>
+
+                          <label for="passport-date-year" class="form-label visually-hidden">Год</label>
+                          <select id="passport-date-year" class="years form-select form-select-year">
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="button-box mb-9 ms-lg-auto">
+                        <a class="button border-0" href="#">Далее</a>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
+                <div class="pt-4 pt-lg-0 mx-auto">
+                  <form method="POST" action="#">
+                    <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="country" class="form-label">Страна:</label>
+                        <input type="text" class="form-control ms-md-2" id="country" name="country">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="region" class="form-label">Регион / город:</label>
+                        <input type="text" class="form-control ms-md-2" id="region-city" name="region-city">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="street-home" class="form-label">Улица, дом:</label>
+                        <input type="text" class="form-control ms-md-2" id="street-home" name="street-home">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="phone-number" class="form-label">Номер телефона:</label>
+                        <input type="text" class="form-control ms-md-2" id="phone-number" name="phone-number">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="whatsapp" class="form-label">WhatsApp:</label>
+                        <input type="text" class="form-control ms-md-2" id="whatsapp" name="whatsapp">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="text" class="form-control ms-md-2" id="email" name="email">
+                      </div>
+
+                      <div class="button-box mb-9 ms-lg-auto">
+                        <a class="button border-0" href="#">Далее</a>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="safety">
+                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                  <form method="POST" action="#">
+                    <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="login" class="form-label">Логин:</label>
+                        <input type="text" class="form-control" id="login" name="login">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="new-password" class="form-label">Новый пароль:</label>
+                        <input type="text" class="form-control" id="new-password" name="new-password">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="repeat-password" class="form-label">Повторить пароль:</label>
+                        <input type="text" class="form-control" id="repeat-password" name="repeat-password">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="manager-number" class="form-label">Номер менеджера:</label>
+                        <input type="text" class="form-control" id="manager-number" name="manager-number">
+                      </div>
+                      <p class="note fs-8 mb-11 ms-lg-auto">Если у Вас нет регистрационного номера менеджера, укажите номер 1234567 </p>
+
+                      <div class="button-box mb-9 ms-lg-auto">
+                        <a class="button border-0" data-bs-toggle="tab" href="#">Далее</a>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0  mb-5" id="loyalty-card">
+                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                  <div class="form-item d-lg-flex justify-content-end">
+                    <label for="user-card" class="form-label">Карта:</label>
+                    <input type="text" class="form-control ms-md-2" id="user-card" name="user-card">
+                  </div>
+
+                  <div class="form-item d-lg-flex justify-content-end">
+                    <label for="user-card-number" class="form-label">Номер карты:</label>
+                    <input type="text" class="form-control ms-md-2" id="user-card-number" name="user-card-number" placeholder="9545 - 34ХХ - ХХХХ - ХХХХ">
+                  </div>
+
+                  <div class="button-box mb-9 ms-lg-auto">
+                    <a class="button border-0" href="#">Далее</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0  show active mb-5" id="client-agreement">
+                <div class="col-12 pt-4 mx-lg-0 d-lg-flex flex-column align-items-center">
+                  <form method="POST" action="#">
+                    <div class="form-item d-flex justify-content-start">
+                      <input type="checkbox" class="btn-check" id="no-break">
+                      <label for="no-break" class="form-label form-label-radio">Я согласен с условиями клиентского соглашения</label>
+                    </div>
+                    <div class="form-item d-flex justify-content-start">
+                      <input type="checkbox" class="btn-check" id="no-break">
+                      <label for="no-break" class="form-label form-label-radio">Стать менеджером SMARTCASH</label>
+                    </div>
+                    <ul class="fs-8 features-list">
+                      <li>Постоянный доход от покупки Ваших рефералов - 1 %</li>
+                      <li>Единоразовая выплата за подключение Партнеров - 2 $</li>
+                      <li>Единоразовая выплата за Премиум статус  - 1 $</li>
+                      <li>Единаразовая выплата за VIP статус - 2 $</li>
+                    </ul>
+                    <p class="fs-8 text-center text-lg-start">Контакты для добавления в группу менеджеров</p>
+                    <div class="form-item d-lg-flex align-items-center justify-content-lg-end">
+                      <label for="whatsapp" class="form-label fs-7">WhatsApp</label>
+                      <input type="text" class="form-control" id="whatsapp" name="whatsapp">
+                    </div>
+                    <div class="form-item d-lg-flex align-items-center justify-content-lg-end">
+                      <label for="telegram" class="form-label fs-7">Telegram</label>
+                      <input type="text" class="form-control" id="telegram" name="telegram">
+                    </div>
+
+                    <div class="button-box mb-9 me-lg-auto ms-lg-12">
+                      <a class="button button-finish border-0" href="#">Завершить регистрацию</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer collapse" id="page-footer">
+      <div class="container navbar-dark d-md-flex text-center text-md-start">
+        <ul class="page-footer-nav navbar-nav">
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Партнерам</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Участникам</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Карты лояльности</a>
+          </li>
+        </ul>
+
+        <ul class="page-footer-nav navbar-nav">
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Вопросы и ответы</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Клиент.соглашение</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Политика конф.</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCASH</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body class="page-body">
+
+    <header class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
+            <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-wrap">
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Личный кабинет</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Магазины / партнеры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" data-bs-toggle="collapse" href="#page-footer" data-bs-target="#page-footer" aria-expanded="false">
+                  Подвал
+                </a>
+              </li>
+            </ul>
+
+            <form class="header-form d-none d-lg-flex position-relative">
+              <label class="visually-hidden" for="site-search">Введите запрос</label>
+              <input class="form-control" id="site-search" type="search" name="search" placeholder="Введите запрос" aria-label="Поиск">
+              <span class="header-search-icon"></span>
+            </form>
+            <a class="header-user d-none d-lg-inline" href="#">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use xlink:href="img/sprite.svg#user-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Регистрация партнера</h1>
+      <div class="container me-0 me-lg-auto gx-0 mt-sm-6 mb-sm-6">
+        <div class="row gx-0 justify-content-lg-between">
+
+          <div class="col-12 col-lg-5 col-xl-3 order-md-0 d-none d-md-block"> <!-- sign-up menu -->
+            <div class="sign-in-menu">
+              <div class="tab-header tab-header-border ">
+                <ul class="nav nav-tabs d-flex flex-md-column">
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" href="sign-in_sign-up.html">Вход</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link active">Регистрация</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="ps-lg-0 col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0"> <!-- right menu -->
+            <div class="card-header tab-header tab-header-border">
+              <div class="scrollable ps-8 ps-lg-0 overflow-auto">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#about-us">О нас</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#contacts">Контакты</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#safety">Безопасность</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#schedule">График</a>
+                  </li>
+                  <li class="tab-item tab-item-large nav-item">
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#client-agreement">Клиентское соглашение</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="sign-up-partner col-12 col-xl-6 order-xl-1 mt-lg-6 mt-xl-0"> <!-- content -->
+            <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
+              <div class="tab-pane fade show active px-8 px-lg-0 mb-5 mx-auto" id="about-us">
+                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+                  <form class="sign-up-partner" method="POST" action="#">
+                    <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="official-name" class="form-label">Юридическое название</label>
+                        <input type="text" class="form-control" id="official-name" name="official-name">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="short-name" class="form-label">Сокращенное название</label>
+                        <input type="text" class="form-control" id="short-name" name="short-name">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="motto" class="form-label">Слоган компании</label>
+                        <input type="text" class="form-control" id="motto" name="motto">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="tin" class="form-label">ИИН</label>
+                        <input type="text" class="form-control" id="tin" name="tin">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="description" class="form-label">Описание</label>
+                        <textarea class="form-control form-textarea" id="description" name="description"></textarea>
+                      </div>
+
+                      <div class="d-lg-flex justify-content-end">
+                        <p class="mb-2 px-lg-0">Добавить фото:</p>
+                        <div class="form-upload ms-lg-2">
+                          <label class="form-label" for="add-img">Добавить изображение</label>
+                          <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
+                        </div>
+                      </div>
+
+                      <div class="button-box mb-9 mt-12 ms-lg-auto ">
+                        <button class="button border-0" data-bs-toggle="tab" type="submit">Далее</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
+                <div class="pt-4 pt-lg-0 mx-auto">
+                  <form class="sign-up-partner" method="POST" action="#">
+                    <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="country" class="form-label">Страна:</label>
+                        <input type="text" class="form-control" id="country" name="country">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="region" class="form-label">Регион / город:</label>
+                        <input type="text" class="form-control" id="region-city" name="region-city">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="street-home" class="form-label">Улица, дом:</label>
+                        <input type="text" class="form-control" id="street-home" name="street-home">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="phone-number" class="form-label">Номер телефона:</label>
+                        <input type="text" class="form-control" id="phone-number" name="phone-number">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="whatsapp" class="form-label">WhatsApp:</label>
+                        <input type="text" class="form-control" id="whatsapp" name="whatsapp">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="text" class="form-control" id="email" name="email">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="instagram" class="form-label">Инстаграм:</label>
+                        <input type="text" class="form-control" id="instagram" name="instagram">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="facebook" class="form-label">Фейсбук:</label>
+                        <input type="text" class="form-control" id="facebook" name="facebook">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="vkontakte" class="form-label">Вконтакте:</label>
+                        <input type="text" class="form-control" id="vkontakte" name="vkontakte">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="odnoklassniki" class="form-label">Одноклассники:</label>
+                        <input type="text" class="form-control" id="odnoklassniki" name="odnoklassniki">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="telegram" class="form-label">Телеграм:</label>
+                        <input type="text" class="form-control" id="telegram" name="telegram">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end">
+                        <label for="website" class="form-label">Веб-сайт:</label>
+                        <input type="text" class="form-control" id="website" name="website">
+                      </div>
+
+                      <div class="button-box mb-9 ms-lg-auto">
+                        <button class="button border-0" data-bs-toggle="tab" type="submit">Далее</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="safety">
+                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                  <form class="sign-up-partner" method="POST" action="#">
+                    <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="login" class="form-label">Логин:</label>
+                        <input type="text" class="form-control" id="login" name="login">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="new-password" class="form-label">Пароль:</label>
+                        <input type="text" class="form-control" id="new-password" name="new-password">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                        <label for="repeat-password" class="form-label">Повторить пароль:</label>
+                        <input type="text" class="form-control" id="repeat-password" name="repeat-password">
+                      </div>
+
+                      <div class="form-item d-lg-flex justify-content-end align-items-center pb-2">
+                        <label for="manager-number" class="form-label">Номер менеджера:</label>
+                        <input type="text" class="form-control" id="manager-number" name="manager-number">
+                      </div>
+                      <p class="note fs-8 mb-11 ms-lg-auto">Если у Вас нет регистрационного номера менеджера, укажите номер 1234567 </p>
+
+                      <div class="button-box mb-9 ms-lg-auto">
+                        <button class="button border-0" data-bs-toggle="tab" type="submit">Далее</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="tab-pane fade tab-pane fade mb-5" id="schedule">
+                <div class="col-12 pt-4 pt-lg-0 mx-auto px-8 px-lg-0">
+                  <form method="POST" action="#">
+                    <div class="form-item d-flex justify-content-between align-items-baseline">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="monday" name="schedule" value="monday" checked>
+                        <label class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center" for="monday">Пн</label>
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="mon-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="mon-from">
+                      </div>
+                      <div class="d-flex align-items-baseline ms-lg-10">
+                        <label for="mon-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="mon-to">
+                      </div>
+                    </div>
+
+                    <div class="form-item d-flex justify-content-between align-items-baseline">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="tuesday" name="schedule" value="tuesday">
+                        <label for="tuesday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Вт</label>
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="tue-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="tue-from">
+                      </div>
+                      <div class="d-flex align-items-baseline ms-lg-10">
+                        <label for="tue-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="tue-to">
+                      </div>
+                    </div>
+
+                    <div class="form-item d-flex justify-content-between align-items-baseline">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="wednesday" name="schedule" value="wednesday">
+                        <label for="wednesday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Ср</label>
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="wed-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="wed-from">
+                      </div>
+                      <div class="d-flex align-items-baseline ms-lg-10">
+                        <label for="wed-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="wed-to">
+                      </div>
+                    </div>
+
+                    <div class="form-item d-flex justify-content-between align-items-baseline">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="thursday" name="schedule" value="thursday">
+                        <label for="thursday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Чт</label>
+                      </div>
+                      <div class="d-flex align-items-baseliner">
+                        <label for="thu-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="thu-from">
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="thu-to" class="form-label ms-lg-10"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="thu-to">
+                      </div>
+                    </div>
+
+                    <div class="form-item d-flex justify-content-between align-items-baseline">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="friday" name="schedule" value="friday">
+                        <label for="friday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Пт</label>
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="fri-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="fri-from">
+                      </div>
+                      <div class="d-flex align-items-baseline ms-lg-10">
+                        <label for="fri-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="fri-to">
+                      </div>
+                    </div>
+
+                    <div class="form-item d-flex justify-content-between align-items-baseline">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="saturday" name="schedule" value="saturday">
+                        <label for="saturday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Сб</label>
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="sat-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="sat-from">
+                      </div>
+                      <div class="d-flex align-items-baseline ms-lg-10">
+                        <label for="sat-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="sat-to">
+                      </div>
+                    </div>
+
+                    <div class="form-item d-flex justify-content-between align-items-baseline pb-0 mb-12">
+                      <div class="d-flex align-items-center">
+                        <input type="checkbox" class="btn-check" id="sunday" name="schedule" value="sunday">
+                        <label for="sunday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Вс</label>
+                      </div>
+                      <div class="d-flex align-items-baseline">
+                        <label for="sun-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                        <input type="text" class="form-control form-time" id="sun-from">
+                      </div>
+                      <div class="d-flex align-items-baseline ms-lg-10">
+                        <label for="sun-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                        <input type="text" class="form-control form-time" id="sun-to">
+                      </div>
+                    </div>
+
+                    <div class="lunch-break mb-11">
+                      <p class="m-0 mb-10">Обеденный перерыв</p>
+                      <div class="form-item d-flex justify-content-end align-items-center ms-lg-auto ">
+                        <div class="d-flex align-items-center">
+                          <label for="break-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
+                          <input type="text" class="form-control form-time" id="break-from">
+                        </div>
+                        <div class="d-flex align-items-center ms-10">
+                          <label for="break-to" class="form-label"><span class="d-lg-none">До:</span><span class="d-none d-lg-inline">Конец:</span></label>
+                          <input type="text" class="form-control form-time" id="break-to">
+                        </div>
+                      </div>
+                      <div class="button-box button-box-check d-flex justify-content-start ms-auto">
+                        <input type="checkbox" class="btn-check" id="no-break" checked>
+                        <label for="no-break" class="form-label form-label-radio">Без перерыва</label>
+                      </div>
+                    </div>
+
+                    <div class="button-box ms-lg-auto">
+                      <button class="button border-0" type="button">Сохранить</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="client-agreement">
+                <div class="col-12 pt-4 mx-lg-0 d-lg-flex flex-column align-items-center">
+                  <form method="POST" action="#">
+                    <div class="form-item d-flex justify-content-start">
+                      <input type="checkbox" class="btn-check" id="agreement" name="agreement">
+                      <label for="agreement" class="form-label form-label-radio">Я согласен с условиями клиентского соглашения</label>
+                    </div>
+
+                    <div class="button-box mb-9 ms-lg-auto">
+                      <button class="button button-finish border-0" type="submit">Завершить регистрацию</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer collapse" id="page-footer">
+      <div class="container navbar-dark d-md-flex text-center text-md-start">
+        <ul class="page-footer-nav navbar-nav">
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Партнерам</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Участникам</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Карты лояльности</a>
+          </li>
+        </ul>
+
+        <ul class="page-footer-nav navbar-nav">
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Вопросы и ответы</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Клиент.соглашение</a>
+          </li>
+          <li class="navbar-item">
+            <a class="page-footer-link nav-link" href="#">Политика конф.</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
