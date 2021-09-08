@@ -1,42 +1,70 @@
-.form-custom {
-  border: 1px solid $basic-grey;
-  border-radius: 5px;
-  text-align: center;
+.my-balance,
+.my-card {
+  @include font(1.13rem, 1.3rem, 400);
+}
 
-  .form-control {
-    width: 256px;
-    margin: 0 auto;
+.my-card {
+  .client-info-list {
+    @include font(0.87rem, 1.06rem, 400);
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.13rem, 1.3rem, 400);
+    }
   }
+
+
+  .card-discount.current {
+    width: 296px;
+    height: 185px;
+
+    @include media-breakpoint-up(lg) {
+      width: 400px;
+      height: 250px;
+    }
+  }
+
   .button {
-    width: 256px;
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
   }
+
+  .card-discount-summ {
+    @include font(0.87rem, 1.06rem, 400);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .button-box {
+    max-width: 230px;
+  }
+
+  @include media-breakpoint-up(md) {
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+    padding: 40px;
+    height: 100%;
+  }
+}
+
+.loyalty-cards {
+  @include media-breakpoint-up(lg) {
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+    padding: 40px;
+    height: 100%;
+    min-height: 450px;
+  }
+}
+
+.loyalty-card-img {
+  background-color: $basic-grey;
+  width: 296px;
+  height: 160px;
 
   @include media-breakpoint-up(lg) {
-    max-width: 285px;
-  }
-}
-
-.form-custom-wrapper {
-  padding: 0 20px 30px;
-}
-
-.form-custom-header {
-  @include font(1.13rem, 1.3rem, 400);
-  color: $basic-light;
-  background-color: $light-green;
-  padding: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-#my-balance {
-  .table-custom {
-    @include media-breakpoint-up(lg) {
-      width: fit-content;
-    }
-
-    @include media-breakpoint-up(xxl) {
-      width: 895px;
-    }
+    width: 200px;
+    height: 110px;
   }
 }

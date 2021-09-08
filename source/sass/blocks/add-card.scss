@@ -1,59 +1,17 @@
 .add-card {
-  @include font(1.13rem, 1.3rem, 400);
+  .title,
+  .form-label {
+    @include font(1.13rem, 1.3rem, 400);
 
-  .title {
+
+  }
+
+  .form-control-percent {
     width: 296px;
 
-    @include media-breakpoint-up(md) {
-      width: max-content;
-    }
-  }
-
-  .form-control {
-    @include media-breakpoint-up(md) {
-      width: 325px;
-    }
-  }
-
-  .form-item {
     @include media-breakpoint-up(lg) {
-      margin: 0;
-      width: auto;
-    }
-  }
-
-  .form-item-percent {
-    .form-control {
-      &::placeholder {
-        color: transparent;
-      }
-
-      @include media-breakpoint-up(lg) {
-        width: 100px;
-
-        &::placeholder {
-          text-align: center;
-          color: $basic-dark-2;
-        }
-      }
+      width: 100px;
     }
 
-    .form-label {
-      @include media-breakpoint-up(lg) {
-        @include font(0.87rem, 1.06rem, 400);
-      }
-    }
-  }
-
-  .form-upload {
-    width: 285px;
-
-    @include media-breakpoint-up(lg) {
-      margin-top: 0;
-    }
-  }
-
-  .button {
-    width: 200px;
   }
 }

@@ -2,13 +2,16 @@
   border-radius: 5px;
   border: 1px solid $basic-grey;
   overflow: hidden;
-  width: 890px;
+  width: 895px;
+}
+
+.scrollable-content-table {
+  min-width: 895px;
 }
 
 .table-custom {
   min-height: 690px;
   margin-bottom: 0;
-
 
   .theader {
     background-color: $light-green;
@@ -19,7 +22,7 @@
   td {
     @include font(1.13rem, 1.3rem, 400);
     border: none;
-    min-width: 150px;
+    width: 150px;
     vertical-align: middle;
     padding: 15px 0;
     text-align: center;

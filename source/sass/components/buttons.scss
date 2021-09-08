@@ -93,19 +93,38 @@
   }
 }
 
-.card-green .button {
+.button-refill {
   border-radius: 0;
   padding: 6px;
+  border-bottom-left-radius: 5px;
+  background-color: $basic-light;
+  color: $basic-dark-2;
+  width: 142px;
 
-  &.button-refill {
-    border-bottom-left-radius: 5px;
-    background-color: $basic-light;
+  &:hover {
+    background-color: rgba($basic-dark, 0.1);
     color: $basic-dark-2;
   }
+}
 
-  &.button-show {
-    background-color: $basic-dark;
-    border-bottom-right-radius: 5px;
+.button-show {
+  border-radius: 0;
+  padding: 6px;
+  background-color: $basic-dark;
+  border-bottom-right-radius: 5px;
+  width: 142px;
+
+  &:hover {
+    background-color: $basic-dark-2;
   }
+}
 
+.button-show-admin {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 296px;
+
+  @include media-breakpoint-up(lg) {
+    width: 285px;
+  }
 }

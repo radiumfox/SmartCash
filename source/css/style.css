@@ -13714,348 +13714,218 @@ textarea.form-control-lg {
   border-radius: 50px;
 }
 
-#coupons {
+.page {
+  height: 100%;
+}
+
+.cash,
+.gifts,
+.coupons,
+.cashback,
+.discount {
   font-size: 1.13rem;
   line-height: 1.3rem;
   font-weight: 400;
 }
-#coupons .form-item {
-  width: 100%;
-  margin: 0 auto;
+.cash .form-control,
+.cash .form-select,
+.gifts .form-control,
+.gifts .form-select,
+.coupons .form-control,
+.coupons .form-select,
+.cashback .form-control,
+.cashback .form-select,
+.discount .form-control,
+.discount .form-select {
+  width: 296px;
 }
 @media (min-width: 992px) {
-  #coupons .form-item {
+  .cash .form-control,
+.cash .form-select,
+.gifts .form-control,
+.gifts .form-select,
+.coupons .form-control,
+.coupons .form-select,
+.cashback .form-control,
+.cashback .form-select,
+.discount .form-control,
+.discount .form-select {
     width: 285px;
     margin: 0;
   }
 }
-#coupons .form-select-day {
-  width: 71px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
 @media (min-width: 992px) {
-  #coupons .form-select-day {
-    width: 75px;
-    background-image: url("../img/select-indicator.svg");
+  .cash .form-control-large,
+.gifts .form-control-large,
+.coupons .form-control-large,
+.cashback .form-control-large,
+.discount .form-control-large {
+    width: 100%;
+    max-width: 590px;
   }
 }
-#coupons .form-select-month {
-  width: 120px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #coupons .form-select-month {
-    width: 135px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#coupons .form-select-year {
-  width: 85px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #coupons .form-select-year {
-    width: 95px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#coupons .form-textarea {
+.cash .form-textarea,
+.gifts .form-textarea,
+.coupons .form-textarea,
+.cashback .form-textarea,
+.discount .form-textarea {
   height: 108px;
 }
 @media (min-width: 992px) {
-  #coupons .form-control-large {
-    width: 590px;
-  }
-}
-@media (min-width: 992px) {
-  #coupons .form-item-date {
-    width: 325px;
-  }
-}
-@media (min-width: 768px) {
-  #coupons .button-box {
-    width: 590px;
-  }
-}
-
-.coupons-amount .button-box {
-  margin-top: 10px;
-}
-
-#gifts {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-#gifts .form-item {
-  width: 100%;
-  margin: 0 auto;
-}
-@media (min-width: 992px) {
-  #gifts .form-item {
-    width: 285px;
-    margin: 0;
-  }
-}
-#gifts .form-select-day {
-  width: 71px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #gifts .form-select-day {
-    width: 75px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#gifts .form-select-month {
-  width: 120px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #gifts .form-select-month {
-    width: 135px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#gifts .form-select-year {
-  width: 85px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #gifts .form-select-year {
-    width: 95px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#gifts .form-textarea {
-  height: 108px;
-}
-@media (min-width: 992px) {
-  #gifts .form-textarea {
-    width: 590px;
+  .cash .form-textarea,
+.gifts .form-textarea,
+.coupons .form-textarea,
+.cashback .form-textarea,
+.discount .form-textarea {
+    width: 100%;
+    max-width: 590px;
     height: 285px;
   }
 }
-#gifts .form-upload {
+.cash .form-select-day,
+.gifts .form-select-day,
+.coupons .form-select-day,
+.cashback .form-select-day,
+.discount .form-select-day {
+  width: 71px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  .cash .form-select-day,
+.gifts .form-select-day,
+.coupons .form-select-day,
+.cashback .form-select-day,
+.discount .form-select-day {
+    width: 75px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+.cash .form-select-month,
+.gifts .form-select-month,
+.coupons .form-select-month,
+.cashback .form-select-month,
+.discount .form-select-month {
+  width: 120px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  .cash .form-select-month,
+.gifts .form-select-month,
+.coupons .form-select-month,
+.cashback .form-select-month,
+.discount .form-select-month {
+    width: 135px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+.cash .form-select-year,
+.gifts .form-select-year,
+.coupons .form-select-year,
+.cashback .form-select-year,
+.discount .form-select-year {
+  width: 85px;
+  height: 32px;
+  background-image: none;
+  padding-top: 4px;
+}
+@media (min-width: 992px) {
+  .cash .form-select-year,
+.gifts .form-select-year,
+.coupons .form-select-year,
+.cashback .form-select-year,
+.discount .form-select-year {
+    width: 95px;
+    background-image: url("../img/select-indicator.svg");
+  }
+}
+@media (min-width: 992px) {
+  .cash .form-item-date,
+.gifts .form-item-date,
+.coupons .form-item-date,
+.cashback .form-item-date,
+.discount .form-item-date {
+    width: 325px;
+  }
+}
+.cash .form-upload,
+.gifts .form-upload,
+.coupons .form-upload,
+.cashback .form-upload,
+.discount .form-upload {
   height: 296px;
 }
 @media (min-width: 992px) {
-  #gifts .form-upload {
+  .cash .form-upload,
+.gifts .form-upload,
+.coupons .form-upload,
+.cashback .form-upload,
+.discount .form-upload {
     width: 285px;
     height: 285px;
     margin: 0;
-    margin-left: 20px;
-  }
-}
-@media (min-width: 992px) {
-  #gifts .form-control-large {
-    width: 590px;
-  }
-}
-@media (min-width: 992px) {
-  #gifts .form-item-date {
-    width: 325px;
-  }
-}
-@media (min-width: 768px) {
-  #gifts .button-box {
-    width: 590px;
   }
 }
 
-#add-discount {
+.client-info {
   font-size: 1.13rem;
   line-height: 1.3rem;
   font-weight: 400;
-}
-#add-discount .form-item-select {
-  width: 285px;
-  margin: 0 auto;
-}
-#add-discount .form-item {
-  width: 285px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-item-date {
-    width: 325px;
-  }
-}
-#add-discount .form-control-percent {
-  width: 266px;
-  text-align: center;
-  height: 32px;
-}
-#add-discount .form-control-percent::placeholder {
-  text-align: center;
-}
-@media (min-width: 992px) {
-  #add-discount .form-control-percent {
-    width: 100px;
-    margin-left: calc(50% - 76px);
-  }
-}
-#add-discount .form-textarea {
-  height: 108px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-textarea {
-    min-height: 150px;
-  }
-}
-@media (min-width: 1200px) {
-  #add-discount {
-    width: 895px;
-  }
-}
-#add-discount .form-select-day {
-  width: 71px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-select-day {
-    width: 75px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#add-discount .form-select-month {
-  width: 120px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-select-month {
-    width: 135px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#add-discount .form-select-year {
-  width: 85px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #add-discount .form-select-year {
-    width: 95px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#add-discount .card-discount {
-  width: 266px;
-  height: 140px;
-}
-#add-discount .card-discount .form-label-radio {
-  padding-left: 0;
-}
-@media (min-width: 992px) {
-  #add-discount .card-discount {
-    width: 254px;
-  }
-}
-
-#add-cashback .form-control-percent {
-  width: 100px;
-}
-#add-cashback .form-select-day {
-  width: 71px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-  padding: 5px 18px 5px 30px;
-}
-@media (min-width: 768px) {
-  #add-cashback .form-select-day {
-    padding: 5px 18px;
-  }
-}
-@media (min-width: 992px) {
-  #add-cashback .form-select-day {
-    width: 75px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#add-cashback .form-select-month {
-  width: 120px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-  padding: 5px 18px 5px 30px;
-}
-@media (min-width: 768px) {
-  #add-cashback .form-select-month {
-    padding: 5px 18px;
-  }
-}
-@media (min-width: 992px) {
-  #add-cashback .form-select-month {
-    width: 135px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#add-cashback .form-select-year {
-  width: 85px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-  padding: 5px 18px 5px 30px;
-}
-@media (min-width: 768px) {
-  #add-cashback .form-select-year {
-    padding: 5px 18px;
-  }
-}
-@media (min-width: 992px) {
-  #add-cashback .form-select-year {
-    width: 95px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#add-cashback .form-textarea {
-  height: 150px;
-}
-
-#clients .card-green {
-  color: #ffffff;
+  border: 1px solid #e0e0e0;
   border-radius: 5px;
-  background-color: #58AE6B;
-  width: 296px;
-  height: 130px;
-  padding-top: 25px;
 }
-#clients .card-green .info {
-  font-size: 0.87rem;
-  line-height: 1.06rem;
-  font-weight: 400;
-}
-#clients .card-green .info .info-summ {
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  font-weight: 400;
+.client-info .button {
+  width: 256px;
 }
 @media (min-width: 992px) {
-  #clients .card-green {
+  .client-info {
+    width: 100%;
+  }
+  .client-info .button {
     width: 285px;
   }
 }
-#clients .output {
+
+.coupons .form-textarea,
+.cashback .form-textarea,
+.discount .form-textarea {
+  width: 100%;
+  max-width: 895px;
+}
+@media (min-width: 992px) {
+  .coupons .form-textarea,
+.cashback .form-textarea,
+.discount .form-textarea {
+    max-width: 100%;
+    height: 150px;
+  }
+}
+
+.cashback .form-control-percent,
+.discount .form-control-percent {
+  width: 100px;
+  text-align: center;
+}
+
+.discount .discount-item {
+  max-width: 296px;
+}
+
+.clients,
+.my-discounts,
+.my-cashback,
+.my-coupons {
   font-size: 1.13rem;
   line-height: 1.3rem;
   font-weight: 400;
+}
+.clients .output,
+.my-discounts .output,
+.my-cashback .output,
+.my-coupons .output {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   height: 60px;
@@ -14063,105 +13933,196 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-.cash .form-item {
+.balance .card-green {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.my-referrals .table-container {
+  width: 438px;
+}
+.my-referrals td {
+  min-width: max-content;
+}
+@media (min-width: 992px) {
+  .my-referrals .table.table-custom {
+    max-width: 438px;
+  }
+}
+
+.partner-profile,
+.my-profile,
+.sign-up-user,
+.sign-up-partner {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+.partner-profile .tab-pane,
+.my-profile .tab-pane,
+.sign-up-user .tab-pane,
+.sign-up-partner .tab-pane {
+  margin: 0 auto;
+}
+.partner-profile .form-control,
+.my-profile .form-control,
+.sign-up-user .form-control,
+.sign-up-partner .form-control {
   width: 296px;
 }
 @media (min-width: 992px) {
-  .cash .form-item {
-    width: 285px;
-  }
-  .cash .form-item:first-child {
-    width: 100%;
-  }
-}
-
-.client-info {
-  border-top: 1px solid #e0e0e0;
-  border-bottom: 1px solid #e0e0e0;
-}
-.client-info .button {
-  width: 256px;
-}
-@media (min-width: 992px) {
-  .client-info {
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-  }
-  .client-info .button {
-    width: 285px;
-  }
-}
-
-.client-info-list {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-
-.partner-profile {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-@media (min-width: 768px) {
-  .partner-profile .button-box {
-    width: 325px;
-  }
-}
-.partner-profile .form-item {
-  max-width: 325px;
-}
-@media (min-width: 992px) {
-  .partner-profile .form-item {
-    width: max-content;
-    max-width: max-content;
-    margin: 0;
-  }
-}
-@media (min-width: 992px) {
-  .partner-profile .form-control {
+  .partner-profile .form-control,
+.my-profile .form-control,
+.sign-up-user .form-control,
+.sign-up-partner .form-control {
     width: 325px;
     margin-left: 10px;
   }
 }
-.partner-profile #schedule .form-time {
-  width: 70px;
-  height: 32px;
-  margin-left: 10px;
-}
-.partner-profile #schedule .form-item {
-  width: 100%;
-}
-.partner-profile #schedule .form-item:last-child {
-  max-width: 288px;
+.partner-profile .form-textarea,
+.my-profile .form-textarea,
+.sign-up-user .form-textarea,
+.sign-up-partner .form-textarea {
+  max-width: 590px;
+  height: 120px;
 }
 @media (min-width: 992px) {
-  .partner-profile #schedule .form-item {
-    max-width: 425px;
+  .partner-profile .form-textarea,
+.my-profile .form-textarea,
+.sign-up-user .form-textarea,
+.sign-up-partner .form-textarea {
+    height: 240px;
   }
 }
-@media (min-width: 768px) {
-  .partner-profile #schedule .button {
+@media (min-width: 992px) {
+  .partner-profile .button,
+.my-profile .button,
+.sign-up-user .button,
+.sign-up-partner .button {
     width: 200px;
   }
 }
-@media (min-width: 768px) {
-  .partner-profile #schedule .button-box {
-    width: 302px;
+@media (min-width: 992px) {
+  .partner-profile .button-finish,
+.my-profile .button-finish,
+.sign-up-user .button-finish,
+.sign-up-partner .button-finish {
+    width: 300px;
   }
 }
-@media (min-width: 768px) {
-  .partner-profile #schedule {
-    width: 374px;
-    margin: 0 auto;
+@media (min-width: 992px) {
+  .partner-profile .button-box,
+.my-profile .button-box,
+.sign-up-user .button-box,
+.sign-up-partner .button-box {
+    max-width: 325px;
+  }
+}
+.partner-profile .button-box-check,
+.my-profile .button-box-check,
+.sign-up-user .button-box-check,
+.sign-up-partner .button-box-check {
+  max-width: 226px;
+}
+@media (min-width: 992px) {
+  .partner-profile .button-box-check,
+.my-profile .button-box-check,
+.sign-up-user .button-box-check,
+.sign-up-partner .button-box-check {
+    max-width: 302px;
+  }
+}
+.partner-profile .form-time,
+.my-profile .form-time,
+.sign-up-user .form-time,
+.sign-up-partner .form-time {
+  width: 70px;
+}
+.partner-profile .lunch-break,
+.my-profile .lunch-break,
+.sign-up-user .lunch-break,
+.sign-up-partner .lunch-break {
+  max-width: 374px;
+}
+.partner-profile #responsible .form-upload,
+.partner-profile #about-us .form-upload,
+.my-profile #responsible .form-upload,
+.my-profile #about-us .form-upload,
+.sign-up-user #responsible .form-upload,
+.sign-up-user #about-us .form-upload,
+.sign-up-partner #responsible .form-upload,
+.sign-up-partner #about-us .form-upload {
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .partner-profile #responsible .form-upload .form-label,
+.partner-profile #about-us .form-upload .form-label,
+.my-profile #responsible .form-upload .form-label,
+.my-profile #about-us .form-upload .form-label,
+.sign-up-user #responsible .form-upload .form-label,
+.sign-up-user #about-us .form-upload .form-label,
+.sign-up-partner #responsible .form-upload .form-label,
+.sign-up-partner #about-us .form-upload .form-label {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 992px) {
+  .partner-profile #responsible .form-upload,
+.partner-profile #about-us .form-upload,
+.my-profile #responsible .form-upload,
+.my-profile #about-us .form-upload,
+.sign-up-user #responsible .form-upload,
+.sign-up-user #about-us .form-upload,
+.sign-up-partner #responsible .form-upload,
+.sign-up-partner #about-us .form-upload {
+    width: 285px;
+    height: 285px;
+    margin-right: 40px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .partner-profile .form-date-group,
+.my-profile .form-date-group,
+.sign-up-user .form-date-group,
+.sign-up-partner .form-date-group {
+    width: 325px;
+    margin-left: 10px;
+  }
+}
+.partner-profile .note,
+.my-profile .note,
+.sign-up-user .note,
+.sign-up-partner .note {
+  max-width: 325px;
+}
+.partner-profile .features-list,
+.my-profile .features-list,
+.sign-up-user .features-list,
+.sign-up-partner .features-list {
+  color: #4F4F4F;
+}
+
+.sign-up-user {
+  font-size: 0.87rem;
+  line-height: 1.18rem;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .sign-up-user {
+    font-size: 1.13rem;
+    line-height: 1.3rem;
+    font-weight: 400;
   }
 }
 
-.my-card .my-card-title {
+.my-balance,
+.my-card {
   font-size: 1.13rem;
   line-height: 1.3rem;
   font-weight: 400;
 }
+
 .my-card .client-info-list {
   font-size: 0.87rem;
   line-height: 1.06rem;
@@ -14174,34 +14135,22 @@ textarea.form-control-lg {
     font-weight: 400;
   }
 }
-.my-card .card-discount {
+.my-card .card-discount.current {
   width: 296px;
   height: 185px;
 }
 @media (min-width: 992px) {
-  .my-card .card-discount {
+  .my-card .card-discount.current {
     width: 400px;
     height: 250px;
   }
 }
-
-#my-card {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-#my-card .card-discount {
-  width: 266px;
-  height: 140px;
-  position: relative;
-}
 @media (min-width: 992px) {
-  #my-card .card-discount {
+  .my-card .button {
     width: 200px;
-    height: 110px;
   }
 }
-#my-card .card-discount-summ {
+.my-card .card-discount-summ {
   font-size: 0.87rem;
   line-height: 1.06rem;
   font-weight: 400;
@@ -14209,23 +14158,10 @@ textarea.form-control-lg {
   top: 15px;
   right: 15px;
 }
-@media (min-width: 992px) {
-  #my-card .button {
-    width: 200px;
-  }
+.my-card .button-box {
+  max-width: 230px;
 }
-@media (min-width: 992px) {
-  #my-card {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    font-weight: 400;
-  }
-}
-
-.my-card {
-  padding: 12px;
-}
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .my-card {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
@@ -14240,6 +14176,7 @@ textarea.form-control-lg {
     border-radius: 5px;
     padding: 40px;
     height: 100%;
+    min-height: 450px;
   }
 }
 
@@ -14255,312 +14192,19 @@ textarea.form-control-lg {
   }
 }
 
-.form-custom {
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  text-align: center;
-}
-.form-custom .form-control {
-  width: 256px;
-  margin: 0 auto;
-}
-.form-custom .button {
-  width: 256px;
-}
-@media (min-width: 992px) {
-  .form-custom {
-    max-width: 285px;
-  }
-}
-
-.form-custom-wrapper {
-  padding: 0 20px 30px;
-}
-
-.form-custom-header {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-  color: #ffffff;
-  background-color: #58AE6B;
-  padding: 15px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-@media (min-width: 992px) {
-  #my-balance .table-custom {
-    width: fit-content;
-  }
-}
-@media (min-width: 1400px) {
-  #my-balance .table-custom {
-    width: 895px;
-  }
-}
-
-#my-discounts .table-container,
-#my-cashback .table-container,
-#my-coupons .table-container {
-  width: 895px;
-}
-#my-discounts .table.table-custom,
-#my-cashback .table.table-custom,
-#my-coupons .table.table-custom {
-  width: 895px;
-}
-#my-discounts td,
-#my-cashback td,
-#my-coupons td {
-  width: 220px;
-}
-#my-discounts .output,
-#my-cashback .output,
-#my-coupons .output {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-}
-@media (min-width: 992px) {
-  #my-discounts .output,
-#my-cashback .output,
-#my-coupons .output {
-    height: 60px;
-    margin-bottom: 0;
-    width: 100%;
-  }
-}
-
-#my-referrals .table-container {
-  width: 438px;
-}
-#my-referrals td {
-  min-width: max-content;
-}
-@media (min-width: 992px) {
-  #my-referrals .table.table-custom {
-    max-width: 438px;
-  }
-}
-
-#my-profile,
-#about-me,
-#contacts,
-#safety,
-#loyalty-card,
-#client-agreement {
+.add-card .title,
+.add-card .form-label {
   font-size: 1.13rem;
   line-height: 1.3rem;
   font-weight: 400;
 }
-#my-profile .form-select-day,
-#about-me .form-select-day,
-#contacts .form-select-day,
-#safety .form-select-day,
-#loyalty-card .form-select-day,
-#client-agreement .form-select-day {
-  width: 71px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #my-profile .form-select-day,
-#about-me .form-select-day,
-#contacts .form-select-day,
-#safety .form-select-day,
-#loyalty-card .form-select-day,
-#client-agreement .form-select-day {
-    width: 75px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#my-profile .form-select-month,
-#about-me .form-select-month,
-#contacts .form-select-month,
-#safety .form-select-month,
-#loyalty-card .form-select-month,
-#client-agreement .form-select-month {
-  width: 120px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #my-profile .form-select-month,
-#about-me .form-select-month,
-#contacts .form-select-month,
-#safety .form-select-month,
-#loyalty-card .form-select-month,
-#client-agreement .form-select-month {
-    width: 135px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#my-profile .form-select-year,
-#about-me .form-select-year,
-#contacts .form-select-year,
-#safety .form-select-year,
-#loyalty-card .form-select-year,
-#client-agreement .form-select-year {
-  width: 85px;
-  height: 32px;
-  background-image: none;
-  padding-top: 4px;
-}
-@media (min-width: 992px) {
-  #my-profile .form-select-year,
-#about-me .form-select-year,
-#contacts .form-select-year,
-#safety .form-select-year,
-#loyalty-card .form-select-year,
-#client-agreement .form-select-year {
-    width: 95px;
-    background-image: url("../img/select-indicator.svg");
-  }
-}
-#my-profile .form-select,
-#about-me .form-select,
-#contacts .form-select,
-#safety .form-select,
-#loyalty-card .form-select,
-#client-agreement .form-select {
-  padding: 5px 18px 5px 30px;
-}
-@media (min-width: 768px) {
-  #my-profile .form-select,
-#about-me .form-select,
-#contacts .form-select,
-#safety .form-select,
-#loyalty-card .form-select,
-#client-agreement .form-select {
-    padding: 5px 18px;
-  }
-}
-@media (min-width: 992px) {
-  #my-profile .form-control,
-#about-me .form-control,
-#contacts .form-control,
-#safety .form-control,
-#loyalty-card .form-control,
-#client-agreement .form-control {
-    width: 325px;
-    margin-left: 5px;
-  }
-}
-@media (min-width: 992px) {
-  #my-profile .form-date-group,
-#about-me .form-date-group,
-#contacts .form-date-group,
-#safety .form-date-group,
-#loyalty-card .form-date-group,
-#client-agreement .form-date-group {
-    width: 325px;
-    margin-left: 10px;
-  }
-}
-@media (min-width: 992px) {
-  #my-profile .button,
-#about-me .button,
-#contacts .button,
-#safety .button,
-#loyalty-card .button,
-#client-agreement .button {
-    width: 200px;
-  }
-}
-@media (min-width: 992px) {
-  #my-profile .button-box,
-#about-me .button-box,
-#contacts .button-box,
-#safety .button-box,
-#loyalty-card .button-box,
-#client-agreement .button-box {
-    width: 325px;
-  }
-}
-@media (min-width: 992px) {
-  #my-profile .note,
-#about-me .note,
-#contacts .note,
-#safety .note,
-#loyalty-card .note,
-#client-agreement .note {
-    width: 325px;
-  }
-}
-
-#client-agreement .features-list {
-  padding-left: 20px;
-}
-#client-agreement .form-label {
-  font-size: 0.87rem;
-  line-height: 1.06rem;
-  font-weight: 400;
-}
-@media (min-width: 992px) {
-  #client-agreement .button {
-    width: 300px;
-  }
-}
-
-.add-card {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-.add-card .title {
+.add-card .form-control-percent {
   width: 296px;
 }
-@media (min-width: 768px) {
-  .add-card .title {
-    width: max-content;
-  }
-}
-@media (min-width: 768px) {
-  .add-card .form-control {
-    width: 325px;
-  }
-}
 @media (min-width: 992px) {
-  .add-card .form-item {
-    margin: 0;
-    width: auto;
-  }
-}
-.add-card .form-item-percent .form-control::placeholder {
-  color: transparent;
-}
-@media (min-width: 992px) {
-  .add-card .form-item-percent .form-control {
+  .add-card .form-control-percent {
     width: 100px;
   }
-  .add-card .form-item-percent .form-control::placeholder {
-    text-align: center;
-    color: #000000;
-  }
-}
-@media (min-width: 992px) {
-  .add-card .form-item-percent .form-label {
-    font-size: 0.87rem;
-    line-height: 1.06rem;
-    font-weight: 400;
-  }
-}
-.add-card .form-upload {
-  width: 285px;
-}
-@media (min-width: 992px) {
-  .add-card .form-upload {
-    margin-top: 0;
-  }
-}
-.add-card .button {
-  width: 200px;
 }
 
 .website-setup {
@@ -14605,41 +14249,6 @@ textarea.form-control-lg {
   }
 }
 
-@media (min-width: 992px) {
-  .finance-setup .form-control {
-    width: 200px;
-    margin-left: 10px;
-  }
-}
-@media (min-width: 992px) {
-  .finance-setup .form-item {
-    width: 576px;
-  }
-}
-@media (min-width: 992px) {
-  .finance-setup .button {
-    width: 200px;
-  }
-}
-
-.texts-setup {
-  font-size: 1.13rem;
-  line-height: 1.3rem;
-  font-weight: 400;
-}
-.texts-setup .form-textarea {
-  min-height: 160px;
-}
-@media (min-width: 992px) {
-  .texts-setup .form-textarea {
-    min-height: 150px;
-    width: 895px;
-  }
-  .texts-setup .form-item {
-    margin: 0;
-  }
-}
-
 .links-setup {
   font-size: 1.13rem;
   line-height: 1.3rem;
@@ -14666,6 +14275,41 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .links-setup .button {
+    width: 200px;
+  }
+}
+
+.texts-setup {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+}
+.texts-setup .form-textarea {
+  min-height: 160px;
+}
+@media (min-width: 992px) {
+  .texts-setup .form-textarea {
+    min-height: 150px;
+    max-width: 895px;
+  }
+  .texts-setup .form-item {
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .finance-setup .form-control {
+    width: 200px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .finance-setup .form-item {
+    width: 576px;
+  }
+}
+@media (min-width: 992px) {
+  .finance-setup .button {
     width: 200px;
   }
 }
@@ -14776,122 +14420,6 @@ textarea.form-control-lg {
 }
 .admin-currency .form-control {
   width: 245px;
-}
-
-.registration-form .form-label-radio {
-  padding-top: 120px;
-  padding-left: 0;
-}
-.registration-form .form-label-radio::before {
-  width: 100px;
-  height: 100px;
-  border-color: #e0e0e0;
-  top: 0;
-  left: calc(50% - 50px);
-}
-.registration-form .btn-check:checked + .form-label-radio::after {
-  width: 0;
-}
-.registration-form .btn-check:checked + .form-label-radio::before {
-  border-color: #58AE6B;
-}
-
-@media (min-width: 768px) {
-  .sign-in .form-item {
-    width: 285px;
-    margin: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .sign-in-menu .tab-header-border.tab-header {
-    width: 285px;
-    margin: 0;
-    padding: 50px 0;
-    border: 1px solid #e0e0e0;
-  }
-}
-@media (min-width: 992px) {
-  .sign-in-menu .tab-header-border .tab-item-large {
-    border-right: 1px solid #e0e0e0;
-  }
-}
-
-.sign-up-partner {
-  font-size: 1.13rem;
-  line-height: 21px;
-  font-weight: 400;
-}
-.sign-up-partner .form-upload {
-  height: 296px;
-  margin-top: 10px;
-}
-.sign-up-partner .form-upload .form-label {
-  margin-top: 125px;
-}
-@media (min-width: 992px) {
-  .sign-up-partner .form-upload {
-    width: 285px;
-    height: 285px;
-    margin: 0;
-    margin-right: 40px;
-  }
-}
-.sign-up-partner .form-item {
-  max-width: 325px;
-}
-@media (min-width: 992px) {
-  .sign-up-partner .form-item {
-    max-width: 540px;
-  }
-}
-.sign-up-partner .form-textarea {
-  height: 120px;
-}
-@media (min-width: 992px) {
-  .sign-up-partner .form-textarea {
-    max-width: 325px;
-  }
-}
-@media (min-width: 992px) {
-  .sign-up-partner .form-control {
-    margin-left: 10px;
-    width: 325px;
-  }
-}
-@media (min-width: 992px) {
-  .sign-up-partner .button {
-    width: 200px;
-  }
-}
-@media (min-width: 992px) {
-  .sign-up-partner .button-box {
-    width: 325px;
-  }
-}
-
-.schedule .form-time {
-  width: 70px;
-  height: 32px;
-  margin-left: 10px;
-}
-
-.schedule .form-item {
-  width: 100%;
-}
-.schedule .form-item:last-child {
-  max-width: 288px;
-}
-@media (min-width: 992px) {
-  .schedule .form-item {
-    width: 374px;
-  }
-}
-
-@media (min-width: 768px) {
-  .schedule .button-box {
-    width: 302px;
-  }
 }
 
 .news .container {
@@ -15229,18 +14757,39 @@ textarea.form-control-lg {
   }
 }
 
-.card-green .button {
+.button-refill {
   border-radius: 0;
   padding: 6px;
-}
-.card-green .button.button-refill {
   border-bottom-left-radius: 5px;
   background-color: #ffffff;
   color: #000000;
+  width: 142px;
 }
-.card-green .button.button-show {
+.button-refill:hover {
+  background-color: rgba(61, 77, 83, 0.1);
+  color: #000000;
+}
+
+.button-show {
+  border-radius: 0;
+  padding: 6px;
   background-color: #3D4D53;
   border-bottom-right-radius: 5px;
+  width: 142px;
+}
+.button-show:hover {
+  background-color: #000000;
+}
+
+.button-show-admin {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 296px;
+}
+@media (min-width: 992px) {
+  .button-show-admin {
+    width: 285px;
+  }
 }
 
 .tab-header .tab-link {
@@ -15356,25 +14905,8 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .tab-header-border.tab-header {
     max-width: 300px;
-    margin: 0 auto;
     padding: 50px 0;
     border: 1px solid #e0e0e0;
-  }
-}
-
-@media (min-width: 992px) {
-  #main.tab-pane {
-    max-width: 533px;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 992px) {
-  #safety.tab-pane,
-#responsible.tab-pane,
-#loyalty-card.tab-pane {
-    max-width: 492px;
-    margin: 0 auto;
   }
 }
 
@@ -15468,6 +15000,18 @@ textarea.form-control-lg {
   }
 }
 
+@media (min-width: 992px) {
+  .card-custom-user {
+    height: 675px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-custom-small {
+    height: 330px;
+  }
+}
+
 .card-preview {
   border-radius: 16px;
   margin-bottom: 25px;
@@ -15545,15 +15089,18 @@ textarea.form-control-lg {
   color: #ffffff;
 }
 
-#add-cashback .card-discount {
+.cashback .card-discount,
+.discount .card-discount {
   width: 266px;
   height: 140px;
 }
-#add-cashback .card-discount .form-label-radio {
+.cashback .card-discount .form-label-radio,
+.discount .card-discount .form-label-radio {
   padding-left: 0;
 }
 @media (min-width: 992px) {
-  #add-cashback .card-discount {
+  .cashback .card-discount,
+.discount .card-discount {
     width: 254px;
   }
 }
@@ -15637,7 +15184,7 @@ textarea.form-control-lg {
   border-radius: 5px;
   background-color: #58AE6B;
   width: 296px;
-  height: 130px;
+  height: 100px;
 }
 .card-green .info {
   font-size: 0.87rem;
@@ -15948,7 +15495,6 @@ textarea.form-control-lg {
   padding-right: 0;
   padding-bottom: 20px;
   margin: 0 auto;
-  width: 296px;
 }
 .form-item:last-child {
   padding-bottom: 0;
@@ -15956,24 +15502,13 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .form-item {
     padding-bottom: 30px;
-    width: 285px;
+    margin: 0;
   }
 }
 
 .form-textarea {
   min-height: 120px;
   resize: none;
-}
-.form-textarea ::-webkit-scrollbar {
-  width: 1px;
-}
-.form-textarea ::-webkit-scrollbar-track {
-  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  border-radius: 10px;
-}
-.form-textarea ::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
 
 .form-upload {
@@ -16076,11 +15611,19 @@ textarea.form-control-lg {
   left: 4px;
 }
 
+.form-control {
+  line-height: 1.2rem;
+  border-color: #e0e0e0;
+}
 @media (min-width: 768px) {
   .form-control {
     height: 32px;
     width: 285px;
   }
+}
+
+.form-control:disabled + .form-label {
+  color: #e0e0e0;
 }
 
 .form-textarea {
@@ -16139,6 +15682,40 @@ textarea.form-control-lg {
   }
 }
 
+.form-custom {
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  text-align: center;
+}
+.form-custom .form-control {
+  width: 245px;
+  margin: 0 auto;
+}
+.form-custom .button {
+  width: 256px;
+}
+@media (min-width: 992px) {
+  .form-custom {
+    max-width: 285px;
+  }
+}
+
+.form-custom-wrapper {
+  padding: 30px 20px 30px;
+}
+
+.form-custom-header {
+  font-size: 1.13rem;
+  line-height: 1.3rem;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #58AE6B;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0;
+}
+
 .catalog-pagination .page-link {
   font-size: 0.87rem;
   line-height: 1.06rem;
@@ -16189,7 +15766,11 @@ textarea.form-control-lg {
   border-radius: 5px;
   border: 1px solid #e0e0e0;
   overflow: hidden;
-  width: 890px;
+  width: 895px;
+}
+
+.scrollable-content-table {
+  min-width: 895px;
 }
 
 .table-custom {
@@ -16206,7 +15787,7 @@ textarea.form-control-lg {
   line-height: 1.3rem;
   font-weight: 400;
   border: none;
-  min-width: 150px;
+  width: 150px;
   vertical-align: middle;
   padding: 15px 0;
   text-align: center;

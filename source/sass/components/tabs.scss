@@ -67,7 +67,6 @@
   }
 
   @include media-breakpoint-up(lg) {
-    // @include font(0.87rem, 1.06rem, 400);
     min-height: calc(100% - 42px);
   }
 }
@@ -117,29 +116,11 @@
   @include media-breakpoint-up(lg) {
     &.tab-header {
       max-width: 300px;
-      margin: 0 auto;
       padding: 50px 0;
       border: 1px solid $basic-grey;
     }
   }
 }
-
-#main.tab-pane {
-  @include media-breakpoint-up(lg) {
-    max-width: 533px;
-    margin: 0 auto;
-  }
-}
-
-#safety.tab-pane,
-#responsible.tab-pane,
-#loyalty-card.tab-pane {
-  @include media-breakpoint-up(lg) {
-    max-width: 492px;
-    margin: 0 auto;
-  }
-}
-
 
 .tab-content {
   position: relative;

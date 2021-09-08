@@ -1,65 +1,103 @@
-.partner-profile {
+.partner-profile,
+.my-profile,
+.sign-up-user,
+.sign-up-partner {
   @include font(1.13rem, 1.3rem, 400);
 
-  .button-box {
-    @include media-breakpoint-up(md) {
-      width: 325px;
-    }
-  }
-
-  .form-item {
-    max-width: 325px;
-
-    @include media-breakpoint-up(lg) {
-      width: max-content;
-      max-width: max-content;
-      margin: 0;
-    }
+  .tab-pane {
+    margin: 0 auto;
   }
 
   .form-control {
+    width: 296px;
+
     @include media-breakpoint-up(lg) {
       width: 325px;
       margin-left: 10px;
     }
   }
 
-  #schedule .form-time {
-    width: 70px;
-    height: 32px;
-    margin-left: 10px;
-  }
+  .form-textarea {
+    max-width: 590px;
+    height: 120px;
 
-  #schedule .form-item {
-    width: 100%;
-
-    &:last-child {
-      max-width: 288px;
-    }
     @include media-breakpoint-up(lg) {
-      max-width: 425px;
+      height: 240px;
     }
   }
 
-  #schedule {
-    .button {
-      @include media-breakpoint-up(md) {
-        width: 200px;
-      }
-    }
-
-    .button-box {
-
-      @include media-breakpoint-up(md) {
-        width: 302px;
-      }
+  .button {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
     }
   }
 
-  #schedule {
-    @include media-breakpoint-up(md) {
-      width: 374px;
-      margin: 0 auto;
+  .button-finish {
+    @include media-breakpoint-up(lg) {
+      width: 300px;
     }
+  }
+
+  .button-box {
+    @include media-breakpoint-up(lg) {
+      max-width: 325px;
+    }
+  }
+
+  .button-box-check {
+    max-width: 226px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 302px;
+    }
+  }
+
+  .form-time {
+    width: 70px;
+  }
+
+  .lunch-break {
+    max-width: 374px;
+  }
+
+  #responsible .form-upload,
+  #about-us .form-upload {
+    margin: 0;
+
+    .form-label {
+      @include media-breakpoint-up(lg) {
+        margin-top: 120px;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 285px;
+      height: 285px;
+      margin-right: 40px;
+      margin-left: 10px;
+    }
+  }
+
+  .form-date-group {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+      margin-left: 10px;
+    }
+  }
+
+  .note {
+    max-width: 325px;
+  }
+
+  .features-list {
+    color: $special-grey-3;
+  }
+}
+
+.sign-up-user {
+  @include font(0.87rem, 1.18rem, 400);
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.3rem, 400);
   }
 }

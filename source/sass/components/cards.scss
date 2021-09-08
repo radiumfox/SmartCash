@@ -28,6 +28,18 @@
   }
 }
 
+.card-custom-user {
+  @include media-breakpoint-up(lg) {
+    height: 675px;
+  }
+}
+
+.card-custom-small {
+  @include media-breakpoint-up(lg) {
+    height: 330px;
+  }
+}
+
 .card-preview {
   border-radius: 16px;
   margin-bottom: 25px;
@@ -102,7 +114,8 @@
   }
 }
 
-#add-cashback .card-discount {
+.cashback .card-discount,
+.discount .card-discount {
   width: 266px;
   height: 140px;
 
@@ -193,7 +206,7 @@
   border-radius: 5px;
   background-color: $light-green;
   width: 296px;
-  height: 130px;
+  height: 100px;
 
   @include media-breakpoint-up(lg) {
     width: 285px;
