@@ -158,6 +158,7 @@
   height: 32px;
   background-image: none;
   padding-top: 4px;
+  padding: 5px 10px;
 
   @include media-breakpoint-up(lg) {
     width: 75px;

@@ -1,25 +1,66 @@
-$(document).ready(function(){
-  var currentTime = new Date();
-  var thisYear = currentTime.getFullYear();
-  var startYear = 1960;
-  var x;
-  for(x=thisYear; x>=startYear; x--){
-      $(".years").append("<option value='" + x + "'>" + x + "</option>")
-    };
-});
+const yearSelects = document.querySelectorAll(".years");
+const daySelects = document.querySelectorAll(".days");
+const monthSelects = document.querySelectorAll(".months");
+const MONTHS = [
+  "Январь",
+  "Февраль",
+  "Март",
+  "Апрель",
+  "Май",
+  "Июнь",
+  "Июль",
+  "Август",
+  "Сентябрь",
+  "Октябрь",
+  "Ноябрь",
+  "Декабрь",
+];
 
-$('.DateTextBox.NoYear').datepicker({
-  beforeShow: function (input, inst) {
-    inst.dpDiv.addClass('NoYearDatePicker');
-  },
-  onClose: function(dateText, inst){
-      inst.dpDiv.removeClass('NoYearDatePicker');
+const pickYear = () => {
+  let currentTime = new Date();
+  let thisYear = currentTime.getFullYear();
+
+  let startYear = 1960;
+  let years = [];
+
+  for (let x = thisYear; x >= startYear; x--) {
+    years.push(x);
   }
-});
 
-$('#datepicker').datepicker( { changeYear: false, dateFormat: 'dd/mm',});
+  yearSelects.forEach(select => {
+    years.forEach(year => {
+      const option = document.createElement("option");
+      option.value = year;
+      option.textContent = year;
+      select.appendChild(option);
+    });
+  });
+}
 
+pickYear();
 
-$('#datepicker1').datepicker( { changeYear: true, dateFormat: 'dd/mm', });
+const pickDay = () => {
+  daySelects.forEach(select => {
+    for(let day = 1; day <= 31; day++) {
+      const option = document.createElement("option");
+      option.value = day;
+      option.textContent = day;
+      select.appendChild(option);
+    }
+  });
+}
 
-$('#datepicker2').datepicker( { changeYear: false, dateFormat: 'dd/mm', });
+pickDay();
+
+const pickMonth = () => {
+  monthSelects.forEach(select => {
+    MONTHS.forEach(month => {
+      const option = document.createElement("option");
+      option.value = month;
+      option.textContent = month;
+      select.appendChild(option);
+    });
+  });
+}
+
+pickMonth();

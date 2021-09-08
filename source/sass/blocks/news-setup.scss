@@ -75,7 +75,8 @@
   }
 
   .form-select {
-    padding: 5px 18px 6px 30px;
+    @include font(1.13rem, 1.56rem, 400);
+    padding: 3px 10px 5px;
   }
 
   .form-item-date {
