@@ -1,0 +1,50 @@
+.registration-form {
+  .form-label-radio {
+    padding-top: 120px;
+    padding-left: 0;
+  }
+
+  .form-label-radio::before {
+    width: 100px;
+    height: 100px;
+    border-color: $basic-grey;
+    top: 0;
+    left: calc(50% - 50px);
+  }
+
+  .btn-check:checked + .form-label-radio::after {
+    width: 0;
+  }
+
+  .btn-check:checked + .form-label-radio::before {
+    border-color: $light-green;
+  }
+}
+
+.sign-in {
+  @include media-breakpoint-up(md) {
+    .form-item {
+      width: 285px;
+      margin: 0;
+    }
+  }
+}
+
+.sign-in-menu {
+  .tab-header-border {
+    @include media-breakpoint-up(md) {
+      &.tab-header {
+        width: 285px;
+        margin: 0;
+        padding: 50px 0;
+        border: 1px solid $basic-grey;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      .tab-item-large {
+        border-right: 1px solid $basic-grey;
+      }
+    }
+  }
+}

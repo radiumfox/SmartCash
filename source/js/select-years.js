@@ -23,7 +23,7 @@ const pickYear = () => {
   let startYear = 1960;
   let years = [];
 
-  for (let x = thisYear; x >= startYear; x--) {
+  for (let x = thisYear + 40; x >= startYear; x--) {
     years.push(x);
   }
 

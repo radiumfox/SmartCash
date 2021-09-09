@@ -83,3 +83,31 @@
     max-width: 325px;
   }
 }
+
+.news-item {
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 50px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100% + 100px);
+      height: 1px;
+      background-color: $basic-grey;
+      bottom: 0;
+    }
+
+    &:last-child::before {
+      width: 0;
+    }
+  }
+
+  .date {
+    @include font(0.87rem, 1.18rem, 400);
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.13rem, 1.56rem, 400);
+    }
+  }
+}
