@@ -1,0 +1,20 @@
+.finance-setup {
+  .form-control {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+      margin-left: 10px;
+    }
+  }
+
+  .form-item {
+    @include media-breakpoint-up(lg) {
+      width: 576px;
+    }
+  }
+
+  .button {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
+  }
+}

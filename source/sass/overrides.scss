@@ -1,0 +1,96 @@
+//// colors
+
+// navigation
+$navbar-dark-color: $basic-light;
+$navbar-dark-active-color: rgba($basic-light, 0.5);
+$nav-link-color: $basic-dark-2;
+$nav-link-hover-color: rgba($basic-dark-2, 0.5);
+$nav-tabs-link-hover-border-color: none;
+$nav-tabs-border-width: 0;
+
+$pagination-active-bg: none;
+$pagination-color: $basic-dark-2;
+$pagination-active-color: $basic-dark-2;
+$pagination-hover-color: $basic-dark-2;
+
+$link-color: $basic-dark-2;
+$link-hover-color: rgba($basic-dark-2, 0.5);
+$link-decoration: none;
+
+$nav-tabs-link-active-border-color: $light-green;
+$nav-tabs-link-active-color:  $light-green;
+
+$card-cap-bg: none;
+
+$input-focus-border-color: none;
+$input-focus-box-shadow: none;
+$input-disabled-bg: none;
+
+$accordion-button-active-bg: none;
+$accordion-button-active-color: $basic-dark-2;
+$accordion-button-focus-border-color: none;
+$accordion-button-focus-box-shadow: none;
+$accordion-border-width: 0;
+$accordion-border-color: 0;
+
+$form-select-box-shadow: none;
+$form-select-focus-box-shadow: none;
+
+$table-variants: (
+  "dark": $light-green,
+);
+
+$theme-colors: (
+  "primary": $light-green,
+  "secondary": $basic-dark,
+);
+
+$zindex-modal-backdrop: 1;
+
+// sizes
+
+$nav-link-padding-y: 0;
+$navbar-nav-link-padding-x: 0;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px,
+  xxl: 1200px
+);
+
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 5),
+  7: ($spacer * 6.2),
+  8: ($spacer * 0.75),
+  9: ($spacer * 0.9),
+  10: ($spacer * 1.25),
+  11: ($spacer * 1.875),
+  12: ($spacer * 2.5),
+);
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: 1.125rem,
+  8: 0.875rem,
+);
+
+
+$btn-border-radius: 20px;
+$btn-focus-width: 0;
+
+// images
+
+$form-select-indicator: url("../img/select-indicator.svg");

@@ -1,0 +1,17 @@
+.add-card {
+  .title,
+  .form-label {
+    @include font(1.13rem, 1.3rem, 400);
+
+
+  }
+
+  .form-control-percent {
+    width: 296px;
+
+    @include media-breakpoint-up(lg) {
+      width: 100px;
+    }
+
+  }
+}

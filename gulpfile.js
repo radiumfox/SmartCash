@@ -5,6 +5,8 @@ const sass = require("gulp-sass")(require('sass'));
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const concat = require("gulp-concat");
+const terser = require("gulp-terser")
 
 // Styles
 
@@ -38,6 +40,21 @@ const server = (done) => {
 }
 
 exports.server = server;
+
+// Scripts
+
+const scripts = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(plumber())
+    .pipe(concat("main.js"))
+    .pipe(gulp.dest("source/js/"))
+    .pipe(terser())
+    .pipe(concat("main.min.js"))
+    .pipe(gulp.dest("source/js/"))
+    .pipe(sync.stream());
+}
+
+exports.scripts = scripts;
 
 // Watcher
 

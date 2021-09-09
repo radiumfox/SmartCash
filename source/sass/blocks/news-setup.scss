@@ -1,0 +1,85 @@
+.news-setup {
+  .form-upload {
+    background-color: $basic-grey;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(lg) {
+      background-color: $basic-light;
+      width: 285px;
+      height: 200px;
+      margin: 0;
+
+      .form-label {
+        margin-top: 76px;
+      }
+    }
+  }
+
+  .title {
+    @include font(1.13rem, 1.3rem, 400);
+    margin: 25px 0 0;
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.5rem, 1.75rem, 400);
+
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.56rem, 400);
+  }
+
+  .button-link-edit {
+    @include media-breakpoint-up(lg) {
+      @include font(1rem, 1.18rem, 400);
+      border-radius: 20px;
+      display: inline-block;
+      padding: 10px 0;
+      width: 200px;
+      text-align: center;
+
+      @include button-variant (
+        $light-green,
+        transparent,
+        $basic-light,
+        $green-special,
+        transparent,
+        $basic-light,
+        $green-special,
+        transparent,
+        $basic-light,
+        $disabled-btn,
+        transparent,
+        rgba($basic-light, 0.7),
+      );
+    }
+
+  }
+
+  .text-edit {
+    @include font(0.87rem, 1.18rem, 400);
+    padding: 20px;
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+    min-height: 160px;
+    max-width: 472px;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      min-height: 142px;
+    }
+  }
+
+  .form-select {
+    @include font(1.13rem, 1.56rem, 400);
+    padding: 3px 10px 5px;
+  }
+
+  .form-item-date {
+    max-width: 325px;
+  }
+}

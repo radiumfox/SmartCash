@@ -1,0 +1,92 @@
+.website-setup {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-upload {
+    height: 296px;
+    margin-top: 10px;
+
+    .form-label {
+      margin-top: 127px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+      height: 325px;
+      margin: 0 0 20px;
+    }
+  }
+
+  .form-textarea {
+    min-height: 160px;
+  }
+
+  .form-item {
+    width: auto;
+
+  }
+
+  .form-control {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+      margin-left: 5px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 520px;
+  }
+
+  .button-box {
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+    }
+  }
+}
+
+.links-setup {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-item {
+    max-width: 325px;
+
+    @include media-breakpoint-up(lg) {
+      width: 475px;
+      max-width: 475px;
+    }
+  }
+
+  .form-control {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 325px;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .button {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
+  }
+}
+
+.texts-setup {
+  @include font(1.13rem, 1.3rem, 400);
+
+  .form-textarea {
+    min-height: 160px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    .form-textarea {
+      min-height: 150px;
+      max-width: 895px;
+    }
+
+    .form-item {
+      margin: 0;
+    }
+  }
+}

@@ -9,37 +9,46 @@
 
   <body class="page-body">
 
-    <header class="page-header">
-      <nav class="page-header__nav navbar navbar-dark navbar-expand-lg py-0">
-        <div class="container px-0">
-          <a class="navbar-brand align-baseline py-0">
-            <img class="page-header__logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
+    <header class="header">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand align-baseline py-0" href="index.html">
+            <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
-          <button class="page-header__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="page-header__toggler-icon"></span>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end position-relative" id="navbarSupportedContent">
-            <ul class="page-header__navbar navbar-nav flex-wrap">
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0 active">Главная</a>
+            <ul class="navbar-nav flex-wrap">
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Личный кабинет</a>
               </li>
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="#">О программе</a>
+              <li class="nav-item">
+                <a class="nav-link active">Главная</a>
               </li>
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="catalog.html">Магазины / партнеры</a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">О программе</a>
               </li>
-              <li class="page-header__item nav-item">
-                <a class="page-header__link nav-link px-0" href="#">Новости</a>
+              <li class="nav-item">
+                <a class="nav-link" href="catalog.html">Магазины / партнеры</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Новости</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a class="nav-link" data-bs-toggle="collapse" href="#page-footer" data-bs-target="#page-footer" aria-expanded="false">
+                  Подвал
+                </a>
               </li>
             </ul>
 
-            <form class="page-header__form d-flex">
-              <input class="page-header__search form-control" type="search" placeholder="Введите запрос" aria-label="Search">
-              <span class="page-header__search-icon"></span>
+            <form class="header-form d-none d-lg-flex position-relative">
+              <label class="visually-hidden" for="site-search">Введите запрос</label>
+              <input class="form-control" id="site-search" type="search" name="search" placeholder="Введите запрос" aria-label="Поиск">
+              <span class="header-search-icon"></span>
             </form>
-            <a class="page-header__user" href="#">
+            <a class="header-user d-none d-lg-inline" href="#">
               <svg viewBox="0 0 24 24" width="24" height="24">
                 <use xlink:href="img/sprite.svg#user-icon"></use>
               </svg>
@@ -49,144 +58,151 @@
       </nav>
     </header>
 
-    <main class="page-main">
+    <main>
       <h1 class="visually-hidden">SmartCASH</h1>
 
-      <div class="container-fluid mx-0 page-main__header">
+      <div class="page-main-header container-fluid">
+        <img src="#" width="280" height="200" alt="image">
       </div>
 
       <div class="features">
-        <section class="features__section">
+
+        <section class="features-section">
           <div class="container-fluid">
-            <h2 class="features__title my-0">Новые возможности</h2>
+            <h2 class="features-title">Новые возможности</h2>
             <div class="row justify-content-end">
-              <ul class="features__list">
-                <li class="features__item list-group-item">
-                  <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-1">
-                    Экономь в магазинах
-                    <span class="features__plus"></span>
-                    <!-- <svg class="features__plus" viewBox="0 0 24 24" width="24" height="24">
-                      <use xlink:href="img/sprite.svg#cross"></use>
-                    </svg> -->
-
-                  </a>
-                  <ul class="features__scheme list-unstyled collapse" id="feature-list-1">
-                    <li class="features__scheme-item">Стань участником</li>
-                    <li class="features__scheme-item">Выбери магазин</li>
-                    <li class="features__scheme-item">Сделай покупку</li>
-                    <li class="features__scheme-item">Получи вознаграждение</li>
-                  </ul>
+              <ul class="accordion-features accordion list-unstyled" id="featuresAccordion">
+                <li class="accordion-item">
+                  <h3 id="headingOne">
+                    <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-1" aria-expanded="true" aria-controls="feature-list-1">
+                      Экономь в магазинах
+                    </button>
+                  </h3>
+                  <div id="feature-list-1" class="accordion-collapse collapse show" data-bs-parent="#featuresAccordion">
+                    <ul class="list-unstyled accordion-body">
+                      <li class="accordion-sub-item">Стань участником</li>
+                      <li class="accordion-sub-item">Выбери магазин</li>
+                      <li class="accordion-sub-item">Сделай покупку</li>
+                      <li class="accordion-sub-item">Получи вознаграждение</li>
+                    </ul>
+                  </div>
                 </li>
 
-                <li class="features__item list-group-item">
-                  <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-2">
-                    Продавай больше
-                    <span class="features__plus"></span>
-                  </a>
-                  <ul class="features__scheme list-unstyled collapse" id="feature-list-2">
-                    <li class="features__scheme-item">Item1</li>
-                    <li class="features__scheme-item">Item2</li>
-                    <li class="features__scheme-item">Item3</li>
-                    <li class="features__scheme-item">Item4</li>
-                  </ul>
+                <li class="accordion-item">
+                  <h3 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button d-flex justify-content-between collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-2" aria-expanded="false" aria-controls="feature-list-1">
+                      Продавай больше
+                    </button>
+                  </h3>
+                  <div id="feature-list-2" class="accordion-collapse collapse" data-bs-parent="#featuresAccordion">
+                    <ul class="list-unstyled accordion-body">
+                      <li class="accordion-sub-item">Стань участником</li>
+                      <li class="accordion-sub-item">Выбери магазин</li>
+                      <li class="accordion-sub-item">Сделай покупку</li>
+                      <li class="accordion-sub-item">Получи вознаграждение</li>
+                    </ul>
+                  </div>
                 </li>
 
-                <li class="features__item list-group-item">
-                  <a class="features__toggle dropdown collapsed d-flex justify-content-between" href="#" data-bs-toggle="collapse" data-bs-target="#feature-list-3">
-                    Заработай много
-                    <span class="features__plus"></span>
-                  </a>
-                  <ul class="features__scheme list-unstyled collapse" id="feature-list-3">
-                    <li class="features__scheme-item">Item1</li>
-                    <li class="features__scheme-item">Item2</li>
-                    <li class="features__scheme-item">Item3</li>
-                    <li class="features__scheme-item">Item4</li>
-                  </ul>
+                <li class="accordion-item">
+                  <h3 class="accordion-header" id="headingThreee">
+                    <button class="accordion-button d-flex justify-content-between collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-3" aria-expanded="false" aria-controls="feature-list-1">
+                      Заработай много
+                    </button>
+                  </h3>
+                  <div id="feature-list-3" class="accordion-collapse collapse" data-bs-parent="#featuresAccordion">
+                    <ul class="list-unstyled accordion-body">
+                      <li class="accordion-sub-item">Стань участником</li>
+                      <li class="accordion-sub-item">Выбери магазин</li>
+                      <li class="accordion-sub-item">Сделай покупку</li>
+                      <li class="accordion-sub-item">Получи вознаграждение</li>
+                    </ul>
+                  </div>
                 </li>
               </ul>
-            </div> <!-- flex-row-reverse -->
-          </div> <!-- container -->
+            </div>
+          </div>
         </section>
 
-        <section class="features__section personnel pe-0">
+        <section class="features-section personnel pe-0">
           <div class="container-fluid pe-0 me-0">
-            <h2 class="features__title my-0">Топ-менеджеры</h2>
-            <div class="d-flex flex-row-reverse overflow-hidden">
-              <ul class="personnel__list list-unstyled d-flex flex-row list-group col-lg-8">
-                <li class="personnel__item">
-                  <img class="personnel__img" src="#" width="200" height="260" alt="photo">
-                  <p class="personnel__name my-0">Иван Иванов</p>
-                  <p class="personnel__duty my-0">Менеджер</p>
+            <h2 class="features-title">Топ-менеджеры</h2>
+            <div class="d-flex flex-row-reverse">
+              <ul class="personnel-list list-unstyled d-flex  overflow-auto flex-row col-lg-8 ">
+                <li class="personnel-item">
+                  <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  <p class="personnel-name">Иван Иванов</p>
+                  <p class="personnel-duty">Менеджер</p>
                 </li>
-                <li class="personnel__item">
-                  <img class="personnel__img" src="#" width="200" height="260" alt="photo">
-                  <p class="personnel__name my-0">Иван Иванов</p>
-                  <p class="personnel__duty my-0">Менеджер</p>
+                <li class="personnel-item">
+                  <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  <p class="personnel-name">Иван Иванов</p>
+                  <p class="personnel-duty">Менеджер</p>
                 </li>
-                <li class="personnel__item">
-                  <img class="personnel__img" src="#" width="200" height="260" alt="photo">
-                  <p class="personnel__name my-0">Иван Иванов</p>
-                  <p class="personnel__duty my-0">Менеджер</p>
+                <li class="personnel-item">
+                  <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  <p class="personnel-name">Иван Иванов</p>
+                  <p class="personnel-duty">Менеджер</p>
                 </li>
               </ul>
-            </div> <!-- flex-row-reverse -->
-          </div> <!-- container -->
+            </div>
+          </div>
         </section>
 
-        <section class="features__section indicators mx-auto">
+        <section class="features-section indicators mx-auto">
           <div class="container-fluid">
-            <h2 class="features__title my-0">Кэшбэк в цифрах</h2>
+            <h2 class="features-title">Кэшбэк в цифрах</h2>
             <div class="row justify-content-end">
-              <dl class="indicators__list d-md-flex flex-row flex-wrap justify-content-between my-0">
-                <div class="indicators__item">
-                  <dt class="indicators__key">102 000</dt>
-                  <dd class="indicators__value">партнеров</dd>
+              <dl class="indicators-list d-md-flex flex-row flex-wrap justify-content-between my-0">
+                <div class="indicators-item">
+                  <dt class="indicators-key">102 000</dt>
+                  <dd class="indicators-value">партнеров</dd>
                 </div>
-                <div class="indicators__item">
-                  <dt class="indicators__key">105 000</dt>
-                  <dd class="indicators__value">пользователей</dd>
+                <div class="indicators-item">
+                  <dt class="indicators-key">105 000</dt>
+                  <dd class="indicators-value">пользователей</dd>
                 </div>
-                <div class="indicators__item">
-                  <dt class="indicators__key">25 000 000</dt>
-                  <dd class="indicators__value">сэкономлено</dd>
+                <div class="indicators-item">
+                  <dt class="indicators-key">25 000 000</dt>
+                  <dd class="indicators-value">сэкономлено</dd>
                 </div>
-              </dl> <!-- flex-row -->
-            </div>  <!-- flex-row-reverse -->
-          </div> <!-- container -->
+              </dl>
+            </div>
+          </div>
         </section>
       </div>
 
     </main>
 
-    <footer class="page-footer">
-      <div class="container navbar-dark d-md-flex text-center text-lg-start">
-        <ul class="page-footer__nav navbar-nav">
+    <footer class="page-footer collapse d-lg-block" id="page-footer">
+      <div class="container navbar-dark d-md-flex text-center text-md-start">
+        <ul class="page-footer-nav navbar-nav">
           <li class="navbar-item">
-            <a class="page-footer__link nav-link" href="#">Партнерам</a>
+            <a class="page-footer-link nav-link" href="#">Партнерам</a>
           </li>
           <li class="navbar-item">
-            <a class="page-footer__link nav-link" href="#">Участникам</a>
+            <a class="page-footer-link nav-link" href="#">Участникам</a>
           </li>
           <li class="navbar-item">
-            <a class="page-footer__link nav-link" href="#">Карты лояльности</a>
+            <a class="page-footer-link nav-link" href="#">Карты лояльности</a>
           </li>
         </ul>
 
-        <ul class="page-footer__nav navbar-nav">
+        <ul class="page-footer-nav navbar-nav">
           <li class="navbar-item">
-            <a class="page-footer__link nav-link" href="#">Вопросы и ответы</a>
+            <a class="page-footer-link nav-link" href="#">Вопросы и ответы</a>
           </li>
           <li class="navbar-item">
-            <a class="page-footer__link nav-link" href="#">Клиент.соглашение</a>
+            <a class="page-footer-link nav-link" href="#">Клиент.соглашение</a>
           </li>
           <li class="navbar-item">
-            <a class="page-footer__link nav-link" href="#">Политика конф.</a>
+            <a class="page-footer-link nav-link" href="#">Политика конф.</a>
           </li>
         </ul>
       </div>
     </footer>
 
-    <script src="js/bootstrap.js"></script>
+    <script src="js/main.min.js"></script>
 
   </body>
 </html>

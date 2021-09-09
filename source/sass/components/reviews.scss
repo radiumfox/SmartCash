@@ -1,0 +1,27 @@
+.reviews {
+  margin-top: 40px;
+
+  .card-text {
+    @include font(0.87rem, 1.25rem, 400);
+  }
+}
+
+.reviews-author {
+  @include font(0.87rem, 1.06rem, 400);
+  background-color: rgba($light-green, 0.3);
+  width: 100%;
+  display: block;
+  border-left: 4px solid $light-green;
+  padding: 7px 16px;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.reviews-time {
+  font-style: normal;
+}
+
+.reviews-list {
+  list-style: none;
+  padding: 0;
+}
