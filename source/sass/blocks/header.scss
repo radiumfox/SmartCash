@@ -1,8 +1,9 @@
 .header {
   background-color: $basic-dark;
+  font-family: "SF UI Display", "Helvetica", sans-serif;
 
   .navbar {
-    padding: 11px 0 11px 8px;
+    padding: 10px 0 11px 8px;
 
     max-width: 1200px;
     margin: 0 auto;
@@ -74,10 +75,6 @@
     &::placeholder {
       @include font(0.87rem, 1.06rem, 400);
       color: $basic-light;
-
-      @include media-breakpoint-up(lg) {
-        @include font(1.13rem, 1.25rem, 400);
-      }
     }
 
     &::-webkit-search-cancel-button {
@@ -97,7 +94,7 @@
 
     @include media-breakpoint-up(lg) {
       margin-left: 40px;
-      margin-right: 24px;
+      margin-right: 23px;
       width: 240px;
       color: $basic-light;
     }
@@ -140,7 +137,7 @@
   }
 
   @include media-breakpoint-up(lg) {
-    padding: 8px 0;
+    padding: 10px 0;
   }
 }
 
@@ -169,7 +166,7 @@
   right: 15px;
 
   @include media-breakpoint-up(lg) {
-    right: 40px;
+    right: 37px;
   }
 }
 
@@ -180,5 +177,6 @@
 
   @include media-breakpoint-up(lg) {
     position: initial;
+    padding-right: 5px;
   }
 }

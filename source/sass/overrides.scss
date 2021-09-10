@@ -6,7 +6,7 @@ $navbar-dark-active-color: rgba($basic-light, 0.5);
 $nav-link-color: $basic-dark-2;
 $nav-link-hover-color: rgba($basic-dark-2, 0.5);
 $nav-tabs-link-hover-border-color: none;
-$nav-tabs-border-width: 0;
+// $nav-tabs-border-width: 0;
 
 $pagination-active-bg: none;
 $pagination-color: $basic-dark-2;
@@ -17,8 +17,8 @@ $link-color: $basic-dark-2;
 $link-hover-color: rgba($basic-dark-2, 0.5);
 $link-decoration: none;
 
-$nav-tabs-link-active-border-color: $light-green;
-$nav-tabs-link-active-color:  $light-green;
+// $nav-tabs-link-active-border-color: $light-green;
+// $nav-tabs-link-active-color:  $light-green;
 
 $card-cap-bg: none;
 
@@ -56,7 +56,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1170px,
+  xl: 1200px,
   xxl: 1200px
 );
 
@@ -90,6 +90,8 @@ $font-sizes: (
 
 $btn-border-radius: 20px;
 $btn-focus-width: 0;
+
+// $accordion-icon-transform: 0;
 
 // images
 

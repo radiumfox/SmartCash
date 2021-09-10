@@ -10,7 +10,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,51 +60,90 @@
     <main class="page-main">
       <section class="news">
         <h1 class="visually-hidden">Новости</h1>
-        <div class="container">
-          <ul class="news-list list-group">
-            <li class="news-item list-group-item">
-              <article class="d-flex flex-column flex-lg-row justify-content-lg-between">
-                <h2 class="news-title">Тема новости</h2>
-                <div class="news-img order-lg-first col-lg-4">
+        <div class="container px-lg-0">
+          <ul class="news-list list-unstyled">
+            <li class="news-item ">
+              <article class="d-flex flex-column flex-xl-row justify-content-lg-between">
+                <div class="news-img d-none d-lg-block">
                   <img src="№" width="296" height="160" alt="Фото">
                 </div>
-                <div class="d-flex justify-content-lg-end flex-md-column col-lg-6">
-                  <p class="news-text d-none d-md-block">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает</p>
-                  <div class="d-flex justify-content-between w-100">
-                    <div class="d-flex justify-content-between">
-                      <a class="news-link button-link fs-7 d-none d-lg-block me-7" href="#">Новости</a>
-                      <time class="news-time" datetime="2021-07-21">21.07.2021</time>
+                <div class="news-content ">
+                  <h2 class="news-title">Тема новости</h2>
+                  <div class="news-img d-lg-none">
+                    <img src="№" width="296" height="160" alt="Фото">
+                  </div>
+                  <div class="d-flex flex-md-column">
+                    <p class="news-text d-none d-md-block">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает</p>
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="d-flex justify-content-between">
+                        <a class="news-link button-link fs-7 d-none d-lg-block" href="#">Новости</a>
+                        <time class="news-time" datetime="2021-07-21">21.07.2021</time>
+                      </div>
+                      <a class="news-link news-link-more" href="news-item.html">
+                        <span>Подробнее</span>
+                        <svg class="news-link-arrow" viewBox="0 0 8 16" width="8" height="16">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
                     </div>
-                    <a class="news-link" href="news-item.html">
-                      <span class="me-3">Подробнее</span>
-                      <svg viewBox="0 0 8 16" width="8" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </a>
                   </div>
                 </div>
               </article>
             </li>
 
-            <li class="news-item list-group-item">
-              <article class="d-flex flex-column flex-lg-row justify-content-lg-between">
-                <h2 class="news-title">Тема новости</h2>
-                <div class="news-img order-lg-first col-lg-4">
+            <li class="news-item">
+              <article class="d-flex flex-column flex-xl-row justify-content-lg-between">
+                <div class="news-img d-none d-lg-block">
                   <img src="№" width="296" height="160" alt="Фото">
                 </div>
-                <div class="d-flex justify-content-lg-end flex-md-column col-lg-6">
-                  <p class="news-text d-none d-md-block">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает</p>
-                  <div class="d-flex justify-content-between w-100">
-                    <div class="d-flex justify-content-between">
-                      <a class="news-link button-link fs-7 d-none d-lg-block me-7" href="#">Новости</a>
-                      <time class="news-time" datetime="2021-07-21">21.07.2021</time>
+                <div class="news-content ">
+                  <h2 class="news-title">Тема новости</h2>
+                  <div class="news-img d-lg-none">
+                    <img src="№" width="296" height="160" alt="Фото">
+                  </div>
+                  <div class="d-flex flex-md-column">
+                    <p class="news-text d-none d-md-block">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает</p>
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="d-flex justify-content-between">
+                        <a class="news-link button-link fs-7 d-none d-lg-block" href="#">Новости</a>
+                        <time class="news-time" datetime="2021-07-21">21.07.2021</time>
+                      </div>
+                      <a class="news-link news-link-more" href="news-item.html">
+                        <span>Подробнее</span>
+                        <svg class="news-link-arrow" viewBox="0 0 8 16" width="8" height="16">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
                     </div>
-                    <a class="news-link" href="news-item.html">
-                      <span class="me-3">Подробнее</span>
-                      <svg viewBox="0 0 8 16" width="8" height="16">
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                      </svg>
-                    </a>
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li class="news-item d-lg-none">
+              <article class="d-flex flex-column flex-xl-row justify-content-lg-between">
+                <div class="news-img d-none d-lg-block">
+                  <img src="№" width="296" height="160" alt="Фото">
+                </div>
+                <div class="news-content ">
+                  <h2 class="news-title">Тема новости</h2>
+                  <div class="news-img d-lg-none">
+                    <img src="№" width="296" height="160" alt="Фото">
+                  </div>
+                  <div class="d-flex flex-md-column">
+                    <p class="news-text d-none d-md-block">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает</p>
+                    <div class="d-flex justify-content-between w-100">
+                      <div class="d-flex justify-content-between">
+                        <a class="news-link button-link fs-7 d-none d-lg-block" href="#">Новости</a>
+                        <time class="news-time" datetime="2021-07-21">21.07.2021</time>
+                      </div>
+                      <a class="news-link news-link-more" href="news-item.html">
+                        <span>Подробнее</span>
+                        <svg class="news-link-arrow" viewBox="0 0 8 16" width="8" height="16">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </article>

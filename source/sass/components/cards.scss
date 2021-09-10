@@ -1,5 +1,6 @@
 .card-custom {
   border: none;
+  font-family: "SF UI Display", "Helvetica", sans-serif;
 
   .card-title {
     @include font(1.5rem, 1.75rem, 400);
@@ -16,15 +17,17 @@
   }
 
   @include media-breakpoint-up(sm) {
-    border: 1px solid $basic-grey;
+    margin: 0 auto;
     max-width: 320px;
   }
 
   @include media-breakpoint-up(lg) {
     @include font(0.87rem, 1.06rem, 400);
     border-radius: 5px;
-    max-height: 740px;
+    // max-height: 740px;
     max-width: 285px;
+    margin: 0;
+    border: 1px solid $basic-grey;
   }
 }
 
@@ -44,7 +47,7 @@
   border-radius: 16px;
   margin-bottom: 25px;
   padding: 20px 30px;
-  width: auto;
+  width: 285px;
   margin: 0 auto 25px;
 
   .title {
@@ -52,21 +55,12 @@
     color: $basic-dark-2;
   }
 
-  @include media-breakpoint-up(sm) {
-    width: 260px;
-  }
-
   @include media-breakpoint-up(md) {
     margin: 0 0 20px;
   }
 
   @include media-breakpoint-up(lg) {
-    width: 285px;
     padding: 0;
-  }
-
-  @include media-breakpoint-up(xl) {
-    width: 285px;
   }
 }
 
@@ -80,7 +74,7 @@
 
 .company-img {
 
-  max-width: 285px;
+  width: 296px;
   height: 160px;
   background-color: $basic-grey;
   margin: 40px auto 20px;

@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-8 px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -37,9 +37,7 @@
                 <a class="nav-link" href="news.html">Новости</a>
               </li>
               <li class="nav-item d-lg-none">
-                <a class="nav-link" data-bs-toggle="collapse" href="#page-footer" data-bs-target="#page-footer" aria-expanded="false">
-                  Подвал
-                </a>
+                <a class="nav-link" href="#page-footer">Подвал</a>
               </li>
             </ul>
 
@@ -68,12 +66,12 @@
       <div class="features">
 
         <section class="features-section">
-          <div class="container-fluid">
-            <h2 class="features-title">Новые возможности</h2>
-            <div class="row justify-content-end">
+          <div>
+            <h2 class="features-title px-8 px-lg-0">Новые возможности</h2>
+            <div class="d-flex justify-content-center justify-content-lg-end">
               <ul class="accordion-features accordion list-unstyled" id="featuresAccordion">
                 <li class="accordion-item">
-                  <h3 id="headingOne">
+                  <h3 class="accordion-header mb-0" id="headingOne">
                     <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-1" aria-expanded="true" aria-controls="feature-list-1">
                       Экономь в магазинах
                     </button>
@@ -89,7 +87,7 @@
                 </li>
 
                 <li class="accordion-item">
-                  <h3 class="accordion-header" id="headingTwo">
+                  <h3 class="accordion-header mb-0" id="headingTwo">
                     <button class="accordion-button d-flex justify-content-between collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-2" aria-expanded="false" aria-controls="feature-list-1">
                       Продавай больше
                     </button>
@@ -105,7 +103,7 @@
                 </li>
 
                 <li class="accordion-item">
-                  <h3 class="accordion-header" id="headingThreee">
+                  <h3 class="accordion-header mb-0" id="headingThree">
                     <button class="accordion-button d-flex justify-content-between collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-3" aria-expanded="false" aria-controls="feature-list-1">
                       Заработай много
                     </button>
@@ -124,23 +122,29 @@
           </div>
         </section>
 
-        <section class="features-section personnel pe-0">
-          <div class="container-fluid pe-0 me-0">
-            <h2 class="features-title">Топ-менеджеры</h2>
-            <div class="d-flex flex-row-reverse">
-              <ul class="personnel-list list-unstyled d-flex  overflow-auto flex-row col-lg-8 ">
+        <section class="features-section personnel">
+          <div>
+            <h2 class="features-title container px-8 px-lg-0">Топ-менеджеры</h2>
+            <div class="scrollable d-flex justify-content-lg-end overflow-auto ">
+              <ul class="scrollable-content ps-8 ps-sm-0 personnel-list list-unstyled d-flex col-lg-8">
                 <li class="personnel-item">
-                  <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  <div class="personnel-img-box">
+                    <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  </div>
                   <p class="personnel-name">Иван Иванов</p>
                   <p class="personnel-duty">Менеджер</p>
                 </li>
                 <li class="personnel-item">
-                  <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  <div class="personnel-img-box">
+                    <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  </div>
                   <p class="personnel-name">Иван Иванов</p>
                   <p class="personnel-duty">Менеджер</p>
                 </li>
                 <li class="personnel-item">
-                  <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  <div class="personnel-img-box">
+                    <img class="personnel-img" src="#" width="200" height="260" alt="photo">
+                  </div>
                   <p class="personnel-name">Иван Иванов</p>
                   <p class="personnel-duty">Менеджер</p>
                 </li>
@@ -149,13 +153,13 @@
           </div>
         </section>
 
-        <section class="features-section indicators mx-auto">
-          <div class="container-fluid">
+        <section class="features-section indicators px-8 px-lg-0">
+          <div>
             <h2 class="features-title">Кэшбэк в цифрах</h2>
-            <div class="row justify-content-end">
+            <div class="d-flex justify-content-lg-end">
               <dl class="indicators-list d-md-flex flex-row flex-wrap justify-content-between my-0">
                 <div class="indicators-item">
-                  <dt class="indicators-key">102 000</dt>
+                  <dt class="indicators-key">120 000</dt>
                   <dd class="indicators-value">партнеров</dd>
                 </div>
                 <div class="indicators-item">
@@ -174,8 +178,8 @@
 
     </main>
 
-    <footer class="page-footer collapse d-lg-block" id="page-footer">
-      <div class="container navbar-dark d-md-flex text-center text-md-start">
+    <footer class="page-footer" id="page-footer">
+      <div class="container px-8 px-lg-0 navbar-dark d-md-flex text-center text-md-start">
         <ul class="page-footer-nav navbar-nav">
           <li class="navbar-item">
             <a class="page-footer-link nav-link" href="to-partners.html">Партнерам</a>
@@ -193,7 +197,7 @@
             <a class="page-footer-link nav-link" href="#">Вопросы и ответы</a>
           </li>
           <li class="navbar-item">
-            <a class="page-footer-link nav-link" href="#">Клиент.соглашение</a>
+            <a class="page-footer-link nav-link" href="#">Клиент. соглашение</a>
           </li>
           <li class="navbar-item">
             <a class="page-footer-link nav-link" href="#">Политика конф.</a>

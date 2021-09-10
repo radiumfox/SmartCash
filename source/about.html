@@ -10,7 +10,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,33 +60,33 @@
     <main class="page-main">
       <h1 class="visually-hidden">SmartCASH</h1>
 
-      <section class="container mb-5 mb-lg-0 gx-xl-0">
+      <section class="about container px-0  mb-lg-0 gx-xl-0">
         <div class="row justify-content-between m-0">
           <h2 class="visually-hidden">О программе</h2>
 
-          <div class="d-none d-lg-block col-12 mt-lg-12 mb-lg-11">
+          <div class="d-none back d-lg-block col-12 ">
             <a class="d-lg-flex align-items-center" href="index.html">
               <svg viewBox="0 0 8 16" width="8" height="16">
                 <use xlink:href="img/sprite.svg#arrow-left"></use>
               </svg>
-              <span class="ps-10">Назад</span>
+              <span>Назад</span>
             </a>
           </div>
 
-          <div class="col-12 col-lg-3 col-xl-2 gx-lg-0">
+          <div class="col-12 col-lg-3 px-8 px-lg-0 gx-lg-0">
             <div class="card-custom card mb-lg-0">
               <img class="company-img card-img-top mx-auto" src="#" alt="img">
 
               <div class="accordion accordion-dropdown mx-md-auto" id="smartcash-contacts">
                 <div class="accordion-item d-flex flex-column">
-                  <h2 class="accordion-header pb-4 p-lg-0 order-lg-0">
+                  <h2 class="accordion-header pb-10 p-lg-0">
                     <button class="accordion-button p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      <span class="button-text fs-4">SMARTCASH</span>
+                      <span class="button-text">SMARTCASH</span>
                     </button>
-                    <span class="card-title d-none d-lg-block m-0 pb-10 mx-md-auto">SMARTCASH</span>
+                    <span class="card-title d-none d-lg-block m-0 mx-md-auto">SMARTCASH</span>
                   </h2>
 
-                  <div id="collapseOne" class="accordion-collapse d-lg-block collapse show order-lg-2" data-bs-parent="#smartcash-contacts">
+                  <div id="collapseOne" class="accordion-collapse d-lg-block collapse show" data-bs-parent="#smartcash-contacts">
                     <div class="justify-content-between d-flex flex-row mb-10">
                       <div class="d-flex">
                         <span class="star star--checked"></span>
@@ -100,8 +100,9 @@
                         <span class="views-icon"></span>
                       </div>
                     </div>
+                    <a href="#" class="button mb-11 mx-auto d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#modal-window">Написать</a>
 
-                    <ul class="d-md-block list-unstyled mb-11 mx-md-auto">
+                    <ul class="card-list d-md-block list-unstyled mb-11 mx-md-auto">
                       <li class="d-flex align-items-center pb-8">
                         <svg viewBox="0 0 20 20" width="20" height="20">
                           <use xlink:href="img/sprite.svg#time"></use>
@@ -154,25 +155,25 @@
 
                   </div>
 
-                  <a href="#" class="button mb-11 mx-auto order-lg-1" data-bs-toggle="modal" data-bs-target="#modal-window">Написать</a>
+                  <a href="#" class="button mb-10 mx-auto d-lg-none" data-bs-toggle="modal" data-bs-target="#modal-window">Написать</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-12 col-lg-8 col-xl-9 gx-lg-0 mx-0 px-sm-5 px-lg-0">
-            <div class="card-header tab-header border-bottom-0 p-0">
+          <div class="col-12 col-lg-8 col-xl-9 px-0 mx-0 px-sm-5 px-lg-0">
+            <div class="card-header tab-header border-bottom-0 p-0 ms-lg-auto">
               <ul class="nav nav-tabs d-flex" id="info" role="tablist">
-                <li class="nav-item tab-item">
+                <li class="nav-item tab-item ps-8 px-lg-0">
                   <a class="nav-link tab-link active py-lg-8" data-bs-toggle="tab" href="#about-us">О нас</a>
                 </li>
-                <li class="nav-item tab-item">
+                <li class="nav-item tab-item pe-8 px-lg-0">
                   <a class="nav-link tab-link py-lg-8" data-bs-toggle="tab" href="#reviews">Отзывы</a>
                 </li>
               </ul>
             </div>
 
-            <div class="tab-content tab-card p-sm-12 pt-lg-5 d-flex flex-column">
+            <div class="tab-content tab-card d-flex flex-column ms-lg-auto ">
               <div class="info-about tab-pane fade show active" role="tabpanel" id="about-us">
                 <h2 class="tab-content-title d-none d-lg-block">О нас</h2>
                 <p class="card-text">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост.</p>
@@ -182,12 +183,12 @@
                 <div class="card-text">
                   <ul class="info-reviews-list">
                     <li>
-                      <blockquote>
+                      <blockquote class="mb-12">
                         <cite class="info-reviews-author col-12 d-lg-flex justify-content-between">
                           <span>Иван Иванович Иванов</span>
                           <time class="info-reviews-time d-none d-lg-inline-block" datetime="2021-07-21">21.07.2021</time>
                         </cite>
-                        <p class="card-text">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост.</p>
+                        <p class="card-text">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает<span class="d-none d-lg-inline">, что реализация намеченных плановых заданий позволяет оценить значение существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост.</span></p>
                       </blockquote>
                     </li>
                     <li>
@@ -196,7 +197,7 @@
                           <span>Иван Иванович Иванов</span>
                           <time class="info-reviews-time d-none d-lg-inline-block" datetime="2021-07-21">21.07.2021</time>
                         </cite>
-                        <p class="card-text">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что реализация намеченных плановых заданий позволяет оценить значение существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост.</p>
+                        <p class="card-text">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает<span class="d-none d-lg-inline">, что реализация намеченных плановых заданий позволяет оценить значение существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост.</span></p>
                       </blockquote>
                     </li>
                   </ul>
@@ -210,7 +211,7 @@
     </main>
 
     <footer class="page-footer collapse" id="page-footer">
-      <div class="container navbar-dark d-md-flex text-center text-md-start">
+      <div class="container px-lg-0 navbar-dark d-md-flex text-center text-md-start">
         <ul class="page-footer-nav navbar-nav">
           <li class="navbar-item">
             <a class="page-footer-link nav-link" href="to-partners.html">Партнерам</a>

@@ -10,7 +10,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,15 +60,15 @@
     <main>
       <h1 class="visually-hidden">Магазины / партнеры</h1>
 
-      <div class="container mt-4 mt-lg-6 mb-3 mb-lg-5 px-lg-0">
+      <div class="container mt-10 mt-lg-6 mb-lg-5 px-lg-0">
         <div class="row justify-content-between m-0">
 
-          <section class="catalog col-12 col-xl-3 px-lg-0">
+          <section class="catalog-filters col-12 col-xl-2 px-0">
             <h2 class="visually-hidden">Фильтры каталога</h2>
             <div class="accordion accordion-dropdown" id="filters">
               <div class="accordion-item">
                 <h2 class="accordion-header">
-                  <button class="accordion-button p-0 d-lg-none mb-11" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <button class="accordion-button p-0 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <span class="button-text">Фильтры</span>
                   </button>
                 </h2>
@@ -85,41 +85,26 @@
                     <div class="form-item">
                       <label for="category" class="form-label">Категория</label>
                       <select id="category" class="form-select">
-                        <option>Опция-1</option>
-                        <option>Опция-2</option>
-                        <option>Опция-3</option>
                       </select>
                     </div>
                     <div class="form-item">
                       <label for="subcategory" class="form-label">Подкатегория</label>
                       <select id="subcategory" class="form-select">
-                        <option>Опция-1</option>
-                        <option>Опция-2</option>
-                        <option>Опция-3</option>
                       </select>
                     </div>
                     <div class="form-item">
                       <label for="program" class="form-label">Программа</label>
                       <select id="program" class="form-select">
-                        <option>Опция-1</option>
-                        <option>Опция-2</option>
-                        <option>Опция-3</option>
                       </select>
                     </div>
                     <div class="form-item">
                       <label for="sort" class="form-label">Сортировать по</label>
                       <select id="sort" class="form-select">
-                        <option>Опция-1</option>
-                        <option>Опция-2</option>
-                        <option>Опция-3</option>
                       </select>
                     </div>
                     <div class="form-item mb-12">
                       <label for="status" class="form-label">Статус</label>
                       <select id="status" class="form-select">
-                        <option>Опция-1</option>
-                        <option>Опция-2</option>
-                        <option>Опция-3</option>
                       </select>
                     </div>
                   </form>
@@ -128,18 +113,20 @@
             </div>
           </section>
 
-          <section class="col-12 col-xl-9 px-lg-0">
+          <section class="catalog col-12 col-xl-9 px-0">
             <h2 class="visually-hidden">Каталог магазинов</h2>
 
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
+            <div class="row gx-0 justify-content-lg-between">
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0">
+                <div class="card card-preview">
                   <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
                   </a>
                   <div class="card-body p-0 text-center">
                     <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
                   </div>
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -156,14 +143,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0">
+                <div class="card card-preview">
                   <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
                   </a>
                   <div class="card-body p-0 text-center">
                     <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
                   </div>
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -180,87 +169,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0">
+                <div class="card card-preview">
                   <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
                   </a>
                   <div class="card-body p-0 text-center">
                     <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <span class="views-number">164</span>
-                      <span class="views-icon"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
-                  <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
-                  </a>
-                  <div class="card-body p-0 text-center">
-                    <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <span class="views-number">164</span>
-                      <span class="views-icon"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
-                  <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
-                  </a>
-                  <div class="card-body p-0 text-center">
-                    <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <div class="d-flex">
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star star--checked"></span>
-                      <span class="star"></span>
-                    </div>
-                    <div class="d-flex align-items-center">
-                      <span class="views-number">164</span>
-                      <span class="views-icon"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
-                  <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
-                  </a>
-                  <div class="card-body p-0 text-center">
-                    <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
                   </div>
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -278,14 +196,16 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0">
+                <div class="card card-preview">
                   <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
                   </a>
                   <div class="card-body p-0 text-center">
                     <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
                   </div>
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -302,14 +222,16 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0 d-none d-md-block">
+                <div class="card card-preview">
                   <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
                   </a>
                   <div class="card-body p-0 text-center">
                     <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
                   </div>
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -326,14 +248,95 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-md-6 col-xl-4 gx-0">
-                <div class="p-3 card card-preview">
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0 d-none d-md-block">
+                <div class="card card-preview">
                   <a href="catalog-item.html">
-                    <img class="card-img mx-auto d-block mb-2" src="#" width="160" height="70" alt="img">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
                   </a>
                   <div class="card-body p-0 text-center">
                     <h3 class="title">ОсОО Belife</h3>
-                    <p class="card-text mb-3">Подарок: Ноутбук (5 шт.)</p>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star"></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span class="views-number">164</span>
+                      <span class="views-icon"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0 d-none d-md-block">
+                <div class="card card-preview">
+                  <a href="catalog-item.html">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
+                  </a>
+                  <div class="card-body p-0 text-center">
+                    <h3 class="title">ОсОО Belife</h3>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star"></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span class="views-number">164</span>
+                      <span class="views-icon"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0 d-none d-md-block">
+                <div class="card card-preview">
+                  <a href="catalog-item.html">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
+                  </a>
+                  <div class="card-body p-0 text-center">
+                    <h3 class="title">ОсОО Belife</h3>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star star--checked"></span>
+                      <span class="star"></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <span class="views-number">164</span>
+                      <span class="views-icon"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item col-12 col-md-6 col-xl-4 gx-0 d-none d-md-block">
+                <div class="card card-preview">
+                  <a href="catalog-item.html">
+                    <div class="card-img-box mx-auto">
+                      <img class="card-img d-block" src="#" width="160" height="70" alt="img">
+                    </div>
+                  </a>
+                  <div class="card-body p-0 text-center">
+                    <h3 class="title">ОсОО Belife</h3>
+                    <p class="card-text">Подарок: Ноутбук (5 шт.)</p>
                   </div>
                   <div class="d-flex justify-content-between">
                     <div class="d-flex">
@@ -354,26 +357,26 @@
 
           </section>
 
-          <div class="col-12 mt-4 mt-lg-5">
+          <div class="col-12 px-0">
             <ul class="catalog-pagination pagination justify-content-end align-items-center justify-content-center justify-content-lg-end">
-              <li class="page-item me-2">
-                <a class="page-link page-link--disabled" href="#" aria-label="Previous">
+              <li class="page-item arrow me-11">
+                <a class="page-link page-link-arrow page-link--disabled" href="#" aria-label="Previous">
                   <svg viewBox="0 0 11 18" width="11" height="18">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
                   </svg>
                 </a>
               </li>
               <li class="page-item active">
-                <a class=" page-link border-0" href="#">1</a>
+                <a class=" page-link border-0 ps-0" href="#">1</a>
               </li>
               <li class="page-item">
                 <a class=" page-link border-0" href="#">2</a>
               </li>
               <li class="page-item">
-                <a class=" page-link border-0" href="#">3</a>
+                <a class="page-link border-0 pe-0" href="#">3</a>
               </li>
-              <li class="page-link page-item ms-2">
-                <a class="" href="#" aria-label="Next">
+              <li class="page-item arrow page-item ms-11">
+                <a class="page-link" href="#" aria-label="Next">
                   <svg viewBox="0 0 11 18" width="11" height="18">
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                   </svg>
