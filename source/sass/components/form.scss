@@ -195,6 +195,14 @@
   border-radius: 5px;
   text-align: center;
 
+  label {
+    margin-bottom: 8px;
+  }
+
+  .form-item {
+    padding-bottom: 20px;
+  }
+
   .form-control {
     width: 245px;
     margin: 0 auto;
@@ -202,14 +210,16 @@
   .button {
     width: 256px;
   }
+  margin-bottom: 26px;
 
   @include media-breakpoint-up(lg) {
     max-width: 285px;
+    margin-bottom: 43px;
   }
 }
 
 .form-custom-wrapper {
-  padding: 30px 20px 30px;
+  padding: 28px 20px 28px;
 }
 
 .form-custom-header {

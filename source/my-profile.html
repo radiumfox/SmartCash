@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,7 +61,7 @@
     <main id="my-profile">
       <h1 class="visually-hidden">Мой профиль</h1>
 
-      <div class="container me-0 me-lg-auto gx-0 mt-11 mt-sm-6 mb-sm-6">
+      <div class="container me-0 me-lg-auto gx-0 mt-12 mt-sm-6 mb-sm-6">
         <div class="row justify-content-between gx-0">
 
           <div class="card-custom card-custom-user col-12 col-lg-5 col-xl-3"> <!-- menu -->
@@ -69,9 +69,9 @@
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
             </div>
-            <div class="d-flex flex-column align-items-center "> <!-- personal number -->
-              <p class="mb-0 mb-lg-3">Ваш личный номер</p>
-              <p class="fs-3">990000001</p>
+            <div class="personal-number d-flex flex-column align-items-center "> <!-- personal number -->
+              <p class="mb-0">Ваш личный номер</p>
+              <p class="number">990000001</p>
             </div>
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
               <div class="nav-item d-md-none">
@@ -116,9 +116,9 @@
           </div>
 
           <div class="col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0">
-            <div class="card-header tab-header tab-header-border">
-              <div class="scrollable overflow-auto  ps-8 ps-md-0">
-                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+            <div class="card-header tab-header tab-header-border ms-lg-auto">
+              <div class="scrollable overflow-auto ps-8 ps-md-0">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column" role="tablist">
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#main">Основное</a>
                   </li>
@@ -137,18 +137,18 @@
             <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
 
               <div class="tab-pane fade px-8 px-lg-0 mb-5" id="main">
-                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+                <div class="pt-12 px-md-0 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
                       <div class="form-item d-lg-flex justify-content-end align-items-center">
-                        <label for="official-name" class="form-label">Имя:</label>
-                        <input type="text" class="form-control" id="official-name" name="official-name">
+                        <label for="short-name" class="form-label">Фамилия:</label>
+                        <input type="text" class="form-control" id="short-name" name="short-name">
                       </div>
 
                       <div class="form-item d-lg-flex justify-content-end align-items-center">
-                        <label for="short-name" class="form-label">Фамилия:</label>
-                        <input type="text" class="form-control" id="short-name" name="short-name">
+                        <label for="official-name" class="form-label">Имя:</label>
+                        <input type="text" class="form-control" id="official-name" name="official-name">
                       </div>
 
                       <div class="form-item d-lg-flex justify-content-end align-items-center">
@@ -188,7 +188,7 @@
                         <input type="text" class="form-control" id="tin" name="tin">
                       </div>
 
-                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-center pb-12">
                         <p class="m-0 mb-2">Когда выдан</p>
                         <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
                           <label for="discount-date-day" class="form-label visually-hidden">День</label>
@@ -216,8 +216,8 @@
 
               <!-- -->
 
-              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
-                <div class="col-12 pt-4 pt-lg-0 mx-auto">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="contacts">
+                <div class="col-12 pt-4 pt-lg-12 mx-auto">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
 
@@ -246,7 +246,7 @@
                         <input type="text" class="form-control" id="whatsapp" name="whatsapp">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end pb-11 pb-lg-12">
                         <label for="email" class="form-label">E-mail:</label>
                         <input type="text" class="form-control" id="email" name="email">
                       </div>
@@ -263,7 +263,7 @@
 
               <!-- -->
               <div class="tab-pane fade show active px-8 px-lg-0 mb-5" id="safety">
-                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                <div class="col-12 pt-4 pt-lg-12 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -282,7 +282,7 @@
                         <input type="text" class="form-control" id="new-password" name="new-password">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center pb-11 pb-lg-12">
                         <label for="repeat-password" class="form-label">Повторить пароль:</label>
                         <input type="text" class="form-control" id="repeat-password" name="repeat-password">
                       </div>

@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,7 +61,7 @@
     <main>
       <h1 class="visually-hidden">Моя карта</h1>
 
-      <div class="container gx-0 mt-11 mt-sm-6 mb-sm-6">
+      <div class="container gx-0 mt-12 mt-sm-6 mb-sm-6">
         <div class="row justify-content-between gx-0">
 
           <div class="card-custom card-custom-user col-12 col-lg-4 col-xl-3 pb-md-5"> <!-- menu -->
@@ -69,9 +69,9 @@
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
             </div>
-            <div class="d-flex flex-column align-items-center "> <!-- personal number -->
-              <p class="mb-0 mb-lg-3">Ваш личный номер</p>
-              <p class="fs-3">990000001</p>
+            <div class="personal-number d-flex flex-column align-items-center "> <!-- personal number -->
+              <p class="mb-0">Ваш личный номер</p>
+              <p class="number">990000001</p>
             </div>
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
               <div class="nav-item d-md-none">
@@ -115,11 +115,11 @@
             </div>
           </div>
 
-          <section class="my-card col-12 col-lg-8 col-xl-9 mt-11 mt-lg-0 px-8"> <!-- main section -->
-            <div class="mb-11 d-flex flex-column align-items-center d-lg-block">
-              <h2 class="fs-4 me-auto mb-0 pb-4">Моя карта</h2>
+          <section class="my-card col-12 col-lg-8 col-xl-9 mt-11 mt-lg-0"> <!-- main section -->
+            <div class="d-flex flex-column d-lg-block mb-11 mb-lg-0">
+              <h2 class="mb-0 pb-2 pb-lg-4">Моя карта</h2>
               <div class="d-lg-flex">
-                <div class="card-discount current mb-2 me-lg-11">
+                <div class="card-discount current me-lg-11">
                   <span class="visually-hidden">Classic</span>
                 </div>
                 <ul class="client-info-list d-flex flex-column list-unstyled m-0">
@@ -132,20 +132,20 @@
                 </ul>
               </div>
             </div>
-            <form class="form mb-12 d-flex flex-column align-items-center d-lg-block" method="POST" id="my-card">
-              <p class="fs-4 mb-lg-4 me-auto">Хотите получать больше?</p>
-              <ul class="list-unstyled d-lg-flex">
-                <li class="d-flex justify-content-end align-items-center d-lg-block me-lg-5">
+            <form class="mb-12 d-flex flex-column align-items-center d-lg-block" method="POST" id="my-card">
+              <p class="mb-lg-4 me-auto">Хотите получать больше?</p>
+              <ul class="list-unstyled d-lg-flex mb-0">
+                <li class="d-flex justify-content-end align-items-center d-lg-block mb-10 mb-lg-9 me-lg-5">
                   <input type="checkbox" class="btn-check" id="discount-premium">
-                  <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end">
+                  <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end mb-0">
                     <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center">
                       Premium<span class="card-discount-summ">2$</span>
                     </div>
                   </label>
                 </li>
-                <li class="d-flex justify-content-end align-items-center d-lg-block">
+                <li class="d-flex justify-content-end align-items-center mb-11 mb-lg-9 d-lg-block">
                   <input type="checkbox" class="btn-check" id="discount-gold">
-                  <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end">
+                  <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end mb-0">
                     <div class="card-discount card-discount--green d-flex justify-content-center align-items-center">
                       Gold <span class="card-discount-summ">4$</span>
                     </div>
@@ -153,7 +153,7 @@
                 </li>
               </ul>
 
-              <div class="button-box d-flex justify-content-center justify-content-lg-end col-lg-4">
+              <div class="button-box d-flex ms-lg-11">
                 <button class="button" type="submit">Оплатить</button>
               </div>
             </form>

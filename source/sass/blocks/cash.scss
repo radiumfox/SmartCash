@@ -363,3 +363,23 @@
     width: 895px;
   }
 }
+
+.personal-number {
+  p {
+    line-height: 1.04rem;
+  }
+
+  .number {
+    @include font(1.5rem, 1.78rem, 400);
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+}
+
+.card-custom-user {
+  .form-upload {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -175,3 +175,9 @@
     @include font(1.13rem, 1.3rem, 400);
   }
 }
+
+.my-profile {
+  .button-box {
+    max-width: 325px;
+  }
+}

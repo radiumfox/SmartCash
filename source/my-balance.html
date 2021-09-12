@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,7 +61,7 @@
     <main>
       <h1 class="visually-hidden">Мой баланс</h1>
 
-      <div class="container me-0 me-xxl-auto gx-0 mt-md-6 mb-6">
+      <div class="container me-0 mt-12 me-xxl-auto gx-0 mt-md-6 mb-6">
         <div class="row justify-content-between gx-0">
 
           <div class="card-custom card-custom-user col-12 col-lg-4 col-xl-3"> <!-- menu -->
@@ -69,9 +69,9 @@
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
             </div>
-            <div class="d-flex flex-column align-items-center "> <!-- personal number -->
-              <p class="mb-0 mb-lg-3">Ваш личный номер</p>
-              <p class="fs-3">990000001</p>
+            <div class="personal-number d-flex flex-column align-items-center "> <!-- personal number -->
+              <p class="mb-0">Ваш личный номер</p>
+              <p class="number">990000001</p>
             </div>
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
               <div class="nav-item d-md-none">
@@ -120,22 +120,22 @@
               <div class="d-flex flex-column flex-xxl-row align-items-center justify-content-lg-between">
 
                 <div class="me-xl-10">
-                  <div class="card-green mx-auto mb-2 mt-11 mb-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center">
+                  <div class="card-green mx-auto mt-11 mb-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center">
                     <div class="info text-center">
                       <p class="info-summ m-0 pb-1">100,00</p>
                       <p class="m-0">Бонус от покупки рефералов</p>
                     </div>
                   </div>
-                  <form class="form-custom mb-11" method="POST" action="#">
+                  <form class="form-custom" method="POST" action="#">
                     <p class="form-custom-header">Обменять бонус на $</p>
                     <div class="form-custom-wrapper">
                       <div class="form-item">
-                        <label class="mb-lg-3" for="referral-points-amount">Количество баллов</label>
+                        <label class="fs-8" for="referral-points-amount">Количество баллов</label>
                         <input class="form-control" type="text" id="referral-points-amount" name="referral-points-amount">
                       </div>
 
                       <div class="form-item">
-                        <label class="mb-lg-3" for="referral-dollar-amount">Сумма в $</label>
+                        <label class="fs-8" for="referral-dollar-amount">Сумма в $</label>
                         <input class="form-control" type="text" id="referral-dollar-amount" name="referral-dollar-amount">
                       </div>
 
@@ -147,22 +147,22 @@
                 </div>
 
                 <div class="me-xl-10">
-                  <div class="card-green mx-auto mb-2 mb-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center">
+                  <div class="card-green mx-auto mb-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center">
                     <div class="info text-center">
                       <p class="info-summ m-0 pb-1">100,00</p>
                       <p class="m-0">Бонус за подключение партнеров</p>
                     </div>
                   </div>
-                  <form class="form-custom mb-11" method="POST" action="#">
+                  <form class="form-custom" method="POST" action="#">
                     <p class="form-custom-header">Обменять бонус на $</p>
                     <div class="form-custom-wrapper">
                       <div class="form-item">
-                        <label class="mb-lg-3" for="activation-points-amount">Количество баллов</label>
+                        <label class="fs-8" for="activation-points-amount">Количество баллов</label>
                         <input class="form-control" type="text" id="activation-points-amount" name="activation-points-amount">
                       </div>
 
                       <div class="form-item">
-                        <label class="mb-lg-3" for="activation-dollar-amount">Сумма в $</label>
+                        <label class="fs-8" for="activation-dollar-amount">Сумма в $</label>
                         <input class="form-control" type="text" id="activation-dollar-amount" name="activation-dollar-amount">
                       </div>
 
@@ -174,23 +174,23 @@
                 </div>
 
                 <div>
-                  <div class="card-green mx-auto mb-2 mb-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center">
+                  <div class="card-green mx-auto mb-lg-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center">
                     <div class="info text-center">
                       <p class="info-summ m-0 pb-1">100$</p>
                       <p class="m-0">Доступный баланс для вывода</p>
                     </div>
                   </div>
 
-                  <form class="form-custom mb-11" method="POST" action="#">
+                  <form class="form-custom" method="POST" action="#">
                     <p class="form-custom-header">Вывод</p>
                     <div class="form-custom-wrapper">
                       <div class="form-item">
-                        <label class="mb-lg-3" for="output-dollar-amount">Сумма в $</label>
+                        <label class="fs-8" for="output-dollar-amount">Сумма в $</label>
                         <input class="form-control" type="text" id="output-dollar-amount" name="output-dollar-amount">
                       </div>
 
                       <div class="form-item">
-                        <label class="mb-lg-3" for="card-number">Номер карты</label>
+                        <label class="fs-8" for="card-number">Номер карты</label>
                         <input class="form-control" type="text" id="card-number" name="card-number">
                       </div>
 
@@ -206,7 +206,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button d-flex align-items-center pb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >
-                      <span class="button-text fs-4 m-0 me-2">История выплат/Обмена</span>
+                      <span class="button-text fs-7 m-0 ps-8 ps-lg-0">История выплат/Обмена</span>
                     </button>
                   </h2>
                   <div id="collapseTwo" class="scrollable ps-8 ps-lg-0 overflow-auto accordion-collapse collapse show" data-bs-parent="#sales-history">
@@ -215,12 +215,11 @@
                         <table class="table table-custom borderless">
                           <thead class="theader">
                             <tr>
-                              <td>ID клиента</td>
-                              <td>Сумма покупки</td>
-                              <td>Программа</td>
-                              <td>Сумма к оплате</td>
-                              <td>Скидка</td>
+                              <td>Вид операции</td>
+                              <td>Карта</td>
+                              <td>Сумма</td>
                               <td class="td-sort">Дата</td>
+                              <td>Статус</td>
                             </tr>
                           </thead>
                           <tbody class="table-body">
@@ -274,6 +273,6 @@
       </div>
     </footer>
 
-    <script src="js/bootstrap.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
