@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,14 +60,14 @@
 
     <main class="partner-profile">
       <h1 class="visually-hidden">Профиль партнера</h1>
-      <div class="container me-0 me-lg-auto gx-0 mt-11 mt-sm-6 mb-sm-6">
+      <div class="container me-0 me-lg-auto gx-0 mt-12 mt-sm-6 mb-sm-6">
         <div class="row justify-content-between gx-0">
-          <div class="card-custom col-12 col-lg-5 col-xl-3">
+          <div class="card-custom card-custom-partner col-12 col-lg-5 col-xl-3">
             <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
             </div>
-            <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
+            <div class="menu-accordion accordion text-center" id="partner-menu">
               <div class="nav-item d-md-none">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -110,10 +110,10 @@
 
           </div>
 
-          <div class="col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0">
-            <div class="card-header tab-header tab-header-border">
+          <div class="menu col-12 col-lg-5 col-xl-3 p-lg-0 order-xl-2">
+            <div class="card-header tab-header tab-header-border ms-lg-auto">
               <div class="scrollable overflow-auto">
-                <ul class="ps-8 ps-lg-0 scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+                <ul class="ps-8 ps-lg-0 scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column" role="tablist">
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#main">Основное</a>
                   </li>
@@ -121,7 +121,7 @@
                     <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#contacts">Контакты</a>
                   </li>
                   <li class="tab-item tab-item-large nav-item">
-                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#schedule">График работы</a>
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#schedule">График<span class="d-none d-lg-inline"> работы</span></a>
                   </li>
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#safety">Безопасность</a>
@@ -134,11 +134,11 @@
             </div>
           </div>
 
-          <div class="col-12 col-xl-6 order-xl-1 mt-lg-6 mt-xl-0">
+          <div class="col-12 col-xl-6 order-xl-1 mt-lg-12">
             <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
 
               <div class="tab-pane fade px-8 px-lg-0 mb-5" id="main">
-                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+                <div class="px-md-0 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -162,7 +162,7 @@
                         <input type="text" class="form-control" id="tin" name="tin">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end ms-lg-auto pb-12">
+                      <div class="form-item d-lg-flex justify-content-end ms-lg-auto pb-11 pb-lg-12">
                         <label for="description" class="form-label">Описание</label>
                         <textarea class="form-control form-textarea" id="description" name="description"></textarea>
                       </div>
@@ -178,67 +178,67 @@
 
               <!-- -->
 
-              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
-                <div class="col-12 pt-4 pt-lg-0 mx-auto">
-                  <form method="POST" action="#">
-                    <div class="row m-0 d-flex align-items-center justify-content-between justify-content-lg-end gx-0">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="contacts">
+                <div class="col-12 pt-lg-0">
+                  <form class="contacts" method="POST" action="#">
+                    <div class="row m-0 d-flex flex-column align-items-lg-end gx-0">
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="country" class="form-label">Страна:</label>
                         <input type="text" class="form-control" id="country" name="country">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="region" class="form-label">Регион / город:</label>
                         <input type="text" class="form-control" id="region-city" name="region-city">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="street-home" class="form-label">Улица, дом:</label>
                         <input type="text" class="form-control" id="street-home" name="street-home">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="phone-number" class="form-label">Номер телефона:</label>
                         <input type="text" class="form-control" id="phone-number" name="phone-number">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="whatsapp" class="form-label">WhatsApp:</label>
                         <input type="text" class="form-control" id="whatsapp" name="whatsapp">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="email" class="form-label">E-mail:</label>
                         <input type="text" class="form-control" id="email" name="email">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="instagram" class="form-label">Инстаграм:</label>
                         <input type="text" class="form-control" id="instagram" name="instagram">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="facebook" class="form-label">Фейсбук:</label>
                         <input type="text" class="form-control" id="facebook" name="facebook">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="vkontakte" class="form-label">Вконтакте:</label>
                         <input type="text" class="form-control" id="vkontakte" name="vkontakte">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="odnoklassniki" class="form-label">Одноклассники:</label>
                         <input type="text" class="form-control" id="odnoklassniki" name="odnoklassniki">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center">
                         <label for="telegram" class="form-label">Телеграм:</label>
                         <input type="text" class="form-control" id="telegram" name="telegram">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end pb-12">
+                      <div class="form-item d-lg-flex justify-content-end pb-11 pb-lg-12 align-items-center">
                         <label for="website" class="form-label">Веб-сайт:</label>
                         <input type="text" class="form-control" id="website" name="website">
                       </div>
@@ -250,13 +250,12 @@
                     </div>
                   </form>
                 </div>
-
               </div>
 
               <!-- -->
 
-              <div class="tab-pane fade tab-pane fade mb-5" id="schedule">
-                <div class="col-12 pt-4 pt-lg-0 mx-auto px-8 px-lg-0">
+              <div class="tab-pane fade mb-5" id="schedule">
+                <div class="col-12 pt-lg-0 mx-auto px-8 px-lg-0">
                   <form method="POST" action="#">
                     <div class="form-item d-flex justify-content-between align-items-baseline">
                       <div class="d-flex align-items-center">
@@ -308,7 +307,7 @@
                         <input type="checkbox" class="btn-check" id="thursday" name="schedule" value="thursday">
                         <label for="thursday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Чт</label>
                       </div>
-                      <div class="d-flex align-items-baseliner">
+                      <div class="d-flex align-items-baseline">
                         <input type="text" class="form-control form-time order-1" id="thu-from" disabled>
                         <label for="thu-from" class="form-label order-0"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
                       </div>
@@ -363,7 +362,7 @@
                       </div>
                     </div>
 
-                    <div class="lunch-break mb-11">
+                    <div class="lunch-break">
                       <p class="m-0 mb-10">Обеденный перерыв</p>
                       <div class="form-item d-flex justify-content-end align-items-center ms-lg-auto ">
                         <div class="d-flex align-items-center">
@@ -390,7 +389,7 @@
 
               <!-- -->
               <div class="tab-pane fade px-8 px-lg-0 mb-5" id="safety">
-                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                <div class="col-12 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -409,7 +408,7 @@
                         <input type="text" class="form-control" id="new-password" name="new-password">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto pb-12">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto pb-11 pb-lg-12">
                         <label for="repeat-password" class="form-label">Повторить пароль:</label>
                         <input type="text" class="form-control" id="repeat-password" name="repeat-password">
                       </div>
@@ -425,8 +424,8 @@
 
               <!-- -->
 
-              <div class="tab-pane fade  show active px-8 px-lg-0 mb-5" id="responsible">
-                <div class="col-12 pt-4 pt-lg-0 mx-auto mx-lg-0">
+              <div class="tab-pane fade show active px-8 px-lg-0 mb-5" id="responsible">
+                <div class="col-12  mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -450,7 +449,7 @@
                         <input type="text" class="form-control" id="head-phone-number" name="head-phone-number">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center ms-lg-auto pb-10 pb-lg-12">
                         <label for="head-email" class="form-label">E-mail:</label>
                         <input type="text" class="form-control" id="head-email" name="head-email">
                       </div>
@@ -458,7 +457,7 @@
                       <div class="form-item d-lg-flex justify-content-end pb-11 pb-lg-12">
                         <p class="m-0 form-label pb-3">Добавить фото:</p>
                         <div class="form-upload form-control d-flex justify-content-center align-items-center">
-                          <label class="form-label m-0" for="head-photo">Добавить изображение</label>
+                          <label class="form-label" for="head-photo">Добавить изображение</label>
                           <input class="form-control visually-hidden" id="head-photo" type="file" name="head-photo" accept="image/gif, image/jpeg, image/png">
                         </div>
                       </div>

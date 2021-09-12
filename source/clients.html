@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,11 +61,11 @@
     <main>
       <h1 class="visually-hidden">Клиенты</h1>
 
-      <div class="container me-0 me-xxl-auto gx-0 mt-md-6 mb-6">
+      <div class="container me-0 me-xxl-auto gx-0 mt-md-6 mt-12">
         <div class="row d-md-flex justify-content-between gx-0">
 
-          <div class="card-custom col-12 col-lg-4 col-xl-3">
-            <div class="form-upload mb-10 mt-10">
+          <div class="card-custom card-custom-partner col-12 col-lg-4 col-xl-3">
+            <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
             </div>
@@ -111,21 +111,21 @@
             </div>
           </div>
 
-          <div class="clients col-12 col-lg-8 col-xl-9 mt-4 px-lg-0 mx-0">
-            <div class="d-lg-flex justify-content-between mb-12">
-              <div class="card-green mx-auto mt-4 mt-lg-0 mb-3 mb-lg-0 me-lg-10 d-flex flex-column justify-content-center align-items-center">
+          <div class="clients col-12 col-lg-8 col-xl-9 px-lg-0 mx-0 mb-5">
+            <div class="cards-box d-lg-flex justify-content-between">
+              <div class="card-green mx-auto mx-lg-0 mt-lg-0 mb-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="info text-center">
                   <p class="info-summ m-0 pb-1">10</p>
                   <p class="m-0">Общее количество клиентов</p>
                 </div>
               </div>
-              <div class="card-green mx-auto mb-3 mb-lg-0 me-lg-10 d-flex flex-column justify-content-center align-items-center">
+              <div class="card-green mx-auto mx-lg-0 mb-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="info text-center">
                   <p class="info-summ m-0 pb-1">100,00</p>
                   <p class="m-0">Общая сумма продаж</p>
                 </div>
               </div>
-              <div class="card-green mx-auto mb-3 mb-lg-0 me-lg-10 d-flex flex-column justify-content-center align-items-center">
+              <div class="card-green mx-auto mx-lg-0 mb-3 mb-lg-0 d-flex flex-column justify-content-center align-items-center">
                 <div class="info text-center">
                   <p class="info-summ m-0 pb-1">100,00</p>
                   <p class="m-0">Общая сумма скидок</p>
@@ -136,13 +136,13 @@
             <div class="accordion accordion-dropdown" id="sales-history">
               <div class="accordion-item">
                 <h2 class="accordion-header mb-11">
-                  <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >
-                    <span class="button-text fs-4 m-0 me-2">История продаж</span>
+                  <button class="accordion-button d-flex align-items-center px-8 px-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" >
+                    <span class="button-text  me-2">История продаж</span>
                   </button>
                 </h2>
                 <div id="collapseTwo" class="scrollable ps-8 ps-lg-0 overflow-auto accordion-collapse collapse show" data-bs-parent="#sales-history">
                   <div class="scrollable-content scrollable-content-table ">
-                    <div class="table-container mb-5">
+                    <div class="table-container mb-12">
                       <table class="table table-custom borderless">
                         <thead class="theader">
                           <tr>

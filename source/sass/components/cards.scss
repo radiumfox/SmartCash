@@ -24,7 +24,6 @@
   @include media-breakpoint-up(lg) {
     @include font(0.87rem, 1.06rem, 400);
     border-radius: 5px;
-    // max-height: 740px;
     max-width: 285px;
     margin: 0;
     border: 1px solid $basic-grey;
@@ -40,6 +39,12 @@
 .card-custom-small {
   @include media-breakpoint-up(lg) {
     height: 330px;
+  }
+}
+
+.card-custom-partner {
+  @include media-breakpoint-up(lg) {
+    height: 620px;
   }
 }
 

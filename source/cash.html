@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,10 +61,10 @@
     <main>
       <h1 class="visually-hidden">Касса партнера</h1>
 
-      <div class="container gx-0 mt-11 mt-sm-6 mb-sm-6">
+      <div class="container gx-0 mt-12 mt-sm-6 mb-sm-6">
         <div class="row justify-content-between gx-0">
 
-          <div class="card-custom col-12 col-lg-3 mx-auto"> <!-- -->
+          <div class="card-custom card-custom-partner col-12 col-lg-4 col-xl-3"> <!-- -->
             <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" name="image" accept="image/gif, image/jpeg, image/png">
@@ -111,70 +111,70 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6 pt-4 pt-lg-0 mx-auto mb-5"> <!-- -->
-              <form class="cash mb-12" method="POST">
-                <div class="row d-flex align-items-center justify-content-between m-0 gx-0">
-                  <div class="form-item col-lg-12">
-                    <label for="loyalty-program" class="form-label">Программа лояльности</label>
-                    <select id="loyalty-program" class="form-select form-control-large">
-                      <option></option>
-                      <option></option>
-                      <option></option>
-                    </select>
-                  </div>
-
-                  <div class="form-item col-lg-6">
-                    <label for="receipt-number" class="form-label">Номер квитанции</label>
-                    <input type="text" class="form-control" id="receipt-number" name="receipt-number">
-                  </div>
-
-                  <div class="form-item col-lg-6">
-                    <label for="purchase-sum" class="form-label">Сумма покупки</label>
-                    <input type="text" class="form-control" id="purchase-sum" name="purchase-sum">
-                  </div>
-
-                  <div class="form-item col-lg-6">
-                    <label for="personal-number" class="form-label">Личный номер клиента</label>
-                    <input type="text" class="form-control" id="personal-number" name="personal-number">
-                  </div>
-
-                  <div class="form-item col-lg-6">
-                    <label for="payment-sum" class="form-label">Сумма к оплате</label>
-                    <input type="text" class="form-control" id="payment-sum" name="payment-sum">
-                  </div>
-
-                  <div class="button-box col-lg-6 d-flex justify-content-center justify-content-lg-start">
-                    <button class="button border-0" type="button">Сохранить</button>
-                  </div>
+          <div class="col-12 col-lg-8 col-xl-6 mx-auto d-flex flex-column align-items-lg-end px-8 px-lg-0"> <!-- -->
+            <form class="cash" method="POST">
+              <div class="row d-flex align-items-center justify-content-between m-0 gx-0">
+                <div class="form-item form-item-large col-lg-12">
+                  <label for="loyalty-program" class="form-label">Программа лояльности</label>
+                  <select id="loyalty-program" class="form-select form-control-large">
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                  </select>
                 </div>
-              </form>
 
-              <div class="container d-flex flex-column align-items-center ">
-                <div class="client-info py-5 px-10">
-                  <ul class="client-info-list d-flex mb-0 flex-column align-items-center list-unstyled">
-                    <li class="pb-9">Номер квитанции: <span>1234567</span>
-                    </li>
-                    <li class="pb-9">Личный номер клиента: <span>365</span>
-                    </li>
-                    <li class="pb-9">Сумма покупки: <span>1200 Р</span>
-                    </li>
-                    <li class="pb-9">Скидка: <span>10%</span>
-                    </li>
-                    <li class="pb-11">Сумма к оплате: <span>1080 Р</span>
-                    </li>
-                  </ul>
-                  <div class="button-box d-flex justify-content-center">
-                    <button class="button border-0" type="submit">Подтвердить</button>
-                  </div>
+                <div class="form-item col-lg-6 d-flex flex-column">
+                  <input type="text" class="form-control order-1" id="receipt-number" name="receipt-number">
+                  <label for="receipt-number" class="form-label order-0">Номер квитанции</label>
+                </div>
+
+                <div class="form-item col-lg-6 d-flex flex-column">
+                  <input type="text" class="form-control ms-lg-auto order-1" id="purchase-sum" name="purchase-sum">
+                  <label for="purchase-sum" class="form-label order-0">Сумма покупки</label>
+                </div>
+
+                <div class="form-item col-lg-6 d-flex flex-column pb-lg-11">
+                  <input type="text" class="form-control order-1" id="personal-number" name="personal-number">
+                  <label for="personal-number" class="form-label order-0">Личный номер клиента</label>
+                </div>
+
+                <div class="form-item col-lg-6 d-flex flex-column pb-11">
+                  <input type="text" class="form-control ms-lg-auto order-1" id="payment-sum" name="payment-sum">
+                  <label for="payment-sum" class="form-label order-0">Сумма к оплате</label>
+                </div>
+
+                <div class="button-box col-lg-6 d-flex justify-content-center justify-content-lg-start">
+                  <button class="button border-0" type="submit">Сохранить</button>
                 </div>
               </div>
+            </form>
 
+            <div class="container d-flex flex-column align-items-center ">
+              <div class="client-info">
+                <ul class="client-info-list d-flex mb-0 flex-column align-items-center list-unstyled">
+                  <li class="client-info-item">Номер квитанции: <span>1234567</span>
+                  </li>
+                  <li class="client-info-item">Личный номер клиента: <span>365</span>
+                  </li>
+                  <li class="client-info-item">Сумма покупки: <span>1200 Р</span>
+                  </li>
+                  <li class="client-info-item">Скидка: <span>10%</span>
+                  </li>
+                  <li class="client-info-item">Сумма к оплате: <span>1080 Р</span>
+                  </li>
+                </ul>
+                <div class="button-box d-flex justify-content-center">
+                  <button class="button border-0" type="submit">Подтвердить</button>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
       </div>
 
     </main>
+
     <footer class="page-footer collapse" id="page-footer">
       <div class="container navbar-dark d-md-flex text-center text-md-start">
         <ul class="page-footer-nav navbar-nav">

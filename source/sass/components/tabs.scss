@@ -114,39 +114,25 @@
   }
 }
 
-// .tab-header-border {
-//   @include media-breakpoint-up(lg) {
-//     &.tab-header {
-//       max-width: 300px;
-//       padding: 50px 0;
-//       border: 1px solid $basic-grey;
-//     }
-//   }
-// }
+.tab-header-border {
+  @include media-breakpoint-up(lg) {
+
+    &.tab-header {
+
+      width: 285px;
+      padding: 40px 0;
+      border: 1px solid $basic-grey;
+    }
+
+    & .tab-link {
+      @include font(1.13rem, 1.3rem, 400);
+    }
+  }
+}
 
 .tab-content {
   position: relative;
   font-family: "SF UI Display", "Helvetica", sans-serif;
-
-  // @include media-breakpoint-up(lg) {
-  //   &::before {
-  //     content: "";
-  //     position: absolute;
-  //     width: calc(100% - 300px);
-  //     height: 1px;
-  //     background-color: $basic-grey;
-  //     right: 0;
-  //     top: -1px;
-  //   }
-
-  //   &--partner::before {
-  //     width: calc(100% - 900px);
-  //   }
-
-  //   &--profile::before {
-  //     width: 0;
-  //   }
-  // }
 
   @include media-breakpoint-up(lg) {
     border: 1px solid $basic-grey;
@@ -194,4 +180,3 @@
   padding: 0;
   max-width: 895px;
 }
-

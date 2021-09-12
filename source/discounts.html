@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,9 +61,9 @@
     <main>
       <h1 class="visually-hidden">Скидки партнера</h1>
 
-      <div class="container gx-0 mt-md-6">
+      <div class="container gx-0 mt-md-6 mt-12">
         <div class="row justify-content-between gx-0">
-          <div class="card-custom col-12 col-lg-4 col-xl-3">
+          <div class="card-custom card-custom-partner col-12 col-lg-4 col-xl-3">
             <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
@@ -110,11 +110,11 @@
             </div>
           </div>
 
-          <div class="container col-12 col-lg-8 col-xl-9 mt-4 px-8 px-lg-0 mx-0">
+          <div class="container col-12 col-lg-8 col-xl-9 px-8 px-lg-0 mx-0">
             <form class="discount" method="POST" action="#">
 
               <div class="row d-flex align-items-center justify-content-between m-0 gx-0">
-                <div class="d-flex justify-content-center justify-content-xl-end mb-5">
+                <div class="d-flex justify-content-center justify-content-xl-end mb-11 mb-lg-5">
                   <button class="button" type="button">+ Добавить скидку</button>
                 </div>
 
@@ -122,97 +122,88 @@
                   <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                     <label for="category" class="form-label">Категория</label>
                     <select id="category" class=" form-select">
-                      <option></option>
-                      <option></option>
-                      <option></option>
                     </select>
                   </div>
                   <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                     <label for="subcategory" class="form-label">Подкатегория</label>
                     <select id="subcategory" class=" form-select">
-                      <option></option>
-                      <option></option>
-                      <option></option>
                     </select>
                   </div>
                   <div class="form-item form-item-select col-lg-6 col-xl-4">
                     <label for="status" class="form-label">Статус</label>
                     <select id="status" class=" form-select">
-                      <option></option>
-                      <option></option>
-                      <option></option>
                     </select>
                   </div>
-                  <div class="form-item col-lg-8 ms-lg-0">
-                    <label for="discount-title" class="form-label">Тема</label>
-                    <input type="text" class="form-control form-control-large" id="discount-title">
-                  </div>
-                  <div class="col-lg-5 ms-lg-0 pb-12">
-                    <p>Дата завершения</p>
-                    <div class="form-item-date d-flex justify-content-between">
-                      <label for="discounts-date-day" class="form-label visually-hidden">День</label>
-                      <select id="discounts-date-day" class="days form-select form-select-day">
-                      </select>
+                </div>
+                <div class="form-item form-item-large pt-lg-9 col-lg-8 ms-lg-0">
+                  <label for="discount-title" class="form-label">Тема</label>
+                  <input type="text" class="form-control form-control-large" id="discount-title">
+                </div>
+                <div class="col-lg-5 ms-lg-0 pb-12">
+                  <p class="mb-2">Дата завершения</p>
+                  <div class="form-item-date d-flex justify-content-between">
+                    <label for="discounts-date-day" class="form-label visually-hidden">День</label>
+                    <select id="discounts-date-day" class="days form-select form-select-day">
+                    </select>
 
-                      <label for="discounts-date-month" class="form-label visually-hidden">Месяц</label>
-                      <select id="discounts-date-month" class="months form-select form-select-month">
-                      </select>
+                    <label for="discounts-date-month" class="form-label visually-hidden">Месяц</label>
+                    <select id="discounts-date-month" class="months form-select form-select-month">
+                    </select>
 
-                      <label for="discounts-date-year" class="form-label visually-hidden">Год</label>
-                      <select id="discounts-date-year" class="years form-select form-select-year">
-                      </select>
-                    </div>
+                    <label for="discounts-date-year" class="form-label visually-hidden">Год</label>
+                    <select id="discounts-date-year" class="years form-select form-select-year">
+                    </select>
                   </div>
                 </div>
 
                 <div>
                   <p class="mb-11">Скидки по картам</p>
-                  <ul class="list-unstyled d-xl-flex m-0 ps-lg-0 pb-5">
-                    <li class="discount-item pe-lg-9 mb-11 d-md-flex justify-content-xl-between align-items-center d-lg-block">
-                      <input type="checkbox" class="btn-check" id="discount-classic">
-                      <label for="discount-classic" class="form-label form-label-radio d-flex justify-content-xl-end">
-                        <div class="card-discount d-flex justify-content-center align-items-center mb-2">
+                  <ul class="list-unstyled d-xl-flex m-0 ps-lg-0 mb-lg-12">
+                    <li class="discount-item d-md-flex justify-content-xl-between align-items-center d-lg-block">
+                      <input type="checkbox" class="btn-check" id="discount-classic" checked>
+                      <label for="discount-classic" class="form-label form-label-radio d-flex justify-content-end">
+                        <div class="card-discount d-flex justify-content-center align-items-center">
                         Classic
                         </div>
                       </label>
                       <div class="d-flex justify-content-center ms-3">
-                        <input class="form-control form-control-percent" type="text" id="discount-classic-input" value="2%" placeholder="%">
+                        <input class="form-control form-control-percent ms-auto mx-lg-auto" type="text" id="discount-classic-input" value="2%" placeholder="%">
                         <label for="discount-classic-input" class="visually-hidden">Введите скидку</label>
                       </div>
                     </li>
-                    <li class="discount-item pe-lg-9 mb-11 d-md-flex justify-content-xl-between align-items-center d-lg-block">
-                      <input type="checkbox" class="btn-check" id="discount-premium">
-                      <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-xl-end">
-                        <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center mb-2">
+                    <li class="discount-item d-md-flex justify-content-xl-between align-items-center d-lg-block">
+                      <input type="checkbox" class="btn-check" id="discount-premium" checked>
+                      <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end">
+                        <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center">
                           Premium
                         </div>
                       </label>
                       <div class="d-flex justify-content-center ms-3">
-                        <input class="form-control form-control-percent" type="text" id="discount-premium-input" placeholder="%">
+                        <input class="form-control form-control-percent ms-auto mx-lg-auto" type="text" id="discount-premium-input" placeholder="%">
                         <label for="discount-premium-input" class="visually-hidden">Введите скидку</label>
                       </div>
                     </li>
-                    <li class="discount-item pe-lg-9 d-md-flex  justify-content-xl-between align-items-center d-lg-block">
-                      <input type="checkbox" class="btn-check" id="discount-gold">
-                      <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-xl-end">
-                        <div class="card-discount card-discount--green d-flex justify-content-center align-items-center mb-2">
+                    <li class="discount-item d-md-flex justify-content-xl-between align-items-center d-lg-block">
+                      <input type="checkbox" class="btn-check" id="discount-gold" checked>
+                      <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end">
+                        <div class="card-discount card-discount--green d-flex justify-content-center align-items-center">
                           Gold
                         </div>
                       </label>
                       <div class="d-flex justify-content-center ms-3">
-                        <input class="form-control form-control-percent" type="text" id="discount-gold-input" placeholder="%">
+                        <input class="form-control form-control-percent ms-auto mx-lg-auto" type="text" id="discount-gold-input" placeholder="%">
                         <label for="discount-gold-input" class="visually-hidden">Введите скидку</label>
                       </div>
                     </li>
                   </ul>
                 </div>
 
-                <div class="mb-12 ">
+                <div class="mb-11 mb-lg-12">
                   <label class="mb-2" for="terms-description">Описание условий</label>
                   <textarea class="form-control form-textarea" id="terms-description"></textarea>
                 </div>
 
-                <div class="d-flex justify-content-center justify-content-lg-start mb-4 mt-lg-4">
+                <div class="d-flex justify-content-center justify-content-lg-start mb-4">
                   <button class="button" type="submit">Сохранить</button>
                 </div>
               </div>

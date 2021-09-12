@@ -94,12 +94,13 @@
 }
 
 .button-refill {
+  @include font(0.875rem, 1.06rem, 400);
   border-radius: 0;
   padding: 6px;
   border-bottom-left-radius: 5px;
   background-color: $basic-light;
   color: $basic-dark-2;
-  width: 142px;
+  width: 100%;
 
   &:hover {
     background-color: rgba($basic-dark, 0.1);
@@ -108,11 +109,12 @@
 }
 
 .button-show {
+  @include font(0.875rem, 1.06rem, 400);
   border-radius: 0;
   padding: 6px;
   background-color: $basic-dark;
   border-bottom-right-radius: 5px;
-  width: 142px;
+  width: 100%;
 
   &:hover {
     background-color: $basic-dark-2;

@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,11 +60,11 @@
 
     <main>
       <h1 class="visually-hidden">Подарки партнера</h1>
-      <div class="container gx-0 mt-md-6">
+      <div class="container gx-0 mt-md-6 mt-12">
         <div class="row d-md-flex justify-content-between gx-0">
 
-          <div class="card-custom col-12 col-lg-4 col-xl-3"> <!-- -->
-            <div class="form-upload mb-10 mt-10">
+          <div class="card-custom card-custom-partner col-12 col-lg-4 col-xl-3"> <!-- -->
+            <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
             </div>
@@ -93,10 +93,10 @@
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="cashback.html">Кэшбэк партнера</a>
                   </div>
-                  <div class="accordion-sub-item d-none d-md-block nav-item">
+                  <div class="accordion-sub-item">
                     <a class="accordion-link" href="coupons.html">Купоны партнера</a>
                   </div>
-                  <div class="accordion-sub-item current nav-item">
+                  <div class="accordion-sub-item current nav-item d-none d-md-block nav-item">
                     <a class="accordion-link current">Подарки партнера</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
@@ -110,92 +110,84 @@
             </div>
           </div>
 
-          <div class="container col-12 col-lg-8 col-xl-9 mt-4 px-8 px-lg-0 mx-0"> <!-- -->
+          <div class="container col-12 col-lg-8 col-xl-9 px-8 px-lg-0 mx-0"> <!-- -->
             <form class="gifts" method="POST" action="#">
-              <div class="d-flex justify-content-center justify-content-lg-end mt-4 mb-5 mt-lg-0">
-                <button class="button" type="button">+ Добавить скидку</button>
+              <div class="d-flex justify-content-center justify-content-lg-end  mb-11 mb-lg-5 mt-lg-0">
+                <button class="button" type="button">+ Добавить подарок</button>
               </div>
 
               <div class="d-flex justify-content-between row gx-0">
                 <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                   <label for="category" class="form-label">Категория</label>
                   <select id="category" class=" form-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
                   </select>
                 </div>
                 <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                   <label for="subcategory" class="form-label">Подкатегория</label>
                   <select id="subcategory" class=" form-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
                   </select>
                 </div>
                 <div class="form-item form-item-select col-lg-6 col-xl-4">
                   <label for="status" class="form-label">Статус</label>
                   <select id="status" class=" form-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
                   </select>
                 </div>
-                <div class="form-item col-lg-8 ms-lg-0">
+                <div class="form-item form-item-large col-lg-8 ms-lg-0">
                   <label for="discount-title" class="form-label">Тема</label>
                   <input type="text" class="form-control form-control-large" id="discount-title">
                 </div>
+
                 <div class="d-flex flex-column">
                   <div class="col-lg-5 ms-lg-0 pb-10">
-                    <p>Дата начала</p>
+                    <p class="mb-2">Дата начала</p>
                     <div class="form-item-date d-flex justify-content-between">
-                      <label for="gifts-date-day-start" class="form-label visually-hidden">День</label>
-                      <select id="gifts-date-day-start" class="days form-select form-select-day">
+                      <label for="coupons-date-day-start" class="form-label visually-hidden">День</label>
+                      <select id="coupons-date-day-start" class="days form-select form-select-day">
                       </select>
 
-                      <label for="gifts-date-month-start" class="form-label visually-hidden">Месяц</label>
-                      <select id="gifts-date-month-start" class="months form-select form-select-month">
+                      <label for="coupons-date-month-start" class="form-label visually-hidden">Месяц</label>
+                      <select id="coupons-date-month-start" class="months form-select form-select-month">
                       </select>
 
-                      <label for="gifts-date-year-start" class="form-label visually-hidden">Год</label>
-                      <select id="gifts-date-year-start" class="years form-select form-select-year">
+                      <label for="coupons-date-year-start" class="form-label visually-hidden">Год</label>
+                      <select id="coupons-date-year-start" class="years form-select form-select-year">
                       </select>
                     </div>
                   </div>
 
-                  <div class="col-lg-5 ms-lg-0 pb-12">
-                    <p>Дата завершения</p>
+                  <div class="col-lg-5 ms-lg-0 pb-10 pb-lg-12">
+                    <p class="mb-2">Дата завершения</p>
                     <div class="form-item-date d-flex justify-content-between">
-                      <label for="gifts-date-day-finish" class="form-label visually-hidden">День</label>
-                      <select id="gifts-date-day-finish" class="days form-select form-select-day">
+                      <label for="coupons-date-day-finish" class="form-label visually-hidden">День</label>
+                      <select id="coupons-date-day-finish" class="days form-select form-select-day">
                       </select>
 
-                      <label for="gifts-date-month-finish" class="form-label visually-hidden">Месяц</label>
-                      <select id="gifts-date-month-finish" class="months form-select form-select-month">
+                      <label for="coupons-date-month" class="form-label visually-hidden">Месяц</label>
+                      <select id="coupons-date-month" class="months form-select form-select-month">
                       </select>
 
-                      <label for="gifts-date-year-finish" class="form-label visually-hidden">Год</label>
-                      <select id="gifts-date-year-finish" class="years form-select form-select-year">
+                      <label for="coupons-date-year" class="form-label visually-hidden">Год</label>
+                      <select id="coupons-date-year" class="years form-select form-select-year">
                       </select>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-xl-8 pb-12">
-                  <div class="d-xl-flex mb-3 mb-xl-0">
-                    <div class="form-item col-xl-6">
+                  <div class="d-lg-flex justify-content-between ">
+                    <div class="form-item col-xl-6 pb-10 pb-lg-2">
                       <label for="discount-from-50" class="form-label">Количество баллов</label>
                       <input type="text" class="form-control" id="discount-from-50">
                     </div>
-                    <div class="form-item col-xl-6">
+                    <div class="form-item col-xl-6 pb-10 pb-lg-2">
                       <label for="coupons-amount" class="form-label">Количество подарков</label>
                       <input type="text" class="form-control" id="coupons-amount">
                     </div>
                   </div>
 
-                  <div class="button-box col-xl-6 d-flex justify-content-lg-start ms-lg-auto">
-                    <input type="checkbox" class="btn-check" id="unlimited">
-                    <label for="unlimited" class="form-label form-label-radio">Неограничено</label>
+                  <div class="button-box d-flex justify-content-lg-start ms-lg-auto">
+                    <input type="checkbox" class="btn-check" id="unlimited" checked>
+                    <label for="unlimited" class="form-label form-label-radio pb-0">Неограничено</label>
                   </div>
                 </div>
 
@@ -207,6 +199,7 @@
                   </div>
 
                   <div class="form-item col-lg-12 col-xl-4 pb-0">
+                    <p class="mb-2 d-lg-none">Добавить фото</p>
                     <div class="form-upload form-control me-0 ms-xl-auto d-flex justify-content-center align-items-center">
                       <label class="form-label m-0" for="head-photo">Добавить изображение</label>
                       <input class="form-control visually-hidden" id="head-photo" type="file" accept="image/gif, image/jpeg, image/png">
@@ -217,7 +210,7 @@
 
               </div>
 
-              <div class="d-flex justify-content-center justify-content-lg-start mb-4 mt-lg-4">
+              <div class="d-flex justify-content-center justify-content-lg-start mb-4 mt-lg-12">
                 <button class="button" type="submit">Сохранить</button>
               </div>
 

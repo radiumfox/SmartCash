@@ -162,10 +162,7 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-
-    @include media-breakpoint-up(md) {
-      padding: 10px 0;
-    }
+    padding: 10px 0;
   }
 
   .accordion-button::after {

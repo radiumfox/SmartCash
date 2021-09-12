@@ -25,18 +25,16 @@
   border: 1px solid $basic-grey;
   min-height: 160px;
   border-radius: 5px;
-  margin-bottom: 20px;
   cursor: pointer;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: 296px;
-  margin: 20px auto 28px;
 
   .form-label {
     @include font(1.13rem, 1.3rem, 400);
     position: relative;
     color: $special-grey-2;
-    margin-top: 60px;
-    margin-left: 25%;
+    margin-top: 54px;
+    margin-left: 73px;
     padding: 5px 0 5px 46px;
     cursor: pointer;
     max-width: 120px;
@@ -44,24 +42,18 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/plus-desktop.svg");
+      background-image: url("../img/upload-icon.svg");
       background-size: contain;
       width: 40px;
       height: 40px;
-      opacity: 0.2;
       top: 4px;
-      right: 80%;
+      right: 76%;
+      z-index: 100;
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 6px;
-      height: 6px;
-      background-color: $light-green;
-      border-radius: 50%;
-      right: 83%;
-      top: 10px;
+    @include media-breakpoint-up(lg) {
+      margin-left: 48px;
+
     }
   }
 
@@ -71,6 +63,8 @@
 
   @include media-breakpoint-up(lg) {
     width: 245px;
+    margin-top: 20px;
+    margin-bottom: 28px;
   }
 }
 
@@ -158,12 +152,13 @@
   width: 71px;
   height: 32px;
   background-image: none;
-  padding-top: 4px;
   padding: 5px 10px;
+  text-align: center;
 
   @include media-breakpoint-up(lg) {
     width: 75px;
     background-image: url("../img/select-indicator.svg");
+    text-align: left;
   }
 }
 
@@ -171,11 +166,13 @@
   width: 120px;
   height: 32px;
   background-image: none;
-  padding-top: 4px;
+  padding: 5px 10px;
+  text-align: center;
 
   @include media-breakpoint-up(lg) {
     width: 135px;
     background-image: url("../img/select-indicator.svg");
+    text-align: left;
   }
 }
 
@@ -183,11 +180,13 @@
   width: 85px;
   height: 32px;
   background-image: none;
-  padding-top: 4px;
+  padding: 5px 10px;
+  text-align: center;
 
   @include media-breakpoint-up(lg) {
     width: 95px;
     background-image: url("../img/select-indicator.svg");
+    text-align: left;
   }
 }
 

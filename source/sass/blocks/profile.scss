@@ -4,8 +4,38 @@
 .sign-up-partner {
   @include font(1.13rem, 1.3rem, 400);
 
+  .form-label {
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form-label-checkbox {
+    @include media-breakpoint-up(lg) {
+      margin-right: 40px;
+    }
+  }
+
+  .form-item {
+    padding-bottom: 20px;
+  }
+
+  #schedule .form-item {
+    padding-bottom: 16px;
+  }
+
   .tab-pane {
     margin: 0 auto;
+  }
+
+  .menu-accordion {
+    margin-bottom: 10px;
+  }
+
+  .tab-header-border {
+    margin-bottom: 24px;
   }
 
   .form-control {
@@ -15,6 +45,10 @@
       width: 325px;
       margin-left: 10px;
     }
+  }
+
+  #schedule .form-control {
+    margin-left: 10px;
   }
 
   .form-textarea {
@@ -40,7 +74,7 @@
 
   .button-box {
     @include media-breakpoint-up(lg) {
-      max-width: 325px;
+      max-width: 302px;
     }
   }
 
@@ -58,16 +92,27 @@
 
   .lunch-break {
     max-width: 374px;
+    margin-bottom: 30px;
+
+    .form-label-radio {
+      @include font(0.875rem, 1.04rem, 400);
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 42px;
+    }
   }
 
   #responsible .form-upload,
   #about-us .form-upload {
-    margin: 0;
+
+    height: 296px;
+    margin-bottom: 0;
 
     .form-label {
-      @include media-breakpoint-up(lg) {
-        margin-top: 120px;
-      }
+      margin-right: 20px;
+      margin-left: 0;
+      margin-top: 0;
     }
 
     @include media-breakpoint-up(lg) {
@@ -75,6 +120,7 @@
       height: 285px;
       margin-right: 40px;
       margin-left: 10px;
+      margin-top: 0;
     }
   }
 
@@ -91,6 +137,34 @@
 
   .features-list {
     color: $special-grey-3;
+  }
+
+  .tab-pane#contacts {
+    @include media-breakpoint-up(xl) {
+      width: 480px;
+      margin: 0 58px 0 92px;
+    }
+  }
+
+  .tab-pane#schedule {
+    margin-top: 11px;
+
+    @include media-breakpoint-up(xl) {
+      width: 374px;
+    }
+  }
+
+  #safety .button-box,
+  #responsible .button-box {
+    @include media-breakpoint-up(xl) {
+      max-width: 325px;
+    }
+  }
+
+  .menu {
+    @include media-breakpoint-up(xl) {
+      width: 285px;
+    }
   }
 }
 

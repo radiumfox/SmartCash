@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -61,11 +61,11 @@
     <main>
       <h1 class="visually-hidden">Кэшбэк партнера</h1>
 
-      <div class="container gx-0 mt-md-6">
+      <div class="container gx-0 mt-md-6 mt-12">
         <div class="row d-md-flex justify-content-between gx-0">
 
-          <div class="card-custom col-12 col-lg-4 col-xl-3">
-            <div class="form-upload mb-10 mt-10">
+          <div class="card-custom card-custom-partner col-12 col-lg-4 col-xl-3">
+            <div class="form-upload">
               <label class="form-label" for="add-img">Добавить изображение</label>
               <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
             </div>
@@ -111,9 +111,9 @@
             </div>
           </div>
 
-          <div class="container col-12 col-lg-8 col-xl-9 mt-4 px-8 px-lg-0 mx-0">
+          <div class="container col-12 col-lg-8 col-xl-9 px-8 px-lg-0 mx-0">
             <form class="cashback" method="POST" action="#" id="add-cashback">
-              <div class="d-flex justify-content-center justify-content-xl-end mb-5">
+              <div class="d-flex justify-content-center justify-content-xl-end mb-11 mb-lg-5">
                 <button class="button" type="button">+ Добавить кэшбэк</button>
               </div>
 
@@ -121,73 +121,65 @@
                 <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                   <label for="category" class="form-label">Категория</label>
                   <select id="category" class=" form-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
                   </select>
                 </div>
                 <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                   <label for="subcategory" class="form-label">Подкатегория</label>
                   <select id="subcategory" class=" form-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
                   </select>
                 </div>
                 <div class="form-item form-item-select col-lg-6 col-xl-4">
                   <label for="status" class="form-label">Статус</label>
                   <select id="status" class=" form-select">
-                    <option></option>
-                    <option></option>
-                    <option></option>
                   </select>
-                </div>
-                <div class="form-item col-lg-8 ms-lg-0">
-                  <label for="discount-title" class="form-label">Тема</label>
-                  <input type="text" class="form-control form-control-large" id="discount-title">
-                </div>
-                <div class="col-lg-5 ms-lg-0 pb-12">
-                  <p>Дата завершения</p>
-                  <div class="form-item-date d-flex justify-content-between">
-                    <label for="cashback-date-day" class="form-label visually-hidden">День</label>
-                    <select id="cashback-date-day" class="days form-select form-select-day">
-                    </select>
-
-                    <label for="cashback-date-month" class="form-label visually-hidden">Месяц</label>
-                    <select id="cashback-date-month" class="months form-select form-select-month">
-                    </select>
-
-                    <label for="cashback-date-year" class="form-label visually-hidden">Год</label>
-                    <select id="cashback-date-year" class="years form-select form-select-year">
-                    </select>
-                  </div>
                 </div>
               </div>
 
-              <div>
-                <p>Скидка по картам</p>
-                <ul class="list-unstyled d-lg-flex flex-column m-0 ps-lg-0 pb-5">
-                  <li class="pe-lg-9 mb-11 d-md-flex justify-content-between align-items-center me-xl-auto">
-                    <input type="checkbox" class="btn-check" id="cashback-classic">
+              <div class="form-item form-item-large col-lg-8 ms-lg-0 pt-lg-9">
+                <label for="discount-title" class="form-label">Тема</label>
+                <input type="text" class="form-control form-control-large" id="discount-title">
+              </div>
+              <div class="col-lg-5 ms-lg-0 pb-12">
+                <p class="mb-2">Дата завершения</p>
+                <div class="form-item-date d-flex justify-content-between">
+                  <label for="cashback-date-day" class="form-label visually-hidden">День</label>
+                  <select id="cashback-date-day" class="days form-select form-select-day">
+                  </select>
+
+                  <label for="cashback-date-month" class="form-label visually-hidden">Месяц</label>
+                  <select id="cashback-date-month" class="months form-select form-select-month">
+                  </select>
+
+                  <label for="cashback-date-year" class="form-label visually-hidden">Год</label>
+                  <select id="cashback-date-year" class="years form-select form-select-year">
+                  </select>
+                </div>
+              </div>
+
+              <div class="pb-11 pb-lg-12">
+                <p class="mb-11">Скидка по картам</p>
+                <ul class="list-unstyled d-lg-flex flex-column m-0 ps-lg-0 ">
+                  <li class="discount-item pe-lg-9 mb-lg-12 d-md-flex justify-content-between align-items-center me-xl-auto">
+                    <input type="checkbox" class="btn-check" id="cashback-classic" checked>
                     <label for="cashback-classic" class="form-label form-label-radio d-flex justify-content-end">
                       <div class="card-discount d-flex justify-content-center align-items-center">
                       Classic
                       </div>
                     </label>
                     <div class="d-flex flex-column align-items-end ms-xl-10">
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-classic-percent" class="form-label">
                           Кэшбэк по картам
                         </label>
                         <input class="form-control form-control-percent ms-2" type="text" id="cashback-classic-percent" value="2%" placeholder="%">
                       </div>
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-classic-points" class="form-label">
                           % оплаты по баллам
                         </label>
                         <input class="form-control form-control-percent ms-2" type="text" id="cashback-classic-points" value="2%" placeholder="%">
                       </div>
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-classic-welcome-points" class="form-label">
                           Приветственный балл
                         </label>
@@ -195,27 +187,27 @@
                       </div>
                     </div>
                   </li>
-                  <li class="pe-lg-9 mb-11 d-md-flex justify-content-between align-items-center me-xl-auto">
-                    <input type="checkbox" class="btn-check" id="discount-premium">
+                  <li class="discount-item pe-lg-9 mb-lg-12 d-md-flex justify-content-between align-items-center me-xl-auto">
+                    <input type="checkbox" class="btn-check" id="discount-premium" checked>
                     <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end">
-                      <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center mb-2">
+                      <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center">
                         Premium
                       </div>
                     </label>
                     <div class="d-flex flex-column align-items-end ms-xl-10">
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-premium-percent" class="form-label">
                           Кэшбэк по картам
                         </label>
                         <input class="form-control form-control-percent ms-2" type="text" id="cashback-premium-percent" value="2%" placeholder="%">
                       </div>
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-premium-points" class="form-label">
                           % оплаты по баллам
                         </label>
                         <input class="form-control form-control-percent ms-2" type="text" id="cashback-premium-points" value="2%" placeholder="%">
                       </div>
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-premium-welcome-points" class="form-label">
                           Приветственный балл
                         </label>
@@ -223,27 +215,27 @@
                       </div>
                     </div>
                   </li>
-                  <li class="pe-lg-9 d-md-flex justify-content-between align-items-center me-xl-auto">
-                    <input type="checkbox" class="btn-check" id="discount-gold">
+                  <li class="discount-item pe-lg-9 d-md-flex justify-content-between align-items-center me-xl-auto">
+                    <input type="checkbox" class="btn-check" id="discount-gold" checked>
                     <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end">
-                      <div class="card-discount card-discount--green d-flex justify-content-center align-items-center mb-2">
+                      <div class="card-discount card-discount--green d-flex justify-content-center align-items-center">
                         Gold
                       </div>
                     </label>
-                    <div class="d-flex flex-column align-items-end ms-xl-10">
-                      <div class="d-flex mb-2 align-items-center">
+                    <div class=" d-flex flex-column align-items-end ms-xl-10">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-gold-percent" class="form-label">
                           Кэшбэк по картам
                         </label>
                         <input class="form-control form-control-percent ms-2" type="text" id="cashback-gold-percent" value="2%" placeholder="%">
                       </div>
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-gold-points" class="form-label">
                           % оплаты по баллам
                         </label>
                         <input class="form-control form-control-percent ms-2" type="text" id="cashback-gold-points" value="2%" placeholder="%">
                       </div>
-                      <div class="d-flex mb-2 align-items-center">
+                      <div class="cashback-item d-flex align-items-baseline">
                         <label for="cashback-gold-welcome-points" class="form-label">
                           Приветственный балл
                         </label>
@@ -254,7 +246,7 @@
                 </ul>
               </div>
 
-              <div class="mb-12 ">
+              <div class="mb-11 mb-lg-12">
                 <label class="mb-2" for="terms-description">Описание условий</label>
                 <textarea class="form-control form-textarea" id="terms-description"></textarea>
               </div>
