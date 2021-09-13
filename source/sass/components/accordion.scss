@@ -241,10 +241,24 @@
 }
 
 .accordion-setup {
+
+  .accordion-header {
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+    @include media-breakpoint-up(lg) {
+
+      width: 325px;
+      margin-left: auto;
+    }
+  }
+
   .accordion-button {
-    @include font(0.87rem, 1.06rem, 400);
+    @include font(1.13rem, 1.3rem, 400);
     background-color: rgba($light-green, 0.3);
     width: 100%;
+    max-width: 325px;
     display: block;
     border-left: 4px solid $light-green;
     padding: 7px 16px;
@@ -279,10 +293,10 @@
       height: calc(100% - 64px);
 
       @include media-breakpoint-up(lg) {
-        height: calc(100% - 52px);
+        height: calc(100% - 72px);
         background-color: $basic-grey;
         top: 40px;
-        left: 7px;
+        left: 138px;
       }
     }
   }
@@ -299,9 +313,30 @@
       left: 0;
     }
 
+    &:first-child {
+      padding-top: 25px;
+    }
+
+    &:first-child::before {
+      top: 26px;
+    }
+
     &:last-child {
-      padding-bottom: 0;
+      padding-bottom: 25px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 325px;
+      margin-left: auto;
     }
   }
 
+  @include media-breakpoint-up(sm) {
+    width: 455px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 455px;
+    margin-left: auto;
+  }
 }

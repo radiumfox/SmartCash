@@ -72,7 +72,7 @@
               </div>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#partner-menu">
                 <div class="accordion-body">
-                  <div class="accordion-sub-item nav-item mt-md-5">
+                  <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="admin-balance.html">Баланс</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
@@ -126,16 +126,16 @@
           </div>
 
           <div class="col-12 col-lg-9">
-            <form class="website-setup mt-11 mx-lg-auto px-8" method="POST" action="#">
+            <form class="website-setup mt-lg-12  px-8 px-lg-0" method="POST" action="#">
               <div class="form-item d-lg-flex justify-content-end align-items-center">
                 <label for="website-name" class="form-label">Название сайта:</label>
                 <input type="text" class="form-control" id="website-name" name="website-name">
               </div>
               <div class="form-item d-lg-flex justify-content-lg-end">
-                <label for="meta-description" class="form-label">Описание (Meta):</label>
+                <label for="meta-description" class="form-label mt-lg-3">Описание (Meta):</label>
                 <textarea class="form-control form-textarea" id="meta-description" name="meta-description"></textarea>
               </div>
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline">
                 <label for="meta-key-words" class="form-label">Ключ. слова (Meta):</label>
                 <input type="text" class="form-control" id="meta-key-words" name="meta-key-words">
               </div>
@@ -146,39 +146,40 @@
                   <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
                 </div>
               </div>
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline">
                 <label for="about-us" class="form-label">О нас</label>
                 <input type="text" class="form-control" id="about-us" name="about-us">
               </div>
 
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline">
                 <label for="tech-support" class="form-label">Тех. поддержка:</label>
                 <input type="text" class="form-control" id="tech-support" name="tech-support">
               </div>
 
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline">
                 <label for="login" class="form-label">Логин:</label>
                 <input type="text" class="form-control" id="login" name="login">
               </div>
 
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline">
                 <label for="old-password" class="form-label">Старый пароль</label>
                 <input type="text" class="form-control" id="old-password" name="old-password">
               </div>
 
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline">
                 <label for="new-password" class="form-label">Новый пароль</label>
                 <input type="text" class="form-control" id="new-password" name="new-password">
               </div>
 
-              <div class="form-item d-lg-flex justify-content-lg-end align-items-center">
+              <div class="form-item d-lg-flex justify-content-lg-end align-items-baseline pb-12">
                 <label for="repeat-password" class="form-label">Повторить пароль</label>
                 <input type="text" class="form-control" id="repeat-password" name="repeat-password">
               </div>
+
               <div>
-                <ul class="accordion-features accordion-setup accordion list-unstyled mx-auto mx-lg-0" id="setupAccordion">
+                <ul class="accordion-features accordion-setup accordion list-unstyled mb-11" id="setupAccordion">
                   <li class="accordion-item">
-                    <h3 id="headingOne">
+                    <h3 class="accordion-header pt-lg-0" id="headingOne">
                       <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse"  data-bs-target="#feature-list-1" aria-expanded="true" aria-controls="feature-list-1">
                         Экономь в магазинах
                       </button>
@@ -232,11 +233,11 @@
                       </button>
                     </h3>
                     <div id="managers-list" class="accordion-collapse collapse show" data-bs-parent="#featuresAccordion">
-                      <div class="form-item d-lg-flex justify-content-end align-items-center mt-10">
+                      <div class="form-item d-lg-flex justify-content-end align-items-baseline mt-10">
                         <label for="full-name" class="form-label fs-7">ФИО:</label>
                         <input type="text" class="form-control" id="full-name" name="full-name">
                       </div>
-                      <div>
+                      <div class="pb-10">
                         <div class="d-lg-flex justify-content-end">
                           <p class="fs-7">Фотография:</p>
                           <div class="form-upload ms-lg-2">
@@ -275,7 +276,7 @@
                 </ul>
               </div>
 
-              <div class="button-box d-flex justify-content-center ms-lg-auto justify-content-lg-start">
+              <div class="button-box d-flex  ms-lg-auto justify-content-start">
                 <button class="button col-lg-6 border-0" type="submit">Сохранить</button>
               </div>
 

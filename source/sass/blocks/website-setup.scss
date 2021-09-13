@@ -1,12 +1,25 @@
 .website-setup {
   @include font(1.13rem, 1.3rem, 400);
+  padding-top: 33px;
 
   .form-upload {
     height: 296px;
     margin-top: 10px;
 
     .form-label {
-      margin-top: 127px;
+      margin-top: 130px;
+      margin-left: 75px;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 135px;
+        margin-left: 75px;
+      }
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 325px;
+      height: 325px;
+      margin: 0 0 20px;
     }
 
     @include media-breakpoint-up(lg) {
@@ -18,22 +31,35 @@
 
   .form-textarea {
     min-height: 160px;
+
+    @include media-breakpoint-up(lg) {
+      min-height: 100px;
+    }
   }
 
   .form-item {
-    width: auto;
-
+    padding-bottom: 20px;
   }
 
   .form-control {
+    max-width: 325px;
     @include media-breakpoint-up(lg) {
       width: 325px;
-      margin-left: 5px;
+      margin-left: 9px;
     }
   }
 
   @include media-breakpoint-up(lg) {
     width: 520px;
+    margin-right: 265px;
+    margin-left: auto;
+    padding-top: 0;
+  }
+
+  .button {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
   }
 
   .button-box {
