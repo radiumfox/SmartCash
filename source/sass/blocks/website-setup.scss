@@ -109,6 +109,14 @@
 .texts-setup {
   @include font(1.13rem, 1.3rem, 400);
 
+  .form-label {
+    @include font(1.13rem, 1.3rem, 400);
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.5rem, 1.75rem, 400);
+    }
+  }
+
   .form-textarea {
     min-height: 160px;
   }

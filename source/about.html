@@ -208,6 +208,85 @@
         </div>
       </section>
 
+      <div class="modal modal-window" tabindex="-1" id="modal-window">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button class="btn-close" type="button" data-bs-dismiss="modal"><span class="visually-hidden">Закрыть</span></button>
+            <div class="card-header tab-header pe-0 pb-12 p-lg-0 d-none d-md-flex">
+              <div class="scrollable overflow-auto ps-8 ps-lg-0">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex" role="tablist">
+                  <li class="tab-item nav-item">
+                    <a class="tab-link nav-link active" data-bs-toggle="tab" href="#write-message">Сообщение</a>
+                  </li>
+                  <li class="tab-item nav-item">
+                    <a class="tab-link nav-link" data-bs-toggle="tab" href="#write-feedback">Отзыв</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tab-content tab-card d-flex flex-column">
+              <div class="tab-pane fade show active" id="write-message">
+
+                <form method="POST" action="#">
+                  <div class="d-md-flex justify-content-between">
+                    <div class="form-item ">
+                      <label for="author-name" class="form-label">Ваше имя</label>
+                      <input type="text" class="form-control" id="author-name" name="author-name" required>
+                    </div>
+
+                    <div class="form-item mb-10">
+                      <label for="author-contacts" class="form-label">Email / номер телефона</label>
+                      <input type="text" class="form-control" id="author-contacts" name="author-contacts" required>
+                    </div>
+                  </div>
+
+                  <div class="form-item">
+                    <label for="message-text" class="form-label">Текст</label>
+                    <textarea class="form-control form-textarea" id="message-text" name="message-text" required></textarea>
+                  </div>
+
+                  <div class="button-box d-flex justify-content-center justify-content-md-start mb-10 mb-md-0">
+                    <button class="button border-0" type="submit">Отправить</button>
+                  </div>
+                  <div class="button-box d-flex justify-content-center d-md-none">
+                    <button class="button button-white" type="button" data-bs-dismiss="modal">Назад</button>
+                  </div>
+                </form>
+              </div>
+
+              <div class="tab-pane fade" id="write-feedback">
+                <form method="POST" action="#">
+                  <div class="d-md-flex justify-content-between">
+                    <div class="form-item">
+                      <label for="feedback-author-name" class="form-label">Ваше имя</label>
+                      <input type="text" class="form-control" id="feedback-author-name" name="feedback-author-name">
+                    </div>
+
+                    <div class="form-item">
+                      <label for="feedback-author-contacts" class="form-label">Email / номер телефона</label>
+                      <input type="text" class="form-control" id="feedback-author-contacts" name="feedback-author-contacts">
+                    </div>
+                  </div>
+
+                  <div class="form-item">
+                    <label for="feedback-text" class="form-label">Текст</label>
+                    <textarea class="form-control form-textarea" id="feedback-text" name="feedback-text" required></textarea>
+                  </div>
+                  <div class="button-box mb-9 d-flex justify-content-center justify-content-md-start">
+                    <button class="button border-0" type="submit">Отправить</button>
+                  </div>
+                  <div class="button-box d-flex justify-content-center d-md-none">
+                    <button class="button button-white" type="button" data-bs-dismiss="modal">Назад</button>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer class="page-footer collapse" id="page-footer">

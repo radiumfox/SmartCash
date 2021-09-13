@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,7 +60,7 @@
 
     <main>
       <h1 class="visually-hidden">Регистрация пользователя</h1>
-      <div class="container me-0 me-lg-auto gx-0 mt-11 mt-sm-6 mb-sm-6">
+      <div class="container me-0 me-lg-auto gx-0 mt-2 mt-sm-6 mb-sm-6">
         <div class="row gx-0 justify-content-lg-between">
 
           <div class="col-12 col-lg-5 col-xl-3 order-md-0 d-none d-md-block"> <!-- sign-up menu -->
@@ -79,9 +79,9 @@
           </div>
 
           <div class="ps-lg-0 col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0"> <!-- right menu -->
-            <div class="card-header tab-header tab-header-border">
-              <div class="scrollable ps-8 ps-lg-0  overflow-auto">
-                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+            <div class="card-header tab-header tab-header-border ms-lg-auto">
+              <div class="scrollable ps-8 ps-lg-0 overflow-auto">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column" role="tablist">
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#about-me">Обо мне</a>
                   </li>
@@ -105,8 +105,8 @@
           <div class="sign-up-user col-12 col-xl-6 order-xl-1 mt-lg-6 mt-xl-0"> <!-- content -->
             <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
 
-              <div class="tab-pane fade px-8 px-lg-0 mb-5 mx-auto" id="about-me">
-                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5 mx-auto show active" id="about-me">
+                <div class="pt-11 pt-lg-12 px-md-0 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -131,7 +131,7 @@
                       </div>
 
                       <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-baseline">
-                        <p class="m-0 mb-2 mb-lg-0">Дата рождения</p>
+                        <p class="m-0 mb-2 mb-lg-0">Дата рождения:</p>
                         <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
                           <label for="birth-date-day" class="form-label visually-hidden">День</label>
                           <select id="birth-date-day" class="days form-select form-select-day">
@@ -143,6 +143,7 @@
 
                           <label for="birth-date-year" class="form-label visually-hidden">Год</label>
                           <select id="birth-date-year" class="years form-select form-select-year">
+                            <option selected>1999</option>
                           </select>
                         </div>
                       </div>
@@ -157,8 +158,8 @@
                         <input type="text" class="form-control" id="tin" name="tin">
                       </div>
 
-                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-center">
-                        <p class="m-0 mb-2 mb-lg-0">Когда выдан</p>
+                      <div class="form-item form-item-date ms-lg-0 d-lg-flex justify-content-end align-items-center pb-11">
+                        <p class="m-0 mb-2 mb-lg-0">Когда выдан:</p>
                         <div class="form-date-group d-flex justify-content-between justify-content-md-around justify-content-lg-between">
                           <label for="passport-date-day" class="form-label visually-hidden">День</label>
                           <select id="passport-date-day" class="days form-select form-select-day">
@@ -170,6 +171,7 @@
 
                           <label for="passport-date-year" class="form-label visually-hidden">Год</label>
                           <select id="passport-date-year" class="years form-select form-select-year">
+                            <option selected>1999</option>
                           </select>
                         </div>
                       </div>
@@ -184,8 +186,8 @@
 
               </div>
 
-              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
-                <div class="pt-4 pt-lg-0 mx-auto">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="contacts">
+                <div class="pt-11 pt-lg-12 mx-auto">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
 
@@ -214,7 +216,7 @@
                         <input type="text" class="form-control ms-md-2" id="whatsapp" name="whatsapp">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end pb-12">
                         <label for="email" class="form-label">E-mail:</label>
                         <input type="text" class="form-control ms-md-2" id="email" name="email">
                       </div>
@@ -230,7 +232,7 @@
               </div>
 
               <div class="tab-pane fade px-8 px-lg-0 mb-5" id="safety">
-                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                <div class="col-12 pt-11 pt-lg-12 mx-auto mx-lg-0">
                   <form method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -240,7 +242,7 @@
                       </div>
 
                       <div class="form-item d-lg-flex justify-content-end align-items-center">
-                        <label for="new-password" class="form-label">Новый пароль:</label>
+                        <label for="new-password" class="form-label">Пароль:</label>
                         <input type="text" class="form-control" id="new-password" name="new-password">
                       </div>
 
@@ -249,11 +251,11 @@
                         <input type="text" class="form-control" id="repeat-password" name="repeat-password">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end align-items-center">
+                      <div class="form-item d-lg-flex justify-content-end align-items-center pb-2">
                         <label for="manager-number" class="form-label">Номер менеджера:</label>
                         <input type="text" class="form-control" id="manager-number" name="manager-number">
                       </div>
-                      <p class="note fs-8 mb-11 ms-lg-auto">Если у Вас нет регистрационного номера менеджера, укажите номер 1234567 </p>
+                      <p class="note fs-8 mb-12 ms-lg-auto">Если у Вас нет регистрационного номера менеджера, укажите номер 1234567 </p>
 
                       <div class="button-box mb-9 ms-lg-auto">
                         <a class="button border-0" data-bs-toggle="tab" href="#">Далее</a>
@@ -264,14 +266,14 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade px-8 px-lg-0  mb-5" id="loyalty-card">
-                <div class="col-12 pt-4 mx-auto mx-lg-0">
-                  <div class="form-item d-lg-flex justify-content-end">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="loyalty-card">
+                <div class="col-12 pt-12 mx-auto mx-lg-0">
+                  <div class="form-item d-lg-flex justify-content-end align-items-baseline">
                     <label for="user-card" class="form-label">Карта:</label>
                     <input type="text" class="form-control ms-md-2" id="user-card" name="user-card">
                   </div>
 
-                  <div class="form-item d-lg-flex justify-content-end">
+                  <div class="form-item d-lg-flex justify-content-end align-items-baseline pb-lg-12">
                     <label for="user-card-number" class="form-label">Номер карты:</label>
                     <input type="text" class="form-control ms-md-2" id="user-card-number" name="user-card-number" placeholder="9545 - 34ХХ - ХХХХ - ХХХХ">
                   </div>
@@ -282,30 +284,30 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade px-8 px-lg-0  show active mb-5" id="client-agreement">
-                <div class="col-12 pt-4 mx-lg-0 d-lg-flex flex-column align-items-center">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="client-agreement">
+                <div class="col-12 pt-10 pt-lg-12 mx-lg-0 d-lg-flex flex-column align-items-center">
                   <form method="POST" action="#">
                     <div class="form-item d-flex justify-content-start">
-                      <input type="checkbox" class="btn-check" id="no-break">
-                      <label for="no-break" class="form-label form-label-radio">Я согласен с условиями клиентского соглашения</label>
+                      <input type="checkbox" class="btn-check" id="agreed" checked>
+                      <label for="agreed" class="form-label form-label-radio">Я согласен с условиями клиентского соглашения</label>
                     </div>
-                    <div class="form-item d-flex justify-content-start">
-                      <input type="checkbox" class="btn-check" id="no-break">
-                      <label for="no-break" class="form-label form-label-radio">Стать менеджером SMARTCASH</label>
+                    <div class="form-item d-flex justify-content-start pb-3">
+                      <input type="checkbox" class="btn-check" id="become-manager" checked>
+                      <label for="become-manager" class="form-label form-label-radio">Стать менеджером SMARTCASH</label>
                     </div>
-                    <ul class="fs-8 features-list">
+                    <ul class="fs-8 features-list mb-11 mb-lg-10">
                       <li>Постоянный доход от покупки Ваших рефералов - 1 %</li>
                       <li>Единоразовая выплата за подключение Партнеров - 2 $</li>
                       <li>Единоразовая выплата за Премиум статус  - 1 $</li>
-                      <li>Единаразовая выплата за VIP статус - 2 $</li>
+                      <li>Единоразовая выплата за VIP статус - 2 $</li>
                     </ul>
-                    <p class="fs-8 text-center text-lg-start">Контакты для добавления в группу менеджеров</p>
-                    <div class="form-item d-lg-flex align-items-center justify-content-lg-end">
-                      <label for="whatsapp" class="form-label fs-7">WhatsApp</label>
+                    <p class="fs-8 text-center text-lg-start mb-10">Контакты для добавления в группу менеджеров</p>
+                    <div class="form-item d-lg-flex align-items-center justify-content-lg-center">
+                      <label for="whatsapp" class="form-label">WhatsApp</label>
                       <input type="text" class="form-control" id="whatsapp" name="whatsapp">
                     </div>
-                    <div class="form-item d-lg-flex align-items-center justify-content-lg-end">
-                      <label for="telegram" class="form-label fs-7">Telegram</label>
+                    <div class="form-item d-lg-flex align-items-center justify-content-lg-center pb-12">
+                      <label for="telegram" class="form-label">Telegram</label>
                       <input type="text" class="form-control" id="telegram" name="telegram">
                     </div>
 

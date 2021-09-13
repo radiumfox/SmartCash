@@ -43,6 +43,7 @@
 .card-custom-small {
   @include media-breakpoint-up(lg) {
     height: 330px;
+    padding: 40px 0;
   }
 }
 

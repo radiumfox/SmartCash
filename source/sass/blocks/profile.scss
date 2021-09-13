@@ -74,7 +74,7 @@
 
   .button-box {
     @include media-breakpoint-up(lg) {
-      max-width: 302px;
+      max-width: 325px;
     }
   }
 
@@ -179,5 +179,13 @@
 .my-profile {
   .button-box {
     max-width: 325px;
+  }
+}
+
+#schedule {
+  .button-box {
+    @include media-breakpoint-up(lg) {
+      max-width: 325px;
+    }
   }
 }

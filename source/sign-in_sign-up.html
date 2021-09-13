@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,9 +60,9 @@
 
     <main>
       <h1 class="visually-hidden">Регистрация / вход</h1>
-      <div class="container mt-md-6">
-        <div class="row justify-content-between">
-          <div class="col-12 col-md-4 d-none d-md-block">
+      <div class="container mt-md-6 px-lg-0">
+        <div class="row justify-content-between ">
+          <div class="col-12 col-md-3 d-none d-md-block px-lg-0">
             <div class="sign-in-menu">
               <div class="tab-header tab-header-border ">
                 <ul class="nav nav-tabs d-flex flex-md-column">
@@ -77,21 +77,21 @@
             </div>
           </div>
 
-          <div class="col-12 col-md-6 col-lg-7 mt-12 mb-11">
+          <div class="col-12 col-md-6 col-lg-6 mx-auto mt-12 mb-11 px-lg-0">
             <form class="sign-in" method="GET" action="#">
               <div class="d-lg-flex justify-content-start">
-                <div class="form-item me-lg-3">
+                <div class="form-item me-lg-3 pb-lg-10">
                   <label for="official-name" class="form-label fs-7">Логин:</label>
                   <input type="text" class="form-control" id="official-name" name="official-name">
                 </div>
-                <div class="form-item">
+                <div class="form-item pb-11 pb-lg-10">
                   <label for="short-name" class="form-label fs-7">Пароль:</label>
                   <input type="text" class="form-control" id="short-name" name="short-name">
                 </div>
               </div>
               <ul class="list-unstyled">
                 <li class="mb-9 ">
-                  <p class="fs-8">Забыли пароль?</p>
+                  <p class="d-none d-lg-block fs-8">Забыли пароль?</p>
                   <button class="button border-0" type="submit">Войти</a>
                 </li>
                 <li>
@@ -103,6 +103,7 @@
         </div>
       </div>
     </main>
+
     <footer class="page-footer collapse" id="page-footer">
       <div class="container navbar-dark d-md-flex text-center text-md-start">
         <ul class="page-footer-nav navbar-nav">

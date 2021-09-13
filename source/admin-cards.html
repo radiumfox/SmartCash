@@ -59,7 +59,7 @@
     <main>
       <h1 class="visually-hidden">Карты</h1>
 
-      <div class="container me-0 me-xxl-auto gx-0 mt-md-6 mb-6">
+      <div class="container gx-0 mt-md-6 mb-6">
         <div class="row justify-content-between gx-0">
           <div class="card-custom card-custom-admin col-12 col-lg-4 col-xl-3">
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
@@ -72,7 +72,7 @@
               </div>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#partner-menu">
                 <div class="accordion-body">
-                  <div class="accordion-sub-item nav-item mt-sm-5">
+                  <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="admin-balance.html">Баланс</a>
                   </div>
                   <div class="accordion-sub-item nav-item">
@@ -129,7 +129,7 @@
 
             <div class="container d-flex justify-content-center justify-content-lg-end mb-12">
               <div class="button-box ms-lg-auto">
-                <button class="button col-lg-6 border-0" type="button">+ Добавить участника</button>
+                <button class="button col-lg-6 border-0" type="button">+ Добавить карту</button>
               </div>
             </div>
 
@@ -310,22 +310,22 @@
                           </ul>
                         </div>
                       </th>
-                      <td></td>
-                      <td></td>
+                      <td class="border-bottom-0"></td>
+                      <td class="border-bottom-0"></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <div class="table-nav d-none d-md-block ms-lg-auto">
-                <nav class="nav ">
-                  <a class="table-nav-item flex-fill nav-link active" aria-current="page" href="#"><span class="visually-hidden">Страница1</span></a>
-                  <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница2</span></a>
-                  <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница3</span></a>
-                </nav>
-              </div>
+            </div>
+            <div class="table-nav d-none d-md-block ms-lg-auto">
+              <nav class="nav ">
+                <a class="table-nav-item flex-fill nav-link active" aria-current="page" href="#"><span class="visually-hidden">Страница1</span></a>
+                <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница2</span></a>
+                <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница3</span></a>
+              </nav>
             </div>
 
-            <div class="mb-7 mt-5">
+            <div class="mb-7 mt-12">
               <form class="add-card" method="POST" action="#">
                 <div class="d-xl-flex">
                   <div class="me-md-10">
@@ -340,16 +340,16 @@
                   </div>
                   <div>
                     <div class="form-item px-8 px-lg-0">
-                      <label for="card-name" class="form-label">Номер карты:</label>
+                      <label for="card-name" class="form-label">Название карты</label>
                       <input type="text" class="form-control form-control-large" id="card-name" name="card-name">
                     </div>
                     <div class="form-item px-8 px-lg-0">
-                      <label for="country-of-issue" class="form-label">Страна:</label>
+                      <label for="country-of-issue" class="form-label">Страна</label>
                       <input type="text" class="form-control form-control-large" id="country-of-issue" name="country-of-issue">
                     </div>
                     <div class="container">
-                      <p class="title mb-4 mx-md-0 ps-8 ps-sm-0"><span class="d-none d-md-inline">Доступные цифры</span><span class="d-md-none">Цифры</span> для регистрации карты</p>
-                      <div class="scrollable ps-8 ps-sm-0 overflow-auto mb-12">
+                      <p class="title mb-9 mx-md-0 ps-8 ps-sm-0"><span class="d-none d-md-inline">Доступные цифры</span><span class="d-md-none">Цифры</span> для регистрации карты</p>
+                      <div class="scrollable ps-8 ps-sm-0 overflow-auto mb-11">
                         <div class="acrollable-content d-flex scale">
                           <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" checked>
                           <label class="btn btn-outline-primary" for="btncheck1"></label>
@@ -386,7 +386,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="px-8 px-lg-0">
+                    <div class="px-8 px-lg-0 mb-12">
                       <p class="title mb-4 mx-md-0 ps-8 ps-sm-0">Цены оформления карт</p>
                       <div class="d-lg-flex justify-content-start">
                         <div class="form-item form-item-percent me-lg-10 text-lg-center">
@@ -403,7 +403,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="button-box d-flex justify-content-center justify-content-lg-start mt-11 ms-lg-auto">
+                    <div class="button-box d-flex justify-content-center justify-content-lg-start ms-lg-auto">
                     <button class="button col-lg-6 border-0" type="submit">Сохранить</button>
                   </div>
                   </div>

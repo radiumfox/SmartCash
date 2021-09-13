@@ -36,10 +36,6 @@
     right: 15px;
   }
 
-  // .button-box {
-  //   max-width: 230px;
-  // }
-
   @include media-breakpoint-up(md) {
     border: 1px solid $basic-grey;
     border-radius: 5px;
@@ -72,7 +68,7 @@
 .my-card {
   padding: 0 8px;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     padding: 40px;
   }
 

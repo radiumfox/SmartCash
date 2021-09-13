@@ -9,10 +9,6 @@
   }
 }
 
-.scrollable-content-table {
-  min-width: 895px;
-}
-
 .table-custom {
   min-height: 690px;
   margin-bottom: 0;
@@ -88,12 +84,8 @@
   }
 }
 
-.table-container-complex {
-  width: 875px;
-}
 
 .table-custom-complex {
-  width: 875px;
   min-height: max-content;
 
   th {
@@ -109,7 +101,6 @@
   td {
     border-bottom: 1px solid $basic-grey;
     width: 285px;
-
     border-left: 1px solid $basic-grey;
   }
 
@@ -201,6 +192,10 @@
   width: 450px;
   background-color: $basic-grey;
   margin-top: 20px;
+
+  @include media-breakpoint-up(lg) {
+    margin-right: 80px;
+  }
 
   .table-nav-item {
     max-width: 100px;

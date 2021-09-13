@@ -1,5 +1,11 @@
 .finance-setup {
+
+  .form-label {
+    @include font(0.87rem, 1.01rem, 400);
+  }
+
   .form-control {
+    padding: 5px 12px 6px;
     @include media-breakpoint-up(lg) {
       width: 200px;
       margin-left: 10px;
@@ -9,6 +15,7 @@
   .form-item {
     @include media-breakpoint-up(lg) {
       width: 576px;
+      padding-bottom: 20px;
     }
   }
 
@@ -16,5 +23,11 @@
     @include media-breakpoint-up(lg) {
       width: 200px;
     }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 576px;
+    margin-right: 230px;
+    margin-left: auto;
   }
 }

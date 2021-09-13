@@ -11,7 +11,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid">
+        <div class="container-fluid px-lg-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -78,10 +78,10 @@
             </div>
           </div>
 
-          <div class="ps-lg-0 col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0"> <!-- right menu -->
-            <div class="card-header tab-header tab-header-border">
+          <div class="ps-lg-0 col-12 col-lg-5 col-xl-3 border-lg-start p-lg-0 order-xl-2 mt-2 mt-sm-5 mb-md-5 my-lg-0 mx-lg-2 mx-xl-0"> <!-- right menu -->
+            <div class="card-header tab-header tab-header-border ms-auto">
               <div class="scrollable ps-8 ps-lg-0 overflow-auto">
-                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column mt-2" role="tablist">
+                <ul class="scrollable-content nav nav-tabs nav-justified d-flex flex-lg-column" role="tablist">
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link active" data-bs-toggle="tab" href="#about-us">О нас</a>
                   </li>
@@ -92,7 +92,7 @@
                     <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#safety">Безопасность</a>
                   </li>
                   <li class="tab-item tab-item-large nav-item">
-                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#schedule">График</a>
+                    <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#schedule">График<span class="d-none d-lg-inline"> работы</span></a>
                   </li>
                   <li class="tab-item tab-item-large nav-item">
                     <a class="tab-link tab-link-white nav-link" data-bs-toggle="tab" href="#client-agreement">Клиентское соглашение</a>
@@ -105,7 +105,7 @@
           <div class="sign-up-partner col-12 col-xl-6 order-xl-1 mt-lg-6 mt-xl-0"> <!-- content -->
             <div class="tab-content tab-content--profile tab-card border-0 d-flex flex-column">
               <div class="tab-pane fade show active px-8 px-lg-0 mb-5 mx-auto" id="about-us">
-                <div class="pt-4 px-md-0 mx-auto mx-lg-0">
+                <div class="pt-11 pt-lg-12 px-md-0 mx-auto mx-lg-0">
                   <form class="sign-up-partner" method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -152,8 +152,8 @@
 
               </div>
 
-              <div class="tab-pane fade px-8 px-lg-0 px-lg-12 mb-5" id="contacts">
-                <div class="pt-4 pt-lg-0 mx-auto">
+              <div class="tab-pane fade px-8 px-lg-0 mb-5" id="contacts">
+                <div class="pt-11 pt-lg-12 mx-auto">
                   <form class="sign-up-partner" method="POST" action="#">
                     <div class="row m-0 d-flex align-items-center justify-content-between gx-0">
 
@@ -212,7 +212,7 @@
                         <input type="text" class="form-control" id="telegram" name="telegram">
                       </div>
 
-                      <div class="form-item d-lg-flex justify-content-end">
+                      <div class="form-item d-lg-flex justify-content-end pb-11 pb-lg-12">
                         <label for="website" class="form-label">Веб-сайт:</label>
                         <input type="text" class="form-control" id="website" name="website">
                       </div>
@@ -227,7 +227,7 @@
               </div>
 
               <div class="tab-pane fade px-8 px-lg-0 mb-5" id="safety">
-                <div class="col-12 pt-4 mx-auto mx-lg-0">
+                <div class="col-12 pt-11 pt-lg-12 mx-auto mx-lg-0">
                   <form class="sign-up-partner" method="POST" action="#">
                     <div class="row m-0 d-flex d-lg-block align-items-center justify-content-end gx-0">
 
@@ -261,8 +261,8 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade tab-pane fade mb-5" id="schedule">
-                <div class="col-12 pt-4 pt-lg-0 mx-auto px-8 px-lg-0">
+              <div class="tab-pane fade mb-5" id="schedule">
+                <div class="col-12 pt-10 pt-lg-12 mx-auto px-8 px-lg-0">
                   <form method="POST" action="#">
                     <div class="form-item d-flex justify-content-between align-items-baseline">
                       <div class="d-flex align-items-center">
@@ -354,7 +354,7 @@
                       </div>
                     </div>
 
-                    <div class="form-item d-flex justify-content-between align-items-baseline pb-0 mb-12">
+                    <div class="form-item d-flex justify-content-between align-items-baseline pb-0 mb-11 mb-lg-12">
                       <div class="d-flex align-items-center">
                         <input type="checkbox" class="btn-check" id="sunday" name="schedule" value="sunday">
                         <label for="sunday" class="btn btn-outline-primary form-label-checkbox d-flex align-items-center justify-content-center">Вс</label>
@@ -369,9 +369,9 @@
                       </div>
                     </div>
 
-                    <div class="lunch-break mb-11">
+                    <div class="lunch-break mb-11 mb-lg-12">
                       <p class="m-0 mb-10">Обеденный перерыв</p>
-                      <div class="form-item d-flex justify-content-end align-items-center ms-lg-auto ">
+                      <div class="form-item d-flex justify-content-end align-items-center ms-lg-auto pb-10">
                         <div class="d-flex align-items-center">
                           <input type="text" class="form-control form-time order-1" id="break-from" disabled>
                           <label for="break-from" class="form-label"><span class="d-lg-none">С:</span><span class="d-none d-lg-inline">Начало:</span></label>
@@ -397,13 +397,13 @@
               <div class="tab-pane fade px-8 px-lg-0 mb-5" id="client-agreement">
                 <div class="col-12 pt-4 mx-lg-0 d-lg-flex flex-column align-items-center">
                   <form method="POST" action="#">
-                    <div class="form-item d-flex justify-content-start">
+                    <div class="form-item d-flex justify-content-start pb-11 pb-lg-12">
                       <input type="checkbox" class="btn-check" id="agreement" name="agreement">
-                      <label for="agreement" class="form-label form-label-radio">Я согласен с условиями клиентского соглашения</label>
+                      <label for="agreement" class="form-label form-label-radio">Я согласен с условиeм Клиентского соглашения</label>
                     </div>
 
-                    <div class="button-box mb-9 ms-lg-auto">
-                      <button class="button button-finish border-0" type="submit">Завершить регистрацию</button>
+                    <div class="button-box mb-9 ms-lg-11">
+                      <button class="button button-finish border-0" type="submit">Завершить<span class="d-none d-lg-inline"> регистрацию</span></button>
                     </div>
                   </form>
                 </div>

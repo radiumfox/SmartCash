@@ -44,34 +44,10 @@
 
   @include media-breakpoint-up(lg) {
     max-width: 150px;
-    // border-bottom: none;
 
-    // &:first-child {
-    //   border-left: 1px solid $basic-grey;
-    //   border-top-left-radius: 4px;
-    // }
-
-    // &:last-child {
-    //   border-right: 1px solid $basic-grey;
-    //   border-top-right-radius: 4px;
-    // }
   }
 }
 
-// .tab-card {
-//   border: none;
-
-//   @include media-breakpoint-up(lg) {
-//     border: 1px solid $basic-grey;
-//     border-top: 0;
-//     border-bottom-left-radius: 4px;
-//     border-bottom-right-radius: 4px;
-//   }
-
-//   @include media-breakpoint-up(lg) {
-//     min-height: calc(100% - 42px);
-//   }
-// }
 
 
 // profile.html
@@ -104,7 +80,7 @@
 }
 
 .tab-header .tab-link-white {
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     background-color: $basic-light;
 
     &.active {

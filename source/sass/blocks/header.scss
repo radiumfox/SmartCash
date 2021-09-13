@@ -2,8 +2,10 @@
   background-color: $basic-dark;
   font-family: "SF UI Display", "Helvetica", sans-serif;
 
+
   .navbar {
     padding: 10px 0 11px 8px;
+
 
     max-width: 1200px;
     margin: 0 auto;
@@ -17,7 +19,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: 110px;
+    margin-top: 80px;
 
     @include media-breakpoint-up(lg) {
       flex-direction: row;
@@ -28,10 +30,12 @@
 
   .navbar-collapse.show,
   .navbar-collapse.collapsing {
-    min-height: 596px;
+    min-height: 550px;
+
 
     @include media-breakpoint-up(lg) {
       min-height: auto;
+
     }
   }
 
@@ -101,7 +105,7 @@
   }
 
   .nav-item {
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: left;
 
     &:first-child {
@@ -119,17 +123,8 @@
   }
 
   .nav-link {
-    @include font(0.87rem, 1.06rem, 400);
+    @include font(1.13rem, 1.25rem, 400);
 
-
-    @include media-breakpoint-up(md) {
-      @include font(1rem, 1.16rem, 400);
-    }
-
-    @include media-breakpoint-up(lg) {
-      @include font(1.13rem, 1.25rem, 400);
-
-    }
   }
 
   @include media-breakpoint-up(sm) {
