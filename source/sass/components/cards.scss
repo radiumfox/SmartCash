@@ -28,6 +28,10 @@
     margin: 0;
     border: 1px solid $basic-grey;
   }
+
+  @include media-breakpoint-up(xl) {
+    width: 285px;
+  }
 }
 
 .card-custom-user {
@@ -51,6 +55,7 @@
 .card-custom-admin {
   @include media-breakpoint-up(lg) {
     height: 740px;
+    padding: 40px 0;
   }
 }
 
