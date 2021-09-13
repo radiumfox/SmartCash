@@ -41,6 +41,14 @@
       width: 325px;
     }
   }
+
+  .accordion-features .accordion-header {
+    border: none;
+  }
+
+  .accordion-features .accordion-item:last-child::before {
+    width: 0;
+  }
 }
 
 .links-setup {

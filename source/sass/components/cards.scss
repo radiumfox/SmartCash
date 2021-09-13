@@ -48,6 +48,12 @@
   }
 }
 
+.card-custom-admin {
+  @include media-breakpoint-up(lg) {
+    height: 740px;
+  }
+}
+
 .card-preview {
   border-radius: 16px;
   margin-bottom: 25px;

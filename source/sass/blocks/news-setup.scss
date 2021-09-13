@@ -92,7 +92,7 @@
     &::before {
       content: "";
       position: absolute;
-      width: calc(100% + 100px);
+      width: 100%;
       height: 1px;
       background-color: $basic-grey;
       bottom: 0;
