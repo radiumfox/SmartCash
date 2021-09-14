@@ -6,11 +6,31 @@ const plumber = require("gulp-plumber");
 const sourcemap = require("gulp-sourcemaps");
 const sass = require("gulp-sass")(require('sass'));
 const postcss = require("gulp-postcss");
+
+const uncss = require('postcss-uncss');
+const cleanCss = require('gulp-clean-css');
+
 const autoprefixer = require("autoprefixer");
 const del = require("del");
 const sync = require("browser-sync").create();
 const concat = require("gulp-concat");
 const terser = require("gulp-terser")
+
+const plugins = [
+  uncss({
+    html: ['source/*.html'],
+    ignore: [
+      ".fade",
+      ".fade.in",
+      ".collapse",
+      ".collapse.in",
+      ".collapsing",
+      ".alert-danger",
+      ".open",
+      "/open+/"
+    ]
+  }),
+];
 
 // Styles
 
@@ -19,11 +39,17 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(postcss(plugins))
     .pipe(postcss([
       autoprefixer(),
       csso()
     ]))
+    .pipe(cleanCss({
+        level: 0,
+        format: 'keep-breaks'
+    }))
     .pipe(rename("style.min.css"))
+
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());

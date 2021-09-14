@@ -6,7 +6,6 @@
   .navbar {
     padding: 10px 0 11px 8px;
 
-
     max-width: 1200px;
     margin: 0 auto;
 
@@ -20,6 +19,7 @@
     flex-direction: column;
     align-items: flex-end;
     margin-top: 80px;
+    margin-bottom: 140px;
 
     @include media-breakpoint-up(lg) {
       flex-direction: row;
@@ -28,16 +28,6 @@
 
   }
 
-  .navbar-collapse.show,
-  .navbar-collapse.collapsing {
-    min-height: 550px;
-
-
-    @include media-breakpoint-up(lg) {
-      min-height: auto;
-
-    }
-  }
 
   .navbar-toggler {
     border: none;
