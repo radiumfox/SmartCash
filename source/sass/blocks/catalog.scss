@@ -12,12 +12,7 @@
     height: 32px;
     width: 296px;
 
-
     @include media-breakpoint-up(md) {
-      width: 325px;
-    }
-
-    @include media-breakpoint-up(xl) {
       width: 245px;
     }
   }
@@ -47,6 +42,9 @@
 
   @include media-breakpoint-up(lg) {
     margin-top: 20px;
+  }
+
+  @include media-breakpoint-up(xxl) {
     margin-left: 20px;
   }
 }
@@ -91,7 +89,7 @@
   }
 
   .catalog-item {
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       width: 285px;
     }
   }
@@ -248,5 +246,24 @@
 
   .card-img {
     margin-bottom: 10px;
+  }
+}
+
+.catalog {
+  .card-preview {
+    margin: 0 auto 20px;
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 65%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 66%;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 75%;
+    margin: 0;
   }
 }

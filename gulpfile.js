@@ -45,11 +45,10 @@ const styles = () => {
       csso()
     ]))
     .pipe(cleanCss({
-        level: 0,
-        format: 'keep-breaks'
+      level: 0,
+      format: 'keep-breaks'
     }))
     .pipe(rename("style.min.css"))
-
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());

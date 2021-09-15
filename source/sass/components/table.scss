@@ -4,7 +4,16 @@
   overflow: hidden;
   width: 454px;
 
+  @include media-breakpoint-up(sm) {
+    margin: 0 auto;
+  }
+
   @include media-breakpoint-up(lg) {
+    width: 590px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin: 0;
     width: 895px;
   }
 }
@@ -51,7 +60,13 @@
       height: 10px;
       z-index: 1;
       right: calc(50% - 50px);
-      top: 20px;
+      top: calc(50% - 4px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      &::before {
+        top: 20px;
+      }
     }
   }
 
@@ -205,5 +220,19 @@
   .table-nav-item.nav-link.active {
     border-bottom: 2px solid $special-grey-2;
     background-color: $special-grey-2;
+  }
+}
+
+
+.output {
+  width: 454px;
+  margin: 0;
+
+  @include media-breakpoint-up(lg) {
+    width: 588px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: 895px;
   }
 }

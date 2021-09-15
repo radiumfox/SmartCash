@@ -1,3 +1,7 @@
+.my-balance {
+  max-width: 895px;
+}
+
 .my-balance,
 .my-card {
   @include font(1.13rem, 1.3rem, 400);

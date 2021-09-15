@@ -5,7 +5,20 @@
 
   @include media-breakpoint-up(lg) {
     background-color: $basic-grey;
+    margin-bottom: -2px;
   }
+}
+
+.tab-link.nav-link {
+  border: none;
+}
+
+.tab-link.nav-link.active {
+  border: none;
+}
+
+.tab-item.nav-item {
+  border: none;
 }
 
 .tab-link {
@@ -21,12 +34,9 @@
 .tab-item .tab-link.active {
   border: none;
   border-bottom: 2px solid $light-green;
-
   background-color: $basic-light;
 
   @include media-breakpoint-up(lg) {
-
-    border-bottom: none;
     border-left: 1px solid $basic-grey;
     border-right: 1px solid $basic-grey;
     border-top: 2px solid $light-green;
@@ -44,10 +54,27 @@
 
   @include media-breakpoint-up(lg) {
     max-width: 150px;
-
+    border-bottom: none;
   }
 }
 
+.tab-link.nav-link {
+  @include media-breakpoint-up(lg) {
+    border-bottom: none;
+  }
+}
+
+.tab-link.nav-link.active {
+  @include media-breakpoint-up(lg) {
+    border-bottom: none;
+  }
+}
+
+.tab-item.nav-item {
+  @include media-breakpoint-up(lg) {
+    border-bottom: none;
+  }
+}
 
 
 // profile.html

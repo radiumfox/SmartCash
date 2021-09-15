@@ -62,9 +62,8 @@
       display: none;
     }
 
-    @include media-breakpoint-up(lg) {
-      left: 0;
-      width: 895px;
+    @include media-breakpoint-up(sm) {
+
       margin-right: -52px;
     }
   }

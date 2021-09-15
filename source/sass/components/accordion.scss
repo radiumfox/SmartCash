@@ -154,7 +154,6 @@
 }
 
 .menu-accordion {
-
   .accordion-button {
     @include font(1.13rem, 1.3rem, 400);
     color: $basic-light;
@@ -220,6 +219,8 @@
 }
 
 .accordion-dropdown {
+  margin:  0 auto;
+
   .accordion-button {
     width: auto;
   }
@@ -236,7 +237,10 @@
 
   .accordion-button:not(.collapsed)::after {
     background-image: url("../img/arrow-down.svg");
+  }
 
+  @include media-breakpoint-up(sm) {
+    margin:  0 auto;
   }
 }
 
@@ -338,5 +342,17 @@
   @include media-breakpoint-up(lg) {
     width: 455px;
     margin-left: auto;
+  }
+}
+
+.accordion-filter {
+  width: 296px;
+
+  @include media-breakpoint-up(md) {
+    margin: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: 245px;
   }
 }

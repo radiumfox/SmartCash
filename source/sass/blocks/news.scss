@@ -3,35 +3,35 @@
   margin-top: 40px;
   margin-bottom: 59px;
 
-
   @include media-breakpoint-up(lg) {
     margin-top: 80px;
   }
 
   .news-content {
-
     @include media-breakpoint-up(lg) {
       width: 594px;
+      margin: 20px auto 0;
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin: 0;
     }
   }
 
   .news-item {
+    max-width: 296px;
+    margin: 0 auto;
+
     &:not(:first-child) {
       margin-top: 39px;
     }
 
-    @include media-breakpoint-up(lg) {
-      padding-bottom: 60px;
-      max-width: 1200px;
-
-      &:not(:first-child) {
-        margin-top: 31px;
-      }
+    @include media-breakpoint-up(sm) {
+      max-width: 438px;
     }
-  }
 
-  .news-item {
     @include media-breakpoint-up(lg) {
+      max-width: 1200px;
       padding-bottom: 60px;
       position: relative;
 
@@ -48,6 +48,19 @@
         width: 0;
       }
 
+      &:not(:first-child) {
+        margin-top: 31px;
+      }
+    }
+  }
+
+  .news-links-box  {
+    @include media-breakpoint-up(lg) {
+      padding-left: 15px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-left: 0;
     }
   }
 }
@@ -66,6 +79,11 @@
   @include media-breakpoint-up(lg) {
     @include font(1.5rem, 1.8rem, 400);
     padding-bottom: 28px;
+    padding-left: 15px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 0;
   }
 }
 
@@ -81,7 +99,6 @@
   .news-link-arrow {
     margin-right: 6px;
     height: 14px;
-
   }
 
   @include media-breakpoint-up(md) {
@@ -91,7 +108,6 @@
   @include media-breakpoint-up(lg) {
     @include font(1.13rem, 1.3rem, 400);
     margin-right: 87px;
-
 
     span {
       margin-right: 20px;
@@ -104,31 +120,29 @@
   }
 }
 
-.news-time {
-  @include font(0.87rem, 1.06rem, 400);
-
-  @include media-breakpoint-up(lg) {
-    @include font(1.13rem, 1.3rem, 400);
-  }
-}
-
 .news-img {
   width: 296px;
   height: 160px;
   background-color: $basic-grey;
   margin: 0 auto 15px;
 
-  @include media-breakpoint-up(md) {
-    width: 367px;
-    height: 205px;
+  @include media-breakpoint-up(sm) {
+    width: 438px;
+    height: 250px;
     margin: 0 0 30px;
   }
 
   @include media-breakpoint-up(lg) {
     @include font(1.13rem, 1.5rem, 400);
-    width: 438px;
-    height: 250px;
     margin-bottom: 0;
+  }
+}
+
+.news-time {
+  @include font(0.87rem, 1.06rem, 400);
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.3rem, 400);
   }
 }
 
@@ -141,8 +155,12 @@
 
   @include media-breakpoint-up(lg) {
     @include font(1.13rem, 1.6rem, 400);
-
     padding-bottom: 96px;
+    padding-left: 15px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 0;
   }
 }
 

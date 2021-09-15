@@ -270,7 +270,7 @@
     border-radius: 5px;
     height: 60px;
     margin-bottom: 0;
-    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -359,8 +359,75 @@
     min-height: 470px;
   }
 
+  .card-green {
+    @include media-breakpoint-up(lg) {
+      width: 200px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 285px;
+    }
+  }
+
+  .accordion-item {
+    @include media-breakpoint-up(lg) {
+      max-width: 639px;
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(xl) {
+      max-width: 895px;
+      margin: 0;
+    }
+  }
+
+  .output {
+    width: 540px;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      width: 639px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 895px;
+    }
+  }
+
   .table-container {
-    width: 895px;
+    width: 540px;
+    margin: 0;
+
+    @include media-breakpoint-up(lg) {
+      width: 639px;
+    }
+
+    td {
+      @include media-breakpoint-up(lg) {
+        @include font(0.87rem, 1.04rem, 400);
+      }
+
+      @include media-breakpoint-up(xl) {
+        @include font(1.13rem, 1.3rem, 400);
+      }
+    }
+
+    .td-sort {
+      &::before {
+        top: calc(50% - 4px);
+        right: 3px;
+      }
+
+      @include media-breakpoint-up(xl) {
+        &::before {
+          right: 10px;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 895px;
+    }
   }
 }
 
