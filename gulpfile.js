@@ -14,7 +14,9 @@ const autoprefixer = require("autoprefixer");
 const del = require("del");
 const sync = require("browser-sync").create();
 const concat = require("gulp-concat");
-const terser = require("gulp-terser")
+const terser = require("gulp-terser");
+
+const ghPages = require("gulp-gh-pages");
 
 const plugins = [
   uncss({
@@ -161,3 +163,10 @@ exports.default = gulp.series(
     server,
     watcher
   ));
+
+  // deploy
+
+  gulp.task("deploy", function() {
+    return gulp.src("./build/**/*")
+      .pipe(ghPages());
+  });
