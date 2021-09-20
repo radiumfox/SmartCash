@@ -198,7 +198,7 @@
   .accordion-sub-item {
     padding: 10px 0 10px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       &.current {
         background-color: $light-green;
         width: 100%;
@@ -210,7 +210,7 @@
   .accordion-link {
     @include font(1.13rem, 1.3rem, 400);
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
       &.current {
         color: $basic-light;
       }
@@ -353,6 +353,6 @@
   }
 
   @include media-breakpoint-up(lg) {
-    width: 245px;
+    width: 244px;
   }
 }
