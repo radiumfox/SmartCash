@@ -12,7 +12,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid px-xl-0">
+        <div class="container-fluid px-xxl-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -60,7 +60,7 @@
     <main>
       <h1 class="visually-hidden">Карты</h1>
 
-      <div class="container gx-0 mt-md-6 mb-6">
+      <div class="container-xl px-0 px-md-8 px-xxl-0 mt-md-6 mb-6">
         <div class="row justify-content-between gx-0">
           <div class="card-custom card-custom-admin col-12 col-lg-4 col-xl-3">
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
@@ -126,7 +126,7 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-8 col-xl-9 mt-4 mt-lg-0 px-lg-0 mx-0">
+          <div class="col-12 col-lg-8 col-xl-9 mt-4 mt-lg-0 mx-0">
 
             <div class="container d-flex justify-content-center justify-content-lg-end mb-12">
               <div class="button-box ms-lg-auto">
@@ -134,7 +134,7 @@
               </div>
             </div>
 
-            <div class="ps-8 ps-lg-0 container me-0 scrollable overflow-auto">
+            <div class="container ps-8 ps-lg-0 me-0 scrollable overflow-auto">
               <div class="scrollable-content d-flex table-container">
                 <table class="table table-custom table-custom-complex">
                   <tbody class="table-body">
@@ -318,7 +318,7 @@
                 </table>
               </div>
             </div>
-            <div class="table-nav d-none d-md-block ms-lg-auto">
+            <div class="table-nav d-none d-md-block ms-md-auto">
               <nav class="nav ">
                 <a class="table-nav-item flex-fill nav-link active" aria-current="page" href="#"><span class="visually-hidden">Страница1</span></a>
                 <a class="table-nav-item flex-fill nav-link" href="#"><span class="visually-hidden">Страница2</span></a>
@@ -329,28 +329,28 @@
             <div class="mb-7 mt-12">
               <form class="add-card" method="POST" action="#">
                 <div class="d-xl-flex">
-                  <div class="me-md-10">
-                    <div class="form-upload">
+                  <div class="me-md-10 px-8">
+                    <div class="form-upload mb-10 mx-0">
                       <label class="form-label" for="add-img">Добавить изображение</label>
                       <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
                     </div>
-                    <div class="form-upload">
+                    <div class="form-upload mb-10 mb-lg-0 mx-0">
                       <label class="form-label" for="add-img">Добавить изображение</label>
                       <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
                     </div>
                   </div>
                   <div>
-                    <div class="form-item px-8 px-lg-0">
+                    <div class="form-item px-8">
                       <label for="card-name" class="form-label">Название карты</label>
                       <input type="text" class="form-control form-control-large" id="card-name" name="card-name">
                     </div>
-                    <div class="form-item px-8 px-lg-0">
+                    <div class="form-item px-8">
                       <label for="country-of-issue" class="form-label">Страна</label>
                       <input type="text" class="form-control form-control-large" id="country-of-issue" name="country-of-issue">
                     </div>
-                    <div class="container">
-                      <p class="title mb-9 mx-md-0 ps-8 ps-sm-0"><span class="d-none d-md-inline">Доступные цифры</span><span class="d-md-none">Цифры</span> для регистрации карты</p>
-                      <div class="scrollable ps-8 ps-sm-0 overflow-auto mb-11">
+                    <div>
+                      <p class="title mb-9 mx-md-0 ps-8"><span class="d-none d-md-inline">Доступные цифры</span><span class="d-md-none">Цифры</span> для регистрации карты</p>
+                      <div class="scrollable overflow-auto mb-11 ps-8">
                         <div class="acrollable-content d-flex scale">
                           <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off" checked>
                           <label class="btn btn-outline-primary" for="btncheck1"></label>
@@ -387,8 +387,8 @@
                         </div>
                       </div>
                     </div>
-                    <div class="px-8 px-lg-0 mb-12">
-                      <p class="title mb-4 mx-md-0 ps-8 ps-sm-0">Цены оформления карт</p>
+                    <div class="mb-12 px-8">
+                      <p class="title mb-4 mx-md-0">Цены оформления карт</p>
                       <div class="d-lg-flex justify-content-start">
                         <div class="form-item form-item-percent me-lg-10 text-lg-center">
                           <label for="classic-price" class="form-label fs-8">Classic</label>

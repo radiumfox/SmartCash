@@ -8,9 +8,17 @@
   margin-bottom: 40px;
 
   .form-item {
+    width: 296px;
+
     @include media-breakpoint-up(lg) {
       padding-bottom: 20px;
       width: 285px;
+    }
+  }
+
+  .form-item-percent {
+    @include media-breakpoint-up(lg) {
+      max-width: 254px;
     }
   }
 
@@ -94,8 +102,12 @@
   }
 
   .form-item-date {
+    width: 296px;
+    margin: 0 auto;
+
     @include media-breakpoint-up(lg) {
       width: 325px;
+      margin: 0;
     }
   }
 
@@ -148,7 +160,7 @@
 .coupons,
 .cashback,
 .discount {
-  .form-textarea {
+  .form-control.form-textarea {
     width: 100%;
     max-width: 895px;
 
@@ -244,12 +256,13 @@
       padding-bottom: 40px;
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(xl) {
       padding-bottom: 0;
       padding-right: 22px;
 
       &:last-child {
         padding-bottom: 0;
+        padding-right: 0;
       }
     }
   }
@@ -295,11 +308,12 @@
       max-width: 438px;
     }
   }
-
 }
 
 .cash {
-  max-width: 590px;
+  @include media-breakpoint-up(lg) {
+    max-width: 590px;
+  }
 }
 
 #partner-menu {
@@ -337,6 +351,15 @@
     @include media-breakpoint-up(lg) {
       height: 285px;
       margin-bottom: 0;
+    }
+  }
+
+  .form-textarea {
+    width: 100%;
+
+    @include media-breakpoint-up(xl) {
+      height: 285px;
+      max-width: 590px;
     }
   }
 }

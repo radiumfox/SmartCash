@@ -96,6 +96,20 @@
 }
 
 .catalog-partner {
+
+  .back {
+    @include media-breakpoint-up(lg) {
+      margin: 40px 0 33px;
+      font-size: 18px;
+
+      span {
+        @include font(1.13rem, 1.3rem, 400);
+        padding-left: 24px;
+        padding-top: 2px;
+      }
+    }
+  }
+
   .card-title {
     @include media-breakpoint-up(lg) {
       padding-bottom: 10px;
@@ -229,17 +243,7 @@
   }
 }
 
-.back {
-  @include media-breakpoint-up(lg) {
-    margin: 40px 0 33px;
-    font-size: 18px;
 
-    span {
-      padding-left: 24px;
-      padding-top: 2px;
-    }
-  }
-}
 
 .catalog-similar {
   max-width: 100%;

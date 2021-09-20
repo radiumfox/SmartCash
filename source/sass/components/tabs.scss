@@ -77,6 +77,8 @@
 }
 
 
+
+
 // profile.html
 
 .tab-item-large {
@@ -109,6 +111,7 @@
 .tab-header .tab-link-white {
   @include media-breakpoint-up(lg) {
     background-color: $basic-light;
+    border-radius: 0;
 
     &.active {
       background-color: $light-green;
@@ -116,6 +119,8 @@
     }
   }
 }
+
+
 
 .tab-header-border {
   @include media-breakpoint-up(lg) {
@@ -156,7 +161,7 @@
     display: none;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     width: auto;
   }
 

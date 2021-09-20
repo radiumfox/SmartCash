@@ -59,14 +59,8 @@
       width: 16px;
       height: 10px;
       z-index: 1;
-      right: calc(50% - 50px);
+      right: calc(50% - 40px);
       top: calc(50% - 4px);
-    }
-
-    @include media-breakpoint-up(lg) {
-      &::before {
-        top: 20px;
-      }
     }
   }
 
@@ -208,8 +202,9 @@
   background-color: $basic-grey;
   margin-top: 20px;
 
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     margin-right: 80px;
+    margin-left: auto;
   }
 
   .table-nav-item {

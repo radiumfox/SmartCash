@@ -29,6 +29,15 @@
 }
 
 .sign-in {
+  .form-item {
+    padding-bottom: 20px;
+  }
+
+  .form-label {
+    @include font(1.13rem, 1.3rem, 400);
+    margin-bottom: 4px;
+  }
+
   @include media-breakpoint-up(md) {
     .form-item {
       width: 285px;
@@ -94,9 +103,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-      margin-right: 55px;
-      margin-left: auto;
-
       .form-control::placeholder {
         color: $basic-dark-2;
         @include font(1.13rem, 1.3rem, 400);
@@ -119,9 +125,6 @@
     }
 
     @include media-breakpoint-up(lg) {
-      margin-right: 55px;
-      margin-left: auto;
-
       .features-list {
         padding-left: 48px;
         line-height: 1.225rem;

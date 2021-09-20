@@ -12,7 +12,7 @@
 
     <header class="header">
       <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container-fluid px-xl-0">
+        <div class="container-fluid px-xxl-0">
           <a class="navbar-brand align-baseline py-0" href="index.html">
             <img class="header-logo" src="img/logo.svg" width="83" height="19" alt="Логотип компании">
           </a>
@@ -62,7 +62,7 @@
     <main>
       <h1 class="visually-hidden">Скидки партнера</h1>
 
-      <div class="container gx-0 mt-md-6 mt-12">
+      <div class="container-xl px-0 px-sm-8 px-xl-0 mt-md-6 mt-12">
         <div class="row justify-content-between gx-0">
           <div class="card-custom card-custom-partner col-12 col-lg-4 col-xl-3">
             <div class="form-upload">
@@ -119,7 +119,7 @@
                   <button class="button" type="button">+ Добавить скидку</button>
                 </div>
 
-                <div class="d-flex justify-content-between row gx-0"> <!-- -->
+                <div class="d-xl-flex justify-content-between"> <!-- -->
                   <div class="form-item form-item-select col-lg-6 col-xl-4 ms-lg-0">
                     <label for="category" class="form-label">Категория</label>
                     <select id="category" class=" form-select">
@@ -159,40 +159,40 @@
 
                 <div>
                   <p class="mb-11">Скидки по картам</p>
-                  <ul class="list-unstyled d-xl-flex m-0 ps-lg-0 mb-lg-12">
-                    <li class="discount-item d-md-flex justify-content-xl-between align-items-center d-lg-block">
+                  <ul class="list-unstyled d-xl-flex m-0 mb-lg-12">
+                    <li class="discount-item ">
                       <input type="checkbox" class="btn-check" id="discount-classic" checked>
-                      <label for="discount-classic" class="form-label form-label-radio d-flex justify-content-end">
+                      <label for="discount-classic" class="form-label form-label-radio">
                         <div class="card-discount d-flex justify-content-center align-items-center">
                         Classic
                         </div>
                       </label>
-                      <div class="d-flex justify-content-center ms-3">
-                        <input class="form-control form-control-percent ms-auto mx-lg-auto" type="text" id="discount-classic-input" value="2%" placeholder="%">
+                      <div class="form-item-percent ms-auto">
+                        <input class="form-control form-control-percent mx-auto" type="text" id="discount-classic-input" value="2%" placeholder="%">
                         <label for="discount-classic-input" class="visually-hidden">Введите скидку</label>
                       </div>
                     </li>
-                    <li class="discount-item d-md-flex justify-content-xl-between align-items-center d-lg-block">
+                    <li class="discount-item">
                       <input type="checkbox" class="btn-check" id="discount-premium" checked>
-                      <label for="discount-premium" class="form-label form-label-radio d-flex justify-content-end">
+                      <label for="discount-premium" class="form-label form-label-radio">
                         <div class="card-discount card-discount--dark d-flex justify-content-center align-items-center">
                           Premium
                         </div>
                       </label>
-                      <div class="d-flex justify-content-center ms-3">
-                        <input class="form-control form-control-percent ms-auto mx-lg-auto" type="text" id="discount-premium-input" placeholder="%">
+                      <div class="form-item-percent ms-auto">
+                        <input class="form-control form-control-percent mx-auto" type="text" id="discount-premium-input" placeholder="%">
                         <label for="discount-premium-input" class="visually-hidden">Введите скидку</label>
                       </div>
                     </li>
-                    <li class="discount-item d-md-flex justify-content-xl-between align-items-center d-lg-block">
+                    <li class="discount-item">
                       <input type="checkbox" class="btn-check" id="discount-gold" checked>
-                      <label for="discount-gold" class="form-label form-label-radio d-flex justify-content-end">
+                      <label for="discount-gold" class="form-label form-label-radio">
                         <div class="card-discount card-discount--green d-flex justify-content-center align-items-center">
                           Gold
                         </div>
                       </label>
-                      <div class="d-flex justify-content-center ms-3">
-                        <input class="form-control form-control-percent ms-auto mx-lg-auto" type="text" id="discount-gold-input" placeholder="%">
+                      <div class="form-item-percent ms-auto">
+                        <input class="form-control form-control-percent mx-auto" type="text" id="discount-gold-input" placeholder="%">
                         <label for="discount-gold-input" class="visually-hidden">Введите скидку</label>
                       </div>
                     </li>

@@ -2,6 +2,11 @@
   border: none;
   font-family: "SF UI Display", "Helvetica", sans-serif;
 
+  .form-upload {
+    margin-top: 20px;
+    margin-bottom: 28px;
+  }
+
   .card-title {
     @include font(1.5rem, 1.75rem, 400);
     text-align: left;
@@ -27,7 +32,6 @@
     border-radius: 5px;
     max-width: 285px;
     margin: 0;
-    // border: 1px solid $basic-grey;
   }
 
   @include media-breakpoint-up(xl) {
@@ -36,7 +40,7 @@
 }
 
 .card-custom-user {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(sm) {
     height: 675px;
   }
 }
@@ -49,7 +53,7 @@
 }
 
 .card-custom-partner {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(sm) {
     height: 620px;
   }
 }
@@ -60,6 +64,8 @@
     padding: 40px 0;
   }
 }
+
+// card-preview
 
 .card-preview {
   border-radius: 16px;

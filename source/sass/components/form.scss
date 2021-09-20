@@ -24,7 +24,7 @@
   min-height: 160px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 auto 20px;
+  margin: 0 auto 0;
   width: 296px;
 
   .form-label {
@@ -51,7 +51,6 @@
 
     @include media-breakpoint-up(lg) {
       margin-left: 48px;
-
     }
   }
 
@@ -61,8 +60,6 @@
 
   @include media-breakpoint-up(lg) {
     width: 245px;
-    margin-top: 20px;
-    margin-bottom: 28px;
   }
 }
 
@@ -119,7 +116,7 @@
 
   @include media-breakpoint-up(md) {
     height: 32px;
-    width: 285px;
+    // width: 285px;
   }
 }
 
