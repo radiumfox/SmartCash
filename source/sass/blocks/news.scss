@@ -18,42 +18,6 @@
     }
   }
 
-  .news-item {
-    max-width: 296px;
-    margin: 0 auto;
-
-    &:not(:first-child) {
-      margin-top: 39px;
-    }
-
-    @include media-breakpoint-up(sm) {
-      max-width: 438px;
-    }
-
-    @include media-breakpoint-up(lg) {
-      max-width: 1200px;
-      padding-bottom: 60px;
-      position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: calc(100% + 100px);
-        height: 1px;
-        background-color: $basic-grey;
-        bottom: 0;
-      }
-
-      &:nth-child(2)::before{
-        width: 0;
-      }
-
-      &:not(:first-child) {
-        margin-top: 31px;
-      }
-    }
-  }
-
   .news-links-box  {
     @include media-breakpoint-up(lg) {
       padding-left: 15px;
@@ -62,28 +26,6 @@
     @include media-breakpoint-up(xl) {
       padding-left: 0;
     }
-  }
-}
-
-.news-title {
-  @include font(1.13rem, 1.3rem, 400);
-  color:  $basic-dark-2;
-  margin: 0;
-  padding-bottom: 15px;
-
-  @include media-breakpoint-up(md) {
-    @include font(1.3rem, 1.5rem, 400);
-    margin-left: auto;
-  }
-
-  @include media-breakpoint-up(lg) {
-    @include font(1.5rem, 1.8rem, 400);
-    padding-bottom: 28px;
-    padding-left: 15px;
-  }
-
-  @include media-breakpoint-up(xl) {
-    padding-left: 0;
   }
 }
 
@@ -121,20 +63,19 @@
 }
 
 .news-img {
-  width: 296px;
+  min-width: 296px;
+  width: 100%;
+  max-width: 420px;
   height: 160px;
   background-color: $basic-grey;
   margin: 0 auto 15px;
-
-  @include media-breakpoint-up(sm) {
-    width: 438px;
-    height: 250px;
-    margin: 0 0 30px;
-  }
+  border-radius: 5px;
 
   @include media-breakpoint-up(lg) {
     @include font(1.13rem, 1.5rem, 400);
-    margin-bottom: 0;
+    margin: 0;
+    min-width: 438px;
+    height: 250px;
   }
 }
 
@@ -166,4 +107,209 @@
 
 .news-link-more {
   margin-right: 0;
+}
+
+
+.news-item {
+  min-width: 296px;
+  max-width: 420px;
+  margin: 39px auto 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.56rem, 400);
+    max-width: 1200px;
+    padding-bottom: 60px;
+    position: relative;
+    margin-top: 31px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: calc(100%);
+      height: 1px;
+      background-color: $basic-grey;
+      bottom: 0;
+    }
+
+    &:last-child::before{
+      width: 0;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .date {
+    @include font(0.87rem, 1.18rem, 400);
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.13rem, 1.56rem, 400);
+    }
+  }
+
+  .title {
+    @include font(1.13rem, 1.3rem, 400);
+    color:  $basic-dark-2;
+    margin: 0;
+    padding-bottom: 15px;
+
+    @include media-breakpoint-up(md) {
+      @include font(1.3rem, 1.5rem, 400);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.5rem, 1.8rem, 400);
+      padding-bottom: 28px;
+      padding-left: 15px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-left: 0;
+    }
+  }
+
+  .text-edit {
+    @include font(0.87rem, 1.225rem, 400);
+    padding: 20px;
+    border: 1px solid $basic-grey;
+    border-radius: 5px;
+    min-height: 160px;
+    max-width: 590px;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      min-height: 142px;
+    }
+  }
+
+  .form-upload {
+    background-color: $basic-grey;
+    margin-bottom: 15px;
+    margin: 0 0 15px;
+    min-width: 296px;
+    width: 100%;
+    max-width: 420px;
+
+    @include media-breakpoint-up(lg) {
+      min-width: 245px;
+      width: 245px;
+      background-color: $basic-light;
+      height: 200px;
+      margin: 0;
+      margin-right: 18px;
+
+      .form-label {
+        margin-top: 76px;
+        margin-left: 48px;
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      min-width: 285px;
+
+      .form-label {
+        margin-top: 76px;
+        margin-left: 68px;
+      }
+    }
+  }
+
+  .form-select {
+    @include font(1.13rem, 1.56rem, 400);
+    padding: 3px 10px 5px;
+  }
+
+  .button-link {
+    @include font(0.87rem, 1.04rem, 400);
+
+    @include media-breakpoint-up(lg) {
+      @include font(1.13rem, 1.3rem, 400);
+      margin-right: 83px;
+      // padding: 7px 0;
+    }
+  }
+
+  .button-link-edit {
+    @include media-breakpoint-up(lg) {
+      @include font(1rem, 1.18rem, 400);
+      border-radius: 20px;
+      display: inline-block;
+      padding: 10px 0;
+      width: 200px;
+      text-align: center;
+      margin-right: 0;
+
+      @include button-variant (
+        $light-green,
+        transparent,
+        $basic-light,
+        $green-special,
+        transparent,
+        $basic-light,
+        $green-special,
+        transparent,
+        $basic-light,
+        $disabled-btn,
+        transparent,
+        rgba($basic-light, 0.7),
+      );
+    }
+
+  }
+
+  .text {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .content-wrap {
+    height: 100%;
+  }
+}
+
+
+.back span {
+  @include font(0.87rem, 1.18rem, 400);
+  padding-left: 10px;
+}
+
+.back {
+  max-width: 420px;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(lg) {
+    max-width: initial;
+  }
+}
+
+.back-text {
+  @include font(0.875rem, 1rem, 400);
+}
+
+.news-setup {
+  margin-bottom: 100px;
+
+  .form-item-date {
+    max-width: 325px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    @include font(1.13rem, 1.56rem, 400);
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: 0;
+  }
 }

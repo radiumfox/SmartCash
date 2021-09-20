@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartCASH</title>
+    <link rel="preload" type="font/woff2" href="../fonts/SFUIDisplay.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
@@ -59,11 +60,11 @@
     <main>
       <h1 class="visually-hidden">Редактор новостей</h1>
 
-      <div class="container gx-0 mt-sm-6 mb-sm-6">
+      <div class="container-xl px-0 px-lg-8 px-xl-0 mt-sm-6 mb-sm-6">
         <div class="row justify-content-between gx-0">
           <div class="card-custom card-custom-admin col-12 col-lg-3">
             <div class="menu-accordion accordion m-0 text-center" id="partner-menu">
-              <div class="nav-item d-md-none mt-sm-5">
+              <div class="nav-item d-sm-none mt-sm-5">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     Новости
@@ -114,7 +115,7 @@
                   <div class="accordion-sub-item nav-item">
                     <a class="accordion-link" href="admin-news.html">Настройка ссылки</a>
                   </div>
-                  <div class="accordion-sub-item nav-item current d-none d-md-block">
+                  <div class="accordion-sub-item nav-item current d-none d-sm-block">
                     <a class="accordion-link current">Новости</a>
                   </div>
                   <div class="accordion-sub-item nav-item mb-sm-5">
@@ -126,8 +127,8 @@
           </div>
 
           <div class="col-12 col-lg-9 pt-11 pt-lg-0 px-8 px-lg-0">
-            <form class="news-setup mx-lg-auto" method="POST" action="#">
-              <div class="back col-12">
+            <form class="news-setup" method="POST" action="#">
+              <div class="back">
                 <a class="d-flex align-items-center" href="admin-news.html">
                   <svg viewBox="0 0 6 11" width="6" height="11">
                     <use xlink:href="img/sprite.svg#arrow-left"></use>
@@ -135,18 +136,18 @@
                   <span class="back-text">Назад</span>
                 </a>
               </div>
-              <div class="mb-12 d-xl-flex">
-                <h3 class="title d-lg-none text-sm-center mb-10">Тема новости</h3>
-                <div class="form-upload ms-lg-2 me-lg-10">
+              <div class="news-item mb-12 d-lg-flex">
+                <h3 class="title d-lg-none mb-10">Тема новости</h3>
+                <div class="form-upload me-lg-2">
                   <label class="form-label d-none d-lg-block" for="add-img">Добавить изображение</label>
                   <input class="form-control visually-hidden" id="add-img" type="file" accept="image/gif, image/jpeg, image/png">
                 </div>
                 <div>
-                  <h3 contenteditable="true" class="title d-none d-lg-block mb-lg-11 mt-lg-0">Тема новости</h3>
+                  <h3 contenteditable="true" class="title d-none d-lg-block">Тема новости</h3>
                   <p contenteditable="true" class="text-edit mb-lg-12 mx-auto mx-md-0">Равным образом новая модель организационной деятельности играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает</p>
                   <div class="d-lg-flex align-items-center mb-11 mb-lg-12">
                     <a class="button-link d-none d-lg-block" href="news.html">Новости</a>
-                    <div class="form-item form-item-date ms-2">
+                    <div class="form-item form-item-date mx-auto">
                       <div class="d-flex justify-content-between">
                         <label for="news-date-day" class="form-label visually-hidden">День</label>
                         <select id="news-date-day" class="days form-select form-select-day me-lg-2" name="news-date-day">
@@ -157,7 +158,7 @@
                         </select>
 
                         <label for="news-date-year" class="form-label visually-hidden">Год</label>
-                        <select id="news-date-year" class="years form-select form-select-year me-lg-2" name="news-date-year">
+                        <select id="news-date-year" class="years form-select form-select-year" name="news-date-year">
                         </select>
                       </div>
                     </div>

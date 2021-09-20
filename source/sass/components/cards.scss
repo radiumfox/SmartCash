@@ -17,6 +17,7 @@
   }
 
   @include media-breakpoint-up(sm) {
+    border: 1px solid $basic-grey;
     margin: 0 auto;
     max-width: 320px;
   }
@@ -26,7 +27,7 @@
     border-radius: 5px;
     max-width: 285px;
     margin: 0;
-    border: 1px solid $basic-grey;
+    // border: 1px solid $basic-grey;
   }
 
   @include media-breakpoint-up(xl) {
@@ -54,7 +55,7 @@
 }
 
 .card-custom-admin {
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(sm) {
     height: 740px;
     padding: 40px 0;
   }
