@@ -66,7 +66,7 @@
   min-width: 296px;
   width: 100%;
   max-width: 420px;
-  height: 160px;
+  height: auto;
   background-color: $basic-grey;
   margin: 0 auto 15px;
   border-radius: 5px;
@@ -75,7 +75,7 @@
     @include font(1.13rem, 1.5rem, 400);
     margin: 0;
     min-width: 438px;
-    height: 250px;
+    height: auto;
   }
 }
 
