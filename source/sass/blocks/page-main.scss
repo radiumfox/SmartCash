@@ -8,9 +8,24 @@
   background-color: $basic-grey;
   min-height: 200px;
   margin-bottom: 30px;
+  padding: 0;
 
   @include media-breakpoint-up(lg) {
     min-height: 600px;
     margin-bottom: 120px;
+  }
+}
+
+.page-main-header img {
+  width: 100%;
+  object-fit: cover;
+
+  @include media-breakpoint-up(sm) {
+    object-position: 0 -40px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    min-height: 600px;
+    object-position: 0 -90px;
   }
 }

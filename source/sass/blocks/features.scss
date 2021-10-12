@@ -145,3 +145,8 @@
 .indicators-value {
   @include font(1.88rem, 2.25rem, 400);
 }
+
+.features-carousel .splide__track {
+  max-width: 850px;
+  margin-left: auto;
+}
